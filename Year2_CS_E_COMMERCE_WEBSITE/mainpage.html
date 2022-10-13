@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie -Your One Stop Source of Unlimited Movies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+
+    <script src="js/stickyFooter.js"></script>
+    <link rel="stylesheet" href="css/slidshow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script>
+        const toggle = document.getElementById('toggleDark');
+        const body = document.querySelector('body');
+
+        toggle.addEventListener('click', function () {
+            this.classList.toggle('bi-moon');
+            if (this.classList.toggle('bi-brightness-high-fill')) {
+                body.style.background = 'white';
+                body.style.color = 'black';
+                body.style.transition = '2s';
+            } else {
+                body.style.background = 'black';
+                body.style.color = 'white';
+                body.style.transition = '2s';
+            }
+        });
+    </script>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: "Arial", Helvetica, sans-serif;
+        }
+
+        i {
+            font-size: 30px;
+            cursor: pointer;
+            position: relative;
+            ;
+        }
+    </style>
+
+</head>
+<!-- font-family: 'Staatliches', cursive; -->
+<!-- font-family: 'Russo One', sans-serif; -->
+
+
+<body>
+
+    <header class="navigationBar">
+        <ul id="navbar">
+            <div id="logoblock">
+                <a href="mainpage.php" class="link">
+                    <p id="logoMovie" style="color:white">
+                        LOGO
+
+                    </p>
+                </a>
+
+            </div>
+            <div id="linksblock">
+                <li class="navbaritem"><a class="link" href="filmPage.html">DESKTOP PCs</a></li>
+                <li class="navbaritem"><a class="link" href="#">LAPTOPS</a></li>
+                <li class="navbaritem"><a class="link" href="#">CONTACT US</a></li>
+                <li class="navbaritem"><a class="link" href="#">REVIEWS</a></li>
+            </div>
+
+            <div id="membershipblock">
+
+
+
+                <li> <i class="bi bi-brightness-high-fill" id="toggleDark"></i></li>
+                
+                <br>
+                <br>
+                <li><a class="searchLogo" class="link" href=""> <i class="fa fa-search"
+                            style="font-size: xx-large;color:white"></i> </a></li>
+        </ul>
+        </div>
+        </ul>
+    </header>
+    <div class="mainbox-container">
+        <div class="mainbox-container-1">
+            <section class="bannerContainer">
+
+
+                <div class="slider-frame">
+                    <div class="slide-images">
+                        <div class="img-container" style="height: 780px; width: 980px; ;">
+                            <img src="img/slidshow1.jpg" alt="" class="bannerImages" name="bannerImages">
+                        </div>
+                        <div class="img-container" style="height: 780px; width: 980px; ;">
+                            <img src="img/slideshow2.jpg" alt="" class="bannerImages" name="bannerImages">
+                        </div>
+                        <div class="img-container" style="height: 780px; width: 980px; ;">
+                            <img src="img/slideshow3.jpg" alt="" class="bannerImages" name="bannerImages">
+                        </div>
+                        <div class="img-container" style="height: 780px; width: 980px; ;">
+                            <img src="img/slidshow1.jpg" alt="" class="bannerImages" name="bannerImages">
+                        </div>
+                        <div class="img-container" style="height: 780px; width: 980px; ;">
+                            <img src="img/slideshow3.jpg" alt="" class="bannerImages" name="bannerImages">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="bannerTextContainer">
+
+                    <p id="bannerText">
+                        LEADING THE WAY IN BESPOKE PC SYSTEMS AND LAPTOP GAMING
+                        <br>
+                        <a href="#"> <button class="linkButton">SEE COLLECTIONS</button>
+                    </p>
+                    
+                </div>
+                <div>
+                   
+                    </a>
+                </div>
+
+
+            </section>
+        </div>
+
+        <div class="devices-container-heading">
+            <h3>FEATURED SYSTEMS</h3>
+        </div>
+
+
+
+        <div class="devices-container">
+            <div class="devices-sub-container">
+                <div class="devices-sub-container-product">
+                    <div class="productdetails">
+                        <div class="product-details-title">AGILITY PRO</div>
+                        <div class="product-details-img"><img src="img/AGILITY_PRO.webp" alt=""></div>
+                        <div class="product-details-description">
+                            <ul class="description-ulisted">
+                                <li class="description-ulisted-item">PCS 3601 CASE</li>
+                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
+                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
+                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
+                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
+                            </ul>
+                        </div>
+                        <div class="product-details-buy-buttons">
+                            <button>CONFIGURE THIS PC ></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="devices-sub-container-product">
+                    <div class="productdetails">
+                        <div class="product-details-title">AGILITY PRO</div>
+                        <div class="product-details-img"><img src="img/AGILITY_PRO.webp" alt=""></div>
+                        <div class="product-details-description">
+                            <ul class="description-ulisted">
+                                <li class="description-ulisted-item">PCS 3601 CASE</li>
+                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
+                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
+                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
+                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
+                            </ul>
+                        </div>
+                        <div class="product-details-buy-buttons">
+                            <button>CONFIGURE THIS PC ></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="devices-sub-container-product">
+                    <div class="productdetails">
+                        <div class="product-details-title">AGILITY PRO</div>
+                        <div class="product-details-img"><img src="img/AGILITY_PRO.webp" alt=""></div>
+                        <div class="product-details-description">
+                            <ul class="description-ulisted">
+                                <li class="description-ulisted-item">PCS 3601 CASE</li>
+                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
+                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
+                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
+                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
+                            </ul>
+                        </div>
+                        <div class="product-details-buy-buttons">
+                            <button>CONFIGURE THIS PC ></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="devices-sub-container">
+                <div class="devices-sub-container-product">
+                    <div class="productdetails">
+                        <div class="product-details-title">AGILITY PRO</div>
+                        <div class="product-details-img"><img src="img/AGILITY_PRO.webp" alt=""></div>
+                        <div class="product-details-description">
+                            <ul class="description-ulisted">
+                                <li class="description-ulisted-item">PCS 3601 CASE</li>
+                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
+                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
+                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
+                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
+                            </ul>
+                        </div>
+                        <div class="product-details-buy-buttons">
+                            <button>CONFIGURE THIS PC ></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="devices-sub-container-product">
+                    <div class="productdetails">
+                        <div class="product-details-title">AGILITY PRO</div>
+                        <div class="product-details-img"><img src="img/AGILITY_PRO.webp" alt=""></div>
+                        <div class="product-details-description">
+                            <ul class="description-ulisted">
+                                <li class="description-ulisted-item">PCS 3601 CASE</li>
+                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
+                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
+                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
+                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
+                            </ul>
+                        </div>
+                        <div class="product-details-buy-buttons">
+                            <button>CONFIGURE THIS PC ></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="devices-sub-container-product">
+                    <div class="productdetails">
+                        <div class="product-details-title">AGILITY PRO</div>
+                        <div class="product-details-img"><img src="img/AGILITY_PRO.webp" alt=""></div>
+                        <div class="product-details-description">
+                            <ul class="description-ulisted">
+                                <li class="description-ulisted-item">PCS 3601 CASE</li>
+                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
+                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
+                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
+                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
+                            </ul>
+                        </div>
+                        <div class="product-details-buy-buttons">
+                            <button>CONFIGURE THIS PC ></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="toggle_button">
+
+        </div>
+
+
+    </div>

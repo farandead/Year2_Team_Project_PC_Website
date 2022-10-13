@@ -1,0 +1,292 @@
+*{
+    /* font-family: 'Staatliches', cursive; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+   
+}
+
+
+.navigationBar{
+    color: white;
+    margin: -22px;
+    padding: 0%;
+    background-color: #0260be;
+    font-size: 10px;
+    height: 100px;
+    box-shadow: 10px 8px 30px rgba(63, 64, 65, 0.544);
+   
+}
+
+
+#navbar{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+}
+#logoblock{
+    margin-left: 250PX;
+    height: 100px;
+    margin-right: 70PX;
+    color: white;
+}
+#logoMovie{
+   margin-top: 22px;
+   font-size: 40px;
+   font-family: 'Russo One', sans-serif;
+}
+
+
+#linksblock{
+    display: flex;
+    flex-direction: row;
+    
+    height: 100px;
+    
+
+}
+.navbaritem{
+    font-weight: bold;
+    
+    display: flex;
+    flex-direction: row;
+    margin-left:20px ;
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+
+
+#membershipblock{
+    display: flex;
+    flex-direction: row;
+   margin-left: 234px;
+    
+}
+#membershipblock li{
+    color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left:15px ;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.link:hover{
+    border-bottom: 1px solid white;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+.searchLogo{
+    margin-left:50px ;
+    color: white;
+   
+}
+.searchLogo:hover{
+    
+    color: #0281ff;
+}
+
+
+
+.safetyContainer{
+    
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+.safetyContainer img{
+    margin-top: 100px;
+    margin-bottom: 100px;
+} 
+
+.footerMenu{
+    margin-top: 30px;
+    background-color: #002952 ;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.footerMenu__list{
+    list-style-type: none;
+}
+
+.legalFooter{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top:1px solid rgba(0, 0, 0, 0.404) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #002952;
+
+}
+.legalFooter__description p{
+    font-size: smaller;
+
+}
+.legalFooter_socialIcons img{
+    height: 34px;
+    padding-top:5px ;
+    padding-left:5px ;
+    padding-right:5px ;
+    filter: brightness(0) invert(1);
+}
+
+#quickBook__location{
+    color: #041b2d;
+
+    padding: 10px 10px;
+}
+#quickBook__film{
+    width: 200px;
+}
+
+.quickBook{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly ;
+    padding-bottom: 25px;
+    position: sticky;
+    top: 100%;
+    background-color: whitesmoke;
+
+}
+
+.quickBook__option{
+    color: black;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left:10px ;
+    margin-right: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    filter: drop-shadow(1px 1px 1px rgba(2, 2, 2, 0.274));
+}
+.quickBook__option option{
+    color: black;
+    border: none;
+}
+#quickBook__date{
+    border: none;
+}
+
+.quickBook__ticketBooking input{
+    border: none;
+}
+
+
+
+.quickBook__button{
+    border: 2px solid #0281ff ;
+    background-color: rgba(255, 255, 255, 0);
+    color: #0281ff;
+    padding: 10px 56px;
+    border-bottom-right-radius:30px ;
+    filter: drop-shadow(1px 1px 1px rgba(2, 2, 2, 0.274));
+}
+
+
+.quickBook__heading{
+    font-family: 'Russo One', sans-serif; 
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    font-size: xx-large;
+    color:black;
+    filter: drop-shadow(1px 1px 1px rgba(2, 2, 2, 0.137));
+}
+.quickBook__button:hover{
+    background-color: #0281ff;
+    color: white;
+    border-bottom-right-radius: 0px;
+}
+
+.devices-container-heading{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center; 
+}
+.devices-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.devices-sub-container{
+    display: flex;
+    margin-top: 40PX;
+}
+.devices-sub-container-product{
+    margin-left:30px ;
+    margin-right: 30px;
+    margin-top: 30px;
+    box-shadow: 1px 1px 10px rgb(161, 161, 161);
+}
+.productdetails{
+    background-color: rgb(219, 235, 243);
+   
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:fit-content;
+    text-align: center;
+    width: 300px;
+
+}
+
+.product-details-title{
+    display: block;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: larger;
+    letter-spacing: 3px;
+    padding:10px 10px;
+    
+    background-color: #1e8af5;
+    
+}
+.product-details-img img{
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.description-ulisted-item{
+    list-style-type:none;
+    text-align: left;
+    font-size: smaller;
+    font-weight: 500;
+}
+.product-details-buy-buttons button{
+    font-family: 'Russo One', sans-serif; 
+   width: 100%;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background-color: #1e8af5;
+   border: none;
+   color: white;
+   font-size: 12px;
+   font-weight: 200;
+   letter-spacing: 2PX;
+}
+.product-details-buy-buttons button:hover{
+    background-color: #1266bb ;
+    color: #e0eefb;
+}
+
+   
+
+    
