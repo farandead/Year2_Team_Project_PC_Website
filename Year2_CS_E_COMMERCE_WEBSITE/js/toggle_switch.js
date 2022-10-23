@@ -11,6 +11,31 @@ function myFunction() {
         target.style.display = "flex"
         
     }
+    // CONTACT PAGE
+    // var contact_page = document.getElementById("container-contact1");
+    // contact_page.classList.toggle("container-contact1-dark-mode");
+
+    var contact_page_title = document.getElementsByClassName("dark_target");
+    var contact_page_img = document.getElementById("contact_img")
+    for (let i = 0; i < contact_page_title.length; i++) {
+
+        if(contact_page_title[i].style.color == "white"){
+            contact_page_title[i].style.background = "white";
+            contact_page_title[i].style.color = "black";
+            contact_page_img.style.filter = "none"
+        }else{
+            contact_page_title[i].style.background = "rgb(30,30,30)";
+            contact_page_title[i].style.color = "white";
+            contact_page_img.style.filter = "invert(100%)"
+
+        }
+        
+    }
+
+    
+    
+
+
     var element = document.body;
     element.classList.toggle("dark-mode");
     var collection = document.getElementById("navigationLightMode");
@@ -41,6 +66,14 @@ function myFunction() {
     for (let i = 0; i < product_box.length; i++) {
         product_box[i].classList.toggle("dark_transperent")
       }
+
+
+    
+    //   CONTACT PAGE
+
+    
+
+
 
     
     
