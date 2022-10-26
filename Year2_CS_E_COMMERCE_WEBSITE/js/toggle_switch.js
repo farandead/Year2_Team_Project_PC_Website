@@ -1,4 +1,8 @@
 function myFunction() {
+
+    var collection = document.getElementById("navigationLightMode");
+    collection.classList.toggle("navigationBar_dark_mode");
+
     var target = document.getElementById("toggle_button");
     var target_two = document.getElementById("toggle_button_dark")
     
@@ -31,15 +35,21 @@ function myFunction() {
         }
         
     }
+    // var dark_sign_up = document.getElementById("Sign_Up_dark");
+    // dark_sign_up.style.background = "rgb(30,30,30)"
+    // var dark_sign_up = document.getElementById("Sign_In_dark");
+    // dark_sign_up.style.background = "rgb(30,30,30)";
+
+
+   
 
     
     
 
 
-    var element = document.body;
+    var element = document.querySelector("form");
     element.classList.toggle("dark-mode");
-    var collection = document.getElementById("navigationLightMode");
-    collection.classList.toggle("navigationBar_dark_mode");
+ 
 
     var main_body = document.getElementById("main_body");
     main_body.classList.toggle("dark-mode-dark");
