@@ -5,6 +5,26 @@ CREATE DATABASE CompUK;
 
 --Step 2
 
+CREATE TABLE CompUK.Contact_details(
+Contacts_ID int PRIMARY KEY AUTO_INCREMENT,
+User_Email VARCHAR(30) NOT NULL,
+User_Phone_Number INT(10) NOT NULL
+
+);
+
+--Step 3
+
+CREATE TABLE CompUK.Delivery_address(
+ZIP  VARCHAR(7) NOT NULL,
+City  VARCHAR(20) NOT NULL,
+Country VARCHAR(20) NOT NULL,
+Street VARCHAR(20) NOT NULL,
+Address_ID int PRIMARY KEY AUTO_INCREMENT
+
+);
+
+--Step 4
+
 CREATE TABLE CompUK.Account(
 User_ID int PRIMARY KEY AUTO_INCREMENT,
 User_FName VARCHAR(20) NOT NULL,
@@ -12,30 +32,13 @@ User_SName VARCHAR(20) NOT NULL,
 User_Sex ENUM('Male','Female'),
 User_DOB DATE,
 User_Status ENUM('Customer','RegAdmin','Admin'),
-User_Password VARCHAR(30) NOT NULL
+User_Password VARCHAR(30) NOT NULL,
+Address_ID  int NOT NULL,
+FOREIGN KEY (Address_ID) REFERENCES CompUK.Delivery_address(Address_ID),
+Contacts_ID  int NOT NULL,
+FOREIGN KEY (Contacts_ID) REFERENCES CompUK.Contact_details(Contacts_ID)
 );
 
---Step 3
-
-CREATE TABLE CompUK.Contact_details(
-Contacts_ID int PRIMARY KEY AUTO_INCREMENT,
-User_Email VARCHAR(30) NOT NULL,
-User_Phone_Number INT(10) NOT NULL,
-User_ID  int NOT NULL,
-FOREIGN KEY (User_ID) REFERENCES CompUK.Account(User_ID)
-);
-
---Step 4
-
-CREATE TABLE CompUK.Delivery_address(
-ZIP  VARCHAR(7) NOT NULL,
-City  VARCHAR(20) NOT NULL,
-Country VARCHAR(20) NOT NULL,
-Street VARCHAR(20) NOT NULL,
-Address_ID int PRIMARY KEY AUTO_INCREMENT,
-User_ID  int NOT NULL,
-FOREIGN KEY (User_ID) REFERENCES CompUK.Account(User_ID)
-);
 
 --Step 5
 
