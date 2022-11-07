@@ -1,3 +1,40 @@
+function darkModeProduct(){
+
+    var collection = document.getElementById("navigationLightMode");
+    collection.classList.toggle("navigationBar_dark_mode");
+
+
+    var contact_page_title = document.getElementsByClassName("dark_target");
+    
+    for (let i = 0; i < contact_page_title.length; i++) {
+
+        if(contact_page_title[i].style.color == "white"){
+            contact_page_title[i].style.background = "white";
+            contact_page_title[i].style.color = "black";
+           
+        }else{
+            contact_page_title[i].style.background = "rgb(30,30,30)";
+            contact_page_title[i].style.color = "white";
+            
+
+        }
+
+        
+    }
+    var target = document.getElementById("toggle_button");
+    var target_two = document.getElementById("toggle_button_dark")
+    
+    if( target.style.display == "flex" ){
+        target.style.display = "none"
+        target_two.style.display = "flex"
+        
+    }else if (target_two.style.display == "flex" ){
+        target_two.style.display= "none"
+        target.style.display = "flex"
+        
+    }
+
+}
 function myFunction() {
 
     var collection = document.getElementById("navigationLightMode");
