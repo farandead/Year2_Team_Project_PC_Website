@@ -105,7 +105,7 @@
 
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
-                <a href="#" style="font-size: smaller;margin-top:10px"">Forgot your password?</a>
+                <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a href="" style="margin-bottom:10px">Here</a></a>
                 <button>Sign In</button>
             </form>
