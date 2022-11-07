@@ -1,4 +1,4 @@
-<?php include '/comp-uk.motorsfeere.com/phpScript/dbh.inc.php';?>
+<?php include '/home2/babimors/comp-uk.motorsfeere.com/';?>
 <!DOCTYPE html>
 <html lang="en">
 
