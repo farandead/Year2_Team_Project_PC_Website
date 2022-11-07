@@ -1,4 +1,4 @@
-<?php include "phpScript/dbh.inc.php" ?>
+<?php include "/phpScript/dbh.inc.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
