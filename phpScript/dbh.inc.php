@@ -1,5 +1,5 @@
 <?php
-var_dump(YOU CAN SEE ME);
+//var_dump(YOU CAN SEE ME);
 $servername = "localhost";
 $username = "babimors_astonTeam";
 $password = "wMxgHygDHh)z";
