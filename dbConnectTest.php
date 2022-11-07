@@ -3,16 +3,15 @@ echo "TESTING TEST ";
 
 
 $servername = "localhost";
-$username = "babimors_compuk";
-$password = ";^5z?6.mA9v";
+$username = 'babimors_astonTeam';
+$password ='HW#1o.5=#cl+';
 
-// Create connection
-$conn = new mysqli($servername, $username, $password);
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=babimors_compuk", $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo "Connected successfully"; 
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
 
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-} 
-echo "Connected successfully";
-
-?>
