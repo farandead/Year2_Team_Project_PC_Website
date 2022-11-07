@@ -1,5 +1,5 @@
 <?php
-echo "TESTING TEST ";
+echo "TESTING TEST Kir";
 
 
 $servername = "localhost";
