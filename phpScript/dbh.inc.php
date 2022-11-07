@@ -2,7 +2,8 @@
 //var_dump(YOU CAN SEE ME);
 $servername = "localhost";
 $username = "babimors_astonTeam";
-$password = "wMxgHygDHh)z";
+$password = ";^5z?6.mA9v"
+  //"wMxgHygDHh)z";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
