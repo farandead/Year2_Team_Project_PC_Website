@@ -17,7 +17,7 @@ while($row=mysqli_fetch_assoc($query)){
   
   require "TemplateProduct.php";
   
-  $counter=counter+1;
+  $counter=$counter+1;
   
   if(counter==3){
     echo "3";
