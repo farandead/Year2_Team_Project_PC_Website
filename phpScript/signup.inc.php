@@ -82,7 +82,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
        // } 
     }
 
-    // var_dump($errors);
+     var_dump($errors);
     // echo "</br>";
 
     // var_dump($messages);
