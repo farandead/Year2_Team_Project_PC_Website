@@ -219,8 +219,7 @@ try {
     ?>
     <!-- END --- SIGN UP PHP SCRIPT-->
         <!-- CREATE AN ACCOUNT  -->
-        <div class="form-container sign-up-container">
-            <form action="#" class="form-id" method="post">
+        <form action="#" class="form-id" method="post">
                
                 <h1>Create Account</h1>
                 <input type="firstname" placeholder="First Name" name="firstName"  value=""/>
@@ -240,6 +239,8 @@ try {
                
                  <input  style="margin-top:15px"  type="submit" name="signup_submit" value="Sign Up">
             </form>
+        <div class="form-container sign-up-container">
+            
         </div>
         
         
