@@ -221,7 +221,7 @@ $values = array(
 	    <!-- LOG IN -->
         <div class="form-container sign-in-container">
 		
-            <form action="/phpScript/login.inc.php" style="background:white ;">
+            <form action="/phpScript/login.inc.php" style="background:white ;" method="post">
                 <h1>Sign in</h1>
 
                 <input type="email" placeholder="Email" autocomplete="email" name="email" value="" />
