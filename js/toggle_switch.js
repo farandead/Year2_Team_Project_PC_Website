@@ -9,11 +9,11 @@ function darkModeProduct(){
     for (let i = 0; i < contact_page_title.length; i++) {
 
         if(contact_page_title[i].style.color == "white"){
-            contact_page_title[i].style.background = "white";
+            contact_page_title[i].style.backgroundColor = "white";
             contact_page_title[i].style.color = "black";
            
         }else{
-            contact_page_title[i].style.background = "rgb(30,30,30)";
+            contact_page_title[i].style.backgroundColor = "rgb(30,30,30)";
             contact_page_title[i].style.color = "white";
             
 
@@ -163,4 +163,38 @@ function changeToDesktop(){
     laptop_button.style.color = "black"
 
     
+}
+
+function changeToProduct(){
+
+    var change_product_button = document.getElementById("change-to-product")
+    var change_product_display = document.getElementById("description-block")
+    var change_product_specification_button = document.getElementById("change-to-specification")
+    var change_product_specification_display = document.getElementById("specific_description")
+
+    change_product_display.style.display = "flex";
+    change_product_specification_display.style.display = "none";
+
+    change_product_button.style.color = "rgb(5, 125, 245)"
+    change_product_specification_button.style.color = "white"
+
+
+
+}  
+
+
+function changeToDescription(){
+
+    var change_product_button = document.getElementById("change-to-product")
+    var change_product_display = document.getElementById("description-block")
+    var change_product_specification_button = document.getElementById("change-to-specification")
+    var change_product_specification_display = document.getElementById("specific_description")
+
+    change_product_specification_display.style.display = "block";
+    change_product_display.style.display = "none";
+
+    change_product_specification_button.style.color = "rgb(5, 125, 245"
+    change_product_button.style.color = "white"
+
+
 }
