@@ -30,6 +30,9 @@ while($row=mysqli_fetch_assoc($query)){
   echo "<br>";
   }
 }
+if($isEmpty==true){
+echo "There are no products.";
+}
 if($isEmpty==true or $counter!=0){
   echo "</div>";
   echo "<br>";
