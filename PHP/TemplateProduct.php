@@ -5,9 +5,9 @@ echo "<div class=\"devices-sub-container-product\">
                             <div class=\"product-details-img\"><img src=\"img/Lafife Pro 15 6.webp\" alt=\"\"></div>
                             <div class=\"product-details-description dark_target\">
                                 <p>From <span>".$row['Product_Price']."£</span> ";
-                                
+                                if($row['Product_Discount']!=0){
                                echo ",discount is ".$row['Product_Discount']."%";
-                                
+                                }
                                 echo "
                                 </p>
                                 <ul class=\"description-ulisted\">
