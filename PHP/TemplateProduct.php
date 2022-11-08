@@ -1,10 +1,11 @@
 <?
+echo $row['Product_Name'];
 echo "<div class=\"devices-sub-container-product\">
                         <div class=\"productdetails dark_target\">
                             <div class=\"product-details-title\">LAFIFE PRO 15 6</div>
                             <div class=\"product-details-img\"><img src=\"img/Lafife Pro 15 6.webp\" alt=\"\"></div>
                             <div class=\"product-details-description dark_target\">
-                                <p>From <span>1000£</span> incl VAT and delivery</p>
+                                <p>From <span>1000£!</span> incl VAT and delivery</p>
                                 <ul class=\"description-ulisted\">
                                     <li class=\"description-ulisted-item\">PCS 3601 CASE</li>
                                     <li class=\"description-ulisted-item\"> Intel® Core™ i3-10100</li>
