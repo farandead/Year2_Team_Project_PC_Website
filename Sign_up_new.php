@@ -265,11 +265,12 @@ try {
       <input type="text" class="small-input" placeholder="Country" name="user_country"  value=""/>
       <input type="text" class="small-input" placeholder="City" name="user_city"  value=""/>
       <input type="text" class="small-input" placeholder="Post Code" name="user_postCode"  value=""/>-->
-    <!--   <p>Please select Male/Female:</p>-->
+       
+    <!--   <p>Please select Male/Female:</p>
   <input type="radio" id="male" name="user_sex" value="M">
        <label for="male">Male</label>
   <input type="radio" id="female" name="user_sex" value="F">
-  <label for="female">Female</label>
+  <label for="female">Female</label>-->
        
       <input  style="margin-top:15px"  type="submit" name="signup_submit" value="Sign Up">
    </form>
