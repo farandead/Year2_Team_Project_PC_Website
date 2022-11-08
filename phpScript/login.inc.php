@@ -11,9 +11,7 @@ try {
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
 }
-?>
 
-<?php 
 if (isset($_POST['submit_Login']) & !empty($_POST['submit_Login'])) {
 // PHP Form Validations
 if (empty($_POST['email'])) {
