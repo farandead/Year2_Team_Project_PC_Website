@@ -130,11 +130,34 @@ try {
         // $errors[] = "";
         //}
         if (empty($_POST['firstName'])) {
-            $errors[] = "Please Enter a Name";
+            $errors[] = "Please Enter your firstName";
         }
+        if (empty($_POST['lastname'])) {
+            $errors[] = "Please Enter your lastname";
+        }
+        if (empty($_POST['user_number'])) {
+            $errors[] = "Please Enter your number";
+        }
+        if (empty($_POST['user_street'])) {
+            $errors[] = "Please Enter your street name";
+        }
+        if (empty($_POST['user_county'])) {
+            $errors[] = "Please Enter your county";
+        }
+        if (empty($_POST['user_country'])) {
+            $errors[] = "Please Enter your country";
+        }
+        if (empty($_POST['user_city'])) {
+            $errors[] = "Please Enter your city";
+        }
+        if (empty($_POST['user_postCode'])) {
+            $errors[] = "Please Enter your Post-Code";
+        }
+       
         if (empty($_POST['email'])) {
             $errors[] = "E-mail address is required";
         } else {
+            
 
             // Check Email is Unique with DB Query
 
@@ -343,7 +366,15 @@ try {
                
                  <input  style="margin-top:15px"  type="submit" name="signup_submit" value="Sign Up">
             </form>
+<!-- message  -->
+                    <?php
+                    if (!empty($errors)) {
+                        var_dump($errors);
+                        var_dump($_POST['email']);
+                    }
 
+
+                    ?>
 
     <section class="footerMenu">
         <div class="footer-menu-sub-container">
