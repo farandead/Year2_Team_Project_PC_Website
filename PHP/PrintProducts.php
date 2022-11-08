@@ -25,6 +25,6 @@ while($row=mysqli_fetch_assoc($query)){
   }
 }
 if($isEmpty==true or $counter!=0){
-  echo "yes"
+  echo "yes";
 }
 ?>
