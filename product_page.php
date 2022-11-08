@@ -104,6 +104,9 @@
 
            
             <div class="devices-container-laptop " id="laptop_container" style="display:block">
+                <?php
+                require "PHP/PrintProducts.php";
+                ?>
                 <div class="devices-sub-container">
                     <div class="devices-sub-container-product ">
                         <div class="productdetails dark_target ">
