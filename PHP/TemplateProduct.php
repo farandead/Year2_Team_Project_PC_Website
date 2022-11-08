@@ -12,12 +12,12 @@ echo "<div class=\"devices-sub-container-product\">
                                 }
                                 echo "
                                 </p>
-                                <ul class=\"description-ulisted\">
-                                    <li class=\"description-ulisted-item\">PCS 3601 CASE</li>
-                                    <li class=\"description-ulisted-item\"> Intel® Core™ i3-10100</li>
-                                    <li class=\"description-ulisted-item\">GIGABYTE B560 HD3 (rev. 1.0)</li>
-                                    <li class=\"description-ulisted-item\"> 8GB PCS PRO DDR4 2666MHz</li>
-                                    <li class=\"description-ulisted-item\">2GB GEFORCE GT 1030 - DVI, HDMI</li>
+                                <ul class=\"description-ulisted\">";
+                                
+                                
+                                   echo " <li class=\"description-ulisted-item\">PCS 3601 CASE</li>";
+                                    
+                               echo "     
                                 </ul>
                             </div>
                             <div class=\"product-details-buy-buttons\">
