@@ -204,7 +204,7 @@ $values = array(
 ?>
 <!-- END --- SIGN UP PHP SCRIPT-->
 
-    <div class="container" id="container123">
+   
 	    <!-- CREATE AN ACCOUNT -->
 <?php
 if (empty($_POST['pwd'])) {
@@ -251,7 +251,8 @@ if (empty($errors)) {
     }
 }
 
-?>
+?> 
+	<div class="container" id="container123">
         <div class="form-container sign-up-container">
             <form action="#" class="form-id" method="post">
                 <h1>Create Account</h1>
