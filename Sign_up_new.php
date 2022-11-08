@@ -204,13 +204,26 @@ try {
             //     $key .= mt_rand(0, 9);
             //}
 
-            $sql = "INSERT INTO account (User_FName, user_Email, User_Password) VALUES ( :User_FName, :user_Email, :User_Password)";
+            $sql = "INSERT INTO account (User_FName, User_SName, User_Sex, User_DOB, User_Phone_Number user_Email, User_Password) 
+            VALUES ( :User_FName, :User_SName, :User_Sex, :User_DOB, :User_Phone_Number :user_Email, :User_Password)";
             $result = $conn->prepare($sql);
             $values = array(
 
                 ':User_FName'     => $_POST['firstName'],
+                ':User_SName'     => $_POST['lastname'],
+                ':User_Sex'        => $_POST['email'],
+                ':User_DOB'     => $_POST['firstName'],
+                ':User_Phone_Number'     => $_POST['user_number'],
                 ':user_Email'        => $_POST['email'],
                 ':User_Password'     => $pass_hash,
+                
+                ':User_DOB'     => $_POST['firstName'],
+                ':user_Email'        => $_POST['email'],
+                ':User_FName'     => $_POST['firstName'],
+                ':user_Email'        => $_POST['email'],
+                
+                
+                
 
             );
             $res = $result->execute($values);
@@ -246,7 +259,7 @@ try {
  
         
         
-<div class="form-container sign-up-container overflow-auto" style="margin:50px">
+<div class="form-container sign-up-container overflow-auto" >
    <!--<div class="sign-up-container form-containe text-center">-->
    <form action="#" class="form-id" method="post">
       <h1>Create Account</h1>
@@ -255,11 +268,11 @@ try {
       <input type="email" placeholder="Email" name="email"  value=""/>
       <input type="password" name="pwd" value="" />
       <input type="number" placeholder="Contact No" name="user_number"  value="" />
-      <input type="text" placeholder="Street"  name="user_street"  value=""/>
+      <!--<input type="text" placeholder="Street"  name="user_street"  value=""/>
       <input type="text" class="small-input" placeholder="County"  name="user_county"  value=""/>
       <input type="text" class="small-input" placeholder="Country" name="user_country"  value=""/>
       <input type="text" class="small-input" placeholder="City" name="user_city"  value=""/>
-      <input type="text" class="small-input" placeholder="Post Code" name="user_postCode"  value=""/>
+      <input type="text" class="small-input" placeholder="Post Code" name="user_postCode"  value=""/>-->
       <input  style="margin-top:15px"  type="submit" name="signup_submit" value="Sign Up">
    </form>
    <!-- message  -->
