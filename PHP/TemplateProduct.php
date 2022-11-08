@@ -1,10 +1,12 @@
 <?
+$price=$row['Product_Price']-$row['Product_Price']*$row['Product_Discount']/100;
+
 echo "<div class=\"devices-sub-container-product\">
                         <div class=\"productdetails dark_target\">
                             <div class=\"product-details-title\">".$row['Product_Name']."</div>
                             <div class=\"product-details-img\"><img src=\"img/Lafife Pro 15 6.webp\" alt=\"\"></div>
                             <div class=\"product-details-description dark_target\">
-                                <p>From <span>".$row['Product_Price']."£</span> ";
+                                <p>Price: <span>".$price."£</span> ";
                                 if($row['Product_Discount']!=0){
                                echo ",discount is ".$row['Product_Discount']."%";
                                 }
