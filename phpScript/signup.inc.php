@@ -66,11 +66,11 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
           //  ':user_pwd'     => $pass_hash,
            
        // );
-        $res = $result->execute($values);
-        if ($res) {
+      //  $res = $result->execute($values);
+      //  if ($res) {
            
-            $messages[] = "YOU ARE IN !";
-            $messages[]= 'An confirmation e-mail have been send to this address' .$_POST['email']. '. ';
+      //      $messages[] = "YOU ARE IN !";
+     //       $messages[]= 'An confirmation e-mail have been send to this address' .$_POST['email']. '. ';
            /*
             if ($confirmationMail ){
                 $messages[]= 'Un e-mail de confirmation à été envoyé à l&apos;addresse suivante : ' .$_POST['email']. '. ';
@@ -79,7 +79,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
 
             }
             */
-        } 
+       // } 
     }
 
     // var_dump($errors);
