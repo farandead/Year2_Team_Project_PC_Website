@@ -22,9 +22,11 @@ while($row=mysqli_fetch_assoc($query)){
   if($counter==3){
     $counter=0;
      echo "</div>";
+    echo <br>
   }
 }
 if($isEmpty==true or $counter!=0){
   echo "</div>";
+  echo "<br>";
 }
 ?>
