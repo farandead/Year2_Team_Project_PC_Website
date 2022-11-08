@@ -281,7 +281,7 @@ if (empty($errors)) {
 			 <?php
 		if (!empty($errors)) {
 		   var_dump($errors);
-			 var_dump($_POST['email']));
+		var_dump($_POST['email']);
 		}
 
 
