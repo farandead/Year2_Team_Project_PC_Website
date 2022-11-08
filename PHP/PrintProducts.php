@@ -12,7 +12,6 @@ while($row=mysqli_fetch_assoc($query)){
   $isEmpty=false;
   
   if($counter==0){
-    echo "0";
     echo " <div class=\"devices-sub-container\">";
   }
   
@@ -21,13 +20,11 @@ while($row=mysqli_fetch_assoc($query)){
   $counter=$counter+1;
   
   if($counter==3){
-    echo "3";
     $counter=0;
      echo "</div>";
   }
 }
 if($isEmpty==true or $counter!=0){
-  echo "yes";
   echo "</div>";
 }
 ?>
