@@ -280,7 +280,7 @@ if (empty($errors)) {
 			<!-- message  -->
 			 <?php
 		if (!empty($errors)) {
-		   vaar_dump($errors);
+		   var_dump($errors);
 		}
 
 
