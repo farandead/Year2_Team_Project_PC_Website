@@ -41,7 +41,8 @@ try {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/sign_up_In.css">
    
-
+<script src="js/toggle_switch.js"></script>
+    <script src="js/sign_up_in.js"></script>
     <script>
 
     </script>
@@ -205,19 +206,20 @@ $values = array(
 
     <div class="container" id="container123">
         <div class="form-container sign-up-container">
-            <form action="#" class="form-id" method="post">
+            
+        </div>
+       
+        
+        
+        <div class="form-container sign-in-container">
+		<form action="#" class="form-id" method="post">
                 <h1>Create Account</h1>
                 <input type="text" name="firstName" placeholder="Name" value=""  />
                 <input type="email" name="email" placeholder="Email" value=""  />
                 <input type="password" name="pwd" placeholder="Password" value=""  />
                <input class="btn btn-block" type="submit" name="signup_submit" value="Sign Up">
             </form>
-        </div>
-       
-        
-        
-        <!--<div class="form-container sign-in-container">
-            <form action="#" style="background:white ;">
+            <!--<form action="#" style="background:white ;">
                 <h1>Sign in</h1>
 
                 <input type="email" placeholder="Email" />
@@ -225,8 +227,8 @@ $values = array(
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a href="" style="margin-bottom:10px">Here</a></a>
                 <button>Sign In</button>
-            </form>
-        </div>-->
+            </form>-->
+        </div>
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
@@ -359,8 +361,7 @@ $values = array(
 
     </footer>
 
- <script src="js/toggle_switch.js"></script>
-    <script src="js/sign_up_in.js"></script>
+ 
 </body>
 
 </html>
