@@ -42,13 +42,14 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
                 // Display Error Message
              //   $errors[] = "Les mots de passes doievent être identiques";
             //}
+	    var_dump($_POST['firstName']);
+		var_dump($_POST['email']);
+	    var_dump($pass_hash);
         }
     }
 
     if (empty($errors)) {
-		var_dump($_POST['firstName']);
-		var_dump($_POST['email']);
-	    var_dump($pass_hash);
+		
 			
       //  $longueurKey = 15;
       //  $key = "";
