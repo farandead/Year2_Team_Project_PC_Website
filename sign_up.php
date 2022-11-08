@@ -2,15 +2,15 @@
 <?php
 $servername = "localhost";
 $username = 'babimors_astonTeam';
-$password ='HW#1o.5=#cl+';
+$password = 'HW#1o.5=#cl+';
 
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=babimors_compuk", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
- // echo "Connected successfully"; 
-} catch(PDOException $e) {
- // echo "Connection failed: " . $e->getMessage();
+    $conn = new PDO("mysql:host=$servername;dbname=babimors_compuk", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // echo "Connected successfully"; 
+} catch (PDOException $e) {
+    // echo "Connection failed: " . $e->getMessage();
 }
 ?>
 <!-- END DATABASE CONNECTION-->
@@ -40,31 +40,14 @@ try {
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/sign_up_In.css">
-   
-<script src="js/toggle_switch.js"></script>
+
+    <script src="js/toggle_switch.js"></script>
 
     <script>
+        function signUp() {
 
-    </script>
-    <style>
-        body {
-            margin: 0%;
-            padding: 0%;
-            font-family: "Arial", Helvetica, sans-serif;
-        }
-
-        i {
-            font-size: 30px;
-            cursor: pointer;
-            position: relative;
-            ;
-        }
-    </style>
-	<script> 
-	function signUp() {
-
-            const signUpButton = document.getElementById('signUp');
-            const signInButton = document.getElementById('signIn');
+            const signUpButton = document.getElementById('sign_Up');
+            const signInButton = document.getElementById('sign_In');
             const container = document.getElementById('container123');
 
             signUpButton.addEventListener('click', () => {
@@ -75,10 +58,11 @@ try {
                 container.classList.remove("right-panel-active");
             });
         }
-	
-	
-	
-	</script>
+    </script>
+    
+    <script>
+        
+    </script>
 
 </head>
 
@@ -108,246 +92,240 @@ try {
 
 
 
-                <li><i id="toggle_button_dark" class="bi bi-moon" onclick="myFunction()"></i> <i id="toggle_button"
-                        style="display: flex;" class="bi bi-brightness-high-fill" onclick="myFunction()"></i></li>
+                <li><i id="toggle_button_dark" class="bi bi-moon" onclick="myFunction()"></i> <i id="toggle_button" style="display: flex;" class="bi bi-brightness-high-fill" onclick="myFunction()"></i></li>
 
 
                 <br>
                 <br>
-                <li><a class="searchLogo" class="link" href=""> <i class="fa fa-search"
-                            style="font-size: xx-large;color:white"></i> </a></li>
+                <li><a class="searchLogo" class="link" href=""> <i class="fa fa-search" style="font-size: xx-large;color:white"></i> </a></li>
                 <br>
                 <br>
-                <li><a class="sign-in-logo" class="link" href="Sign_up.html"> <i class="bi bi-person-fill"
-                            style="font-size: xx-large;color:white"></i> </a></li>
+                <li><a class="sign-in-logo" class="link" href="Sign_up.html"> <i class="bi bi-person-fill" style="font-size: xx-large;color:white"></i> </a></li>
         </ul>
         </div>
 
     </header>
-<!-- SIGN UP PHP SCRIPT-->
-    <?php 
+    <!-- SIGN UP PHP SCRIPT-->
+    <?php
 
-if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
-	
-    //if (empty($_POST['lastName'])) {
-       // $errors[] = "";
-    //}
-    if (empty($_POST['firstName'])) {
-        $errors[] = "Please Enter a Name";
-    }
-    if (empty($_POST['email'])) {
-        $errors[] = "E-mail address is required";
-    } else {
-	   
-        // Check Email is Unique with DB Query
-	    
-        $sql = "SELECT * FROM account WHERE user_Email=?";
-     	  $result = $conn->prepare($sql);
-        $result->execute(array($_POST['email']));
-        $count = $result->rowCount();
-        if ($count == 1) {
-            $errors[] = "The e-mail already exist. Please connect.";
-        }
-    }
+    if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
 
-   // if (empty($_POST['phoneNumber'])) {
-      //  $errors[] = "Veuiller rentrer votre numéro de téléphone";
-   // }
-    if (empty($_POST['pwd'])) {
-        $errors[] = "Please insert a password.";
-    } else {
-      $pass_hash = password_hash($_POST['pwd'], PASSWORD_DEFAULT);
-        // check the repeat password
-       // if (empty($_POST['pwdRepeat'])) {
-         //  $errors[] = "Confirmer votre mot de passe.";
-       // } else {
-            // compare both passwords, if they match. Generate the Password Hash
-          //  if ($_POST['pwd'] == $_POST['pwdRepeat']) {
-                // create password hash
-         //       $pass_hash = password_hash($_POST['pwd'], PASSWORD_DEFAULT);
-          //  } else {
-                // Display Error Message
-             //   $errors[] = "Les mots de passes doievent être identiques";
-            //}
-	    var_dump($_POST['firstName']);
-		var_dump($_POST['email']);
-	    var_dump($pass_hash);
-       // }
-    }
-
-    if (empty($errors)) {
-		echo " inserting ";
-			
-      //  $longueurKey = 15;
-      //  $key = "";
-       // for ($i = 1; $i < $longueurKey; $i++) {
-       //     $key .= mt_rand(0, 9);
+        //if (empty($_POST['lastName'])) {
+        // $errors[] = "";
         //}
+        if (empty($_POST['firstName'])) {
+            $errors[] = "Please Enter a Name";
+        }
+        if (empty($_POST['email'])) {
+            $errors[] = "E-mail address is required";
+        } else {
 
-        $sql = "INSERT INTO account (User_FName, user_Email, User_Password) VALUES ( :User_FName, :user_Email, :User_Password)";
-        $result = $conn->prepare($sql);
-$values = array(
-           
-            ':User_FName'     => $_POST['firstName'],
-            ':user_Email'        => $_POST['email'],
-           ':User_Password'     => $pass_hash,
-           
-        );
-        $res = $result->execute($values);
-        if ($res) {
-          echo "YOU ARE IN !";
-      //      $messages[] = "YOU ARE IN !";
-     //       $messages[]= 'An confirmation e-mail have been send to this address' .$_POST['email']. '. ';
-           /*
+            // Check Email is Unique with DB Query
+
+            $sql = "SELECT * FROM account WHERE user_Email=?";
+            $result = $conn->prepare($sql);
+            $result->execute(array($_POST['email']));
+            $count = $result->rowCount();
+            if ($count == 1) {
+                $errors[] = "The e-mail already exist. Please connect.";
+            }
+        }
+
+        // if (empty($_POST['phoneNumber'])) {
+        //  $errors[] = "Veuiller rentrer votre numéro de téléphone";
+        // }
+        if (empty($_POST['pwd'])) {
+            $errors[] = "Please insert a password.";
+        } else {
+            $pass_hash = password_hash($_POST['pwd'], PASSWORD_DEFAULT);
+            // check the repeat password
+            // if (empty($_POST['pwdRepeat'])) {
+            //  $errors[] = "Confirmer votre mot de passe.";
+            // } else {
+            // compare both passwords, if they match. Generate the Password Hash
+            //  if ($_POST['pwd'] == $_POST['pwdRepeat']) {
+            // create password hash
+            //       $pass_hash = password_hash($_POST['pwd'], PASSWORD_DEFAULT);
+            //  } else {
+            // Display Error Message
+            //   $errors[] = "Les mots de passes doievent être identiques";
+            //}
+            var_dump($_POST['firstName']);
+            var_dump($_POST['email']);
+            var_dump($pass_hash);
+            // }
+        }
+
+        if (empty($errors)) {
+            echo " inserting ";
+
+            //  $longueurKey = 15;
+            //  $key = "";
+            // for ($i = 1; $i < $longueurKey; $i++) {
+            //     $key .= mt_rand(0, 9);
+            //}
+
+            $sql = "INSERT INTO account (User_FName, user_Email, User_Password) VALUES ( :User_FName, :user_Email, :User_Password)";
+            $result = $conn->prepare($sql);
+            $values = array(
+
+                ':User_FName'     => $_POST['firstName'],
+                ':user_Email'        => $_POST['email'],
+                ':User_Password'     => $pass_hash,
+
+            );
+            $res = $result->execute($values);
+            if ($res) {
+                echo "YOU ARE IN !";
+                //      $messages[] = "YOU ARE IN !";
+                //       $messages[]= 'An confirmation e-mail have been send to this address' .$_POST['email']. '. ';
+                /*
             if ($confirmationMail ){
                 $messages[]= 'Un e-mail de confirmation à été envoyé à l&apos;addresse suivante : ' .$_POST['email']. '. ';
             } else{
                 $errors[] = " EMAIL NOT SEND ";
             }
             */
+            } else {
+                echo "not in ";
+            }
         } else {
-	echo"not in ";
-	
-	}
-    }else {
-	    
-	    echo "not inserting";
-	    var_dump($errors);
+
+            echo "not inserting";
+            var_dump($errors);
+        }
+
+        //var_dump($errors);
+        // echo "</br>";
+
+        // var_dump($messages);
     }
+    ?>
+    <!-- END --- SIGN UP PHP SCRIPT-->
 
-     //var_dump($errors);
-    // echo "</br>";
 
-    // var_dump($messages);
-}
-?>
-<!-- END --- SIGN UP PHP SCRIPT-->
 
-   
-	    
 
-	<!-- CREATE AN ACCOUNT -->
-	<div class="container" id="container123">
+    <!-- CREATE AN ACCOUNT -->
+    <div class="container" id="container123">
         <div class="form-container sign-up-container">
             <form action="#" class="form-id" method="post">
                 <h1>Create Account</h1>
-                <input type="text" name="firstName" placeholder="Name" value=""  />
-                <input type="email" name="email" placeholder="Email" value=""  />
-                <input type="password" name="pwd" placeholder="Password" value=""  />
-               <input class="ghost" id="signUp" type="submit" name="signup_submit" value="Sign Up">
+                <input type="text" name="firstName" placeholder="Name" value="" />
+                <input type="email" name="email" placeholder="Email" value="" />
+                <input type="password" name="pwd" placeholder="Password" value="" />
+                <input class="ghost" id="signUp" type="submit" name="signup_submit" value="Sign Up">
             </form>
         </div>
-       <!-- END CREATE AN ACCOUNT -->
-        
-	    
-	    <!-- LOG IN -->
-		
-		
-		
-		<?php
-		if (isset($_POST['submit_Login']) & !empty($_POST['submit_Login'])) {
-// PHP Form Validations
-if (empty($_POST['email'])) {
-   // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
-  //  exit();
-	$errors[]= "emptyinputemail";
-  
-}
+        <!-- END CREATE AN ACCOUNT -->
 
-		
-		
-if (empty($_POST['pwd'])) {
-    // header("location: /pages/connexion.php?error=emptyinput");
-	$errors[]= "emptyinputpwd";
-   
-}
+
+        <!-- LOG IN -->
 
 
 
-if (empty($errors)) {
-    // Check the Login Credentials
-    
-    $sql = "SELECT * FROM account WHERE user_Email=? ";
+        <?php
+        if (isset($_POST['submit_Login']) & !empty($_POST['submit_Login'])) {
+            // PHP Form Validations
+            if (empty($_POST['email'])) {
+                // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
+                //  exit();
+                $errors[] = "emptyinputemail";
+            }
 
-    $result = $conn->prepare($sql);
-    $result->execute(array($_POST['email']));
-    $count = $result->rowCount();
-    $res = $result->fetch(PDO::FETCH_ASSOC);
-    if ($count == 1) {
-        // Compare the password with password hash
-        if (password_verify($_POST['pwd'], $res['User_Password'])) {
-            // regenerate session id
-            //session_start();
-           // $_SESSION['login'] = true;
-          //  $_SESSION['standardUserId'] = $res['standard_user_id'];
-           // $_SESSION['userEmail'] = $res['user_email'];
-           // $_SESSION['last_login'] = time();
-           // session_start();
 
-            // redirect the user to members area/dashboard page
-            header("location: /index.php");
-            exit;
-        } else {
-        //  header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
-         // exit();
-		$errors[]= "wronglogin";
+
+            if (empty($_POST['pwd'])) {
+                // header("location: /pages/connexion.php?error=emptyinput");
+                $errors[] = "emptyinputpwd";
+            }
+
+
+
+            if (empty($errors)) {
+                // Check the Login Credentials
+
+                $sql = "SELECT * FROM account WHERE user_Email=? ";
+
+                $result = $conn->prepare($sql);
+                $result->execute(array($_POST['email']));
+                $count = $result->rowCount();
+                $res = $result->fetch(PDO::FETCH_ASSOC);
+                if ($count == 1) {
+                    // Compare the password with password hash
+                    if (password_verify($_POST['pwd'], $res['User_Password'])) {
+                        // regenerate session id
+                        //session_start();
+                        // $_SESSION['login'] = true;
+                        //  $_SESSION['standardUserId'] = $res['standard_user_id'];
+                        // $_SESSION['userEmail'] = $res['user_email'];
+                        // $_SESSION['last_login'] = time();
+                        // session_start();
+
+                        // redirect the user to members area/dashboard page
+                        header("location: /index.php");
+                        exit;
+                    } else {
+                        //  header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
+                        // exit();
+                        $errors[] = "wronglogin";
+                    }
+                } else {
+
+                    // header("location: /pages/connexion.php?error=unknowDetail");   
+                    //exit();
+                    $errors[] = "unknowDetail";
+                }
+            }
         }
-    } else {
-        
-       // header("location: /pages/connexion.php?error=unknowDetail");   
-    //exit();
-	    $errors[]= "unknowDetail";
-    }
-}
-		}
 
-?> 
-		
+        ?>
+
         <div class="form-container sign-in-container">
-		
+
             <form action="#" style="background:white ;" method="post">
                 <h1>Sign in</h1>
 
                 <input type="email" placeholder="Email" autocomplete="email" name="email" value="" />
-                <input type="password" placeholder="Password" name="pwd" value=""/>
+                <input type="password" placeholder="Password" name="pwd" value="" />
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a href="" style="margin-bottom:10px">Here</a></a>
                 <input class="ghost" id="signIn" type="submit" name="submit_Login" value="Sign Up">
-		    
-		     <div class="fs-login-notice">
-			<!-- message  -->
-			 <?php
-		if (!empty($errors)) {
-		   var_dump($errors);
-		var_dump($_POST['email']);
-		}
+
+                <div class="fs-login-notice">
+                    <!-- message  -->
+                    <?php
+                    if (!empty($errors)) {
+                        var_dump($errors);
+                        var_dump($_POST['email']);
+                    }
 
 
-		?>
-		    </div>
-		    
-		    
+                    ?>
+                </div>
+
+
             </form>
         </div>
-	    <!-- END LOG IN -->
-	    
-	    <!-- RIGHT COLUMN CHANGE OPTION -->
+        <!-- END LOG IN -->
+
+        <!-- RIGHT COLUMN CHANGE OPTION -->
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
                     <h1>Welcome Back!</h1>
                     <p>To keep connected with us please login with your personal info</p>
-			<input class="ghost" id="signIn" type="submit" name="submit_Login" value="Sign In">
-                    
+                    <input class="ghost" id="sign_In" type="submit" name="submit_Login" value="Sign In">
+
                 </div>
                 <div class="overlay-panel overlay-right">
                     <h1>Hello, Friend!</h1>
                     <p>Enter your personal details and start journey with COMPUK</p>
-                    <button class="ghost" id="signUp" onclick="signUp()">Sign Up</button>
+                    <button class="ghost" id="sign_Up" onclick="signUp()">Sign Up</button>
                 </div>
             </div>
-		
-		<!-- END RIGHT COLUMN CHANGE OPTION -->
+
+            <!-- END RIGHT COLUMN CHANGE OPTION -->
         </div>
     </div>
 
@@ -467,7 +445,7 @@ if (empty($errors)) {
 
     </footer>
 
- 
+
 </body>
 
 </html>
