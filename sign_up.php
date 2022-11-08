@@ -42,7 +42,7 @@ try {
     <link rel="stylesheet" href="css/sign_up_In.css">
    
 <script src="js/toggle_switch.js"></script>
-    <script src="js/sign_up_in.js"></script>
+
     <script>
 
     </script>
@@ -60,6 +60,25 @@ try {
             ;
         }
     </style>
+	<script> 
+	function signUp() {
+
+            const signUpButton = document.getElementById('signUp');
+            const signInButton = document.getElementById('signIn');
+            const container = document.getElementById('container123');
+
+            signUpButton.addEventListener('click', () => {
+                container.classList.toggle("right-panel-active");
+            });
+
+            signInButton.addEventListener('click', () => {
+                container.classList.remove("right-panel-active");
+            });
+        }
+	
+	
+	
+	</script>
 
 </head>
 
@@ -321,12 +340,10 @@ if (empty($errors)) {
 			<input class="ghost" id="signIn" type="submit" name="submit_Login" value="Sign In">
                     
                 </div>
-                <div class="overlay-panel overlay-right">
+                div class="overlay-panel overlay-right">
                     <h1>Hello, Friend!</h1>
                     <p>Enter your personal details and start journey with COMPUK</p>
-			
-			 
-                    <button class="ghost" id="signUp" onclick="signUp()" >Sign Up</button>
+                    <button class="ghost" id="signUp" onclick="signUp()">Sign Up</button>
                 </div>
             </div>
 		
