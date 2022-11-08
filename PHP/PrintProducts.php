@@ -13,6 +13,7 @@ while($row=mysqli_fetch_assoc($query)){
   
   if($counter==0){
     echo " <div class=\"devices-sub-container\">";
+    echo "<p>";
   }
   
   require "TemplateProduct.php";
@@ -22,11 +23,11 @@ while($row=mysqli_fetch_assoc($query)){
   if($counter==3){
     $counter=0;
      echo "</div>";
-    echo "<br>";
+    echo "</p>";
   }
 }
 if($isEmpty==true or $counter!=0){
   echo "</div>";
-  echo "<br>";
+  echo "</p>";
 }
 ?>
