@@ -226,12 +226,12 @@ try {
             }
             */
             } else {
-                echo "not in ";
+                $errors[] = "not in ";
             }
         } else {
 
-            echo "not inserting";
-            var_dump($errors);
+            $errors[] = "not inserting";
+           // var_dump($errors);
         }
 
         //var_dump($errors);
@@ -246,7 +246,7 @@ try {
  
         
         
-<div class="form-container sign-up-container overflow-auto">
+<div class="form-container sign-up-container overflow-auto" style="margin:5px">
    <!--<div class="sign-up-container form-containe text-center">-->
    <form action="#" class="form-id" method="post">
       <h1>Create Account</h1>
@@ -266,7 +266,7 @@ try {
    <?php
       if (!empty($errors)) {
           var_dump($errors);
-          var_dump($_POST['email']);
+          //var_dump($_POST['email']);
       }
       
       
