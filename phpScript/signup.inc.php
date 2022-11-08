@@ -11,14 +11,16 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
     if (empty($_POST['email'])) {
         $errors[] = "E-mail address is required";
     } else {
+	    echo"I got you , you can continue";
         // Check Email is Unique with DB Query
-        $sql = "SELECT * FROM account WHERE user_Email=?";
-        $result = $dbh->prepare($sql);
-        $result->execute(array($_POST['email']));
-        $count = $result->rowCount();
-        if ($count == 1) {
-            $errors[] = "The e-mail already exist. Please connect.";
-        }
+	    
+        //$sql = "SELECT * FROM account WHERE user_Email=?";
+      //  $result = $dbh->prepare($sql);
+       // $result->execute(array($_POST['email']));
+       // $count = $result->rowCount();
+       // if ($count == 1) {
+       //     $errors[] = "The e-mail already exist. Please connect.";
+        //}
     }
 
    // if (empty($_POST['phoneNumber'])) {
@@ -46,6 +48,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
     if (empty($errors)) {
 		var_dump(firstName);
 		var_dump(email);
+	    var_dump($pass_hash);
 			
       //  $longueurKey = 15;
       //  $key = "";
@@ -85,12 +88,12 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
 
 ?>
 <div class="form-container sign-in-container">
-            <form action="#" style="background:white ;">
+            <form action="#" style="background:white;" method="post">
                 <h1>Sign in</h1>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="email" name="firstName" placeholder="Email" />
+                <input type="password" name="email" placeholder="Password" />
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a href="" style="margin-bottom:10px">Here</a></a>
-                <button>Sign In</button>
+                <button name="signup_submit" >Sign In</button>
             </form>
         </div>
