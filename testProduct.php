@@ -1,7 +1,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
    
     
-    <link rel="stylesheet" href="css/mainpage.css">
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
