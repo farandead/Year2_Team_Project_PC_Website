@@ -44,7 +44,9 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
     }
 
     if (empty($errors)) {
-			echo"You can implement de insert";
+		var_dump(firstName);
+		var_dump(email);
+			
       //  $longueurKey = 15;
       //  $key = "";
        // for ($i = 1; $i < $longueurKey; $i++) {
@@ -60,7 +62,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
           //  ':user_pwd'     => $pass_hash,
            
        // );
-      //  $res = $result->execute($values);
+        $res = $result->execute($values);
         if ($res) {
            
             $messages[] = "YOU ARE IN !";
