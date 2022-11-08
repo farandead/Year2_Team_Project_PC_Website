@@ -92,10 +92,10 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
 <div class="form-container sign-in-container">
             <form action="#" style="background:white;" method="post">
                 <h1>Sign in</h1>
-                <input type="email" name="firstName" placeholder="Email" />
-                <input type="password" name="email" placeholder="Password" />
+                <input type="email" name="firstName" placeholder="Email" value="" required />
+                <input type="password" name="email" placeholder="Password" value="" required />
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a href="" style="margin-bottom:10px">Here</a></a>
-                <button name="signup_submit" >Sign In</button>
+                <button type="submit" name="signup_submit" >Sign In</button>
             </form>
         </div>
