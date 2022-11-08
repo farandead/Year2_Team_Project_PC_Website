@@ -217,7 +217,7 @@ $values = array(
        
         
         
-        <div class="form-container sign-in-container">
+        <!--<div class="form-container sign-in-container">
             <form action="#" style="background:white ;">
                 <h1>Sign in</h1>
 
@@ -227,7 +227,7 @@ $values = array(
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a href="" style="margin-bottom:10px">Here</a></a>
                 <button>Sign In</button>
             </form>
-        </div>
+        </div>-->
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
