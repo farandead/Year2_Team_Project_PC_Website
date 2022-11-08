@@ -157,9 +157,8 @@ try {
         if (empty($_POST['email'])) {
             $errors[] = "E-mail address is required";
         } else {
-            
-
-            // Check Email is Unique with DB Query
+           
+            // Check Email is Unique in DB 
 
             $sql = "SELECT * FROM account WHERE user_Email=?";
             $result = $conn->prepare($sql);
@@ -279,7 +278,7 @@ try {
         
         <!--END  CREATE AN ACCOUNT  -->
         
-        <!-- LOG IN  -->
+        <!-- LOG IN SCRIPT -->
         <?php
         if (isset($_POST['submit_Login']) & !empty($_POST['submit_Login'])) {
             // PHP Form Validations
@@ -336,6 +335,7 @@ try {
         }
 
         ?>
+        <!-- END LOG IN PHP SCRIPT -->
         <div class="form-container sign-in-container">
             <form action="#" style="background:white ;" method="post">
                 <h1>Sign in</h1>
@@ -347,6 +347,15 @@ try {
                         href="" style="margin-bottom:10px">Here</a></a>
 
                 <input class="ghost" type="submit" name="submit_Login" value="Sign In">
+                <!-- message  -->
+                    <?php
+                    if (!empty($errors)) {
+                        var_dump($errors);
+                        var_dump($_POST['email']);
+                    }
+
+
+                    ?>
             </form>
         </div>
         
