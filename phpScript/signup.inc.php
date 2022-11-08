@@ -18,7 +18,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
         $errors[] = "Please Enter a Name";
     }
     if (empty($_POST['email'])) {
-        $errors[] = "E-mail address is required"
+        $errors[] = "E-mail address is required";
     } else {
         // Check Email is Unique with DB Query
         $sql = "SELECT * FROM account WHERE user_Email=?";
@@ -53,7 +53,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
     }
 
     if (empty($errors)) {
-var_dump (NO ERROR YOU CAN IMPLEMENT THE INSERT ) ;
+			echo"You can implement de insert";
       //  $longueurKey = 15;
       //  $key = "";
        // for ($i = 1; $i < $longueurKey; $i++) {
