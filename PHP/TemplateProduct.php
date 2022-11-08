@@ -8,7 +8,7 @@ echo "<div class=\"devices-sub-container-product\">
                             <div class=\"product-details-description dark_target\">
                                 <p>Price: <span>".$price."£</span> ";
                                 if($row['Product_Discount']!=0){
-                               echo ",discount is ".$row['Product_Discount']."% (<s>.$row['Product_Price'].</s>)";
+                               echo ",discount is ".$row['Product_Discount']."% (<s>".$row['Product_Price']."</s>)";
                                 }
                                 echo "
                                 </p>
