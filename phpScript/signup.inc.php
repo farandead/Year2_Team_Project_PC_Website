@@ -67,7 +67,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
     }
 
     if (empty($errors)) {
-		echo " inserting "
+		echo " inserting ";
 			
       //  $longueurKey = 15;
       //  $key = "";
