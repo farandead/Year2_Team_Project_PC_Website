@@ -1,5 +1,21 @@
 <!-- SIGN UP -->
+<?php
+echo "TESTING TEST Kir";
 
+
+$servername = "localhost";
+$username = 'babimors_astonTeam';
+$password ='HW#1o.5=#cl+';
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=babimors_compuk", $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo "Connected successfully"; 
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
+?>
 <?php 
 
 if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
@@ -17,7 +33,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
         // Check Email is Unique with DB Query
 	    
         $sql = "SELECT * FROM account WHERE user_Email=?";
-     	  $result = $dbh->prepare($sql);
+     	  $result = $conn->prepare($sql);
         $result->execute(array($_POST['email']));
         $count = $result->rowCount();
         if ($count == 1) {
@@ -60,7 +76,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
         //}
 
         $sql = "INSERT INTO account (user_last_name, user_email, user_pwd) VALUES ( :user_last_name, :user_email, :user_pwd)";
-        $result = $dbh->prepare($sql);
+        $result = $conn->prepare($sql);
 $values = array(
            
             ':user_last_name'     => $_POST['lastName'],
