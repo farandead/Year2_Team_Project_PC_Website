@@ -33,7 +33,7 @@ if (empty($errors)) {
     
     $sql = "SELECT * FROM account WHERE user_Email=? ";
 
-    $result = $dbh->prepare($sql);
+    $result = $conn->prepare($sql);
     $result->execute(array($_POST['email']));
     $count = $result->rowCount();
     $res = $result->fetch(PDO::FETCH_ASSOC);
