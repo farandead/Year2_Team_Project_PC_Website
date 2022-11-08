@@ -245,7 +245,7 @@ try {
  
         
         
-        <div class="form-container sign-up-container">
+        <div class="form-container sign-up-container container text-center">
          <!--<div class="sign-up-container form-containe text-center">-->
             <form action="#" class="form-id" method="post">
                
