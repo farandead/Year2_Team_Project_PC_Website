@@ -67,7 +67,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
     }
 
     if (empty($errors)) {
-		
+		echo " inserting "
 			
       //  $longueurKey = 15;
       //  $key = "";
@@ -97,7 +97,13 @@ $values = array(
 
             }
             */
-        } 
+        } else {
+	echo"not in ";
+	
+	}
+    }else {
+	    
+	    echo "not inserting";
     }
 
      //var_dump($errors);
