@@ -247,7 +247,7 @@ if (empty($errors)) {
     exit();
     }
 }
-} 
+
 ?>
         <div class="form-container sign-up-container">
             <form action="#" class="form-id" method="post">
