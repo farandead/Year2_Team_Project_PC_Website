@@ -228,7 +228,7 @@ $values = array(
                 <input type="password" placeholder="Password" name="pwd" value=""/>
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a href="" style="margin-bottom:10px">Here</a></a>
-                <input class="ghost" id="signIn" type="submit" name="signup_submit" value="Sign Up">
+                <input class="ghost" id="signIn" type="submit" name="submit_Login" value="Sign Up">
 		    
 		     <div class="fs-login-notice">
 			<!-- message  -->
