@@ -1,0 +1,213 @@
+.main-product-description-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    flex-direction: column;
+    
+}
+#product_heading_with_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:rgb(30,30,30);
+    width: 100%;
+    padding: 10px 10px;
+    color: white;
+    align-items: center;
+}
+.main-summary-description-conatiner{
+    display: flex;
+}
+#product_summary_with_button{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color:whitesmoke;
+    padding: 6px 6px;
+}
+.main-product-description-sub-container{
+    display:flex;
+    justify-content: space-around;
+    width: 70%;
+    
+    
+}
+#description-block{
+    padding-top: 100px;
+    width:70%;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.367);
+    padding-bottom: 100px;
+}
+.product-heading-container h3{
+    font-weight: 700;
+    letter-spacing: 3px;
+
+}
+.product-heading-container button{
+    color: white;
+    background: none;
+    margin-left:10px ;
+    margin-right:10px ;
+    font-weight:700;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.summary-container{
+    margin-left:15px ;
+    margin-right:15px ;
+}
+.summary-container p{
+    margin-left:15px ;
+    margin-right:15px ;
+    font-size: 14px;
+}
+#summary-container-heading{
+    font-weight: 600;
+    
+}
+
+.price-container {
+    background-color: white;
+    
+}
+.price-container p{
+    font-weight: 700;
+    font-size: smaller;
+    
+}
+.price-container p strong{
+    font-size:18px ;
+    color:  #0376ea;
+
+}
+.main-summary-description-conatiner button{
+    padding-left: 30px;
+    padding-right:40px;
+    height: 50px;
+    background-color: #057df5;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    font-weight:700 ;
+    align-items: center;
+    display: flex;
+    letter-spacing: 1px;
+}
+.main-summary-description-conatiner button:hover{
+   
+   background-color:  #006bd6;
+}
+.main-summary-description-conatiner button svg{
+   font-weight: 700;
+   margin-left: 5px;
+}
+#description-block{
+ 
+
+}
+.main-product-sub-container img{
+    margin-right: 50px;
+    padding-right: 50px;
+}
+.main-product-heading-container h2{
+    font-weight:700 ;
+    letter-spacing: 3px;
+    font-size: x-large;
+   
+
+}
+.main-product-heading-container{
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+   
+
+}
+.main-product-heading-description-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.description-ulisted-item{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom:5px ;
+}
+
+.main-product-heading-description-container-button{
+    width:100% ;
+}
+.main-product-heading-description-container-button button{
+    width:100% ;
+    border: 1px solid #057df5;
+    background-color: white;
+    color: #057df5;
+    padding-top: 10px;
+    padding-bottom:10px ;
+    font-weight: 700;
+    margin-bottom: 20PX;
+    border-radius: 2px ;
+    letter-spacing: 2px;
+
+}
+.main-product-heading-description-container-button button:hover{
+    
+    
+    background-color:rgb(5, 125, 245);
+    color:white;
+  
+
+}
+.main-product-sub-container div p{
+    font-weight: 600;
+    color: #0376ea;
+}
+
+
+/* Specific Description */
+.specific-description-container{
+    padding-top:20px ;
+    padding-bottom:20px ;
+    width: 70%;
+   box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.279);
+   padding-left:20px ;
+   padding-right:20px ;
+}
+.specific-description-main-container{
+    padding-top: 30px;
+    background-color: rgb(231, 229, 229);
+    padding-bottom: 30px;
+}
+.specific-description-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+
+}
+
+.specific-description-details {
+    display: flex;
+    justify-content: space-between;
+
+}
+.description-details-title {
+    padding-left: 100px;
+}
+.description-details-paragraph{
+    padding-right: 100px;
+   
+}
+.specific-heading{
+    padding-left: 50px;
+}
+.specific-heading p{
+    font-size: larger;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
