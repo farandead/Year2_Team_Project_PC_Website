@@ -221,14 +221,35 @@ $values = array(
 	    <!-- LOG IN -->
         <div class="form-container sign-in-container">
 		
-            <form action="#" style="background:white ;">
+            <form action="/phpScript/login.inc.php" style="background:white ;">
                 <h1>Sign in</h1>
 
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="email" placeholder="Email" autocomplete="email" name="email" value="" />
+                <input type="password" placeholder="Password" name="pwd" value=""/>
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a href="" style="margin-bottom:10px">Here</a></a>
                 <input class="ghost" id="signIn" type="submit" name="signup_submit" value="Sign Up">
+		    
+		     <div class="fs-login-notice">
+			<!-- message  -->
+			 <?php
+		if (isset($_GET["error"])) {
+		    if ($_GET["error"] == "emptyinput") {
+			echo "<div class='alert alert-danger'> <p>Veuillez remplir toutes les cases.</p> </div>";
+		    } 
+		    if ($_GET["error"] == "wronglogin") {
+			echo "<div class='alert alert-danger'> <p>L'addresse email ou le mot de passe est incorrecte.</p> </div>";
+		    }
+		    if ($_GET["error"] == "unknowDetail") {
+			echo "<div class='alert alert-danger'> <p>L'e-mail n'existe pas, veuillez vérifier ou vous inscrire.</p> </div>";
+		    }
+		}
+
+
+		?>
+		    </div>
+		    
+		    
             </form>
         </div>
 	    <!-- END LOG IN -->
