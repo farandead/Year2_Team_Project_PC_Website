@@ -1,8 +1,9 @@
 <!-- SIGN UP -->
 
 <?php 
-$errors[] = "" ;
+
 if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
+	echo"firststep";
     //if (empty($_POST['lastName'])) {
        // $errors[] = "";
     //}
