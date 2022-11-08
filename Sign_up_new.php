@@ -242,14 +242,7 @@ try {
     <!-- END --- SIGN UP PHP SCRIPT-->
         <!-- CREATE AN ACCOUNT  -->
        
-  <div class="row">
-    <div class="col">
-      <input type="firstname" placeholder="First Name" name="firstName"  value=""/>
-    </div>
-    <div class="col">
-      <input type="lastname" placeholder="Last Name" name="lastname"  value="" />
-    </div>
-  </div>
+ 
         
         
         <!--<div class="form-container sign-up-container">-->
@@ -257,7 +250,14 @@ try {
             <form action="#" class="form-id" method="post">
                
                 <h1>Create Account</h1>
-                
+                 <div class="row">
+    <div class="col">
+      <input type="firstname" placeholder="First Name" name="firstName"  value=""/>
+    </div>
+    <div class="col">
+      <input type="lastname" placeholder="Last Name" name="lastname"  value="" />
+    </div>
+  </div>
                 <div class="row">
     <div class="col">
      <input type="email" placeholder="Email" name="email"  value=""/>
