@@ -205,11 +205,41 @@ $values = array(
 <!-- END --- SIGN UP PHP SCRIPT-->
 
    
-	    <!-- CREATE AN ACCOUNT -->
-<?php
+	    
+
+	<!-- CREATE AN ACCOUNT -->
+	<div class="container" id="container123">
+        <div class="form-container sign-up-container">
+            <form action="#" class="form-id" method="post">
+                <h1>Create Account</h1>
+                <input type="text" name="firstName" placeholder="Name" value=""  />
+                <input type="email" name="email" placeholder="Email" value=""  />
+                <input type="password" name="pwd" placeholder="Password" value=""  />
+               <input class="ghost" id="signUp" type="submit" name="signup_submit" value="Sign Up">
+            </form>
+        </div>
+       <!-- END CREATE AN ACCOUNT -->
+        
+	    
+	    <!-- LOG IN -->
+		
+		
+		
+		<?php
+		if (isset($_POST['submit_Login']) & !empty($_POST['submit_Login'])) {
+// PHP Form Validations
+if (empty($_POST['email'])) {
+   // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
+  //  exit();
+	$errors[]= "emptyinputemail";
+  
+}
+
+		
+		
 if (empty($_POST['pwd'])) {
     // header("location: /pages/connexion.php?error=emptyinput");
-	$errors[]= "emptyinput";
+	$errors[]= "emptyinputpwd";
    
 }
 
@@ -250,22 +280,10 @@ if (empty($errors)) {
 	    $errors[]= "unknowDetail";
     }
 }
+		}
 
 ?> 
-	<div class="container" id="container123">
-        <div class="form-container sign-up-container">
-            <form action="#" class="form-id" method="post">
-                <h1>Create Account</h1>
-                <input type="text" name="firstName" placeholder="Name" value=""  />
-                <input type="email" name="email" placeholder="Email" value=""  />
-                <input type="password" name="pwd" placeholder="Password" value=""  />
-               <input class="ghost" id="signUp" type="submit" name="signup_submit" value="Sign Up">
-            </form>
-        </div>
-       <!-- END CREATE AN ACCOUNT -->
-        
-	    
-	    <!-- LOG IN -->
+		
         <div class="form-container sign-in-container">
 		
             <form action="#" style="background:white ;" method="post">
