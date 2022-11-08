@@ -245,68 +245,32 @@ try {
  
         
         
-        <div class="form-container sign-up-container container text-center">
-         <!--<div class="sign-up-container form-containe text-center">-->
-            <form action="#" class="form-id" method="post">
-               
-                <h1>Create Account</h1>
-                 <div class="row">
-    <div class="col">
+<div class="form-container sign-up-container">
+   <!--<div class="sign-up-container form-containe text-center">-->
+   <form action="#" class="form-id" method="post">
+      <h1>Create Account</h1>
       <input type="firstname" placeholder="First Name" name="firstName"  value=""/>
-    </div>
-    <div class="col">
       <input type="lastname" placeholder="Last Name" name="lastname"  value="" />
-    </div>
-  </div>
-                <div class="row">
-    <div class="col">
-     <input type="email" placeholder="Email" name="email"  value=""/>
-    </div>
-    <div class="col">
-       <input type="password" name="pwd" value="" />
-    </div>
-  </div>
-        <div class="row">
-    <div class="col">
-     <input type="number" placeholder="Contact No" name="user_number"  value="" />
-    </div>
-    <div class="col">
-       <input type="text" placeholder="Street"  name="user_street"  value=""/>
-    </div>
-  </div>
-        
-        <div class="row">
-    <div class="col">
-     <input type="text" class="small-input" placeholder="County"  name="user_county"  value=""/>
-    </div>
-    <div class="col">
+      <input type="email" placeholder="Email" name="email"  value=""/>
+      <input type="password" name="pwd" value="" />
+      <input type="number" placeholder="Contact No" name="user_number"  value="" />
+      <input type="text" placeholder="Street"  name="user_street"  value=""/>
+      <input type="text" class="small-input" placeholder="County"  name="user_county"  value=""/>
       <input type="text" class="small-input" placeholder="Country" name="user_country"  value=""/>
-    </div>
-  </div>
-
-        <div class="row">
-    <div class="col">
-     <input type="text" class="small-input" placeholder="City" name="user_city"  value=""/>
-    </div>
-    <div class="col">
+      <input type="text" class="small-input" placeholder="City" name="user_city"  value=""/>
       <input type="text" class="small-input" placeholder="Post Code" name="user_postCode"  value=""/>
-    </div>
-  </div>
-                
-               
-                 <input  style="margin-top:15px"  type="submit" name="signup_submit" value="Sign Up">
-            </form>
-            
-<!-- message  -->
-                    <?php
-                    if (!empty($errors)) {
-                        var_dump($errors);
-                        var_dump($_POST['email']);
-                    }
-
-
-                    ?>
-        </div>
+      <input  style="margin-top:15px"  type="submit" name="signup_submit" value="Sign Up">
+   </form>
+   <!-- message  -->
+   <?php
+      if (!empty($errors)) {
+          var_dump($errors);
+          var_dump($_POST['email']);
+      }
+      
+      
+      ?>
+</div>
         
         
         
