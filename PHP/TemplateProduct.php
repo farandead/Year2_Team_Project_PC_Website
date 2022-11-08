@@ -21,7 +21,7 @@ foreach($lines as $line){
                                 </ul>
                             </div>
                             <div class=\"product-details-buy-buttons\">
-                                <button>CONFIGURE THIS PC ></button>
+                                <button>CONFIGURE THIS ITEM ></button>
                             </div>
     
                         </div>
