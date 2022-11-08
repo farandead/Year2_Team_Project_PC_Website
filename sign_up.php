@@ -279,7 +279,7 @@ if (empty($errors)) {
 		     <div class="fs-login-notice">
 			<!-- message  -->
 			 <?php
-		if (!empty($errors) {
+		if (!empty($errors)) {
 		   echo"$errors";
 		}
 
