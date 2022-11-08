@@ -127,7 +127,7 @@
                     </div>
                     
                     <?php 
-                    echo "test";
+                    require "/PHP/PrintProducts.php";
                     ?>
                     
                     <div class="devices-sub-container-product">
