@@ -205,43 +205,53 @@ $values = array(
 <!-- END --- SIGN UP PHP SCRIPT-->
 
     <div class="container" id="container123">
+	    <!-- CREATE AN ACCOUNT -->
         <div class="form-container sign-up-container">
-            
-        </div>
-       
-        
-        
-        <div class="form-container sign-in-container">
-		<form action="#" class="form-id" method="post">
+            <form action="#" class="form-id" method="post">
                 <h1>Create Account</h1>
                 <input type="text" name="firstName" placeholder="Name" value=""  />
                 <input type="email" name="email" placeholder="Email" value=""  />
                 <input type="password" name="pwd" placeholder="Password" value=""  />
-               <input class="btn btn-block" type="submit" name="signup_submit" value="Sign Up">
+               <input class="ghost" id="signUp" type="submit" name="signup_submit" value="Sign Up">
             </form>
-            <!--<form action="#" style="background:white ;">
+        </div>
+       <!-- END CREATE AN ACCOUNT -->
+        
+	    
+	    <!-- LOG IN -->
+        <div class="form-container sign-in-container">
+		
+            <form action="#" style="background:white ;">
                 <h1>Sign in</h1>
 
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a href="" style="margin-bottom:10px">Here</a></a>
-                <button>Sign In</button>
-            </form>-->
+                <input class="ghost" id="signIn" type="submit" name="signup_submit" value="Sign Up">
+            </form>
         </div>
+	    <!-- END LOG IN -->
+	    
+	    <!-- RIGHT COLUMN CHANGE OPTION -->
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
                     <h1>Welcome Back!</h1>
                     <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn" >Sign In</button>
+			<input class="ghost" id="signIn" type="submit" name="submit_Login" value="Sign In">
+                    
                 </div>
                 <div class="overlay-panel overlay-right">
                     <h1>Hello, Friend!</h1>
                     <p>Enter your personal details and start journey with COMPUK</p>
+			
+			 
                     <button class="ghost" id="signUp" >Sign Up</button>
                 </div>
             </div>
+		
+		<!-- END RIGHT COLUMN CHANGE OPTION -->
         </div>
     </div>
 
