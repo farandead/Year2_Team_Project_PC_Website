@@ -19,9 +19,9 @@ while($row=mysqli_fetch_assoc($query)){
   
   $counter=$counter+1;
   
-  if(counter==3){
+  if($counter==3){
     echo "3";
-    counter=0;
+    $counter=0;
   }
 }
 if($isEmpty==true or $counter!=0){
