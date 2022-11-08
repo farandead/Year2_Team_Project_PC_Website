@@ -75,13 +75,13 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
        //     $key .= mt_rand(0, 9);
         //}
 
-        $sql = "INSERT INTO account (user_last_name, user_email, user_pwd) VALUES ( :user_last_name, :user_email, :user_pwd)";
+        $sql = "INSERT INTO account (User_FName, user_Email, User_Password) VALUES ( :User_FName, :user_Email, :User_Password)";
         $result = $conn->prepare($sql);
 $values = array(
            
-            ':user_last_name'     => $_POST['lastName'],
-            ':user_email'        => $_POST['email'],
-           ':user_pwd'     => $pass_hash,
+            ':User_FName'     => $_POST['firstName'],
+            ':user_Email'        => $_POST['email'],
+           ':User_Password'     => $pass_hash,
            
         );
         $res = $result->execute($values);
