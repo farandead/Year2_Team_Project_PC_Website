@@ -136,24 +136,15 @@ try {
         if (empty($_POST['lastname'])) {
             $errors[] = "Please Enter your lastname";
         }
+        
         if (empty($_POST['user_number'])) {
             $errors[] = "Please Enter your number";
         }
-        if (empty($_POST['user_street'])) {
-            $errors[] = "Please Enter your street name";
+        if (empty($_POST['user_sex'])) {
+            $errors[] = "Please choose : M or F";
         }
-        if (empty($_POST['user_county'])) {
-            $errors[] = "Please Enter your county";
-        }
-        if (empty($_POST['user_country'])) {
-            $errors[] = "Please Enter your country";
-        }
-        if (empty($_POST['user_city'])) {
-            $errors[] = "Please Enter your city";
-        }
-        if (empty($_POST['user_postCode'])) {
-            $errors[] = "Please Enter your Post-Code";
-        }
+      
+        
        
         if (empty($_POST['email'])) {
             $errors[] = "E-mail address is required";
@@ -204,23 +195,24 @@ try {
             //     $key .= mt_rand(0, 9);
             //}
 
-            $sql = "INSERT INTO account (User_FName, User_SName, User_Sex, User_DOB, User_Phone_Number user_Email, User_Password) 
-            VALUES ( :User_FName, :User_SName, :User_Sex, :User_DOB, :User_Phone_Number :user_Email, :User_Password)";
+            $sql = "INSERT INTO account (User_FName, User_SName, user_Email, User_Password, User_Phone_Number , User_Sex) 
+            VALUES ( :User_FName, :User_SName, :user_Email,   :User_Password ,:User_Phone_Number, , :User_Sex)";
             $result = $conn->prepare($sql);
             $values = array(
 
                 ':User_FName'     => $_POST['firstName'],
                 ':User_SName'     => $_POST['lastname'],
-                ':User_Sex'        => $_POST['email'],
-                ':User_DOB'     => $_POST['firstName'],
-                ':User_Phone_Number'     => $_POST['user_number'],
                 ':user_Email'        => $_POST['email'],
                 ':User_Password'     => $pass_hash,
+                ':User_Phone_Number'     => $_POST['user_number'],
                 
-                ':User_DOB'     => $_POST['firstName'],
-                ':user_Email'        => $_POST['email'],
-                ':User_FName'     => $_POST['firstName'],
-                ':user_Email'        => $_POST['email'],
+                ':User_Sex'        => $_POST['user_sex'],
+                
+               
+                
+
+             
+             
                 
                 
                 
@@ -273,6 +265,12 @@ try {
       <input type="text" class="small-input" placeholder="Country" name="user_country"  value=""/>
       <input type="text" class="small-input" placeholder="City" name="user_city"  value=""/>
       <input type="text" class="small-input" placeholder="Post Code" name="user_postCode"  value=""/>-->
+       <p>Please select Male/Female:</p>
+  <input type="radio" id="male" name="user_sex" value="M">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="user_sex" value="F">
+  <label for="female">Female</label><br>
+       
       <input  style="margin-top:15px"  type="submit" name="signup_submit" value="Sign Up">
    </form>
    <!-- message  -->
