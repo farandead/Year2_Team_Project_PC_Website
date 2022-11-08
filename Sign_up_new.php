@@ -220,7 +220,7 @@ try {
     <!-- END --- SIGN UP PHP SCRIPT-->
         <!-- CREATE AN ACCOUNT  -->
         <div class="form-container sign-up-container">
-            <form action="#" class="form-id">
+            <form action="#" class="form-id" method="post">
                
                 <h1>Create Account</h1>
                 <input type="firstname" placeholder="First Name" name="firstName"  value=""/>
@@ -304,7 +304,7 @@ try {
 
         ?>
         <div class="form-container sign-in-container">
-            <form action="#" style="background:white ;">
+            <form action="#" style="background:white ;" method="post">
                 <h1>Sign in</h1>
 
                 <input type="email" placeholder="Email" autocomplete="email" name="email" value="" />
