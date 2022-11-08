@@ -245,8 +245,8 @@ try {
  
         
         
-        <!--<div class="form-container sign-up-container">-->
-         <div class="sign-up-container form-containe text-center">
+        <div class="form-container sign-up-container">
+         <!--<div class="sign-up-container form-containe text-center">-->
             <form action="#" class="form-id" method="post">
                
                 <h1>Create Account</h1>
