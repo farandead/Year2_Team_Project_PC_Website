@@ -50,9 +50,8 @@ if (empty($errors)) {
             header("location: /index.php");
             exit;
         } else {
-            
-             header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");   
-    exit();
+          header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
+          exit();
         }
     } else {
         
