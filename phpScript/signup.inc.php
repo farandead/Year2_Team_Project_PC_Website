@@ -104,6 +104,7 @@ $values = array(
     }else {
 	    
 	    echo "not inserting";
+	    var_dump($errors);
     }
 
      //var_dump($errors);
