@@ -267,9 +267,9 @@ try {
       <input type="text" class="small-input" placeholder="Post Code" name="user_postCode"  value=""/>-->
        <p>Please select Male/Female:</p>
   <input type="radio" id="male" name="user_sex" value="M">
-  <label for="male">Male</label><br>
+       <label for="male">Male</label>
   <input type="radio" id="female" name="user_sex" value="F">
-  <label for="female">Female</label><br>
+  <label for="female">Female</label>
        
       <input  style="margin-top:15px"  type="submit" name="signup_submit" value="Sign Up">
    </form>
