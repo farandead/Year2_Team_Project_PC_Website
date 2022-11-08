@@ -1,5 +1,5 @@
 <?
-$price=$row['Product_Price']-$row['Product_Price']*$row['Product_Discount']/100;
+$price=round($row['Product_Price']-$row['Product_Price']*$row['Product_Discount']/100,2);
 
 echo "<div class=\"devices-sub-container-product\">
                         <div class=\"productdetails dark_target\">
