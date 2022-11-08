@@ -3,7 +3,7 @@
 <?php 
 
 if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
-	echo"firststep";
+	
     //if (empty($_POST['lastName'])) {
        // $errors[] = "";
     //}
@@ -13,16 +13,16 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
     if (empty($_POST['email'])) {
         $errors[] = "E-mail address is required";
     } else {
-	    echo"I got you , you can continue";
+	   
         // Check Email is Unique with DB Query
 	    
-        //$sql = "SELECT * FROM account WHERE user_Email=?";
-      //  $result = $dbh->prepare($sql);
-       // $result->execute(array($_POST['email']));
-       // $count = $result->rowCount();
-       // if ($count == 1) {
-       //     $errors[] = "The e-mail already exist. Please connect.";
-        //}
+        $sql = "SELECT * FROM account WHERE user_Email=?";
+     	  $result = $dbh->prepare($sql);
+        $result->execute(array($_POST['email']));
+        $count = $result->rowCount();
+        if ($count == 1) {
+            $errors[] = "The e-mail already exist. Please connect.";
+        }
     }
 
    // if (empty($_POST['phoneNumber'])) {
@@ -34,8 +34,8 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
       $pass_hash = password_hash($_POST['pwd'], PASSWORD_DEFAULT);
         // check the repeat password
        // if (empty($_POST['pwdRepeat'])) {
-        //    $errors[] = "Confirmer votre mot de passe.";
-        //} else {
+           $errors[] = "Confirmer votre mot de passe.";
+       // } else {
             // compare both passwords, if they match. Generate the Password Hash
           //  if ($_POST['pwd'] == $_POST['pwdRepeat']) {
                 // create password hash
@@ -47,7 +47,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
 	    var_dump($_POST['firstName']);
 		var_dump($_POST['email']);
 	    var_dump($pass_hash);
-        }
+       // }
     }
 
     if (empty($errors)) {
@@ -59,18 +59,18 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
        //     $key .= mt_rand(0, 9);
         //}
 
-      //  $sql = "INSERT INTO account (user_last_name, user_email, user_pwd) VALUES ( :user_last_name, :user_email, :user_pwd)";
-       // $result = $dbh->prepare($sql);
-//$values = array(
+        $sql = "INSERT INTO account (user_last_name, user_email, user_pwd) VALUES ( :user_last_name, :user_email, :user_pwd)";
+        $result = $dbh->prepare($sql);
+$values = array(
            
-           // ':user_last_name'     => $_POST['lastName'],
-          //  ':user_email'        => $_POST['email'],
-          //  ':user_pwd'     => $pass_hash,
+            ':user_last_name'     => $_POST['lastName'],
+            ':user_email'        => $_POST['email'],
+           ':user_pwd'     => $pass_hash,
            
-       // );
-      //  $res = $result->execute($values);
-      //  if ($res) {
-           
+        );
+        $res = $result->execute($values);
+        if ($res) {
+          echo "YOU ARE IN !";
       //      $messages[] = "YOU ARE IN !";
      //       $messages[]= 'An confirmation e-mail have been send to this address' .$_POST['email']. '. ';
            /*
@@ -81,7 +81,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
 
             }
             */
-       // } 
+        } 
     }
 
      //var_dump($errors);
