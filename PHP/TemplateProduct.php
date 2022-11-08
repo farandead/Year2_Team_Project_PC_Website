@@ -4,7 +4,12 @@ echo "<div class=\"devices-sub-container-product\">
                             <div class=\"product-details-title\">".$row['Product_Name']."</div>
                             <div class=\"product-details-img\"><img src=\"img/Lafife Pro 15 6.webp\" alt=\"\"></div>
                             <div class=\"product-details-description dark_target\">
-                                <p>From <span>".$row['Product_Price']."£</span> discount is ".$row['Product_Discount']."%</p>
+                                <p>From <span>".$row['Product_Price']."£</span> ";
+                                
+                               echo ",discount is ".$row['Product_Discount']."%";
+                                
+                                echo "
+                                </p>
                                 <ul class=\"description-ulisted\">
                                     <li class=\"description-ulisted-item\">PCS 3601 CASE</li>
                                     <li class=\"description-ulisted-item\"> Intel® Core™ i3-10100</li>
@@ -18,5 +23,5 @@ echo "<div class=\"devices-sub-container-product\">
                             </div>
     
                         </div>
-                    </div>"
+                    </div>";
 ?>
