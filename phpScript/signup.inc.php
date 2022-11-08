@@ -104,7 +104,7 @@ $values = array(
     // echo "</br>";
 
     // var_dump($messages);
-
+}
 ?>
 <div class="form-container sign-in-container">
             <form action="#" style="background:white;" method="post">
