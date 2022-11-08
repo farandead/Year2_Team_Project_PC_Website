@@ -125,6 +125,11 @@
     
                         </div>
                     </div>
+                    
+                    <?php 
+                    echo "test";
+                    ?>
+                    
                     <div class="devices-sub-container-product">
                         <div class="productdetails dark_target">
                             <div class="product-details-title">LAFIFE PRO 15 6</div>
