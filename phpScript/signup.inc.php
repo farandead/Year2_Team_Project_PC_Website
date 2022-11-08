@@ -1,14 +1,5 @@
 <!-- SIGN UP -->
-<div class="form-container sign-in-container">
-            <form action="#" style="background:white ;">
-                <h1>Sign in</h1>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
-                <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a href="" style="margin-bottom:10px">Here</a></a>
-                <button>Sign In</button>
-            </form>
-        </div>
+
 <?php 
 if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
     //if (empty($_POST['lastName'])) {
@@ -91,3 +82,13 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
     // var_dump($messages);
 
 ?>
+<div class="form-container sign-in-container">
+            <form action="#" style="background:white ;">
+                <h1>Sign in</h1>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
+                <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a href="" style="margin-bottom:10px">Here</a></a>
+                <button>Sign In</button>
+            </form>
+        </div>
