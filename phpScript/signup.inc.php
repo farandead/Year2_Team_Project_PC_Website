@@ -50,7 +50,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
       $pass_hash = password_hash($_POST['pwd'], PASSWORD_DEFAULT);
         // check the repeat password
        // if (empty($_POST['pwdRepeat'])) {
-           $errors[] = "Confirmer votre mot de passe.";
+         //  $errors[] = "Confirmer votre mot de passe.";
        // } else {
             // compare both passwords, if they match. Generate the Password Hash
           //  if ($_POST['pwd'] == $_POST['pwdRepeat']) {
