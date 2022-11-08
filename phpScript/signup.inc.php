@@ -84,7 +84,7 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
        // } 
     }
 
-     var_dump($errors);
+     //var_dump($errors);
     // echo "</br>";
 
     // var_dump($messages);
@@ -97,6 +97,6 @@ if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
                 <input type="password" name="email" placeholder="Password" value=""  />
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a href="" style="margin-bottom:10px">Here</a></a>
-                <button type="submit" name="signup_submit" >Sign In</button>
+                 <input class="btn btn-block" type="submit" name="signup_submit" value="Incription">
             </form>
         </div>
