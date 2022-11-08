@@ -1,4 +1,5 @@
 <?
+$lines= file("../Products/PreDescription/".$row['Product_ID'].".txt");
 $price=round($row['Product_Price']-$row['Product_Price']*$row['Product_Discount']/100,2);
 echo "0";
 echo "<div class=\"devices-sub-container-product\">
@@ -14,9 +15,9 @@ echo "<div class=\"devices-sub-container-product\">
                                 </p>
                                 <ul class=\"description-ulisted\">";
                                 
-                                
-                                   echo " <li class=\"description-ulisted-item\">PCS 3601 CASE</li>";
-                                    
+foreach($lines as $line){   
+                                   echo " <li class=\"description-ulisted-item\">".$line."</li>";
+}             
                                echo "     
                                 </ul>
                             </div>
