@@ -1,8 +1,8 @@
 <?php
-require "connect_db.php"  
-$test= 'test';
+require "connect_db.php";
 
-echo .$test;
+
+
 
 $sql = "SELECT Product_Name FROM Product";
 
