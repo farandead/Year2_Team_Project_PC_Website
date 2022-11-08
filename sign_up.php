@@ -326,7 +326,7 @@ if (empty($errors)) {
                     <p>Enter your personal details and start journey with COMPUK</p>
 			
 			 
-                    <button class="ghost" id="signUp" >Sign Up</button>
+                    <button class="ghost" id="signUp" onclick="signUp()" >Sign Up</button>
                 </div>
             </div>
 		
