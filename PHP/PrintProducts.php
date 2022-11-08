@@ -1,7 +1,7 @@
 <?
 require "connect_db.php"
   
-$sql="SELECT Car_Type_ID FROM car_type_table ";
+$sql="SELECT Product_Name FROM Product";
 
 $query=mysqli_query($conn,$sql);
 
