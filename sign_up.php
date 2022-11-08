@@ -208,8 +208,9 @@ $values = array(
 	    <!-- CREATE AN ACCOUNT -->
 <?php
 if (empty($_POST['pwd'])) {
-     header("location: /pages/connexion.php?error=emptyinput");   
-    exit();
+    // header("location: /pages/connexion.php?error=emptyinput");
+	$errors[]= "emptyinput";
+   
 }
 
 
@@ -238,13 +239,15 @@ if (empty($errors)) {
             header("location: /index.php");
             exit;
         } else {
-          header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
-          exit();
+        //  header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
+         // exit();
+		$errors[]= "wronglogin";
         }
     } else {
         
-        header("location: /pages/connexion.php?error=unknowDetail");   
-    exit();
+       // header("location: /pages/connexion.php?error=unknowDetail");   
+    //exit();
+	    $errors[]= "unknowDetail";
     }
 }
 
@@ -276,16 +279,8 @@ if (empty($errors)) {
 		     <div class="fs-login-notice">
 			<!-- message  -->
 			 <?php
-		if (isset($_GET["error"])) {
-		    if ($_GET["error"] == "emptyinput") {
-			echo "<div class='alert alert-danger'> <p>Veuillez remplir toutes les cases.</p> </div>";
-		    } 
-		    if ($_GET["error"] == "wronglogin") {
-			echo "<div class='alert alert-danger'> <p>L'addresse email ou le mot de passe est incorrecte.</p> </div>";
-		    }
-		    if ($_GET["error"] == "unknowDetail") {
-			echo "<div class='alert alert-danger'> <p>L'e-mail n'existe pas, veuillez vérifier ou vous inscrire.</p> </div>";
-		    }
+		if (!empty($errors) {
+		   echo"$errors";
 		}
 
 
