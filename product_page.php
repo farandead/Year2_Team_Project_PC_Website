@@ -126,9 +126,7 @@
                         </div>
                     </div>
                     
-                    <?php 
-                    require "PHP/PrintProducts.php";
-                    ?>
+
                     
                     <div class="devices-sub-container-product">
                         <div class="productdetails dark_target">
