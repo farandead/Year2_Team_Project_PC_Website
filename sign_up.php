@@ -1,8 +1,5 @@
 <!-- DATABASE CONNECTION -- HAVE TO MAKE AN INCLUSIONS-->
 <?php
-echo "TESTING TEST Kir";
-
-
 $servername = "localhost";
 $username = 'babimors_astonTeam';
 $password ='HW#1o.5=#cl+';
@@ -17,8 +14,9 @@ try {
 }
 ?>
 <!-- END DATABASE CONNECTION-->
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
 
 <head>
     <meta charset="UTF-8">
