@@ -1,7 +1,7 @@
 <?php
 require "connect_db.php";
 
-$queryCat=mysqli_query($conn,"SELECT Cat_ID FROM Category WHERE Cat_Name=$category");
+$queryCat=mysqli_query($conn,"SELECT Cat_ID FROM Category WHERE Cat_Name=".$category."");
 
 $query=mysqli_query($conn,"SELECT * FROM Product");
 
