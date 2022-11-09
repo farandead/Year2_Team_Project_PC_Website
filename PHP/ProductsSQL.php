@@ -10,3 +10,5 @@ else{$Cat_ID=null;
 $query=mysqli_query($conn,"SELECT * FROM Product WHERE Cat_ID='$Cat_ID'");
 
 $template= "TemplateProduct.php";
+
+echo "Test!";
