@@ -278,11 +278,11 @@ try {
     
        <div class="row">
     <div class="col">
-      <input type="radio" id="male" name="user_sex" value="M">
+      <input type="radio" id="male" name="user_sex" value="Male">
        <label for="male">Male</label>
     </div>
     <div class="col">
-     <input type="radio" id="female" name="user_sex" value="F">
+     <input type="radio" id="female" name="user_sex" value="Female">
   <label for="female">Female</label>
     </div>
     
