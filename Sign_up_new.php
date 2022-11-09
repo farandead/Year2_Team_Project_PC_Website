@@ -187,7 +187,7 @@ try {
         }
 
         if (empty($errors)) {
-            echo " inserting ";
+         //   echo " inserting ";
 
             //  $longueurKey = 15;
             //  $key = "";
