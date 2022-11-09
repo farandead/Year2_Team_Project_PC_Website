@@ -110,7 +110,7 @@
            
             <div class="devices-container-laptop " id="laptop_container" style="display:block">
                 <?php
-                require "PHP/ProductsCollectionPrinter.php";
+                require "PHP/CategoriesCollectionPrinter.php";
                 ?>
                 
             </div>
