@@ -221,11 +221,7 @@ try {
             $res = $result->execute($values);
             if ($res) {
                 //echo "YOU ARE IN !";
-                alert("You are IN");
-
-function alert($msg) {
-    echo "<script type='text/javascript'>alert('$msg');</script>";
-}
+                 echo "<script>alert('YOU ARE IN !');</script>";
                 //      $messages[] = "YOU ARE IN !";
                 //       $messages[]= 'An confirmation e-mail have been send to this address' .$_POST['email']. '. ';
                 /*
