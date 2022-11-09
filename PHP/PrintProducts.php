@@ -2,14 +2,19 @@
 require "connect_db.php";
 
 $queryCat=mysqli_query($conn,"SELECT Cat_ID FROM Category WHERE Cat_Name='$category'");
-
 $res=mysqli_fetch_assoc($queryCat);
+
 if($res!=null){
 $Cat_ID=$res["Cat_ID"];}
 else{$Cat_ID=null;
 }
 
 $query=mysqli_query($conn,"SELECT * FROM Product WHERE Cat_ID='$Cat_ID'");
+
+$template= "TemplateProduct.php";
+
+
+
 
 $isEmpty=true;
 $counter=0;
@@ -22,7 +27,7 @@ while($row=mysqli_fetch_assoc($query)){
     echo " <div class=\"devices-sub-container\">";
   }
   
-  require "TemplateProduct.php";
+  require $template;
   
   $counter=$counter+1;
   
