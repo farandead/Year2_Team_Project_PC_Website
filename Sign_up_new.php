@@ -338,9 +338,9 @@ try {
                 if ($count == 1) {
                     // Compare the password with password hash
                     
-                    //$hashed = '$2y$10$ATrMted2kYz/iT/YWUp1euF';
+                    $hashed = '$2y$10$HqLUsOHun8xAxsui5wGCYe5';
                     
-                    if (password_verify($_POST['pwd'], $res['User_Password'])) {
+                    if (password_verify($_POST['pwd'], $hashed)) {
                         // regenerate session id
                         //session_start();
                         // $_SESSION['login'] = true;
