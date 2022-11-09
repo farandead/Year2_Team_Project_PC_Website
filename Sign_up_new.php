@@ -380,6 +380,7 @@ try {
                     if (!empty($errors)) {
                         var_dump($errors);
                         var_dump($_POST['email']);
+                        var_dump(password_verify($_POST['pwd'], $res['User_Password']));
                     }
 
 
