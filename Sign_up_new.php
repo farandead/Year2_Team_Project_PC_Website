@@ -180,9 +180,9 @@ try {
             // Display Error Message
             //   $errors[] = "Les mots de passes doievent être identiques";
             //}
-            var_dump($_POST['firstName']);
-            var_dump($_POST['email']);
-            var_dump($pass_hash);
+            //var_dump($_POST['firstName']);
+            //var_dump($_POST['email']);
+            //var_dump($pass_hash);
             // }
         }
 
