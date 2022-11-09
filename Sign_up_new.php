@@ -164,10 +164,10 @@ try {
         // if (empty($_POST['phoneNumber'])) {
         //  $errors[] = "Veuiller rentrer votre numéro de téléphone";
         // }
-        if (empty($_POST['pwd'])) {
+        if (empty($_POST['user_pwd'])) {
             $errors[] = "Please insert a password.";
         } else {
-            $pass_hash = password_hash($_POST['pwd'], PASSWORD_DEFAULT);
+            $pass_hash = password_hash($_POST['user_pwd'], PASSWORD_DEFAULT);
             // check the repeat password
             // if (empty($_POST['pwdRepeat'])) {
             //  $errors[] = "Confirmer votre mot de passe.";
@@ -268,7 +268,7 @@ try {
      
       
       <input type="email" placeholder="Email" name="email"  value=""/>
-      <input type="password" name="pwd" value="" />
+      <input type="password" name="user_pwd" value="" />
       <input type="number" placeholder="Contact No" name="user_number"  value="" />
       <!--<input type="text" placeholder="Street"  name="user_street"  value=""/>
       <input type="text" class="small-input" placeholder="County"  name="user_county"  value=""/>
