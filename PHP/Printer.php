@@ -1,9 +1,4 @@
 <?php
-require "connect_db.php";
-require "ProductsSQL.php";
-
-
-
 
 $isEmpty=true;
 $counter=0;
