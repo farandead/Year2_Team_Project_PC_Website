@@ -348,8 +348,9 @@ try {
                         // session_start();
 
                         // redirect the user to members area/dashboard page
-                        header("location: /index.php");
-                        exit;
+                       // header("location: /index.php");
+                       // exit;
+                        echo"Valid";
                     } else {
                         //  header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
                         // exit();
