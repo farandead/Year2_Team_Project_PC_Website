@@ -196,7 +196,7 @@ try {
             //}
 
             $sql = "INSERT INTO account (User_FName, User_SName, user_Email, User_Password, User_Phone_Number , User_Sex) 
-            VALUES ( :User_FName, :User_SName, :user_Email,   :User_Password ,:User_Phone_Number, , :User_Sex)";
+            VALUES ( :User_FName, :User_SName, :user_Email,   :User_Password ,:User_Phone_Number, :User_Sex)";
             $result = $conn->prepare($sql);
             $values = array(
 
