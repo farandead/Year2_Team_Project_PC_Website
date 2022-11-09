@@ -255,8 +255,17 @@ try {
    <!--<div class="sign-up-container form-containe text-center">-->
    <form action="#" class="form-id" method="post">
       <h1>Create Account</h1>
-      <input type="firstname" placeholder="First Name" name="firstName"  value=""/>
+       <div class="row">
+    <div class="col">
+       <input type="firstname" placeholder="First Name" name="firstName"  value=""/>
+    </div>
+    <div class="col">
       <input type="lastname" placeholder="Last Name" name="lastname"  value="" />
+    </div>
+    
+  </div>
+     
+      
       <input type="email" placeholder="Email" name="email"  value=""/>
       <input type="password" name="pwd" value="" />
       <input type="number" placeholder="Contact No" name="user_number"  value="" />
