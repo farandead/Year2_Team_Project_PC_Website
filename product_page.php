@@ -101,7 +101,7 @@
             <?php 
             
          
-            $category=$_GET["name"];
+            $category=$_GET["Category"];
                 echo "<h1>".$category."</h1>";
             
             ?>
