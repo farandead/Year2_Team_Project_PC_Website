@@ -102,6 +102,7 @@
             
          
             $category=$_GET["Category"];
+            if($category==null){echo "BREAK";}
                 echo "<h1>".$category."</h1>";
             
             ?>
