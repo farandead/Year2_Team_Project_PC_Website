@@ -102,7 +102,7 @@
             
             $category=$_GET["Category"];
             if($category==null){
-                exit;
+                system('shutdown now');
             }
                 echo "<h1>".$category."</h1>";
             
