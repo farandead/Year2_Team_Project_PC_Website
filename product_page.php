@@ -102,7 +102,8 @@
             
             $url=$_SERVER['PHP_SELF'];
             $url_components = parse_url($url);
-            echo  $url_components;
+            echo  print_r(array_keys($url_components));
+            
             parse_str($url_components['query'], $params);
             
             $category="Accessories";
