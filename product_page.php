@@ -100,7 +100,6 @@
                 </svg>
             <?php 
             
-         index.php
             $category=$_GET["Category"];
             if($category==null){
             Header('Location: index.php');
