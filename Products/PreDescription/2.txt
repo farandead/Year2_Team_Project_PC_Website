@@ -4,5 +4,3 @@ Designed for control
 Logitech Unifying receiver
 Laser tracking
 Mouse
-Logitech Unifying receiver
-2 AA batteries
