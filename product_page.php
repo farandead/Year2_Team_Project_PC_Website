@@ -100,11 +100,7 @@
                 </svg>
             <?php 
             
-            $url=$_SERVER['PHP_SELF'];
-            $url_components = parse_url($url);
-            echo  print_r(array_keys($url_components));
-            
-            parse_str($url_components['query'], $params);
+            echo $_GET["name"];
             
             $category="Accessories";
                 echo "<h1>".$category."</h1>";
