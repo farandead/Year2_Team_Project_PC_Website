@@ -1,0 +1,5 @@
+2560 x 1440 WQHD
+HDMI & DisplayPort
+165Hz / 1ms Response Time
+Panel Type: VA
+AMD Freesync

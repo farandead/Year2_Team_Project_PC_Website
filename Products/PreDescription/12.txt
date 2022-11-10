@@ -1,0 +1,3 @@
+AMD Ryzen 5 5600X 3.7GHz
+16GB RAM,Samsung 1TB M.2 NVMe SSD
+Asus NVIDIA GeForce RTX 3060 Ti

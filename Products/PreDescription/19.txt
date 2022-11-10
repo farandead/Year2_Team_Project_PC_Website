@@ -1,0 +1,4 @@
+Quiet
+Responsive
+Thin profile keys
+Media hotkeys

@@ -1,0 +1,5 @@
+Intel Core i7 11th Gen
+16GB DDR4 (2 x 8GB)
+512GB M.2 NVMe SSD
+NVIDIA RTX A2000
+15" FHD Display
