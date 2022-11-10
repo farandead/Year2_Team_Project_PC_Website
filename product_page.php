@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -102,6 +103,7 @@
             
             $category=$_GET["Category"];
             if($category==null){
+                header('Location: //www.w3docs.com');
                 exit();
             }
                 echo "<h1>".$category."</h1>";
