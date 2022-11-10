@@ -100,9 +100,12 @@
                 </svg>
             <?php 
             
-         
+         index.php
             $category=$_GET["Category"];
-            if($category==null){echo "BREAK";}
+            if($category==null){
+            Header('Location: index.php');
+                exit;
+            }
                 echo "<h1>".$category."</h1>";
             
             ?>
