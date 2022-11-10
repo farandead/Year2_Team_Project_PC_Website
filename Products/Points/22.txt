@@ -1,0 +1,49 @@
+Mechanical
+Flat Panel Mount Interface	75 x 75 mm
+Display Position Adjustments	Tilt
+Tilt Angle	-5/+15
+VESA Mounting Interface	75 x 75 mm
+General
+Native Resolution	Full HD (1080p) 1920 x 1080 at 75 Hz
+Energy Class	Class F
+Power Consumption (On mode)	24 W
+Display Type	LED-backlit LCD monitor / TFT active matrix
+Energy Consumption per Year	35 kWh
+Diagonal Size	24"
+Viewable Size	23.8"
+Adaptive-Sync Technology	AMD FreeSync
+Panel Type	IPS
+Aspect Ratio	16:9
+Pixel Pitch	0.2745 mm
+Brightness	250 cd/m²
+Contrast Ratio	1000:1
+Colour Support	16.7 million colours
+Response Time	5 ms
+Vertical Refresh Rate	48 - 75 Hz
+Horizontal Refresh Rate	30 - 83 kHz
+Horizontal Viewing Angle	178
+Vertical Viewing Angle	178
+Screen Coating	Anti-glare
+Backlight Technology	LED backlight
+Features	Game mode, Cinema Mode, Auto Resolution, Mega Dynamic Contrast Ratio, On-screen Digital Controls, Crosshair Display, Flicker Safe, Reader Mode, Smart Energy Saving technology, Black Stabilizer, Response Time Control
+Colour	Matte black
+Dimensions (WxDxH)	55.5 cm x 18.19 cm x 42.1 cm - with stand
+Weight	3.1 kg
+Manufacturer Warranty
+Service & Support	Limited warranty - 2 years
+Power
+Power Consumption (On mode)	19.9 W
+Voltage Required	AC 120/230 V
+Input Voltage	AC 120/230 V
+Power Consumption SDR (On mode)	19.9 kWh/1000h
+Power Consumption Stand by	0.3 Watt
+Power Consumption (Off Mode)	0.3 Watt
+Connectivity
+Interfaces	HDMI (HDCP) ¦ VGA ¦ Headphones
+Miscellaneous
+Features	Security lock slot (cable lock sold separately)
+Cables Included	1 x HDMI cable
+Compliant Standards	Plug and Play, FCC Class B certified, UL, TUV, cUL, CCC, DDC/CI, KC, ERP, EPA 7.0
+Security Slot Type	Kensington security slot
+Dimensions & Weight
+Dimensions & Weight Details	With stand - width: 55.5 cm - depth: 18.19 cm - height: 42.1 cm - weight: 3.1 kg ¦ Without stand - width: 55.5 cm - depth: 3.84 cm - height: 33.09 cm - weight: 2.8 kg

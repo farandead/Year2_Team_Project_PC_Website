@@ -1,0 +1,80 @@
+Display
+Bezel Type	Raised
+Features	Anti-glare, narrow-bezel design
+Type	15.6" - IPS
+LCD Backlight Technology	WLED backlight
+Resolution	1920 x 1080 (Full HD)
+Widescreen	Yes
+Image Aspect Ratio	16:9
+Image Brightness	250 cd/m²
+Colour Gamut	45% NTSC
+Memory
+RAM	8 GB (1 x 8 GB (non customer accessible / upgradeable))
+Max RAM Supported	16 GB
+Technology	DDR4 SDRAM - non-ECC
+Speed	2400 MHz / PC4-19200
+Rated Speed	2400 MHz
+Form Factor	SO-DIMM 260-pin
+Slots Qty	2
+Empty Slots	1
+Audio & Video
+Graphics Processor	AMD Radeon Graphics
+Camera	Yes - HD
+Video Resolutions	720p
+Sound	Stereo speakers, dual array microphone
+Input
+Type	Keyboard, touchpad
+Keyboard Layout	UK
+Numeric Keypad	Yes
+Features	Multi-touch touchpad, touchpad with gesture support
+Communications
+Wireless	Bluetooth 5.0, 802.11a/b/g/n/ac/ax
+Wireless Controller	Intel Wi-Fi 6 AX 200
+Network Interface	Gigabit Ethernet
+Ethernet Controller	Realtek RTL8111HSH-CG
+Features	Dual stream (2x2)
+Battery
+Technology	3-cell Lithium Ion
+Capacity	41 Wh
+AC Adapter
+Input	AC 120/230 V (50/60 Hz)
+Output	45 Watt, 19.5 V
+Connections & Expansion
+Interfaces	2 x USB 3.2 Gen 1 ¦ USB-C 3.2 Gen 1 ¦ HDMI ¦ LAN ¦ Headphone/microphone combo jack
+Memory Card Reader	Yes (SD Card, SDHC Card, SDXC Card)
+Software
+Software Included	HP Support Assistant, McAfee LiveSafe (30 days trial), HP Setup Integrated OOBE, HP Documentation, HP Audio Switch, HP JumpStart, Native Miracast, HP SSRM, Xerox DocuShare (90 days trial)
+Miscellaneous
+Colour	Dark ash silver
+Security	Firmware Trusted Platform Module (TPM 2.0) Security Chip
+Theft/Intrusion Protection	Security lock slot (cable lock sold separately)
+Security Slot Type	Kensington security slot
+Included Accessories	Power adapter, HP Smart AC Adapter
+Compliant Standards	UL, BSMI, CCC, FCC, ICES
+Localization	Language: English / region: United Kingdom
+Dimensions & Weight
+Dimensions (WxDxH)	35.8 cm x 24.2 cm x 1.99 cm
+Weight	1.74 kg
+Environmental Standards
+ENERGY STAR Certified	Yes
+Manufacturer Warranty
+Service & Support	Limited warranty - parts and labour - 1 year
+Environmental Parameters
+Min Operating Temperature	0 °C
+Max Operating Temperature	35 °C
+Humidity Range Operating	10 - 90% (non-condensing)
+Shock Tolerance (operating)	40 g @ 2 ms half-sine
+Shock Tolerance (non-operating)	240 g @ 2 ms half-sine
+Vibration Tolerance (operating)	1.043 g @ RMS (random)
+Vibration Tolerance (non-operating)	3.5 g @ RMS (random)
+General
+Product Type	Notebook
+Operating System	Windows 10 Pro 64-bit Edition - English
+Processor / Chipset
+CPU	AMD Ryzen 5 3500U / 2.1 GHz
+Max Turbo Speed	3.7 GHz
+Number of Cores	Quad-Core
+Cache	L3 - 4 MB
+64-bit Computing	Yes
+Storage
+Main Storage	256 GB SSD M.2 2280 PCIe - NVM Express (NVMe)

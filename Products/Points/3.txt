@@ -1,0 +1,55 @@
+General
+Product Type	Notebook
+Operating System	Windows 11 Home
+Processor / Chipset
+CPU	AMD Ryzen 5 4600H / 3 GHz
+Max Turbo Speed	4 GHz
+Number of Cores	6-core
+Cache	8 MB
+Memory
+RAM	8 GB (1 x 8 GB)
+Max RAM Supported	32 GB
+Technology	DDR4 SDRAM
+Speed	3200 MHz
+Form Factor	SO-DIMM 260-pin
+Storage
+Main Storage	512 GB SSD M.2 PCIe 3.0 - NVM Express (NVMe)
+Display
+Type	15.6"
+LCD Backlight Technology	LED backlight
+Resolution	1920 x 1080 (Full HD)
+V-Sync Rate at Max Res.	144 Hz
+Widescreen	Yes
+Image Aspect Ratio	16:9
+Colour Gamut	47.34% Adobe RGB, 62.5% sRGB
+Features	Anti-glare, Adaptive-Sync technology, IPS-level
+Audio & Video
+Graphics Processor	NVIDIA GeForce GTX 1650
+Video Memory	4 GB GDDR6 SDRAM
+Video System Features	NVIDIA Optimus
+Gaming	Yes
+Camera	Yes - 720p
+Sound	Stereo speakers, array microphone
+Compliant Standards	DTS Sound
+Audio Features	AI noise cancelling
+Input
+Type	Keyboard, touchpad
+Keyboard Backlight	Yes (RGB)
+Features	Chiclet keyboard
+Communications
+Wireless	802.11a/b/g/n/ac/ax, Bluetooth 5.1
+Network Interface	Gigabit Ethernet
+Features	Dual stream (2x2)
+AC Adapter
+Input	AC 100-240 V (50/60 Hz)
+Connections & Expansion
+Interfaces	Headphone/microphone combo jack ¦ HDMI ¦ 3 x USB 3.2 Gen 1 ¦ USB-C 3.2 Gen 2 ¦ LAN ¦ USB-C 3.2 Gen 1 (supports DisplayPort Alt Mode)
+Miscellaneous
+Security	Firmware Trusted Platform Module (TPM) Security Chip
+Features	System password
+Theft/Intrusion Protection	Security lock slot (cable lock sold separately)
+Security Slot Type	Kensington security slot
+Included Accessories	Power adapter
+Dimensions & Weight
+Dimensions (WxDxH)	35.9 cm x 25.6 cm
+Weight	2.3 kg

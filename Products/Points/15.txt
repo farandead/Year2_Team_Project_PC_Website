@@ -1,0 +1,116 @@
+Camera
+Resolution (MP)	5 Megapixel
+Resolution	720p
+Features	LED indicator, privacy shutter
+Camera	Yes
+Input Device
+Type	Mouse, keyboard
+Keyboard
+Keyboard Name	Lenovo Calliope Keyboard
+Interface	USB
+Localization & Layout	UK
+Mouse
+Mouse Name	Lenovo Calliope Mouse
+Interface	USB
+Audio Input
+Type	Dual array microphone
+Networking
+Ethernet Controller	Realtek RTL8111H
+Wireless LAN Supported	Yes
+Wireless NIC	Intel Wi-Fi 6 AX 201
+Data Link Protocol	Ethernet, Fast Ethernet, Gigabit Ethernet, IEEE 802.11b, IEEE 802.11a, IEEE 802.11g, IEEE 802.11n, IEEE 802.11ac, IEEE 802.11ax (Wi-Fi 6), Bluetooth 5.2
+Features	Dual stream (2x2)
+Expansion / Connectivity
+Bays	1 (total) / 1 (free) x internal 2.5"
+Slots	1 (total) / 0 (free) x M.2 Card (for WLAN) ¦ 1 (total) / 0 (free) x M.2 Card (for SSD)
+Interfaces	2 x USB 2.0 ¦ 2 x USB 3.2 Gen 2 ¦ 1 x HDMI output ¦ 1 x LAN (Gigabit Ethernet) ¦ 1 x headphones/microphone (1 bottom)
+Miscellaneous
+Theft/Intrusion Protection	Security lock slot (cable lock sold separately)
+Security Slot Type	Kensington security slot
+Compliant Standards	RoHS, WEEE, REACH, TUV Rheinland Low Blue Light Certification, Energy-Related Products (ErP) Lot 3, TUV Rheinland Flicker Free Certification, Energy-Related Products (ErP) Lot 7, TUV Rheinland Low Noise Certification
+Manufacturer Selling Program	TopSeller
+Power
+Device Type	Power adapter
+Voltage Required	AC 100-240 V (50/60 Hz)
+Power Provided	90 Watt
+Efficiency	89%
+Operating System / Software
+OS Provided	Windows 11 Pro English
+Environmental Standards
+EPEAT Compliant	EPEAT Silver
+ENERGY STAR Certified	Yes
+ENERGY STAR Version	8.0
+Manufacturer Warranty
+Service & Support	Base warranty - 1 year - on-site ¦ Extended warranty - 3 years - on-site
+Dimensions & Weight
+Dimensions & Weight Details	54.1 cm - 22 cm - 48.044 cm - 6.6 kg - with stand (highest position) ¦ 54.1 cm - 22 cm - 38.044 cm - 6.6 kg - with stand (lowest position)
+Width	54.1 cm
+Depth	22 cm
+Height	38.044 cm
+Weight	6.6 kg
+Dimensions & Weight (Shipping)
+Shipping Width	69.5 cm
+Shipping Depth	19.6 cm
+Shipping Height	56.9 cm
+Shipping Weight	10.74 kg
+Environmental Parameters
+Min Operating Temperature	5 °C
+Max Operating Temperature	35 °C
+Humidity Range Operating	20 - 80%
+General
+Type	Personal computer
+Bundled Services	3 Years Lenovo Onsite Support
+Product Form Factor	All-in-one - with Full Function Monitor stand
+Built-in Devices	Stereo speakers
+Embedded Security	Firmware Trusted Platform Module (TPM 2.0) Security Chip
+Colour	Raven black
+Localisation	Language: English / region: United Kingdom
+Processor / Chipset
+CPU	Intel Core i5 (12th Gen) 1240P
+Clock Speed	1.7 GHz (P-core) / 1.2 GHz (E-core)
+Max Turbo Speed	4.4 GHz (P-core) / 3.3 GHz (E-core)
+Number of Cores	12-core
+CPU Qty	1
+Max CPU Qty	1
+Cache Memory
+Installed Size	12 MB
+Cache Per Processor	12 MB
+RAM
+Installed Size	8 GB / 16 GB (max)
+Technology	DDR4 SDRAM
+Effective Memory Speed	3200 MHz
+Rated Memory Speed	3200 MHz
+Form Factor	SO-DIMM 260-pin
+Slots	2 (Total) / 1 (empty)
+Features	Dual channel memory architecture
+Configuration Features	1 x 8 GB
+Hard Drive
+Type	SSD - M.2 2280
+Capacity	1 x 256 GB
+Interface Type	PCI Express 4.0 x4
+Features	NVM Express (NVMe)
+Storage Controller
+Type	1 x SATA
+Optical Storage
+Type	No optical drive
+Monitor
+Monitor Type	LED
+Diagonal Size	23.8"
+Native Resolution	1920 x 1080 (Full HD)
+V-Sync Rate at Max Res.	60 Hz
+Widescreen Display	Yes
+Image Aspect Ratio	16:9
+Horizontal Viewing Angle	+89 / -89
+Vertical Viewing Angle	+89 / -89
+Colour Gamut	72% NTSC
+Response Time	14 ms
+Image Brightness	250 cd/m²
+Image Contrast Ratio	1000:1
+Monitor Features	Anti-glare, Wide Viewing Angle, borderless
+Graphics Controller
+Graphics Processor	Intel Iris Xe Graphics Shared Video Memory (UMA)
+Video Interfaces	HDMI
+Max Monitors Supported	2
+Audio Output
+Compliant Standards	High Definition Audio
+Speakers Included	2 x right / left channel

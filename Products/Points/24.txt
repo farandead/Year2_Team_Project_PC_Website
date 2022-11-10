@@ -1,0 +1,46 @@
+General
+Display Type	OLED monitor / OLED
+Energy Class	Class E
+Energy Class (HDR)	Class E
+Diagonal Size	32"
+Viewable Size	31.5"
+Built-in Devices	USB 3.0/USB-C hub
+USB Power Delivery	90 Watt
+Aspect Ratio	16:9
+Native Resolution	4K 3840 x 2160 at 60 Hz
+Pixel Pitch	0.1818 mm
+Brightness	250 cd/m²
+Contrast Ratio	1000000:1
+HDR Format	HDR10
+HDR Certification	DisplayHDR 400 True Black
+Colour Support	1.07 billion colours
+Colour Gamut	99% Adobe RGB (CIE 1976), 99% DCI-P3 (CIE 1976)
+Response Time	1 ms (grey-to-grey)
+Horizontal Viewing Angle	178
+Vertical Viewing Angle	178
+Screen Coating	Anti-glare
+Features	Wide Colour Gamut, Color Calibrated, Hardware Calibration Ready, 10-bit Colour Depth, 8M Pixel Dimming
+Dimensions (WxDxH)	72.65 cm x 23.93 cm x 50.65 cm - with stand
+Weight	5.5 kg
+Connectivity
+Interfaces	HDMI ¦ 2 x DisplayPort 1.4 ¦ USB-C/DisplayPort Alt Mode (power up to 90W) ¦ Headphones ¦ USB 3.0 upstream (Type B) ¦ 3 x USB 3.0 downstream
+Mechanical
+Display Position Adjustments	Height, pivot (rotation), tilt
+VESA Mounting Interface	100 x 100 mm
+Miscellaneous
+Features	Security lock slot (cable lock sold separately)
+Cables Included	1 x HDMI cable ¦ 1 x DisplayPort cable ¦ 1 x USB-C cable ¦ 1 x USB type A to USB type B cable ¦ 1 x USB-A to USB-C adapter
+Security Slot Type	Kensington security slot
+Power
+Input Voltage	AC 100-240 V (50/60 Hz)
+Power Consumption (On mode)	27 W
+Power Consumption SDR (On mode)	27 kWh/1000h
+Power Consumption HDR (On mode)	27 kWh/1000h
+Power Consumption (Typical)	72 Watt
+Power Consumption (Max)	210 Watt
+Power Consumption Sleep	0.5 Watt
+Power Consumption (Off Mode)	0.3 Watt
+Software / System Requirements
+Included Software	Dual Controller Software, True Color Pro, LG On-Screen Control
+Dimensions & Weight
+Dimensions & Weight Details	With stand (lowest position) - width: 72.65 cm - depth: 23.93 cm - height: 50.65 cm - weight: 5.5 kg ¦ With stand (highest position) - width: 72.65 cm - depth: 23.93 cm - height: 61.65 cm - weight: 5.5 kg ¦ Without stand - width: 72.65 cm - depth: 3.53 cm - height: 43.58 cm - weight: 3.8 kg

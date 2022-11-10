@@ -1,0 +1,10 @@
+Processor: AMD Ryzen 5 3600 (6 Cores up to 4.2GHz, 32MB Cache)
+Memory: 8GB Corsair Vengeance LPX 3200MHz
+Hard Drive: Samsung 980 500GB PCIe 3.0 NVMe M.2 Internal SSD &
+GPU: NVIDIA GeForce RTX 3060 *
+Power Supply: Corsair TX550m
+Motherboard: MSI B550M PRO-VDH WIFI Motherboard
+Cooling: AMD Wraith Prism RGB LED 75E
+WiFi: None
+Operating System: No OS
+Case: Onyx

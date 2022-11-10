@@ -1,0 +1,36 @@
+General
+Device Type	Keyboard
+Interface	2.4 GHz
+Max Operating Distance	Up to 10 m
+Wireless Receiver	Nano USB wireless receiver
+Input Device
+Type	Wireless
+Keys Qty	105
+Hot Keys Qty	10
+Hot Keys Function	Calculator, e-mail, volume, browser, lock computer, play/pause, previous track, next track, volume -, volume +
+Localization and Layout	QWERTY UK
+Keyboard Technology	Scissors
+Key Switch Type	CHERRY SX
+Adjustable Height	Yes
+Features	Numeric keypad
+Width	46.22 cm
+Depth	16.22 cm
+Height	2.31 cm
+Weight	920 g
+Miscellaneous
+Colour	Black
+Compliant Standards	WHQL, AES-128, VDE GS, China RoHS, cRUus
+MTBF	80,000 hours
+Key Life Span	20 million clicks
+Software & System Requirements
+OS Required	Microsoft Windows 7 / 8 / 10
+Battery
+Type	AA type
+Installed Qty	2
+Required Qty	2
+Run Time (Up To)	36 months
+Dimensions & Weight (Shipping)
+Shipping Width	47.8 cm
+Shipping Depth	20.3 cm
+Shipping Height	2.5 cm
+Shipping Weight	1.074 kg

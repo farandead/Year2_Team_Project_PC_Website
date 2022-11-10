@@ -1,0 +1,12 @@
+Processor Intel Core i7 11th Gen
+RAM 16GB DDR4 (2 x 8GB)
+Storage 512GB M.2 NVMe SSD
+Screen Size / Resolution 15 inch | 1920 x 1080 (FHD)
+Operating System Windows 10 Pro
+Graphics NVIDIA RTX A2000
+WIFI / BT Yes | Yes
+Connectivity HDMI | THUNDERBOLT / USB-4 | USB-C | USB 3.2
+Touchscreen No
+Optical Drive None
+Webcam Yes
+Numeric Keypad Yes

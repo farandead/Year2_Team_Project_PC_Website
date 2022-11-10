@@ -1,0 +1,22 @@
+General
+Device Type	Keyboard
+Backlit	RGB / 16.8 million colours
+Interface	USB
+Input Device
+Hot Keys Function	Multimedia, programmable, volume, macros buttons, G-Key
+Localization and Layout	QWERTY UK
+Keyboard Technology	Mechanical
+Key Switch Type	GL Tactile
+Gaming	Yes
+Detachable Cable	Yes
+Width	47.5 cm
+Depth	15 cm
+Height	2.2 cm
+Weight	1.045 kg
+Expansion / Connectivity
+Interfaces	2 x USB
+Miscellaneous
+Colour	Black
+Cable Length	1.8 m
+Software & System Requirements
+OS Required	Microsoft Windows 7 or later, Apple MacOS 10.11 or later

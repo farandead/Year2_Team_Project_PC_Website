@@ -1,0 +1,60 @@
+ommunications
+Wireless	Bluetooth 5.2, 802.11a/b/g/n/ac/ax (Wi-Fi 6E)
+Wireless Controller	Killer Wi-Fi 6E AX1690
+Network Interface	2.5 Gigabit Ethernet
+Compliant Standards	IEEE 802.11az
+General
+Product Type	Notebook
+Operating System	Windows 11 Home
+Processor / Chipset
+CPU	Intel Core i7 (12th Gen) 12800H / 2.4 GHz
+Max Turbo Speed	4.8 GHz
+Number of Cores	14-core
+Cache	24 MB
+Features	Intel Turbo Boost Technology, Intel Platform Trust Technology (PTT)
+Memory
+RAM	32 GB (2 x 16 GB)
+Technology	DDR5 SDRAM
+Speed	4800 MHz
+Rated Speed	4800 MHz
+Storage
+Main Storage	1 TB SSD M.2 PCIe 4.0 x4 - NVM Express (NVMe)
+Display
+Type	17.3"
+Resolution	1920 x 1080 (Full HD)
+V-Sync Rate at Max Res.	360 Hz
+Widescreen	Yes
+Colour Gamut	100% sRGB
+Features	Anti-glare, Factory Calibration, 3 ms response rate, 6 mm bezel
+Audio & Video
+Graphics Processor	NVIDIA GeForce RTX 3080 Ti
+Video Memory	8 GB GDDR6 SDRAM
+Video System Features	NVIDIA Battery Boost technology, NVIDIA WhisperMode, NVIDIA GPU Boost Technology
+Camera	Yes - 1080p
+Camera Features	IR camera, Windows Hello
+Sound	Eight speakers, 2 multi-array microphones
+Compliant Standards	THX Spatial Audio
+Input
+Type	Keyboard, touchpad
+Keyboard Backlight	Yes (RGB)
+Features	Anti-ghosting, per key Chroma, precision glass touchpad
+Battery
+Capacity	82 Wh
+AC Adapter
+Output	280 Watt
+Connections & Expansion
+Slots	2 x M.2 (PCI Express 4.0 x4) (1 free)
+Interfaces	2 x USB-C (supports Thunderbolt 4) ¦ USB-C 3.2 Gen 2 (Power Delivery 3.0) ¦ 3 x USB 3.2 Gen 2 ¦ HDMI ¦ Headphone/microphone combo jack ¦ LAN
+Memory Card Reader	Yes (SDXC UHS-II Card)
+Miscellaneous
+Colour	Black
+Case Material	Aluminum
+Surface Finish	Anodising
+Security	Firmware Trusted Platform Module (TPM 2.0) Security Chip
+Features	Fingerprint-resistant coating, illuminated Razer logo, vapor chamber cooling system
+Theft/Intrusion Protection	Security lock slot (cable lock sold separately)
+Security Slot Type	Kensington security slot
+Included Accessories	Power adapter
+Dimensions & Weight
+Dimensions (WxDxH)	39.5 cm x 26 cm x 1.99 cm
+Weight	2.75 kg

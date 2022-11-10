@@ -1,0 +1,10 @@
+Processor: AMD Ryzen 5 5600X (6 Cores up to 4.6GHz, 32MB Cache)
+Memory: 16GB Corsair Vengeance LPX 3200MHz (2x8GB)
+Hard Drive: 1TB Samsung 980 PCIe NVMe M.2 SSD - Gen3 &
+GPU: ASUS NVIDIA GeForce RTX 3060Ti *
+Power Supply: Corsair CV750 750W Power Supply
+Motherboard: ASUS PRIME B550M-K (Ryzen AM4) micro ATX motherboard
+Cooling: Coolermaster Hyper 212 RGB
+WiFi: WIFI - AC1200
+Operating System: Windows 11 Home Advanced
+Case: Diamond

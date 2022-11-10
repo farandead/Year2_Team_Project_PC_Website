@@ -1,0 +1,52 @@
+General
+Energy Class	Class G
+Bezel Type	Flat front
+Features	Blue light reduction, MSI Anti-Flicker, frameless bezel design, night vision mode
+Response Time	4 ms (grey-to-grey), 1 ms (MPRT)
+Display Type	LED-backlit LCD monitor / TFT active matrix
+Energy Consumption per Year	57 kWh
+Diagonal Size	27"
+Curved Screen	Yes (1500R)
+Adaptive-Sync Technology	AMD FreeSync
+Panel Type	VA
+Aspect Ratio	16:9
+Native Resolution	WQHD 2560 x 1440 (DisplayPort: 165 Hz, HDMI: 144 Hz)
+Pixel Pitch	0.2331 mm
+Brightness	250 cd/m²
+Contrast Ratio	3000:1 / 100000000:1 (dynamic)
+Colour Support	16.7 million colours (8-bit)
+Colour Gamut	115% sRGB, 92% DCI-P3
+Vertical Refresh Rate	48 - 165 Hz
+Horizontal Refresh Rate	70.56 - 243.37 kHz
+Gaming	Yes
+Horizontal Viewing Angle	178
+Vertical Viewing Angle	178
+Screen Coating	Anti-glare
+Backlight Technology	LED backlight
+Colour	Black
+Dimensions (WxDxH)	61.15 cm x 22.54 cm x 45.79 cm - with stand
+Weight	5.4 kg
+Power
+Power Consumption (On mode)	32.2 W
+Power Consumption Operational	40 Watt
+Voltage Required	AC 120/230 V (50 - 60 Hz)
+Input Voltage	AC 120/230 V (50 - 60 Hz)
+Power Consumption SDR (On mode)	32.2 kWh/1000h
+Power Consumption (Typical)	40 Watt
+Power Consumption Stand by	0.5 Watt
+Power Consumption (Off Mode)	0.3 Watt
+Input
+Type	5-way joystick
+Connectivity
+Interfaces	DisplayPort ¦ 2 x HDMI ¦ Headphones
+Mechanical
+Display Position Adjustments	Tilt
+Tilt Angle	-5/+20
+VESA Mounting Interface	100 x 100 mm
+Miscellaneous
+Features	Security lock slot (cable lock sold separately)
+Cables Included	1 x HDMI cable ¦ 1 x DisplayPort cable
+Compliant Standards	VCCI, BSMI, CB, PSE Mark, MEPS, KC, RCM, MSIP, DisplayPort 1.2a, CE/EMC, K-MEPS, CIE1976
+Security Slot Type	Kensington security slot
+Dimensions & Weight
+Dimensions & Weight Details	With stand - width: 61.15 cm - depth: 22.54 cm - height: 45.79 cm - weight: 5.4 kg ¦ Without stand - width: 61.15 cm - depth: 7.59 cm - height: 37.28 cm

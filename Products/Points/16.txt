@@ -1,0 +1,90 @@
+Monitor
+Bezel Type	Flat front
+Monitor Type	LED
+Diagonal Size	27"
+Native Resolution	5120 x 2880 (5K)
+Widescreen Display	Yes
+Image Brightness	500 cd/m²
+Monitor Features	LED-backlit, Wide Colour Gamut, arsenic free, True Tone technology, standard glass
+Power
+Nominal Voltage	AC 120/230 V (50/60 Hz)
+Device Type	Power supply
+Voltage Required	AC 100-240 V (50/60 Hz)
+Processor / Chipset
+CPU	Intel Core i5 (10th Gen)
+Clock Speed	3.3 GHz
+Max Turbo Speed	4.8 GHz
+Number of Cores	6-core
+CPU Qty	1
+Max CPU Qty	1
+Processor Main Features	Intel Turbo Boost Technology
+Networking
+Compliant Standards	IEEE 802.11b, IEEE 802.11a, IEEE 802.11g, IEEE 802.11n, IEEE 802.11ac, Bluetooth 5.0
+Wireless LAN Supported	Yes
+Data Link Protocol	Ethernet, Fast Ethernet, Gigabit Ethernet, IEEE 802.11b, IEEE 802.11a, IEEE 802.11g, IEEE 802.11n, IEEE 802.11ac, Bluetooth 5.0
+General
+Built-in Devices	Microphone, stereo speakers
+Localisation	Language: English / region: United Kingdom
+Type	Personal computer
+Product Form Factor	All-in-one
+RAM
+Installed Size	8 GB
+Technology	DDR4 SDRAM
+Effective Memory Speed	2666 MHz
+Form Factor	SO-DIMM 260-pin
+Slots	4 (Total) / 2 (empty)
+Configuration Features	2 x 4 GB
+Hard Drive
+Type	SSD
+Capacity	1 x 512 GB
+Optical Storage
+Type	No optical drive
+Card Reader
+Type	Card reader
+Supported Flash Memory Cards	SD Memory Card, SDHC UHS-II Memory Card, SDXC UHS-II Memory Card
+Graphics Controller
+Graphics Processor	AMD Radeon Pro 5300
+Video Memory	4 GB GDDR6 SDRAM
+Video Interfaces	USB-C
+Audio Output
+Sound Output Mode	Stereo
+Speakers Included	2 x right / left channel
+Camera
+Camera	Yes
+Resolution	1080p
+Features	FaceTime HD camera
+Input Device
+Type	Mouse, keyboard
+Keyboard
+Keyboard Name	Apple Magic Keyboard
+Connectivity	Wireless
+Interface	Bluetooth
+Localization & Layout	UK
+Mouse
+Mouse Name	Apple Magic Mouse 2
+Connectivity	Wireless
+Technology	Laser
+Interface	Bluetooth
+Features	Multi-Touch
+Audio Input
+Type	3-microphone array
+Expansion / Connectivity
+Interfaces	2 x Thunderbolt 3/DisplayPort/USB-C 3.1 Gen 2 ¦ 4 x USB 3.0 ¦ 1 x LAN (Gigabit Ethernet) ¦ 1 x headphones/microphone
+Miscellaneous
+Included Accessories	Cleaning cloth
+Cables Included	Lightning to USB cable
+Theft/Intrusion Protection	Security lock slot (cable lock sold separately)
+Security Slot Type	Kensington security slot
+Compliant Standards	BFR-free, PVC-free, Beryllium-free, Mercury-free
+Operating System / Software
+OS Provided	Apple macOS Big Sur 11.0
+Software	Apple iTunes, Apple Mac OS X Mail, Apple iPhoto, Apple iMovie, Apple Safari, Apple GarageBand, Apple Dashboard, Apple Spotlight, Photo Booth, Power Saver, Apple Time Machine, Apple FaceTime, Apple Mission Control, Apple Preview, Maps, Reminders, App Store, Contacts, Notes, Calendar, Apple AirDrop, Siri, Notification Center, Messages, Dictation, iCloud, Game Center, Apple AirPlay, Apple iBooks, Apple Keynote, Apple Pages, Apple Numbers, Facebook, Twitter, Family Sharing
+Environmental Standards
+ENERGY STAR Certified	Yes
+Manufacturer Warranty
+Service & Support	Limited warranty - 1 year ¦ Technical support - phone consulting - 90 days
+Dimensions & Weight
+Width	65 cm
+Depth	20.3 cm
+Height	51.6 cm
+Weight	8.92 kg

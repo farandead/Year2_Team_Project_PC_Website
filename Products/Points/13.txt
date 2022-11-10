@@ -1,0 +1,10 @@
+Processor: AMD Ryzen 9 5950X (16 Cores up to 4.9GHz, 64MB Cache)
+Memory: 64GB Corsair Vengeance RGB Pro 3600MHz (4x16GB)
+Hard Drive: Samsung 970 EVO Plus V-NAND M.2 2TB SSD, Samsung 980 PRO V-NAND M.2 1TB & None
+GPU: Asus GeForce RTX 3090 24GB ROG STRIX OC *
+Power Supply: Asus 1200W ROG THOR
+Motherboard: ASUS ROG STRIX X570-F GAMING
+Cooling: Custom watercooled loop
+WiFi: ADD-XWP3000E1 AX Wifi PCI-E Card Wifi 6
+Operating System: Windows 11 Home
+Case: Corsair iCUE 7000X RGB Tempered Glass Black

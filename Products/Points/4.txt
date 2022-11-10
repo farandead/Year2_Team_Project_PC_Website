@@ -1,0 +1,77 @@
+General
+Product Type	Notebook
+Operating System	Windows 11 Home - English
+Processor / Chipset
+CPU	AMD Ryzen 5 5600H / 3.3 GHz
+Max Turbo Speed	4.2 GHz
+Number of Cores	6-core
+Cache	L3 - 16 MB
+Features	Integrated memory controller
+Memory
+RAM	8 GB (1 x 8 GB)
+Max RAM Supported	16 GB
+Technology	DDR4 SDRAM
+Speed	3200 MHz
+Rated Speed	3200 MHz
+Form Factor	SO-DIMM 260-pin
+Slots Qty	2
+Empty Slots	1
+Storage
+Main Storage	512 GB SSD M.2 2242 PCIe 3.0 x4 - NVM Express (NVMe)
+Display
+Type	15.6" - IPS
+LCD Backlight Technology	LED backlight
+Resolution	1920 x 1080 (Full HD)
+V-Sync Rate at Max Res.	120 Hz
+Widescreen	Yes
+Image Aspect Ratio	16:9
+Image Brightness	250 cd/m²
+Colour Gamut	45% NTSC
+Features	Anti-glare, FreeSync Technology, 170° viewing angle, DC dimmer
+Audio & Video
+Multi-GPU Configuration	1 single GPU card / integrated GPU
+Graphics Processor	NVIDIA GeForce RTX 3050 Ti / AMD Radeon Graphics
+Video Memory	4 GB GDDR6 SDRAM
+Max Monitors Supported	1 external monitor(s)
+Gaming	Yes
+Camera	Yes - 720p
+Camera Features	Privacy shutter
+Sound	Stereo speakers, dual array microphone
+Codec	Realtek ALC3287
+Compliant Standards	High Definition Audio
+Audio Features	Nahimic audio
+Input
+Type	Keyboard, touchpad
+Keyboard Backlight	Yes
+Keyboard Layout	UK
+Numeric Keypad	Yes
+Features	Multi-touch touchpad, buttonless touchpad, white LED backlight
+Communications
+Wireless	Bluetooth 5.0, 802.11a/b/g/n/ac/ax
+Wireless Controller	M.2 Card
+Network Interface	Gigabit Ethernet
+Features	Dual stream (2x2)
+Battery
+Technology	Lithium polymer
+Capacity	45 Wh
+Run Time	Up to 5 hours
+AC Adapter
+Input	AC 100-240 V (50/60 Hz)
+Output	170 Watt
+Connections & Expansion
+Interfaces	2 x USB 3.2 Gen 1 ¦ USB-C 3.2 Gen 1 ¦ HDMI ¦ Headphone/microphone combo jack ¦ LAN
+Software
+Software Included	Microsoft Office (Trial)
+Miscellaneous
+Colour	Shadow black
+Case Material	Polycarbonate ABS (bottom), polycarbonate ABS (top)
+Surface Finish	IMR
+Security	Firmware Trusted Platform Module (TPM 2.0) Security Chip
+Features	Administrator password, hard drive password, power-on password, Rapid Charge Pro
+Included Accessories	Power adapter
+Compliant Standards	RoHS, Energy-Related Products (ErP) Lot 3
+Localization	Language: English / region: United Kingdom
+Manufacturer Selling Program	TopSeller
+Dimensions & Weight
+Dimensions (WxDxH)	35.96 cm x 25.19 cm x 2.42 cm
+Weight	2.25 kg

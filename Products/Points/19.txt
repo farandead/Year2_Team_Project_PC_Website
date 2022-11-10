@@ -1,0 +1,16 @@
+Localisation	English - United Kingdom
+Device Type	Keyboard
+Interface	USB
+Input Device
+Layout	English - United Kingdom
+Localization and Layout	UK
+Hot Keys Function	Multimedia, calculator, volume, mute
+Features	Spillproof
+Width	45.6 cm
+Depth	16 cm
+Miscellaneous
+Colour	Black
+Cables Included	1 x USB cable
+Compatible with Windows 7	"Compatible with Windows 7" software and devices carry Microsoft's assurance that these products have passed tests for compatibility and reliability with 32-bit and 64-bit Windows 7.
+Software & System Requirements
+OS Required	Microsoft Windows XP SP2, Microsoft Windows Vista, Apple MacOS X 10.2 - 10.5
