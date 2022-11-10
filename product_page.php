@@ -100,9 +100,8 @@
                 </svg>
             <?php 
             
-            echo $_GET["name"];
-            
-            $category="Accessories";
+         
+            $category=$_GET["name"];
                 echo "<h1>".$category."</h1>";
             
             ?>
