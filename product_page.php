@@ -100,7 +100,7 @@
                 </svg>
             <?php 
             
-            $url=$_SERVER['HTTP_REFERER'];
+            $url=$_SERVER['PHP_SELF'];
             $url_components = parse_url($url);
             parse_str($url_components['query'], $params);
             
