@@ -102,7 +102,6 @@
             
             $category=$_GET["Category"];
             if($category==null){
-            header('Location:index.php');
                 exit;
             }
                 echo "<h1>".$category."</h1>";
