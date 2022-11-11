@@ -144,7 +144,7 @@ require "PHP/IndProductPriceDis.php";
                     $text=$NamePR;
                     $insert="<br>";
 
-                    require "PHP/textCutter.php ";
+                    require "PHP/textCutter.php";
                     
                     
                     $NamePR=$text;
