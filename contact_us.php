@@ -199,10 +199,10 @@
                 </div>
                 <?php  if (empty($errors)) {
 
-         echo '$_POST['name']';
-         echo '$_POST['email']';    
-         echo '$_POST['subject']';    
-         echo '$_POST['message']';    
+         var_dump($_POST['name']);
+         var_dump( $_POST['email']);    
+         var_dump( $_POST['subject']);    
+         var_dump( $_POST['message']);    
                                                                
      }?>
             </form>
