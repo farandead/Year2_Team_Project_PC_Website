@@ -119,7 +119,7 @@
                     <p id="bannerText">
                         LEADING THE WAY IN BESPOKE PC SYSTEMS AND LAPTOP GAMING
                         <br>
-                        <a href="#"> <button class="linkButton">SEE COLLECTIONS</button>
+                        <a href="categories.php"> <button class="linkButton">SEE COLLECTIONS</button>
                     </p>
 
                 </div>
