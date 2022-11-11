@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '/home2/babimors/public_html/PHPMailer/src/Exception.php';
-require '/home2/babimors/public_html/PHPMailer/src/PHPMailer.php';
-require '/home2/babimors/public_html/PHPMailer/src/SMTP.php';
+require '/home2/babimors/comp-uk.motorsfeere.com/PHPMailer/src/Exception.php';
+require '/home2/babimors/comp-uk.motorsfeere.com/PHPMailer/src/PHPMailer.php';
+require '/home2/babimors/comp-uk.motorsfeere.com/PHPMailer/src/SMTP.php';
 
 function sendMail($emailFrom,$email_from_alias,$email_to, $object, $body){
 
