@@ -1,4 +1,4 @@
-<?php. include_once '/home2/babimors/comp-uk.motorsfeere.com/phpScript/send_email.inc.php'; ?>
+<?php include_once '/home2/babimors/comp-uk.motorsfeere.com/phpScript/send_email.inc.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
