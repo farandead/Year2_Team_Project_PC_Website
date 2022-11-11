@@ -110,7 +110,7 @@
                 </div>
                
                 <?php
-                require "PHP/IndProductPriceDis.php ";
+                require "PHP/IndProductPriceDis.php";
                 ?>
                 
                 
