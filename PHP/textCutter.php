@@ -5,7 +5,9 @@
                       $tracker=false;
                       while($tracker){
                       if($text[$position+1]!=" "){
+                        echo $text[$position+1];
                       $position=$position+1;
+                        
                       }
                       else{
                       $tracker=true;
