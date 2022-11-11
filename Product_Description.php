@@ -182,7 +182,7 @@ require "PHP/IndProductPriceDis.php";
             <div class="specific-description-main-container dark_target">
                 <div class="specific-description-sub-container dark_target">
                     <div class="specific-heading dark_target">
-                        <p>CHIPSET</p>
+                        <p>SPECIFICATIONS</p>
                     </div>
                     <div class="specific-description-details dark_target">
                         <div class="description-details-title">
@@ -196,7 +196,7 @@ require "PHP/IndProductPriceDis.php";
                 </div>
                 <div class="specific-description-sub-container">
                     <div class="specific-heading">
-                        <p>MEMORY</p>
+                        <p>DESCRIPTION</p>
                     </div>
                     <div class="specific-description-details dark_target">
                         jawdlaldjlkawdjjjjjaljdlajwdljaldjaljdlkwajdljawldjaljdwljawdajdlajdwljaldjlawjldjlajdwjlj
