@@ -138,7 +138,7 @@ require "PHP/IndProductPriceDis.php";
                     <?php
                     $NamePR=$res["Product_Name"];
                     $NamePRL=Strlen($NamePR);
-                    $Jump=10;
+                    $Jump=20;
                     $Changes= (int)($NamePRL/ $Jump);
                     
                     if($Changes>0){
