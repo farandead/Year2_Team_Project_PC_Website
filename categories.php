@@ -140,7 +140,68 @@
                     </div>
                 </div>
             </div>
+            
+              
+            
         </div>
+    
+    
+    <!-- -->
+            <div class="devices-container" id="desktop_container">
+                     <div class=" devices-sub-container-product ">
+                <div class ="category-details">
+                    <div class="category-details-title">Desktops</div>
+                    <div class="category-details-img1"><img src="img/AGILITY_PRO.webp" alt=""></div>
+                    <div class="category-details-description">
+                        <ul class="description-ulisted">
+                            <li class="description-ulisted-item">High End Desktops</li>
+                            <li class="description-ulisted-item">Wide variety of specs</li>
+                            <li class="description-ulisted-item">Bargain Prices</li>
+                        </ul>
+                    </div>
+                    <div class="category-details-browse-button">
+                        <button>BROWSE DESKTOPS ></button>
+                    </div>
+                </div>
+            </div>
+            <div class=" devices-sub-container-product ">
+                <div class ="category-details">
+                    <div class="category-details-title">Laptops</div>
+                    <div class="category-details-img2"><img src="img/Lafife Pro 15 6.webp" alt=""></div>
+                    <div class="category-details-description">
+                        <ul class="description-ulisted">
+                            <li class="description-ulisted-item">High End Laptops</li>
+                            <li class="description-ulisted-item">Wide variety of specs</li>
+                            <li class="description-ulisted-item">Bargain Prices</li>
+                        </ul>
+                    </div>
+                    <div class="category-details-browse-button">
+                        <button>BROWSE LAPTOPS ></button>
+                    </div>
+                </div>
+            </div>
+            <div class=" devices-sub-container-product ">
+                <div class ="category-details">
+                    <div class="category-details-title">Peripherals</div>
+                    <div class="category-details-img3"><img src="img/Product IMG/Product image 16.png" alt=""></div>
+                    <div class="category-details-description">
+                        <ul class="description-ulisted">
+                            <li class="description-ulisted-item">High End Peripherals</li>
+                            <li class="description-ulisted-item">Wide variety to choose from</li>
+                            <li class="description-ulisted-item">Bargain Prices</li>
+                        </ul>
+                    </div>
+                    <div class="category-details-browse-button">
+                        <button>BROWSE PERIPHERALS ></button>
+                    </div>
+                </div>
+            </div>
+            
+              
+            
+        </div>
+    
+    <!-- -->
     
     </div>
 
