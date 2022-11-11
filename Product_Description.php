@@ -127,7 +127,10 @@
             </div>
             <div class="main-product-sub-container">
                 <div class="main-product-heading-container">
-                    <h2>LAFIFE 15.6</h2>
+                    <?php
+                    echo "<h2>".$res["Product_Name"]."</h2>";
+                    ?>
+                    
                 </div>
                 <div class="main-product-heading-description-container">
                     <ul class="description-ulisted">
