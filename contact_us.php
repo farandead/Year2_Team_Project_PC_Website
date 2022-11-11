@@ -160,10 +160,10 @@ if (empty($errors)) {
 
         }
         */
-    if ($confirmationMail) {
+    
                 //echo "YOU ARE IN !";
                  echo "<script>alert('Message Sent');</script>";
-    }
+    
     
 } } ?>
     <div class="contact1 dark_target">
