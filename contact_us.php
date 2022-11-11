@@ -119,13 +119,6 @@
             $errors[] = "Please enter your  message";
         }
     
-    if (empty($errors)) {
-
-         echo '$_POST['name']';
-         echo '$_POST['email']';    
-         echo '$_POST['subject']';    
-         echo '$_POST['message']';    
-                                                               
      }
     ?>
 <!-- 
@@ -198,14 +191,22 @@
                 </div>
 
                 <div class="container-contact1-form-btn">
-                    <button class="contact1-form-btn">
+                   <!-- <button class="contact1-form-btn">
                         <span>
                             Send Email
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </span>
-                    </button>
-                      <input class="ghost" type="submit" name="submit_ContactUs" value="Sign In">
+                    </button>-->
+                      <input class="contact1-form-btn" type="submit" name="submit_ContactUs" value="Send Email">
                 </div>
+                <?php  if (empty($errors)) {
+
+         echo '$_POST['name']';
+         echo '$_POST['email']';    
+         echo '$_POST['subject']';    
+         echo '$_POST['message']';    
+                                                               
+     }?>
             </form>
         </div>
     </div>
