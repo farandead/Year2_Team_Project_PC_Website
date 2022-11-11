@@ -202,50 +202,8 @@ require "PHP/IndProductPriceDis.php";
                         jawdlaldjlkawdjjjjjaljdlajwdljaldjaljdlkwajdljawldjaljdwljawdajdlajdwljaldjlawjldjlajdwjlj
                     </div>
                 </div>
-                <div class="specific-description-sub-container">
-                    <div class="specific-heading">
-                        <p>MEMORY</p>
-                    </div>
-                    <div class="specific-description-details dark_target">
-                        <div class="description-details-title">
-                            <p>RAM</p>
-                            <p>Max Ram</p>
-                            <p>Technology</p>
-                            <p>Speed</p>
-                            <p>Form Factor</p>
-
-                        </div>
-                        <div class="description-details-paragraph">
-                            <p>8GB</p>
-                            <p>32 GB Supported</p>
-                            <p>DDR4 SDRAM</p>
-                            <p>3200 MHZ</p>
-                            <p>SO-DIMM 260-pin</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="specific-description-sub-container">
-                    <div class="specific-heading">
-                        <p>MEMORY</p>
-                    </div>
-                    <div class="specific-description-details dark_target">
-                        <div class="description-details-title">
-                            <p>RAM</p>
-                            <p>Max Ram</p>
-                            <p>Technology</p>
-                            <p>Speed</p>
-                            <p>Form Factor</p>
-
-                        </div>
-                        <div class="description-details-paragraph">
-                            <p>8GB</p>
-                            <p>32 GB Supported</p>
-                            <p>DDR4 SDRAM</p>
-                            <p>3200 MHZ</p>
-                            <p>SO-DIMM 260-pin</p>
-                        </div>
-                    </div>
-                </div>
+                
+              <!-- -->
             </div>
         </div>
     </div>
