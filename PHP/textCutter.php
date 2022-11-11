@@ -11,7 +11,7 @@
                       $tracker=true;
                       }
                       }
-                      }
+                      
                        $text= substr_replace(  $text,  $insert, $position, 0 );
                         $Jump=$Jump+Strlen($insert);
                                                    }
