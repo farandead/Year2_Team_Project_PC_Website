@@ -5,7 +5,7 @@
                       $tracker=false;
                       while(!$tracker){
                         $arr = str_split($text, 1);
-                      if($arr[$position]!=" "){
+                      if($text[$position]!=" "){
                         echo $text[$position+1];
                       $position=$position+1;
                         
