@@ -4,7 +4,7 @@
 echo"
 <div class=\" devices-sub-container-product \">
                 <div class =\"category-details\">
-                    <div class=\"category-details-title\">Desktops</div>
+                    <div class=\"category-details-title\">".$row['Cat_Name']."</div>
                     <div class=\"category-details-img1\"><img src=\"img/AGILITY_PRO.webp\" alt=\"No image\"></div>
                     <div class=\"category-details-description\">
                         <ul class=\"description-ulisted\">
