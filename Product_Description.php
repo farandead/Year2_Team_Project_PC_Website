@@ -123,7 +123,11 @@
         <div class="main-product-description-sub-container dark_target" id="description-block" style="display:flex ;">
 
             <div class="main-product-sub-container">
-                <img src="img/AGILITY_PRO.webp" alt="">
+                
+                <?php
+                echo "<img src=\"Products/Images/".$res['Product_ID'].".jpg\" alt=\"No image\">";
+                ?>
+                
             </div>
             <div class="main-product-sub-container">
                 <div class="main-product-heading-container">
