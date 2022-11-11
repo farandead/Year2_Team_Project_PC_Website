@@ -99,7 +99,7 @@
         </ul>
     </header>
     
-    <?PHP>
+    <?php
      if (isset($_POST['submit_ContactUs']) & !empty($_POST['submit_ContactUs'])) {
 
         //if (empty($_POST['lastName'])) {
@@ -121,8 +121,7 @@
     
      }
     ?>
-<!-- 
- if ($res) {
+<!-- if ($res) {
                                                                     $message = '
                                                                     <html> 
                                                                         <body>
@@ -157,8 +156,7 @@
                                                                     }
                                                                     */
                                                                 } 
-                                                            } 
--->
+                                                            }  -->
     <div class="contact1 dark_target">
         <div id="container-contact1" class="container-contact1 dark_target">
             <div class="contact1-pic js-tilt" data-tilt>
