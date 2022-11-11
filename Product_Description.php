@@ -1,4 +1,4 @@
-
+<?php ob_start(); ?>
 <!DOCTYPE html>
 <?php
     require "PHP/IndSQLandDBcon.php";
