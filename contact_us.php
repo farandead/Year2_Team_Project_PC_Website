@@ -158,7 +158,7 @@ if (empty($errors)) {
 
         }
         */
-    } 
+    
 }  ?>
     <div class="contact1 dark_target">
         <div id="container-contact1" class="container-contact1 dark_target">
