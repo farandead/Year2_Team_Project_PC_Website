@@ -93,7 +93,7 @@
     <div< class="container1">
         <div class="devices-container" id="desktop_container">
             <?php require "PHP/CategoriesCollectionPrinter.php"; ?>
- 
+    </div>
     </div>
 
     
