@@ -4,7 +4,8 @@
                      $position=$Jump*$x;
                       $tracker=false;
                       while($tracker){
-                      if($text[$position+1]!=" "){
+                        $arr = str_split($text, 1);
+                      if($arr[$position+1]!=" "){
                         echo $text[$position+1];
                       $position=$position+1;
                         
