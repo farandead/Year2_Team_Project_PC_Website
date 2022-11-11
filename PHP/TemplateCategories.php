@@ -14,7 +14,7 @@ echo"
                         </ul>
                     </div>
                     <div class=\"category-details-browse-button\">
-                        <button>BROWSE DESKTOPS ></button>
+                        <a href='product_page.php?Category=".$row['Cat_Name']."'><button>BROWSE DESKTOPS ></button></a>
                     </div>
                 </div>
             </div>
