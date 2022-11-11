@@ -22,7 +22,7 @@ foreach($lines as $line){
                                 </ul>
                             </div>
                             <div class=\"product-details-buy-buttons\">
-                                <button>CONFIGURE THIS ITEM ></button>
+                               <a href='Product_Description.php?Product=".$row['Product_ID']."'> <button>CONFIGURE THIS ITEM ></button></a>
                             </div>
     
                         </div>
