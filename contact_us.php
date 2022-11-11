@@ -202,10 +202,7 @@ if (empty($errors)) {
                     </button>-->
                       <input class="contact1-form-btn" type="submit" name="submit_ContactUs" value="Send Email">
                 </div>
-                <?php  if (empty($errors)) {
-
-      ?>  <h1> <?php echo $messages ?> </h1>  <?php                     
-     }?>
+                
             </form>
         </div>
     </div>
