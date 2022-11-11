@@ -202,7 +202,9 @@
         </div>
     
     <!-- -->
-    
+    <?php 
+    require "PHP/CategoriesCollectionPrinter.php";
+    ?>
     </div>
 
     
