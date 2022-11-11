@@ -136,7 +136,7 @@
                                
                             
                              <?php
-                            reqire "PHP/IndProductPreDescription.php";
+                            require "PHP/IndProductPreDescription.php";
                             ?>
                     </ul>
 
