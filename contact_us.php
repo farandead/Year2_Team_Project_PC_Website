@@ -202,7 +202,7 @@ if (empty($errors)) {
                 </div>
                 <?php  if (empty($errors)) {
 
-      ?>  <h1> <?php echo $messages[] ?> </h1>  <?php                     
+      ?>  <h1> <?php echo $messages ?> </h1>  <?php                     
      }?>
             </form>
         </div>
