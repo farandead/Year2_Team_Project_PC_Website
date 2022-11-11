@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    require "PHP/IndSQLandDBcon.php";
+ ?>
 <html lang="en">
 
 <head>
