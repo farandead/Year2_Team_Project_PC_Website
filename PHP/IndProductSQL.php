@@ -13,5 +13,6 @@ $Product_ID=$res["Product_ID"];
   $res2=mysqli_fetch_assoc($queryPr2);
 }
 else{$Product_ID=null;
+     header('Location: index.php');
 }
 ?>
