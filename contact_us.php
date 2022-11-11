@@ -145,7 +145,7 @@ if (empty($errors)) {
        $test = "ibrahim.gbanet@gmail.com" ;
         $testing = "the-team@motorsfeere.com" ;
 
-    $confirmationMail =    sendMail($testing, "No-reply-motorsfeere", $_POST['email'] , $_POST['subject'], $message);
+    $confirmationMail =    sendMail($testing, "No-reply-Comp-UK", $_POST['email'] , $_POST['subject'], $message);
 
         // header("Location:" . $_SERVER["HTTP_REFERER"] . "?error=none");
         // exit();
@@ -160,6 +160,10 @@ if (empty($errors)) {
 
         }
         */
+    if ($confirmationMail) {
+                //echo "YOU ARE IN !";
+                 echo "<script>alert('Message Sent');</script>";
+    }
     
 } } ?>
     <div class="contact1 dark_target">
