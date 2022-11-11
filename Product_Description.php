@@ -141,10 +141,13 @@ require "PHP/IndProductPriceDis.php";
                     $Jump=30;
                     $Changes= (int)($NamePRL/ $Jump);
                     
+                    $text=$NamePR;
+                    $insert="<br>";
                     if($Changes>0){
                     for ($x = 1; $x <= $Changes; $x++) {
                      $position=$Jump*$x;
-                       $NamePR= substr_replace( $NamePR, "<br>", $position, 0 );
+                       $NamePR= substr_replace(  $text,  $insert, $position, 0 );
+                        $Jump=$Jump+Strlen($insert);
                                                    }
                     }
                     
