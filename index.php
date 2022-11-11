@@ -139,7 +139,7 @@
             <div class="banner-1-sub-container">
                 <div class="banner-1-sub-container-heading">
                     <h1 style="font-family: 'Russo One', sans-serif; ">
-                        CUSTOM LAPTOPS</h1>
+                        GAMING LAPTOPS</h1>
                 </div>
                 <div class="banner-1-sub-container-paragraph">
                     <p
@@ -149,7 +149,7 @@
 
                 </div>
                 <div class="banner-1-sub-container-button">
-                    <button style="  font-family: 'Russo One', sans-serif;  ">CONFIGURE NOW</button>
+                    <a href='product_page.php?Category=Gaming Laptops'><button style="  font-family: 'Russo One', sans-serif;  ">CONFIGURE NOW</button></a>
                 </div>
             </div>
         </div>
