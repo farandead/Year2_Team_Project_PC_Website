@@ -136,7 +136,20 @@ require "PHP/IndProductPriceDis.php";
             <div class="main-product-sub-container">
                 <div class="main-product-heading-container">
                     <?php
-                    echo "<h2>".$res["Product_Name"]."</h2>";
+                    $NamePR=$res["Product_Name"];
+                    $NamePRL=Strlen($NamePR);
+                    $Jump=10;
+                    $Changes= (int)($NamePRL/ $Jump);
+                    
+                    if($Changes>0){
+                    for ($x = 1; $x <= $Changes+1; $x++) {
+                     echo "The number is: $x <br>";
+                                                   }
+                    }
+                    
+                    
+                    
+                    echo "<h2>".$NamePR."</h2>";
                     ?>
                     
                 </div>
