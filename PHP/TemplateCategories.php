@@ -5,7 +5,7 @@ echo"
 <div class=\" devices-sub-container-product \">
                 <div class =\"category-details\">
                     <div class=\"category-details-title\">".$row['Cat_Name']."</div>
-                    <div class=\"category-details-img1\"><img src=\"../Products/Images/".$row['Cat_ID'].".jpg\" alt=\"No image\"></div>
+                    <div class=\"category-details-img1\"><img src=\"../Categories/Images/".$row['Cat_ID'].".jpg\" alt=\"No image\"></div>
                     <div class=\"category-details-description\">
                         <ul class=\"description-ulisted\">
                             <li class=\"description-ulisted-item\">High End Desktops</li>
