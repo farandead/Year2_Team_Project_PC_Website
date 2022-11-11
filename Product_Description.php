@@ -142,7 +142,7 @@ require "PHP/IndProductPriceDis.php";
                     $Changes= (int)($NamePRL/ $Jump);
                     
                     if($Changes>0){
-                    for ($x = 1; $x <= $Changes+1; $x++) {
+                    for ($x = 1; $x <= 1+1; $x++) {
                      echo "The number is: $x <br>";
                                                    }
                     }
