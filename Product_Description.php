@@ -133,29 +133,11 @@
                     <ul class="description-ulisted">
                         <li class="description-ulisted-item"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                 height="16" fill=" #057df5" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                            </svg>PCS 3601 CASE</li>
-                        <li class="description-ulisted-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill=" #057df5" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                            </svg> Intel® Core™ i3-10100</li>
-                        <li class="description-ulisted-item"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill=" #057df5" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                            </svg>GIGABYTE B560 HD3 (rev. 1.0)</li>
-                        <li class="description-ulisted-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill=" #057df5" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                            </svg> 8GB PCS PRO DDR4 2666MHz</li>
-                        <li class="description-ulisted-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill=" #057df5" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                            </svg>2GB GEFORCE GT 1030 - DVI, HDMI</li>
+                               
+                            
+                             <?php
+                            reqire "PHP/IndProductPreDescription.php";
+                            ?>
                     </ul>
 
                 </div>
