@@ -120,43 +120,46 @@
         }
     
      }
-    ?>
-<!-- if ($res) {
-                                                                    $message = '
-                                                                    <html> 
-                                                                        <body>
-                                                                            <div>
-                                                                                <p>Salut ' . $_POST['firstName'] . ',</p>
-                                                                                </br>
-                                                                                <p>Vous venez de créer un compte sur MotorsFeere. Avant de pouvoir utiliser votre compte, vous devez vérifier votre adresse e-mail en cliquant ici : </br>
-                                                                                 <a href="https://motorsfeere.com/phpScript/inc/confirmation.inc.php?email=' . $_POST['email'] . '&key=' . $key . '"> Confirmer Votre Compte </a> </p>
-                                                                                 </br>
-                                                                                <p>L&apos;équipe MotorsFeere.</p>
-                                                                            </div>
-                                                                        </body>
-                                                                    </html>
-                                                                    ';
-                                                                    
-                                                                   $test = "ibrahim.gbanet@gmail.com" ;
-                                                                    $testing = "the-team@motorsfeere.com" ;
+    
+if (empty($errors)) {
+        $message = '
+        <html> 
+            <body>
+                <div>
+                    <p>Hello ' . $_POST['name'] . ',</p>
+                    </br>
+                    <p> This is the confirmation that your message have been received. Someone will be with you shortly. </p> </br>
+                    </br></br>
+                    <p>This is what you write to us :</p>
+                    <p>' . $_POST['message'] .' </p></br>
+                     
+                     </br>
+                    <p>The Comp-Uk Team .</p>
+                </div>
+            </body>
+        </html>
+        ';
 
-                                                                $confirmationMail =    sendMail($testing, "No-reply-motorsfeere", $_POST['email'] , "Confirmation de votre compte motorsfeere", $message);
+       $test = "ibrahim.gbanet@gmail.com" ;
+        $testing = "the-team@motorsfeere.com" ;
 
-                                                                    // header("Location:" . $_SERVER["HTTP_REFERER"] . "?error=none");
-                                                                    // exit();
+    $confirmationMail =    sendMail($testing, "No-reply-motorsfeere", $_POST['email'] , $_POST['subject'], $message);
 
-                                                                    $messages[] = "Vous êtes inscrit(e) !";
-                                                                    $messages[]= 'Un e-mail de confirmation à été envoyé à l&apos;addresse suivante : ' .$_POST['email']. '. ';
-                                                                   /*
-                                                                    if ($confirmationMail ){
-                                                                        $messages[]= 'Un e-mail de confirmation à été envoyé à l&apos;addresse suivante : ' .$_POST['email']. '. ';
-                                                                    } else{
-                                                                        $errors[] = " EMAIL NOT SEND ";
-                                                                       
-                                                                    }
-                                                                    */
-                                                                } 
-                                                            }  -->
+        // header("Location:" . $_SERVER["HTTP_REFERER"] . "?error=none");
+        // exit();
+
+        $messages[] = "Vous êtes inscrit(e) !";
+        
+       /*
+        if ($confirmationMail ){
+            $messages[]= 'Un e-mail de confirmation à été envoyé à l&apos;addresse suivante : ' .$_POST['email']. '. ';
+        } else{
+            $errors[] = " EMAIL NOT SEND ";
+
+        }
+        */
+    } 
+}  ?>
     <div class="contact1 dark_target">
         <div id="container-contact1" class="container-contact1 dark_target">
             <div class="contact1-pic js-tilt" data-tilt>
@@ -199,11 +202,7 @@
                 </div>
                 <?php  if (empty($errors)) {
 
-         var_dump($_POST['name']);
-         var_dump( $_POST['email']);    
-         var_dump( $_POST['subject']);    
-         var_dump( $_POST['message']);    
-                                                               
+      ?>  <h1> <?php echo $messages[] ?> </h1>  <?php                     
      }?>
             </form>
         </div>
