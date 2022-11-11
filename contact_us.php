@@ -98,14 +98,81 @@
         </ul>
         </ul>
     </header>
+    
+    <?PHP>
+     if (isset($_POST['submit_ContactUs']) & !empty($_POST['submit_ContactUs'])) {
 
+        //if (empty($_POST['lastName'])) {
+        // $errors[] = "";
+        //}
+        if (empty($_POST['name'])) {
+            $errors[] = "Please Enter your name";
+        }
+        if (empty($_POST['email'])) {
+            $errors[] = "Please Enter your email";
+        }
+        
+        if (empty($_POST['subject'])) {
+            $errors[] = "Please Enter your subject";
+        }
+        if (empty($_POST['message'])) {
+            $errors[] = "Please enter your  message";
+        }
+    
+    if (empty($errors)) {
+
+         echo '$_POST['name']';
+         echo '$_POST['email']';    
+         echo '$_POST['subject']';    
+         echo '$_POST['message']';    
+                                                               
+     }
+    ?>
+<!-- 
+ if ($res) {
+                                                                    $message = '
+                                                                    <html> 
+                                                                        <body>
+                                                                            <div>
+                                                                                <p>Salut ' . $_POST['firstName'] . ',</p>
+                                                                                </br>
+                                                                                <p>Vous venez de créer un compte sur MotorsFeere. Avant de pouvoir utiliser votre compte, vous devez vérifier votre adresse e-mail en cliquant ici : </br>
+                                                                                 <a href="https://motorsfeere.com/phpScript/inc/confirmation.inc.php?email=' . $_POST['email'] . '&key=' . $key . '"> Confirmer Votre Compte </a> </p>
+                                                                                 </br>
+                                                                                <p>L&apos;équipe MotorsFeere.</p>
+                                                                            </div>
+                                                                        </body>
+                                                                    </html>
+                                                                    ';
+                                                                    
+                                                                   $test = "ibrahim.gbanet@gmail.com" ;
+                                                                    $testing = "the-team@motorsfeere.com" ;
+
+                                                                $confirmationMail =    sendMail($testing, "No-reply-motorsfeere", $_POST['email'] , "Confirmation de votre compte motorsfeere", $message);
+
+                                                                    // header("Location:" . $_SERVER["HTTP_REFERER"] . "?error=none");
+                                                                    // exit();
+
+                                                                    $messages[] = "Vous êtes inscrit(e) !";
+                                                                    $messages[]= 'Un e-mail de confirmation à été envoyé à l&apos;addresse suivante : ' .$_POST['email']. '. ';
+                                                                   /*
+                                                                    if ($confirmationMail ){
+                                                                        $messages[]= 'Un e-mail de confirmation à été envoyé à l&apos;addresse suivante : ' .$_POST['email']. '. ';
+                                                                    } else{
+                                                                        $errors[] = " EMAIL NOT SEND ";
+                                                                       
+                                                                    }
+                                                                    */
+                                                                } 
+                                                            } 
+-->
     <div class="contact1 dark_target">
         <div id="container-contact1" class="container-contact1 dark_target">
             <div class="contact1-pic js-tilt" data-tilt>
                 <img id="contact_img" src="img/img-01.png" alt="IMG">
             </div>
 
-            <form class="contact1-form validate-form">
+            <form class="contact1-form validate-form" method='post'>
                 <span class="contact1-form-title dark_target">
                     Get in touch
                 </span>
@@ -137,6 +204,7 @@
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </span>
                     </button>
+                      <input class="ghost" type="submit" name="submit_ContactUs" value="Sign In">
                 </div>
             </form>
         </div>
