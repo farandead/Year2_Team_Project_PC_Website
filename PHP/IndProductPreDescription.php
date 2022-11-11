@@ -8,4 +8,5 @@ foreach($PreD as $line){
                         <li class=\"description-ulisted-item\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\"
                                 height=\"16\" fill=\" #057df5\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\">";
 }    
+echo "</svg>2GB GEFORCE GT 1030 - DVI, HDMI</li>";
 ?>
