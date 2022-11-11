@@ -7,7 +7,7 @@ $product=$_GET["Product"];
   $res=mysqli_fetch_assoc($queryPr);
 
 if($res!=null){
-$Product_ID=$res["Cat_ID"];}
+$Product_ID=$res["Product_ID"];}
 else{$Product_ID=null;
 }
 ?>
