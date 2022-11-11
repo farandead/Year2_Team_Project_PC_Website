@@ -91,9 +91,8 @@
 
 
     <div< class="container1">
-    <?php require "PHP/CategoriesCollectionPrinter.php"; ?>
         <div class="devices-container" id="desktop_container">
-            
+            <?php require "PHP/CategoriesCollectionPrinter.php"; ?>
             <div class=" devices-sub-container-product ">
                 <div class ="category-details">
                     <div class="category-details-title">Desktops</div>
