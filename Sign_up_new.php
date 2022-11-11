@@ -2,7 +2,7 @@
 <?php
 $servername = "localhost";
 $username = 'babimors_astonTeam';
-$password = 'HW#1o.5=#cl+';
+$password = 'HW#1o.5=#cl+'; 
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=babimors_compuk", $username, $password);
