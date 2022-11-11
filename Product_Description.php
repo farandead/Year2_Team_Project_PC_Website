@@ -142,8 +142,9 @@ require "PHP/IndProductPriceDis.php";
                     $Changes= (int)($NamePRL/ $Jump);
                     
                     if($Changes>0){
-                    for ($x = 1; $x <= 1+1; $x++) {
-                     echo "The number is: $x <br>";
+                    for ($x = 1; $x <= $Changes; $x++) {
+                     $position=$Jump*$x;
+                       $NamePR= substr_replace( $NamePR, "<br>", $position, 0 );
                                                    }
                     }
                     
