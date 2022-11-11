@@ -143,16 +143,11 @@ require "PHP/IndProductPriceDis.php";
                     
                     $text=$NamePR;
                     $insert="<br>";
-                    if($Changes>0){
-                    for ($x = 1; $x <= $Changes; $x++) {
-                     $position=$Jump*$x;
-                       $NamePR= substr_replace(  $text,  $insert, $position, 0 );
-                        $Jump=$Jump+Strlen($insert);
-                                                   }
-                    }
+
+                    require "PHP/textCutter.php ";
                     
                     
-                    
+                    $NamePR=$text;
                     echo "<h2>".$NamePR."</h2>";
                     ?>
                     
