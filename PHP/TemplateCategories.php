@@ -2,6 +2,7 @@
 
 //echo $row['Cat_Name'];
 echo"
+<div class=\" devices-sub-container-product \">
                 <div class =\"category-details\">
                     <div class=\"category-details-title\">Desktops</div>
                     <div class=\"category-details-img1\"><img src=\"img/AGILITY_PRO.webp\" alt=\"No image\"></div>
