@@ -19,7 +19,7 @@ while($row=mysqli_fetch_assoc($query)){
     $counter=0;
      echo "</div>";
       echo "<br>";
-  echo "<br>";
+
   }
 }
 if($isEmpty==true){
@@ -28,6 +28,6 @@ echo "<h2>There are no products.</h2>";
 if($isEmpty==true or $counter!=0){
   echo "</div>";
   echo "<br>";
-  echo "<br>";
+ 
 }
 ?>
