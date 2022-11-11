@@ -6,12 +6,12 @@
                       while(!$tracker){
                         $arr = str_split($text, 1);
                       if($text[$position]!=" "){
-                        echo $text[$position+1];
+                       
                       $position=$position+1;
                         
                       }
                       else{
-                        echo "Test!!!!";
+                        
                       $tracker=true;
                       }
                       }
