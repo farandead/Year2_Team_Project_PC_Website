@@ -121,7 +121,7 @@
             $errors[] = "Please enter your  message";
         }
     
-     }
+     
     
 if (empty($errors)) {
         $message = '
@@ -161,7 +161,7 @@ if (empty($errors)) {
         }
         */
     
-}  ?>
+} } ?>
     <div class="contact1 dark_target">
         <div id="container-contact1" class="container-contact1 dark_target">
             <div class="contact1-pic js-tilt" data-tilt>
