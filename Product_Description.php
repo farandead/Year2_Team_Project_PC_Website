@@ -108,12 +108,13 @@
                 <div class="summary-container" id="summary-container-heading">
                     <p>SYSTEM SUMMARY</p>
                 </div>
-                <div class="summary-container price-container dark_target">
-                    <p><strong>£500 </strong>ex. VAT</p>
-                </div>
-                <div class="summary-container price-container dark_target">
-                    <p><strong>£600 </strong>inl. VAT</p>
-                </div>
+               
+                <?php
+                require "PHP/IndProductPriceDis.php ";
+                ?>
+                
+                
+                
             </div>
             <div class="main-summary-description-conatiner">
                 <button>PROCEED <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
