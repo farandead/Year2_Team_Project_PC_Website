@@ -1,5 +1,5 @@
 <?php
-$PreD= file("Products/PreDescription/".$row['Product_ID'].".txt");
+$PreD= file("Products/PreDescription/".$res['Product_ID'].".txt");
 
 foreach($PreD as $line){   
             echo"                      <path
