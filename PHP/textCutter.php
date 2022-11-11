@@ -3,7 +3,7 @@
                     for ($x = 1; $x <= $Changes; $x++) {
                      $position=$Jump*$x;
                       $tracker=false;
-                      while($tracker){
+                      while(!$tracker){
                         $arr = str_split($text, 1);
                       if($arr[$position+1]!=" "){
                         echo $text[$position+1];
