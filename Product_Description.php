@@ -93,7 +93,10 @@
     <div class="main-product-description-container" style="padding-top:100px;">
         <div class="main-product-description-sub-container " id="product_heading_with_button">
             <div class="product-heading-container">
-                <h3>LAPTOP</h3>
+                <?php
+                echo "<h3>".$res2["Man_Name"]."</h3>";
+                ?>
+               
             </div>
             <div class="product-heading-container">
                 <button id="change-to-product" onclick="changeToProduct()" >PRODUCT</button>
