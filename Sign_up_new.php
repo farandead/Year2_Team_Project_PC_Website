@@ -270,11 +270,11 @@ try {
       <input type="email" placeholder="Email" name="email"  value=""/>
       <input type="password" name="user_pwd" value="" />
       <input type="number" placeholder="Contact No" name="user_number"  value="" />
-      <input type="text" placeholder="Street"  name="user_street"  value=""/>
+     <!-- <input type="text" placeholder="Street"  name="user_street"  value=""/>
       <input type="text" class="small-input" placeholder="County"  name="user_county"  value=""/>
       <input type="text" class="small-input" placeholder="Country" name="user_country"  value=""/>
       <input type="text" class="small-input" placeholder="City" name="user_city"  value=""/>
-      <input type="text" class="small-input" placeholder="Post Code" name="user_postCode"  value=""/>
+      <input type="text" class="small-input" placeholder="Post Code" name="user_postCode"  value=""/>-->
        
     
        <div class="row">
