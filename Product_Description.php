@@ -202,7 +202,7 @@ require "PHP/IndProductPriceDis.php";
                         jawdlaldjlkawdjjjjjaljdlajwdljaldjaljdlkwajdljawldjaljdwljawdajdlajdwljaldjlawjldjlajdwjlj
                                             <?php
                         $Description=file("Products/Description/".$res['Product_ID'].".txt");
-                        ini_set('memory_limit', '2048M');
+                        
                         foreach($Description as $Des){
                    // $Des=$res["Product_Name"];
                     $DesL=Strlen($Des);
