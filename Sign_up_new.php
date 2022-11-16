@@ -197,7 +197,7 @@ try {
             //}
     
             $sql = "INSERT INTO account (User_FName, User_SName, user_Email, User_Password, User_Phone_Number , User_Sex) 
-        VALUES ( :User_FName, :User_SName, :user_Email,   :User_Password ,:User_Phone_Number, :User_Sex)";
+        VALUES ( :User_FName, :User_SName, :user_Email,   :User_Password ,:User_Phone_Number)";
             $result = $conn->prepare($sql);
             $values = array(
                 ':User_FName' => $_POST['firstName'],
@@ -205,7 +205,7 @@ try {
                 ':user_Email' => $_POST['email'],
                 ':User_Password' => $pass_hash,
                 ':User_Phone_Number' => $_POST['user_number'],
-                ':User_Sex' => $_POST['user_sex'],
+                
 
 
             );
@@ -245,10 +245,12 @@ try {
 
                 <h1>Create Account</h1>
 
-                <input type="firstname" placeholder="First Name" name="firstName" value="" />
-                <input type="lastname" placeholder="Last Name" name="lastname" value="" />
-                <input type="email" placeholder="Email" name="email" value="" />
-                <input type="number" placeholder="Contact No" name="user_number" value="" />
+                <input type="firstname" placeholder="First Name" name="firstName" value=""/>
+                <input type="lastname" placeholder="Last Name" name="lastname" value=""/>
+                <input type="email" placeholder="Email" name="email" value=""/>
+                <input type="password" placeholder="Password" name="Password" value=""/>
+                <input type="number" placeholder="Contact No" name="user_number" value=""/>
+                 
                <!-- <input type="text" placeholder="Street" name="user_street" value="" />
                 <div class="small-container">
                     <input type="text" class="small-input" placeholder="County" name="user_county" value="" />
