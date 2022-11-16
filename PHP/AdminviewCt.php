@@ -2,7 +2,7 @@
 
 $linkToAdd="";
 
-if($status=="Admin")
+if($status=="Admin"){
  
 
 if($view!=1){
@@ -19,4 +19,5 @@ if($view==1){
   echo "<a href='".$linkToAdd."'>add </a>";
 }
 echo "<a href='".$link."'>change view</a>";
+}
 ?>
