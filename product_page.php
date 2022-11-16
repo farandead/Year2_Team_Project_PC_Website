@@ -109,6 +109,7 @@ require "PHP/StatusSetter.php";
                 exit();
             }
                 echo "<h1>".$category."</h1>";
+                require "Adminview.php";
             
             ?>
                 
