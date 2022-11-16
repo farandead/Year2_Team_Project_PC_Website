@@ -185,13 +185,7 @@ require "PHP/IndProductPriceDis.php";
                         <p>SPECIFICATIONS</p>
                     </div>
                     <div class="specific-description-details dark_target">
-                        <div class="description-details-title">
-                            <p>Processor Support</p>
-
-                        </div>
-                        <div class="description-details-paragraph ">
-                            <p>Intel Celron</p>
-                        </div>
+                      
                             <?php
                         $Points=file("Products/Points/".$res['Product_ID'].".txt");
                         
