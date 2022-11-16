@@ -192,6 +192,15 @@ require "PHP/IndProductPriceDis.php";
                         <div class="description-details-paragraph ">
                             <p>Intel Celron</p>
                         </div>
+                            <?php
+                        $Points=file("Products/Points/".$res['Product_ID'].".txt");
+                        
+                        foreach($Points as $Point){
+                        
+                
+                    echo $Point."<br>";
+                        }
+                    ?>
                     </div>
                 </div>
                 <div class="specific-description-sub-container">
