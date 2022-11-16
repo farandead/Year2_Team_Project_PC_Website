@@ -15,7 +15,13 @@ echo"
                     </div>
                     <div class=\"category-details-browse-button\">
                         <a href='product_page.php?Category=".$row['Cat_Name']."'><button>Browse ".$row['Cat_Name']." ></button></a>
-                    </div>
+                    </div>";
+if($view==1 and $status=="Admin"){
+  echo "<div class=\"product-details-buy-buttons\">
+                               <a href=''> EDIT THE ITEM ></a>
+                            </div>";
+}
+echo "
                 </div>
             </div>
 ";
