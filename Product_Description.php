@@ -204,19 +204,8 @@ require "PHP/IndProductPriceDis.php";
                         $Description=file("Products/Description/".$res['Product_ID'].".txt");
                         
                         foreach($Description as $Des){
-                             echo $Des;
-                   // $Des=$res["Product_Name"];
-                    $DesL=Strlen($Des);
-                    $Jump=30;
-                    $Changes= (int)($DesL/ $Jump);
-                    
-                    $text=$Des;
-                    $insert="<br>";
-
-                    require "PHP/textCutter.php";
-                    
-                    
-                    $Des=$text;
+                        
+                
                     echo $Des."<br>";
                         }
                     ?>
