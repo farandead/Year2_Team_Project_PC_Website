@@ -17,18 +17,23 @@ echo "<div class=\"devices-sub-container-product\">
                                 
 foreach($lines as $line){   
                                    echo " <li class=\"description-ulisted-item\">".$line."</li>";
-}             
+}
+
+if(isset($_SESSION['User_Status'])){
+$status=$_SESSION['User_Status'];}else{$status=null;}
+
 if(isset($_GET["AdminView"])){
 $view=$_GET["AdminView"];}else{$view=0;}
+
                                echo "     
                                 </ul>
                             </div>
                             <div class=\"product-details-buy-buttons\">
                                <a href='Product_Description.php?Product=".$row['Product_ID']."'> <button>CONFIGURE THIS ITEM ></button></a>
                             </div>";
-if($view==1){
+if($view==1 and $status=="Admin"){
   echo "<div class=\"product-details-buy-buttons\">
-                               <a href='Product_Description.php?Product=".$row['Product_ID']."'> <button>EDIT THE ITEM ></button></a>
+                               <a href=''> EDIT THE ITEM ></a>
                             </div>";
 }
 echo "
