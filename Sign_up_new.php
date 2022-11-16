@@ -289,11 +289,11 @@ try {
                 $result->execute(array($_POST['email']));
                 $count = $result->rowCount();
                 $res = $result->fetch(PDO::FETCH_ASSOC);
-                var_dump($res['User_Password']);
+                
                 if ($count == 1) {
                     // Compare the password with password hash
                     // $hashed = '$2y$10$HqLUsOHun8xAxsui5wGCYe5';
-                    if (password_verify('1', $res['User_Password'])) {
+                    if (password_verify('q', $res['User_Password'])) {
                         // regenerate session id
                         //session_start();
                         // $_SESSION['login'] = true;
