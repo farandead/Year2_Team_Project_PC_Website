@@ -4,7 +4,6 @@ $linkToAdd="";
 
 if($status=="Admin")
  
- $CATT= $_GET["Category"];
 
 if($view!=1){
 //change to 1
