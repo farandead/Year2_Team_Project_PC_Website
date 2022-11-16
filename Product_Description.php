@@ -178,7 +178,7 @@ require "PHP/IndProductPriceDis.php";
 
 
         <div class="specific-description-container dark_target" id="specific_description" style="display:none ;">
-            <p>Here are the specific details for the <strong>Laptop</strong></p>
+            <p>Here are the specific details for the <strong>Item</strong></p>
             <div class="specific-description-main-container dark_target">
                 <div class="specific-description-sub-container dark_target">
                     <div class="specific-heading dark_target">
