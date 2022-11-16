@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$_SESSION['User_Status']="Admin";
+
 
 if(isset($_SESSION['User_Status'])){
 $status=$_SESSION['User_Status'];}else{$status=null;}
