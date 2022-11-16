@@ -216,7 +216,7 @@ require "PHP/IndProductPriceDis.php";
                     
                     
                     $Des=$text;
-                    echo $Des;
+                    echo $Des."<br>";
                         }
                     ?>
                     </div>
