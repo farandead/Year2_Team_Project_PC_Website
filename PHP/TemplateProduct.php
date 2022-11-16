@@ -18,7 +18,8 @@ echo "<div class=\"devices-sub-container-product\">
 foreach($lines as $line){   
                                    echo " <li class=\"description-ulisted-item\">".$line."</li>";
 }             
-$view=$_GET["AdminView"];
+if($_GET["AdminView"]){
+$view=$_GET["AdminView"];}
                                echo "     
                                 </ul>
                             </div>
