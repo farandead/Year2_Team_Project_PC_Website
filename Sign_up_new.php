@@ -293,7 +293,7 @@ try {
                 if ($count == 1) {
                     // Compare the password with password hash
                     // $hashed = '$2y$10$HqLUsOHun8xAxsui5wGCYe5';
-                    if (password_verify($_POST['pwd'], $res['User_Password'])) {
+                    if (password_verify('1', $res['User_Password'])) {
                         // regenerate session id
                         //session_start();
                         // $_SESSION['login'] = true;
@@ -337,12 +337,12 @@ try {
                 <!-- message  -->
                     <?php
                     if (!empty($errors)) {
-                        //var_dump($errors);
+                        var_dump($errors);
                         //var_dump($_POST['email']);
-                        //var_dump(password_verify($_POST['pwd'], $res['User_Password']));
+                        var_dump(password_verify($_POST['pwd'], $res['User_Password']));
                         var_dump($res['User_Password']);
                         var_dump($_POST['pwd']);
-                       var_dump(password_hash($_POST['pwd'], PASSWORD_DEFAULT));
+                       
                     }
 
 
