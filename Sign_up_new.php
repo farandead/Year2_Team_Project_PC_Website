@@ -309,27 +309,29 @@
         <!-- END LOG IN PHP SCRIPT -->
 
         <div class="form-container sign-in-container">
-            <form action="#" style="background:white ;">
+            <form action="#" style="background:white ;" method="post">
                 <h1>Sign in</h1>
 
-
                 <input type="email" placeholder="Email" autocomplete="email" name="email" value="" />
-                <input type="password" placeholder="Password" name="pwd" value="" />
+                <input type="password" placeholder="Password" name="pwd" value=""/>
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a
                         href="" style="margin-bottom:10px">Here</a></a>
-                <!-- <button>Sign In</button> -->
+
                 <input class="ghost" type="submit" name="submit_Login" value="Sign In">
+                <!-- message  -->
+                    <?php
+                    if (!empty($errors)) {
+                        var_dump($errors);
+                        var_dump($_POST['email']);
+                        var_dump(password_verify($_POST['pwd'], $res['User_Password']));
+                    }
+
+
+                    ?>
             </form>
-            <!-- message  -->
-            <?php
-            if (!empty($errors)) {
-                var_dump($errors);
-                var_dump($_POST['email']);
-                var_dump(password_verify($_POST['pwd'], $res['User_Password']));
-            }
-            ?>
         </div>
+        
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
