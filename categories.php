@@ -1,4 +1,6 @@
-<?php ob_start(); ?>
+<?php ob_start(); 
+require "StatusSetter.php";
+?>
 <html>
 <head>
     <meta charset="UTF-8">
