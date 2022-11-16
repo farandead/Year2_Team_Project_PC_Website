@@ -342,6 +342,7 @@ try {
                         var_dump(password_verify($_POST['pwd'], $res['User_Password']));
                         var_dump($res['User_Password']);
                         var_dump($_POST['pwd']);
+                       var_dump(password_hash($_POST['pwd'], PASSWORD_DEFAULT));
                     }
 
 
