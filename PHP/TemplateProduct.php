@@ -18,13 +18,20 @@ echo "<div class=\"devices-sub-container-product\">
 foreach($lines as $line){   
                                    echo " <li class=\"description-ulisted-item\">".$line."</li>";
 }             
+$view=$_GET["AdminView"];
                                echo "     
                                 </ul>
                             </div>
                             <div class=\"product-details-buy-buttons\">
                                <a href='Product_Description.php?Product=".$row['Product_ID']."'> <button>CONFIGURE THIS ITEM ></button></a>
-                            </div>
-    
+                            </div>";
+if($view==1){
+  echo "<div class=\"product-details-buy-buttons\">
+                               <a href='Product_Description.php?Product=".$row['Product_ID']."'> <button>EDIT THE ITEM ></button></a>
+                            </div>";
+}
+echo "
+      
                         </div>
                     </div>";
 ?>
