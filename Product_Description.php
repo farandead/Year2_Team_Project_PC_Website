@@ -204,6 +204,7 @@ require "PHP/IndProductPriceDis.php";
                         $Description=file("Products/Description/".$res['Product_ID'].".txt");
                         
                         foreach($Description as $Des){
+                             echo $Des;
                    // $Des=$res["Product_Name"];
                     $DesL=Strlen($Des);
                     $Jump=30;
