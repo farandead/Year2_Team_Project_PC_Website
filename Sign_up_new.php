@@ -249,7 +249,7 @@ try {
                 <input type="lastname" placeholder="Last Name" name="lastname" value="" />
                 <input type="email" placeholder="Email" name="email" value="" />
                 <input type="number" placeholder="Contact No" name="user_number" value="" />
-                <input type="text" placeholder="Street" name="user_street" value="" />
+               <!-- <input type="text" placeholder="Street" name="user_street" value="" />
                 <div class="small-container">
                     <input type="text" class="small-input" placeholder="County" name="user_county" value="" />
                     <input type="text" class="small-input" placeholder="Country" name="user_country" value="" />
@@ -257,7 +257,7 @@ try {
                 <div class="small-conatainer-2">
                     <input type="text" class="small-input" placeholder="City" name="user_city" value="" />
                     <input type="text" class="small-input" placeholder="Post Code" name="user_postCode" value="" />
-                </div>
+                </div> -->
                 <button style="margin-top:15px ;" type="submit" name="signup_submit">Sign Up</button>
                 <!--<input  style="margin-top:15px"   value="Sign Up">-->
             </form>
