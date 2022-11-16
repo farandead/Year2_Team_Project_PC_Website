@@ -18,6 +18,8 @@ echo "<div class=\"devices-sub-container-product\">
 foreach($lines as $line){   
                                    echo " <li class=\"description-ulisted-item\">".$line."</li>";
 }
+session_start();
+$_SESSION['User_Status']="Admin";
 
 if(isset($_SESSION['User_Status'])){
 $status=$_SESSION['User_Status'];}else{$status=null;}
