@@ -141,9 +141,9 @@ try {
         if (empty($_POST['user_number'])) {
             $errors[] = "Please Enter your number";
         }
-        if (empty($_POST['user_sex'])) {
-            $errors[] = "Please choose : M or F";
-        }
+       // if (empty($_POST['user_sex'])) {
+       //     $errors[] = "Please choose : M or F";
+       // }
 
 
 
