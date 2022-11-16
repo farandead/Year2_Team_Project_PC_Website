@@ -1,8 +1,10 @@
 <?php
 if($status=="Admin")
+ 
+ $CATT= $_GET["Category"];
+
 if($view!=1){
 //change to 1
- $CATT= $_GET["Category"];
   $link="product_page.php?Category=".$CATT."&AdminView=1";
 }
 else{
