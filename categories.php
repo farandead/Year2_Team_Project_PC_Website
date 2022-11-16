@@ -1,5 +1,5 @@
 <?php ob_start(); 
-require "StatusSetter.php";
+require "PHP/StatusSetter.php";
 ?>
 <html>
 <head>
