@@ -209,7 +209,7 @@ require "PHP/IndProductPriceDis.php";
                     $Jump=30;
                     $Changes= (int)($DesL/ $Jump);
                     
-                    $text=$NamePR;
+                    $text=$Des;
                     $insert="<br>";
 
                     require "PHP/textCutter.php";
