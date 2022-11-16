@@ -2,7 +2,7 @@
 $linkToAdd="";
 
 
-if($status=="Admin")
+if($status=="Admin"){
  
  $CATT=$_GET["Category"];
 
@@ -20,4 +20,5 @@ if($view==1){
   echo "<a href='".$linkToAdd."'>add </a>";
 }
 echo "<a href='".$link."'>change view</a>";
+}
 ?>
