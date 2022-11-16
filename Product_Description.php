@@ -200,6 +200,21 @@ require "PHP/IndProductPriceDis.php";
                     </div>
                     <div class="specific-description-details dark_target">
                         jawdlaldjlkawdjjjjjaljdlajwdljaldjaljdlkwajdljawldjaljdwljawdajdlajdwljaldjlawjldjlajdwjlj
+                                            <?php
+                    $Des=$res["Product_Name"];
+                    $DesL=Strlen($Des);
+                    $Jump=30;
+                    $Changes= (int)($DesL/ $Jump);
+                    
+                    $text=$NamePR;
+                    $insert="<br>";
+
+                    require "PHP/textCutter.php";
+                    
+                    
+                    $Des=$text;
+                    echo $Des;
+                    ?>
                     </div>
                 </div>
                 
