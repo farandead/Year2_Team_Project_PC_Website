@@ -318,7 +318,8 @@
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a
                         href="" style="margin-bottom:10px">Here</a></a>
-                <button>Sign In</button>
+                <!-- <button>Sign In</button> -->
+                <input class="ghost" type="submit" name="submit_Login" value="Sign In">
             </form>
             <!-- message  -->
             <?php
