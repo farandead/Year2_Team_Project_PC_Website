@@ -286,7 +286,7 @@ try {
             }
             if (empty($errors)) {
                 // Check the Login Credentials
-                $sql = "SELECT * FROM account WHERE user_Email=? ";
+                $sql = "SELECT user_Email,User_Password FROM account WHERE user_Email=? ";
                 $result = $conn->prepare($sql);
                 $result->execute(array($_POST['email']));
                 $count = $result->rowCount();
