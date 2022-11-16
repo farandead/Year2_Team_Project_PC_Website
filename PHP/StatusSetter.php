@@ -1,3 +1,5 @@
+<?php
+
 session_start();
 $_SESSION['User_Status']="Admin";
 
@@ -6,3 +8,5 @@ $status=$_SESSION['User_Status'];}else{$status=null;}
 
 if(isset($_GET["AdminView"])){
 $view=$_GET["AdminView"];}else{$view=0;}
+
+?>
