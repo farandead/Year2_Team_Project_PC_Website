@@ -203,7 +203,7 @@ require "PHP/IndProductPriceDis.php";
                                             <?php
                         $Description=file("Products/Description/".$res['Product_ID'].".txt");
                         foreach($Description as $Des){
-                    $Des=$res["Product_Name"];
+                   // $Des=$res["Product_Name"];
                     $DesL=Strlen($Des);
                     $Jump=30;
                     $Changes= (int)($DesL/ $Jump);
