@@ -271,7 +271,7 @@
                 // Check the Login Credentials
                 $sql = "SELECT * FROM account WHERE user_Email=? ";
                 $result = $conn->prepare($sql);
-                $result->execute(array($_POST['email']));
+                $result->execute($_POST['email']);
                 $count = $result->rowCount();
                 $res = $result->fetch(PDO::FETCH_ASSOC);
                 var_dump($res['User_Password']);
