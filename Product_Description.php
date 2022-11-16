@@ -201,7 +201,7 @@ require "PHP/IndProductPriceDis.php";
                     <div class="specific-description-details dark_target">
                         jawdlaldjlkawdjjjjjaljdlajwdljaldjaljdlkwajdljawldjaljdwljawdajdlajdwljaldjlawjldjlajdwjlj
                                             <?php
-                        $Description=file("Products/Description/".$res['Product_ID'].".txt");
+                        $Description=file("Products/PreDescription/".$res['Product_ID'].".txt");
                         
                         foreach($Description as $Des){
                    // $Des=$res["Product_Name"];
