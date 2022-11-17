@@ -47,7 +47,7 @@ require "PHP/StatusSetter.php";
 
 </head>
 
-<?php include 'header.php'; ?>
+<?php require 'header.php'; ?>
 
 <body style="background: none;" class="dark_target"></body>
    
