@@ -56,10 +56,7 @@ require "PHP/StatusSetter.php";
         <ul id="navbar">
             <div id="logoblock">
                 <a href="index.php" class="link">
-                    <p id="logoMovie" style="color:white">
-                        LOGO
-
-                    </p>
+                <img class="img-logo" src="img/Logo.png" alt="Logo">
                 </a>
 
             </div>
@@ -91,7 +88,7 @@ require "PHP/StatusSetter.php";
 
     </header>
 
-    <?php include '/header.php'; ?>
+    
 
     <div< class="container1">
        
