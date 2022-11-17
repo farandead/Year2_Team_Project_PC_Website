@@ -52,7 +52,7 @@ require "PHP/StatusSetter.php";
 <body style="background: none;" class="dark_target"></body>
    
 
-    <header class="navigationBar" id="navigationLightMode" style="margin-top:-100px ;">
+    <header class="navigationBar" id="navigationLightMode" style="margin-top:-50px ;">
         <ul id="navbar">
             <div id="logoblock">
                 <a href="index.php" class="link">
