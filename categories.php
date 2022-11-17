@@ -91,7 +91,7 @@ require "PHP/StatusSetter.php";
 
     </header>
 
-
+    <?php include '/header.php'; ?>
 
     <div< class="container1">
        
