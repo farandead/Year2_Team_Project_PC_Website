@@ -8,7 +8,7 @@ echo"
                     <div class=\"category-details-img1\"><img src=\"../Categories/Images/".$row['Cat_ID'].".png\" width=\"50 px\" height=\"150px\" alt=\"No image\"></div>
                     <div class=\"category-details-description\">
                         <ul class=\"description-ulisted\">
-                            <li class=\"description-ulisted-item\">High End Desktops</li>
+                            <li class=\"description-ulisted-item\">High End </li>
                             <li class=\"description-ulisted-item\">Wide variety of specs</li>
                             <li class=\"description-ulisted-item\">Bargain Prices</li>
                         </ul>
