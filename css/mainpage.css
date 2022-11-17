@@ -87,6 +87,7 @@ i {
 .logo {
     margin-top: 22px;
     width: 10px;
+    box-sizing: 50px;
 }
 
 
