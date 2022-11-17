@@ -84,10 +84,10 @@ i {
    font-size: 40px;
    font-family: 'Russo One', sans-serif;
 }
-#logo {
-    margin-top: 22px;
-    width: 10px;
-    box-sizing: 50px;
+.logo {
+    margin-top: 15px;
+    width: 200px;
+    box-sizing: 500px;
 }
 
 
