@@ -2,6 +2,8 @@
 
 //echo $row['Cat_Name'];
 echo"
+<br>
+<br>
 <div class=\" devices-sub-container-product \">
                 <div class =\"category-details\">
                     <div class=\"category-details-title\">".$row['Cat_Name']."</div>
