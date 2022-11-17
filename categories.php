@@ -47,16 +47,18 @@ require "PHP/StatusSetter.php";
 
 </head>
 
-<?php include 'header.php'; ?>
+
 
 <body style="background: none;" class="dark_target"></body>
    
 
-    <header class="navigationBar" id="navigationLightMode" style="margin-top:-200px ;">
+    <header class="navigationBar" id="navigationLightMode"  >
         <ul id="navbar">
             <div id="logoblock">
                 <a href="index.php" class="link">
-                <img class="img-logo" src="img/Logo.png" alt="Logo">
+
+                    <img class="img-logo" src="img/Logo.png" alt="Logo">
+
                 </a>
 
             </div>
