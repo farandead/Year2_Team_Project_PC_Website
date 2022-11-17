@@ -84,6 +84,10 @@ i {
    font-size: 40px;
    font-family: 'Russo One', sans-serif;
 }
+.logo {
+    margin-top: 22px;
+    width: 100px;
+}
 
 
 #linksblock{

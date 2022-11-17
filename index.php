@@ -57,11 +57,9 @@
     <header class="navigationBar" id="navigationLightMode">
         <ul id="navbar">
             <div id="logoblock">
-                <a href="mainpage.php" class="link">
-                    <p id="logoMovie" style="color:white">
-                        LOGO
-
-                    </p>
+                <a href="index.php" class="link">
+                    
+                    <img class="logo" src="img/Logo.png" alt="Logo">
                 </a>
 
             </div>
