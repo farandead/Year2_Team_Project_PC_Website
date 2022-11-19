@@ -22,11 +22,11 @@ try {
 
                 <h1>Create Account</h1>
 
-                <input type="firstname" placeholder="First Name" name="firstName" value=""/>
-                <input type="lastname" placeholder="Last Name" name="lastname" value=""/>
-                <input type="email" placeholder="Email" name="email" value=""/>
-                <input type="password" placeholder="Password" name="Password" value=""/>
-                <input type="number" placeholder="Contact No" name="user_number" value=""/>
+              <input type="firstname" placeholder="First Name" name="firstName"  value=""/>
+              <input type="lastname" placeholder="Last Name" name="lastname"  value="" />
+              <input type="email" placeholder="Email" name="email"  value=""/>
+              <input type="password" name="user_pwd" value="" />
+              <input type="number" placeholder="Contact No" name="user_number"  value="" />
                  
                <!-- <input type="text" placeholder="Street" name="user_street" value="" />
                 <div class="small-container">
