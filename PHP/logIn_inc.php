@@ -37,10 +37,11 @@ try {
                 $count = $result->rowCount();
                 $res = $result->fetch(PDO::FETCH_ASSOC);
                 
-                if ($count == 1) {
+                if ($res) {
                     // Compare the password with password hash
                     // $hashed = '$2y$10$HqLUsOHun8xAxsui5wGCYe5';
-                    if (password_verify($res['User_Password'],$_POST['pwd'])) {
+                    if (password_verify($_POST['pwd'], $res['User_Password'])) {
+                        
                         // regenerate session id
                         //session_start();
                         // $_SESSION['login'] = true;
@@ -58,10 +59,13 @@ try {
                     } else {
                         //  header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
                         // exit();
-                       echo  "wronglogin";
+                       echo  "wrong login ";
                         var_dump($res['User_Password']);
                         var_dump($_POST['pwd']);
                     }
+                    
+                    
+                    
                 } else {
 
                     // header("location: /pages/connexion.php?error=unknowDetail");   
