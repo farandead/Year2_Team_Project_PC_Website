@@ -88,7 +88,7 @@ try {
             //     $key .= mt_rand(0, 9);
             //}
     
-            $sql = "INSERT INTO account (User_FName, User_SName, user_Email, User_Password, User_Phone_Number , User_Sex) 
+            $sql = "INSERT INTO account (User_FName, User_SName, user_Email, User_Password, User_Phone_Number ) 
         VALUES ( :User_FName, :User_SName, :user_Email,   :User_Password ,:User_Phone_Number)";
             $result = $conn->prepare($sql);
             $values = array(
