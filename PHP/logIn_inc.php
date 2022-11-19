@@ -53,10 +53,14 @@ try {
                         // header("location: /index.php");
                         // exit;
                         echo "Valid";
+                        var_dump($res['User_Password']);
+                        var_dump($_POST['pwd']);
                     } else {
                         //  header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
                         // exit();
                        echo  "wronglogin";
+                        var_dump($res['User_Password']);
+                        var_dump($_POST['pwd']);
                     }
                 } else {
 
