@@ -18,7 +18,7 @@ try {
 <!-- SIGN UP PHP SCRIPT-->
     <?php
 
-    if (isset($_POST['signup_submit']) & !empty($_POST['signup_submit'])) {
+   
 
         //if (empty($_POST['lastName'])) {
         // $errors[] = "";
@@ -127,9 +127,6 @@ try {
         // echo "</br>";
     
         // var_dump($messages);
-    } else {
-      
-      echo "Not submit ";
-    }
+   
     ?>
     <!-- END --- SIGN UP PHP SCRIPT-->
