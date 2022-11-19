@@ -16,36 +16,31 @@ try {
 ?>
 
 
-    <div class="container" id="container123">
-        <div class="form-container sign-up-container">
-            <form action="/PHP/signUp_inc.php" class="form-id" method="post">
+   <div class="form-container sign-in-container">
+            <form action="PHP/logIn_inc.php" style="background:white ;" method="post">
+                <h1>Sign in</h1>
 
-                <h1>Create Account</h1>
+                <input type="email" placeholder="Email" autocomplete="email" name="email" value="" />
+                <input type="password" placeholder="Password" name="pwd" value=""/>
+                <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
+                <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a
+                        href="" style="margin-bottom:10px">Here</a></a>
 
-              <input type="firstname" placeholder="First Name" name="firstName"  value=""/>
-              <input type="lastname" placeholder="Last Name" name="lastname"  value="" />
-              <input type="email" placeholder="Email" name="email"  value=""/>
-              <input type="password" name="user_pwd" value="" />
-              <input type="number" placeholder="Contact No" name="user_number"  value="" />
-                 
-               <!-- <input type="text" placeholder="Street" name="user_street" value="" />
-                <div class="small-container">
-                    <input type="text" class="small-input" placeholder="County" name="user_county" value="" />
-                    <input type="text" class="small-input" placeholder="Country" name="user_country" value="" />
-                </div>
-                <div class="small-conatainer-2">
-                    <input type="text" class="small-input" placeholder="City" name="user_city" value="" />
-                    <input type="text" class="small-input" placeholder="Post Code" name="user_postCode" value="" />
-                </div> -->
-                <button style="margin-top:15px ;" type="submit" name="signup_submit">Sign Up</button>
-                <!--<input  style="margin-top:15px"   value="Sign Up">-->
+              <button class="ghost" name="submit_Login" >Sign In</button>
+                <!-- message  -->
+                    <?php
+                    if (!empty($errors)) {
+                        var_dump($errors);
+                        //var_dump($_POST['email']);
+                        var_dump(password_verify($_POST['pwd'], $res['User_Password']));
+                        var_dump($res['User_Password']);
+                        var_dump($_POST['pwd']);
+                       
+                    }
+
+
+                    ?>
             </form>
-            <?php
-            if (!empty($errors)) {
-                var_dump($errors);
-            }
-            ?>
         </div>
-        <!--END  CREATE AN ACCOUNT  -->
 
         
