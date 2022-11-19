@@ -146,7 +146,8 @@ try {
                     <input type="text" class="small-input" placeholder="City" name="user_city" value="" />
                     <input type="text" class="small-input" placeholder="Post Code" name="user_postCode" value="" />
                 </div> -->
-                <button style="margin-top:15px ;" type="submit" name="signup_submit">Sign Up</button>
+               
+                <button class="ghost" name="signup_submit" >Sign In</button>
                 <!--<input  style="margin-top:15px"   value="Sign Up">-->
             </form>
             <?php
