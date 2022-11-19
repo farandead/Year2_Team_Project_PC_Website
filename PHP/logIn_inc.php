@@ -14,22 +14,22 @@ try {
 ?> 
 
 <?php
-        
+        $Noerrors = 1 ;
             // PHP Form Validations
             if (empty($_POST['email'])) {
                 // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
                 //  exit();
                 echo "emptyinputemail";
-                $Noerrors = false;
+                $Noerrors = 2;
             }
             if (empty($_POST['pwd'])) {
                 // header("location: /pages/connexion.php?error=emptyinput");
                 echo "emptyinputpwd";
                 
-                $Noerrors = false;
+                $Noerrors = 2;
             }
 
-            if ($Noerrors) {
+            if ($Noerrors = 1) {
                 // Check the Login Credentials
                 $sql = "SELECT user_Email,User_Password FROM account WHERE user_Email=? ";
                 $result = $conn->prepare($sql);
