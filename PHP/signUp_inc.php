@@ -115,7 +115,7 @@ try {
                 }
                 */
             } else {
-                $errors[] = "not in ";
+                echo "not in ";
             }
         } else {
 
@@ -127,6 +127,9 @@ try {
         // echo "</br>";
     
         // var_dump($messages);
+    } else {
+      
+      echo "Not submit ";
     }
     ?>
     <!-- END --- SIGN UP PHP SCRIPT-->
