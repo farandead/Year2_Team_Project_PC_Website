@@ -40,7 +40,7 @@ try {
                 if ($count == 1) {
                     // Compare the password with password hash
                     // $hashed = '$2y$10$HqLUsOHun8xAxsui5wGCYe5';
-                    if (password_verify($res['User_Password']),$_POST['pwd']) {
+                    if (password_verify($res['User_Password'],$_POST['pwd'])) {
                         // regenerate session id
                         //session_start();
                         // $_SESSION['login'] = true;
