@@ -19,12 +19,13 @@ try {
             if (empty($_POST['email'])) {
                 // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
                 //  exit();
-                $errors[] = "emptyinputemail";
+                echo "emptyinputemail";
             }
             if (empty($_POST['pwd'])) {
                 // header("location: /pages/connexion.php?error=emptyinput");
-                $errors[] = "emptyinputpwd";
+                echo "emptyinputpwd";
             }
+$errors[];
             if (empty($errors)) {
                 // Check the Login Credentials
                 $sql = "SELECT user_Email,User_Password FROM account WHERE user_Email=? ";
@@ -52,7 +53,7 @@ try {
                     } else {
                         //  header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
                         // exit();
-                        $errors[] = "wronglogin";
+                       echo  "wronglogin";
                     }
                 } else {
 
