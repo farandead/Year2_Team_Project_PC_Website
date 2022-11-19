@@ -133,7 +133,7 @@ try {
 
     <div class="container" id="container123">
         <div class="form-container sign-up-container">
-            <form action="#" class="form-id">
+            <form action="#" class="form-id" method="post">
 
                 <h1>Create Account</h1>
 
