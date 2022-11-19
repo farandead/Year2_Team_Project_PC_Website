@@ -170,7 +170,7 @@ try {
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a
                         href="" style="margin-bottom:10px">Here</a></a>
 
-              <button class="ghost" name="submit_Login" >Sign In</button>
+              <button name="submit_Login" >Sign In</button>
                 <!-- message  -->
                     <?php
                     if (!empty($errors)) {
@@ -197,7 +197,7 @@ try {
                 <div class="overlay-panel overlay-right">
                     <h1>Hello, Friend!</h1>
                     <p>Enter your personal details and start journey with COMPUK</p>
-                    <button class="ghost" id="signUp" onclick="signUp()">Sign Up</button>
+                    <button id="signUp" onclick="signUp()">Sign Up</button>
                 </div>
             </div>
         </div>
