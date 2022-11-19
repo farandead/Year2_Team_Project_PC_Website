@@ -14,7 +14,7 @@ try {
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
 }
-
+?>
  <!-- SIGN UP PHP SCRIPT-->
     <?php
 
