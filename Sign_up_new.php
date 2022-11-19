@@ -127,7 +127,7 @@ try {
 
     <div class="container" id="container123">
         <div class="form-container sign-up-container">
-            <form action="PHP/signUp_inc.php" class="form-id">
+            <form action="PHP/signUp_inc.php" method='post' class="form-id">
 
                 <h1>Create Account</h1>
 
