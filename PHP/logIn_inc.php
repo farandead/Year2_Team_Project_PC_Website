@@ -20,13 +20,16 @@ try {
                 // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
                 //  exit();
                 echo "emptyinputemail";
+                $Noerrors = false;
             }
             if (empty($_POST['pwd'])) {
                 // header("location: /pages/connexion.php?error=emptyinput");
                 echo "emptyinputpwd";
+                
+                $Noerrors = false;
             }
-$errors[];
-            if (empty($errors)) {
+
+            if ($Noerrors) {
                 // Check the Login Credentials
                 $sql = "SELECT user_Email,User_Password FROM account WHERE user_Email=? ";
                 $result = $conn->prepare($sql);
