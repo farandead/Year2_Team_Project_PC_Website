@@ -92,6 +92,10 @@
             <div></div>
         </div>
     </div>
+    <?php
+    echo "test test!!!!!!!!!!";
+    
+    ?>
 </div>
 <div class="shoppCarImg"><img src="img/car.png"/></div>
 <div class="shopCarMark">
@@ -103,10 +107,7 @@
         <div class="close">Close</div>
         <div class="pay">Pay</div>
     </div>
-<?php
-    echo "test test!!!!!!!!!!";
-    
-    ?>
+
 </div>
 <section class="footerMenu">
     <div class="footer-menu-sub-container">
