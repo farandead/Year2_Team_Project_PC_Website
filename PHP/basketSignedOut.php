@@ -2,7 +2,7 @@
 ob_start();
 //if(!isset($_COOKIE["Basket"])){setcookie("Basket","");}
 
-//$_COOKIE["Basket"]="8,1;2,3;";
+$_COOKIE["Basket"]="8,1;2,3;";
 $product="18";
 $IsThere=false;
 
