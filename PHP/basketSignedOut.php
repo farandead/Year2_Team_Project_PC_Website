@@ -1,5 +1,5 @@
 <?php
-$_COOKIE["Basket"]="8,1;2,3;";
+//$_COOKIE["Basket"]="8,1;2,3;";
 
 
 if(isset($_COOKIE["Basket"])){
