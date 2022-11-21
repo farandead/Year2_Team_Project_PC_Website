@@ -21,9 +21,9 @@ $ArrayCollectionBasket[$i]=explode(",", $arrayStringBasket[$i] );
   break;
  }
   
-  
+  echo "Not found!";
 }
-echo "Not found!";
+
 }else{
 echo "empty";
   $_COOKIE["Basket"]="";
