@@ -5,9 +5,9 @@ $BasketStr= $_COOKIE["Basket"];
 
 $arrayStringBasket=  explode(";", $BasketStr );
 
-$i=-1;
-while($arrayStringBasket){
-echo $arrayStringBasket[$i++];
+
+for($i=0;$i<Count($arrayStringBasket);$i++){
+echo $arrayStringBasket[$i];
 }
 
 ?>
