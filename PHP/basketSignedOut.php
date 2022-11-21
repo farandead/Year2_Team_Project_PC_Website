@@ -6,7 +6,7 @@ if(!isset($_COOKIE["Basket"])){setcookie("Basket","");}
 $product="18";
 $IsThere=false;
 
-if(isset($_COOKIE["Basket"])){
+if(!($_COOKIE["Basket"]=="")){
 $BasketStr= $_COOKIE["Basket"];
 
 $arrayStringBasket=  explode(";", $BasketStr );
