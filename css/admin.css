@@ -1,0 +1,8 @@
+header {
+    background: #01474a ;
+}
+
+.admin-wrapper {
+    border: 1px solid red;
+    height: calc(100% - 66px);
+}
