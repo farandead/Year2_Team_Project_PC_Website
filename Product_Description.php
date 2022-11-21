@@ -95,7 +95,7 @@
         <div class="main-product-description-sub-container " id="product_heading_with_button">
             <div class="product-heading-container">
                 <?php
-                echo "<a href='".$res["Product_ID"]."' target=\"_blank\" rel=\"noopener noreferrer\"><h3>".$res2["Man_Name"]."</h3></a>";
+                echo "<a href='".$res2["Man_Link"]."' target=\"_blank\" rel=\"noopener noreferrer\"><h3>".$res2["Man_Name"]."</h3></a>";
                 ?>
                
             </div>
@@ -119,7 +119,7 @@ require "PHP/IndProductPriceDis.php";
             </div>
             <div class="main-summary-description-conatiner">
                 <?php
-               echo "<a href='PHP/checkStatusForBasket.php?product=".$res2["Man_Link"]."'>"; 
+               echo "<a href='PHP/checkStatusForBasket.php?product=".$res["Product_ID"]."'>"; 
                    ?>
                    
                    <button>
