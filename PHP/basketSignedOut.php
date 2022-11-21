@@ -1,12 +1,12 @@
 <?php
 
-if(!isset($_COOKIE["Basket"])){setcookie("Basket","");}
+//if(!isset($_COOKIE["Basket"])){setcookie("Basket","");}
 
 //$_COOKIE["Basket"]="8,1;2,3;";
 $product="18";
 $IsThere=false;
 
-if(!($_COOKIE["Basket"]=="")){
+if(isset($_COOKIE["Basket"])){
 $BasketStr= $_COOKIE["Basket"];
 
 $arrayStringBasket=  explode(";", $BasketStr );
