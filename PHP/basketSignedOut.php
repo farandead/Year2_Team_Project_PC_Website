@@ -6,8 +6,8 @@ ob_start();
 $product="18";
 $IsThere=false;
 
-if(isset($_COOKIE["Basket"])){
-$BasketStr= $_COOKIE["Basket"];
+if(isset($_COOKIE["BasketCompUK"])){
+$BasketStr= $_COOKIE["BasketCompUK"];
 
 $arrayStringBasket=  explode(";", $BasketStr );
 
@@ -28,17 +28,17 @@ $ArrayCollectionBasket[$i]=explode(",", $arrayStringBasket[$i] );
 
 }else{
 echo "empty";
-  setcookie("Basket","",time() + 2 * 24 * 60 * 60);
+  setcookie("BasketCompUK","",time() + 2 * 24 * 60 * 60);
   
 }
 
 if(!$IsThere){
- $update=$_COOKIE["Basket"].$product.",1;";
-  setcookie("Basket",$update,time() + 2 * 24 * 60 * 60);
+ $update=$_COOKIE["BasketCompUK"].$product.",1;";
+  setcookie("BasketCompUK",$update,time() + 2 * 24 * 60 * 60);
 }
 
-echo "Basket: ";
-echo $_COOKIE["Basket"];
+echo "BasketCompUK: ";
+echo $_COOKIE["BasketCompUK"];
 
 
 ?>
