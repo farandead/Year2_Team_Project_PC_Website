@@ -1,6 +1,8 @@
 <?php
 $_COOKIE["Basket"]="8,1;2,3;";
 
+
+if(isset($_COOKIE["Basket"])){
 $BasketStr= $_COOKIE["Basket"];
 
 $arrayStringBasket=  explode(";", $BasketStr );
@@ -14,5 +16,8 @@ $ArrayCollectionBasket[$i]=explode(",", $arrayStringBasket[$i] );
 }
 
 echo "Done1";
+}else{
+echo "empty";
+}
 
 ?>
