@@ -119,7 +119,7 @@ require "PHP/IndProductPriceDis.php";
             </div>
             <div class="main-summary-description-conatiner">
                 <?php
-               echo "<a href='PHP/checkStatusForBasket.php?product=123'>"; 
+               echo "<a href='PHP/checkStatusForBasket.php?product=".$res2["Man_Link"]."'>"; 
                    ?>
                    
                    <button>
