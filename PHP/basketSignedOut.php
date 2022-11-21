@@ -28,6 +28,7 @@ $ArrayCollectionBasket[$i]=explode(",", $arrayStringBasket[$i] );
 
 }else{
 echo "empty";
+  setcookie("Basket","");
   $_COOKIE["Basket"]="";
 }
 
