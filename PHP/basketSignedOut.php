@@ -1,6 +1,6 @@
 <?php
 $_COOKIE["Basket"]="8,1;2,3;";
-$product="8";
+$product="18";
 $IsThere=false;
 
 if(isset($_COOKIE["Basket"])){
