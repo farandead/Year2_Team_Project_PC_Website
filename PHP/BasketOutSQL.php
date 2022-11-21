@@ -7,7 +7,7 @@ $items="";
 $arrayStringBasket=  explode(";", $BasketStr );
 
 
-for($i=0;$i<Count($arrayStringBasket);$i++){
+for($i=0;$i<Count($arrayStringBasket)-1;$i++){
 $ArrayCollectionBasket=explode(",", $arrayStringBasket[$i] );
   $ArrayCollectionBasketDic=array($ArrayCollectionBasket[0]=>$ArrayCollectionBasket[1]);
   
