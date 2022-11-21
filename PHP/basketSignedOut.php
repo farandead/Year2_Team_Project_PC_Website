@@ -2,8 +2,8 @@
 ob_start();
 //if(!isset($_COOKIE["Basket"])){setcookie("Basket","");}
 
-$_COOKIE["Basket"]="8,1;2,3;";
-$product="18";
+//$_COOKIE["Basket"]="8,1;2,3;";
+$product="15";
 $IsThere=false;
 
 if(isset($_COOKIE["BasketCompUK"])){
