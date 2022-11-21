@@ -103,7 +103,10 @@
         <div class="close">Close</div>
         <div class="pay">Pay</div>
     </div>
-
+<?php
+    echo "test test!!!!!!!!!!";
+    
+    ?>
 </div>
 <section class="footerMenu">
     <div class="footer-menu-sub-container">
