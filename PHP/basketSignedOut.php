@@ -7,7 +7,7 @@ $arrayStringBasket=  explode(";", $BasketStr );
 
 $i=-1;
 while($arrayStringBasket){
-echo $arrayStringBasket[$i++]
+echo $arrayStringBasket[$i++];
 }
 
 ?>
