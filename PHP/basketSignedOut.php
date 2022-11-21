@@ -8,8 +8,11 @@ $arrayStringBasket=  explode(";", $BasketStr );
 
 for($i=0;$i<Count($arrayStringBasket);$i++){
 $ArrayCollectionBasket[$i]=explode(",", $arrayStringBasket[$i] );
+  
+ echo $ArrayCollectionBasket[$i][0];
+  echo "<br>";
 }
 
-echo "Done!";
+echo "Done1";
 
 ?>
