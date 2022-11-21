@@ -1,5 +1,5 @@
 <?php
-$_COOKIE["Basket"]="8,1;2,3;";
+//$_COOKIE["Basket"]="8,1;2,3;";
 $product="18";
 $IsThere=false;
 
@@ -21,7 +21,6 @@ $ArrayCollectionBasket[$i]=explode(",", $arrayStringBasket[$i] );
   break;
  }
   
-  echo "Not found!";
 }
 
 }else{
