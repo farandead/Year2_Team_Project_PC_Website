@@ -92,14 +92,11 @@
             <div></div>
         </div>
          <?php
-    echo "test 2222!!!!!!!!!!";
+   require "PHP/BasketCollectionPrinter.php";
     
     ?>
     </div>
-    <?php
-    echo "test 11111!!!!!!!!!!";
-    
-    ?>
+   
 </div>
 <div class="shoppCarImg"><img src="img/car.png"/></div>
 <div class="shopCarMark">
