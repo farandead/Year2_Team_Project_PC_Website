@@ -20,3 +20,8 @@ ob_start();
 </body>
 </html>
 
+<?php
+echo "COOKIES:<br>";
+    echo  print_r($_COOKIE);
+?>
+
