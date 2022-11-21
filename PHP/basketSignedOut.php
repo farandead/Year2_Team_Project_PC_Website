@@ -3,7 +3,7 @@ ob_start();
 //if(!isset($_COOKIE["Basket"])){setcookie("Basket","");}
 
 //$_COOKIE["Basket"]="8,1;2,3;";
-$product=$_Get["product"];
+$product=$_GET["product"];
 $IsThere=false;
 
 if(isset($_COOKIE["BasketCompUK"])){
