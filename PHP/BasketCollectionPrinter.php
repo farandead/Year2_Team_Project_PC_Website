@@ -15,6 +15,7 @@ require "Printer.php";
 }
   else{
   echo "No products1";
+    print_r($_COOKIE,true);
   }
 
 }
