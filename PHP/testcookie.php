@@ -4,7 +4,7 @@ ob_start();
 
 <!DOCTYPE html>
 <?php
-    setcookie("Auction_Item", "Luxury Car", time() + 2 * 24 * 60 * 60);
+    setcookie("Auction_Item", "Luxury Car", time() + 2 * 24 * 60 * 60,"/","comp-uk.motorsfeere.com",true);
 ?>
 <html>
 <body>
