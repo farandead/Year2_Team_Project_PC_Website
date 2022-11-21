@@ -29,11 +29,12 @@ $ArrayCollectionBasket[$i]=explode(",", $arrayStringBasket[$i] );
 }else{
 echo "empty";
   setcookie("Basket","",time() + 2 * 24 * 60 * 60);
-  $_COOKIE["Basket"]="";
+  
 }
 
 if(!$IsThere){
-  $_COOKIE["Basket"]=$_COOKIE["Basket"].$product.",1;";
+ $update=$_COOKIE["Basket"].$product.",1;";
+  setcookie("Basket",$update,time() + 2 * 24 * 60 * 60);
 }
 
 echo "Basket: ";
