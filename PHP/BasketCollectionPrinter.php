@@ -11,10 +11,10 @@ require "BasketOutSQL.php";
 require "Printer.php";
   
 }else{
-  echo "No products";}
+  echo "No products2";}
 }
   else{
-  echo "No products";
+  echo "No products1";
   }
 
 }
