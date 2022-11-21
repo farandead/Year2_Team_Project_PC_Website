@@ -35,5 +35,5 @@ if(!$IsThere){
 echo "Basket: ";
 echo $_COOKIE["Basket"];
 
-setcookie("Basket",$_COOKIE["Basket"]);
+
 ?>
