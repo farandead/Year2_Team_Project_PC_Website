@@ -30,7 +30,7 @@ echo "empty";
 }
 
 if(!$IsThere){
-  $_COOKIE["Basket"]=$_COOKIE["Basket"]+$product.",1;";
+  $_COOKIE["Basket"]=$_COOKIE["Basket"].$product.",1;";
 }
 
 echo "Basket: ";
