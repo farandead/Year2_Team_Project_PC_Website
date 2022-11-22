@@ -92,7 +92,7 @@
             <div></div>
         </div>
          <?php
-   require "PHP/BasketCollectionPrinter.php";
+   include "PHP/BasketCollectionPrinter.php";
     
     ?>
     </div>
