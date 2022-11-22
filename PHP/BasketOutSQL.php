@@ -19,7 +19,7 @@ $ArrayCollectionBasket=explode(",", $arrayStringBasket[$i] );
   
 }
 
-echo $items;
+//echo $items;
 
  $query=mysqli_query($conn,"SELECT * FROM Product WHERE ".$items."");
  // $res=mysqli_fetch_assoc($query);
