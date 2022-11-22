@@ -28,13 +28,13 @@ $ArrayCollectionBasket[$i]=explode(",", $arrayStringBasket[$i] );
 
 }else{
 echo "empty";
-  setcookie("BasketCompUK","",time() + 2 * 24 * 60 * 60);
+  setcookie("BasketCompUK","",time() + 2 * 24 * 60 * 60,"/","comp-uk.motorsfeere.com",true);
   
 }
 
 if(!$IsThere){
  $update=$_COOKIE["BasketCompUK"].$product.",1;";
-  setcookie("BasketCompUK",$update,time() + 2 * 24 * 60 * 60);
+  setcookie("BasketCompUK",$update,time() + 2 * 24 * 60 * 60,"/","comp-uk.motorsfeere.com",true);
 }
 
 echo "BasketCompUK: ";
