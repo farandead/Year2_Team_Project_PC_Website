@@ -73,15 +73,15 @@
     
     
     
+          <?php
+   include "PHP/BasketCollectionPrinter.php";
     
+    ?>
     
     
     
         </div>
-         <?php
-   include "PHP/BasketCollectionPrinter.php";
-    
-    ?>
+   
     </div>
    
 </div>
