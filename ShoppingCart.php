@@ -67,7 +67,7 @@
 <div class="shopping-box">
     <div class="shopping_con">
         <div class="shopping_title">PRODUCT LIST</div>
-        <div class="shopping_list">
+        <div class="">
             
         <?php
    include "PHP/BasketCollectionPrinter.php";
