@@ -100,7 +100,7 @@ let shoppArr = [
     },
 ]
 let ShoppingCart = []               //加入购物车的数据
-let shopping_list = document.querySelector(".shopping_list")
+
 // 此处发起加入购物车商品请求
 function getList() {
 

@@ -74,7 +74,7 @@
     
         <div class="shopping_con">
         <div class="shopping_title">PRODUCT LIST</div>
-        <div class="">
+        <div class="shopping_list">
             <div>
                 <div class="shopping_name">Computer name</div>
                 <img src="img/Product IMG/Product image 1.png"/>
