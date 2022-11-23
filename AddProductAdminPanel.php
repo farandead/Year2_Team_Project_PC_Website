@@ -14,6 +14,9 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
 
 <body>
     <form action="">
+        
+         <h3>Add a new product</h3>
+        
   <label for="Name">Name:</label><br>
   <input type="text" id="NamePr" name="NamePr" maxlength= "50" ><br>
         
