@@ -8,8 +8,7 @@ $queryMans=mysqli_query($conn,"SELECT * FROM Manufacture");
 //SQL For Cats
 $queryCats=mysqli_query($conn,"SELECT * FROM Category");
 
-while($row=mysqli_fetch_assoc($queryCats)){
-echo "1";}
+
 ?>
 <html>
 
@@ -28,7 +27,8 @@ echo "1";}
   <select name="Cats" id="Cats">
       <?php
       while($row=mysqli_fetch_assoc($queryCats)){
-echo "<option value=/" 1/"> 2</option>";}
+echo "<option value=\" 1\"> 2</option>";
+      }
       ?>
 
   </select><br><br>
