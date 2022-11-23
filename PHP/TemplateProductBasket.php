@@ -16,7 +16,7 @@ echo "<div class=\"devices-sub-container-product\">
                                 <ul class=\"description-ulisted\">";
                                 
 //foreach($lines as $line){   
-                                   echo " <li class=\"description-ulisted-item\"> Quantity: 3"."</li>";
+                                   echo " <li class=\"description-ulisted-item\"> <h3>Quantity: 3</h3>"."</li>";
 //}
 
 
