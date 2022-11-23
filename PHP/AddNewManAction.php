@@ -4,7 +4,7 @@ if (isset($_POST['submit'])){
 $link=$_POST['LinkMan'];
 $name=$_POST['NameMan'];
   
- require "PHP/connect_db.php";
+ require "connect_db.php";
   
   //SQL to add a new Man
   
