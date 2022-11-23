@@ -153,7 +153,7 @@
         </div>
 
         <div class="devices-container-heading">
-            <h3 id="devices-container-heading-h3" style="font-family: 'Russo One', sans-serif;font-size:19px ">FEATURED SYSTEMS</h3>
+            <h3 id="devices-container-heading-h3" style="font-family: 'Russo One', sans-serif;font-size:19px ">Discounts:</h3>
 
         </div>
 
@@ -162,7 +162,9 @@
             <button id="desktopChange_Button" onclick="changeToDesktop()">DESKTOPS</button>
         </div>
 
-
+<?php
+    //here
+    ?>
 
         <div class="devices-container" id="desktop_container">
             <div class="devices-sub-container">
