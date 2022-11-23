@@ -7,7 +7,7 @@ $template= "TemplateProductBasket.php";
 
 $arrayStringBasket=  explode(";", $BasketStr );
 
-$ArrayCollectionBasketDic;
+$ArrayCollectionBasketDic=[];
 
 for($i=0;$i<Count($arrayStringBasket)-1;$i++){
 $ArrayCollectionBasket=explode(",", $arrayStringBasket[$i] );
