@@ -1,6 +1,6 @@
 <?php
 require "PHP/CheckAdminAccess.php";
-require "connect_db.php";
+require "PHP/connect_db.php";
 
 //SQL For Mans
 $queryMans=mysqli_query($conn,"SELECT * FROM Manufacture");
