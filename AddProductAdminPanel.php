@@ -52,7 +52,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
   <input type="submit" value="Add new product">
 </form> 
     
- <form action ="PHP/AddNewManAction.php">
+ <form action ="PHP/AddNewManAction.php" method="post">
      <h3>Add a new manufacture</h3>
      
        <label for="Name">Name:</label><br>
@@ -61,7 +61,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
        <label for="Link">Link:</label><br>
   <input type="text" id="NamePr" name="NamePr" maxlength= "50" ><br><br>
      
-     <input type="submit" value="submit">
+     <input type="submit" name="submit" value="Add a new manufacturer">
     </form>
 </body>
 </html>
