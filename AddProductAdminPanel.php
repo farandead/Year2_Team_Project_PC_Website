@@ -52,7 +52,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
   <input type="submit" value="Add new product">
 </form> 
     
- <form action ="">
+ <form action ="AddNewManAction.php">
      <h3>Add a new manufacture</h3>
      
        <label for="Name">Name:</label><br>
