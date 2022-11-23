@@ -111,6 +111,11 @@
     width: 200px;
     box-sizing: 200px;
 }
+#logoMovie{
+    margin-top: 22px;
+    font-size: 40px;
+    font-family: 'Russo One', sans-serif;
+ }
 
 #linksblock{
     display: flex;
