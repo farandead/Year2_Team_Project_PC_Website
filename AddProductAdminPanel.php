@@ -48,9 +48,12 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
   </select><br><br>
         
         
-        
-        <textarea class="scrollabletextbox" name="note"  cols="129" maxlength="5000" required></textarea>
-        <br>
+        <label for="Mans">Enter the points:</label><br>
+        <textarea class="scrollabletextbox" name="Points"  cols="129" maxlength="5000" required></textarea>
+        <br><br>
+         <label for="Mans">Enter the description:</label><br>
+        <textarea class="scrollabletextbox" name="Description"  cols="129" maxlength="5000" required></textarea>
+        <br><br>
         
         
   <input type="submit" value="Add new product">
