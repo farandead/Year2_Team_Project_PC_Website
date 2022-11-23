@@ -58,7 +58,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
         <textarea class="scrollabletextbox" name="note" required>
   
 </textarea>
-        
+        <br>
         
         
   <input type="submit" value="Add new product">
