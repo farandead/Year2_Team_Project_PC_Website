@@ -15,7 +15,6 @@
     background-color: #0260be;
     font-size: 10px;
     margin-top: -20px;
-    margin-bottom: 100px;
    
    
 }
@@ -41,11 +40,6 @@
    margin-top: 22px;
    font-size: 40px;
    font-family: 'Russo One', sans-serif;
-}
-#img-logo{
-    margin-top: 15px;
-    width: 200px;
-    box-sizing: 500px;
 }
 
 
@@ -184,7 +178,7 @@ input {
 	max-width: 100%;
 	min-height: 750px;
 	margin: auto;
-	margin-top: 400px;
+	margin-top: 200px;
 	margin-bottom: 200px;
 }
 
