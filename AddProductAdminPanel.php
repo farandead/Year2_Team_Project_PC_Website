@@ -28,7 +28,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
       <option value="0" selected disabled>Select</option>
       <?php
       while($row=mysqli_fetch_assoc($queryCats)){
-echo "<option value=\" ".$row['Cat_ID']."\"> ".$row['Cat_Name']."</option>";
+        echo "<option value=\" ".$row['Cat_ID']."\"> ".$row['Cat_Name']."</option>";
       }
       ?>
 
@@ -36,11 +36,12 @@ echo "<option value=\" ".$row['Cat_ID']."\"> ".$row['Cat_Name']."</option>";
         
    <label for="Mans">Choose a Manufacture:</label>
   <select name="Mans" id="Mans">
-      <?php 
-      
+       <option value="0" selected disabled>Select</option>
+  <?php
+      while($row=mysqli_fetch_assoc($queryMans)){
+        echo "<option value=\" ".$row['Man_ID']."\"> ".$row['Man_Name']."</option>";
+      }
       ?>
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
   </select><br><br>
         
         <a> <button type="buttonMan">Add a new manufacture</button> </a><br><br>
