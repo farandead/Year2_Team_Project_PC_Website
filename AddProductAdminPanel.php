@@ -27,7 +27,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
   <select name="Cats" id="Cats">
       <?php
       while($row=mysqli_fetch_assoc($queryCats)){
-echo "<option value=\" 1\"> 2</option>";
+echo "<option value=\" ".$row['Cat_ID']."\"> 3</option>";
       }
       ?>
 
