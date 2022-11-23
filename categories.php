@@ -51,8 +51,9 @@ require "PHP/StatusSetter.php";
 
 <body style="background: none;" class="dark_target"></body>
    
+    <?php include '/header.php'; ?>
 
-    <header class="navigationBar" id="navigationLightMode" style="margin-top:-50px ;">
+    <!-- <header class="navigationBar" id="navigationLightMode" style="margin-top:-50px ;">
         <ul id="navbar">
             <div id="logoblock">
                 <a href="index.php" class="link">
@@ -88,7 +89,7 @@ require "PHP/StatusSetter.php";
         </ul>
         </div>
 
-    </header>
+    </header> --> 
 
     
 
