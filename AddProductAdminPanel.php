@@ -44,9 +44,21 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
       ?>
   </select><br><br>
         
-        <a> <button type="buttonMan">Add a new manufacture</button> </a><br><br>
         
-  <input type="submit" value="Submit">
+        
+  <input type="submit" value="SubmitPr">
 </form> 
+    
+ <form action ="">
+     <h3>Add a new manufacture</h3>
+     
+       <label for="Name">Name:</label><br>
+  <input type="text" id="NamePr" name="NamePr" maxlength= "20" ><br>
+     
+       <label for="Link">Link:</label><br>
+  <input type="text" id="NamePr" name="NamePr" maxlength= "50" ><br>
+     
+     <input type="submit" value="SubmitMan">
+    </form>
 </body>
 </html>
