@@ -8,7 +8,7 @@ $queryMans=mysqli_query($conn,"SELECT * FROM Manufacture");
 //SQL For Cats
 $queryCats=mysqli_query($conn,"SELECT * FROM Category");
 
-while($row=mysqli_fetch_assoc($query)){
+while($row=mysqli_fetch_assoc($queryCats)){
 echo "1";}
 ?>
 <html>
