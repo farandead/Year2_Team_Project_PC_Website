@@ -18,7 +18,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
          <h3>Add a new product</h3>
         
   <label for="Name">Name:</label><br>
-  <input type="text" id="NamePr" name="NamePr" maxlength= "50" ><br>
+  <input type="text" id="NamePr" name="NamePr" maxlength= "50" ><br><br>
         
   <label for="Price">Price:</label><br>
   <input type="number" id="PricePr" name="PricePr" min="0.01" max = "1000000" ><br><br>
@@ -56,10 +56,10 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
      <h3>Add a new manufacture</h3>
      
        <label for="Name">Name:</label><br>
-  <input type="text" id="NamePr" name="NamePr" maxlength= "20" ><br>
+  <input type="text" id="NamePr" name="NamePr" maxlength= "20" ><br><br>
      
        <label for="Link">Link:</label><br>
-  <input type="text" id="NamePr" name="NamePr" maxlength= "50" ><br>
+  <input type="text" id="NamePr" name="NamePr" maxlength= "50" ><br><br>
      
      <input type="submit" value="Add new manufacture">
     </form>
