@@ -27,7 +27,7 @@ foreach($lines as $line){
                                <a href='Product_Description.php?Product=".$row['Product_ID']."'> <button>CONFIGURE THIS ITEM ></button></a>
                             </div>
   <div class=\"product-details-buy-buttons\">
-                               <a href='Product_Description.php?Product=".$row['Product_ID']."'> <button>CONFIGURE THIS ITEM ></button></a>
+                               <a href='Product_Description.php?Product=".$row['Product_ID']."'> <button>REMOVE THIS ITEM ></button></a>
                             </div>";
 
 echo "
