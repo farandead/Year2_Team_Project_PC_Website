@@ -162,13 +162,19 @@
             <button id="desktopChange_Button" onclick="changeToDesktop()">DESKTOPS</button>
         </div>
 
-<?php
+
+
+        <div class="devices-container" id="desktop_container">
+            
+            
+            
+            <?php
     //here
     
     require "PHP/ProductsCollectionPrinterIndex.php";
     ?>
-
-        <div class="devices-container" id="desktop_container">
+            
+            
             <div class="devices-sub-container">
                 <div class="devices-sub-container-product">
                     <div class="productdetails">
