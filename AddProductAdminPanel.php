@@ -34,7 +34,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
   
      <label for="Cats">Choose a Category:</label>
   <select name="Cats" id="Cats" required >
-      <option value="0" selected disabled>Select</option>
+      <option value="" selected disabled>Select</option>
       <?php
       while($row=mysqli_fetch_assoc($queryCats)){
         echo "<option value=\" ".$row['Cat_ID']."\"> ".$row['Cat_Name']."</option>";
@@ -45,7 +45,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
         
    <label for="Mans">Choose a Manufacture:</label>
   <select name="Mans" id="Mans" required >
-       <option value="0" selected disabled>Select</option>
+       <option value="" selected disabled>Select</option>
   <?php
       while($row=mysqli_fetch_assoc($queryMans)){
         echo "<option value=\" ".$row['Man_ID']."\"> ".$row['Man_Name']."</option>";
