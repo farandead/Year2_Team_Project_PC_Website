@@ -10,7 +10,7 @@ echo $bas;
   echo " After:";
   echo $bas;
   
-  $_COOKIE["BasketCompUK"]=echo $bas;
+  $_COOKIE["BasketCompUK"]=$bas;
 }
 
 
