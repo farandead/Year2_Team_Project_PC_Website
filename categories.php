@@ -63,7 +63,7 @@ require "PHP/StatusSetter.php";
 
             </div>
             <div id="linksblock">
-                <li class="navbaritem"><a class="link" href="filmPage.html">DESKTOP PCs</a></li>
+                <li class="navbaritem"><a class="link" href="header.php">DESKTOP PCs</a></li>
                 <li class="navbaritem"><a class="link" href="#">LAPTOPS</a></li>
                 <li class="navbaritem"><a class="link" href="contact_us.html">CONTACT US</a></li>
                 <li class="navbaritem"><a class="link" href="#">REVIEWS</a></li>

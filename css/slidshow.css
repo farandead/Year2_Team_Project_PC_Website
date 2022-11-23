@@ -115,4 +115,101 @@
     border-radius: 6px;
 }
 
- 
+.navigationBar{
+    z-index:+1 ;
+    position: absolute;
+    width: 100%;
+    color: white;
+    height: 120px;
+    padding: 0%;
+    background-color: #0260be;
+    font-size: 10px;
+    margin-top: -20px;
+    margin-bottom: 100px;
+   
+   
+}
+.navigationBar_dark_mode{
+    background-color: rgb(26, 26, 26);
+   
+}
+
+
+#navbar{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+}
+#logoblock{
+    margin-left: 250PX;
+    height: 100px;
+    margin-right: 70PX;
+    color: white;
+}
+#logoMovie{
+   margin-top: 22px;
+   font-size: 40px;
+   font-family: 'Russo One', sans-serif;
+}
+.img-logo{
+    margin-top: 15px;
+    width: 200px;
+    box-sizing: 500px;
+}
+
+#linksblock{
+    display: flex;
+    flex-direction: row;
+    
+    height: 100px;
+    color: white;
+    
+
+}
+.navbaritem{
+    font-weight: bold;
+    
+    display: flex;
+    flex-direction: row;
+    margin-left:20px ;
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+
+}
+
+.link:hover{
+    border-bottom: 1px solid white;
+    color: white;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+.searchLogo{
+    margin-left:50px ;
+    color: white;
+   
+}
+.searchLogo:hover{
+    
+    color: #0260be;
+}
+
+#membershipblock{
+    display: flex;
+    flex-direction: row;
+   margin-left: 234px;
+    
+}
+#membershipblock li{
+    color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left:15px ;
+    margin-right: 15px;
+    font-weight: bold;
+}
