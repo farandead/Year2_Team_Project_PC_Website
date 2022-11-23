@@ -21,6 +21,6 @@ if ($conn->query($sql) === TRUE) {
 
   
 }
-header("Location: AddProductAdminPanel.php");
+header("Location: ../AddProductAdminPanel.php");
 
 ?>
