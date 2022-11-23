@@ -25,16 +25,18 @@ echo "1";}
   <input type="number" id="DisPr" name="DisPr" min="0" max="100" ><br><br>
   
      <label for="Cats">Choose a Category:</label>
-  <select name="Cats" id="cars">
-      <?php 
+  <select name="Cats" id="Cats">
+      <?php
+      while($row=mysqli_fetch_assoc($queryCats)){
+echo "<option value=/"".$row['Cat_ID']."/">".$row['Cat_Name']."</option>";}
       ?>
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
+
   </select><br><br>
         
    <label for="Mans">Choose a Manufacture:</label>
   <select name="Mans" id="Mans">
       <?php 
+      
       ?>
     <option value="volvo">Volvo</option>
     <option value="saab">Saab</option>
