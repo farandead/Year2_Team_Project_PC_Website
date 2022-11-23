@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="css/slidshow.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -61,7 +61,7 @@
 
             </div>
             <div id="linksblock">
-                <li class="navbaritem"><a class="link" href="filmPage.html">DESKTOP PCs</a></li>
+                <li class="navbaritem"><a class="link" href="#l">DESKTOP PCs</a></li>
                 <li class="navbaritem"><a class="link" href="#">LAPTOPS</a></li>
                 <li class="navbaritem"><a class="link" href="contact_us.html">CONTACT US</a></li>
                 <li class="navbaritem"><a class="link" href="#">REVIEWS</a></li>
