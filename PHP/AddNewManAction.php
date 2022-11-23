@@ -1,6 +1,7 @@
 <?php
 
 if (isset($_POST['submit'])){
+  ob_start();
 $link=$_POST['LinkMan'];
 $name=$_POST['NameMan'];
   
