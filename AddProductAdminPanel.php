@@ -18,16 +18,16 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
          <h3>Add a new product</h3>
         
   <label for="Name">Name:</label><br>
-  <input type="text" id="NamePr" name="NamePr" maxlength= "50" ><br><br>
+  <input type="text" id="NamePr" name="NamePr" maxlength= "50" required  ><br><br>
         
   <label for="Price">Price:</label><br>
-  <input type="number" id="PricePr" name="PricePr" min="0.01" max = "1000000" ><br><br>
+  <input type="number" id="PricePr" name="PricePr" min="0.01" max = "1000000" required ><br><br>
         
   <label for="Discount">Discount:</label><br>
-  <input type="number" id="DisPr" name="DisPr" min="0" max="100" ><br><br>
+  <input type="number" id="DisPr" name="DisPr" min="0" max="100" required ><br><br>
   
      <label for="Cats">Choose a Category:</label>
-  <select name="Cats" id="Cats">
+  <select name="Cats" id="Cats" required >
       <option value="0" selected disabled>Select</option>
       <?php
       while($row=mysqli_fetch_assoc($queryCats)){
@@ -38,7 +38,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
   </select><br><br>
         
    <label for="Mans">Choose a Manufacture:</label>
-  <select name="Mans" id="Mans">
+  <select name="Mans" id="Mans" required >
        <option value="0" selected disabled>Select</option>
   <?php
       while($row=mysqli_fetch_assoc($queryMans)){
@@ -56,10 +56,10 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
      <h3>Add a new manufacture</h3>
      
        <label for="Name">Name:</label><br>
-  <input type="text" id="NamePr" name="NamePr" maxlength= "20" ><br><br>
+  <input type="text" id="NameMan" name="NameMan" maxlength= "20" required  ><br><br>
      
        <label for="Link">Link:</label><br>
-  <input type="text" id="NamePr" name="NamePr" maxlength= "50" ><br><br>
+  <input type="text" id="LinkMan" name="LinkMan" maxlength= "50" required  ><br><br>
      
      <input type="submit" name="submit" value="Add a new manufacturer">
     </form>
