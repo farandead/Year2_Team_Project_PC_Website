@@ -1,3 +1,7 @@
+<?php
+require "PHP/CheckAdminAccess.php";
+
+?>
 <html>
 
 <body>
