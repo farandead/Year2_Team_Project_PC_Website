@@ -208,7 +208,7 @@
 
                 </div>
                 <div class="banner-1-sub-container-button">
-                    <button style="  font-family: 'Russo One', sans-serif;  ">CONFIGURE NOW</button>
+                    <a href='categories.php'>  <button style="  font-family: 'Russo One', sans-serif;  ">CONFIGURE NOW</button> </a>
                 </div>
             </div>
             <div class="banner-1-sub-container">
