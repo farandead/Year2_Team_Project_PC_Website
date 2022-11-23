@@ -55,7 +55,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
         
         
         
-        <textarea class="scrollabletextbox" name="note" required>
+        <textarea class="scrollabletextbox" name="note"  cols="129" maxlength="5000" required>
   
 </textarea>
         <br>
