@@ -11,7 +11,7 @@ $ArrayCollectionBasketDic;
 
 for($i=0;$i<Count($arrayStringBasket)-1;$i++){
 $ArrayCollectionBasket=explode(",", $arrayStringBasket[$i] );
-    $ArrayCollectionBasketDic=array($ArrayCollectionBasket[0]=>$ArrayCollectionBasket[1]);
+    $ArrayCollectionBasketDic= $ArrayCollectionBasketDic + array($ArrayCollectionBasket[0]=>$ArrayCollectionBasket[1]);
   
   if($i==0){ $items=$items."Product_ID='".$ArrayCollectionBasket[0]."'";}else{
    $items=$items." OR Product_ID='".$ArrayCollectionBasket[0]."'";
