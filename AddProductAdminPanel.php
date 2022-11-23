@@ -19,15 +19,15 @@ require "PHP/CheckAdminAccess.php";
   <select name="Cats" id="cars">
     <option value="volvo">Volvo</option>
     <option value="saab">Saab</option>
-  </select>
+  </select><br><br>
         
    <label for="Mans">Choose a Manufacture:</label>
   <select name="Mans" id="Mans">
     <option value="volvo">Volvo</option>
     <option value="saab">Saab</option>
-  </select>
+  </select><br><br>
         
-        <a> <button type="buttonMan">Add a new manufacture</button> </a>
+        <a> <button type="buttonMan">Add a new manufacture</button> </a><br><br>
         
   <input type="submit" value="Submit">
 </form> 
