@@ -51,7 +51,7 @@ require "PHP/StatusSetter.php";
 
 <body style="background: none;" class="dark_target"></body>
    
-    <?php include '/header.php'; ?>
+    <?php require 'header.php'; ?>
 
     <!-- <header class="navigationBar" id="navigationLightMode" style="margin-top:-50px ;">
         <ul id="navbar">
