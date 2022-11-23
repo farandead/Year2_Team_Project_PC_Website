@@ -4,11 +4,11 @@ require "PHP/connect_db.php";
 
 //SQL For Mans
 $queryMans=mysqli_query($conn,"SELECT * FROM Manufacture");
-$resMans=mysqli_fetch_assoc($queryMans);
+
 //SQL For Cats
 $queryCats=mysqli_query($conn,"SELECT * FROM Category");
-$resCats=mysqli_fetch_assoc($queryCats);
-while($resCats){
+
+while($row=mysqli_fetch_assoc($query)){
 echo "1";}
 ?>
 <html>
