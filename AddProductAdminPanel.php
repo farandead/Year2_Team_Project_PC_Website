@@ -28,7 +28,7 @@ echo "1";}
   <select name="Cats" id="Cats">
       <?php
       while($row=mysqli_fetch_assoc($queryCats)){
-echo "<option value=/"".$row['Cat_ID']."/">".$row['Cat_Name']."</option>";}
+echo "<option value="".$row['Cat_ID']."">".$row['Cat_Name']."</option>";}
       ?>
 
   </select><br><br>
