@@ -164,6 +164,8 @@
 
 <?php
     //here
+    
+    require "PHP/ProductsCollectionPrinter.php";
     ?>
 
         <div class="devices-container" id="desktop_container">
