@@ -92,9 +92,10 @@
                     </div>
                 </div>
             </div>
-            <div><img src="img/Product IMG/Product image 2.png"/></div>
-            <div><img src="img/Product IMG/Product image 3.png"/></div>
-            <div><img src="img/Product IMG/Product image 4.png"/></div>
+            
+            
+            
+            
             <div></div>
             <div></div>
     
