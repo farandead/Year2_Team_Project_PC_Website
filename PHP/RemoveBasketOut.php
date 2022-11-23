@@ -1,4 +1,5 @@
 <?php
+ob_start();
 
 echo $_GET["ITR"]." \ ";
 if(isset($_COOKIE["BasketCompUK"])){
