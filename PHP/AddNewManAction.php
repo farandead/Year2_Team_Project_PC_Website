@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['submit'])){
+if (isset($_POST['submitMan'])){
   ob_start();
 $link=$_POST['LinkMan'];
 $name=$_POST['NameMan'];
