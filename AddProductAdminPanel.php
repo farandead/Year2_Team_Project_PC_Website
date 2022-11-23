@@ -7,7 +7,7 @@ require "PHP/CheckAdminAccess.php";
 <body>
     <form action="">
   <label for="Name">Name:</label><br>
-  <input type="text" id="NamePr" name="NamePr" ><br>
+  <input type="text" id="NamePr" name="NamePr" maxlength= "50" ><br>
   <label for="Price">Price:</label><br>
   <input type="number" id="PricePr" name="PricePr" min="0.01" ><br><br>
   <label for="Discount">Discount:</label><br>
