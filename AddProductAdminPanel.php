@@ -61,7 +61,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
        <label for="Link">Link:</label><br>
   <input type="text" id="NamePr" name="NamePr" maxlength= "50" ><br><br>
      
-     <input type="submit" value="submit">
+     <input type="submit" name="submit" value="submit">
     </form>
 </body>
 </html>
