@@ -1,10 +1,12 @@
 <?php
 
 if (isset($_POST['submit'])){
-echo "YES!";
+$link=$_POST['LinkMan'];
+$name=$_POST['NameMan'];
+  
+  echo $name.$link;
+  
 }
-else {
-  echo "No!";
-}
+
 
 ?>
