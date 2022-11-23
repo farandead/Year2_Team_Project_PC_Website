@@ -1,7 +1,7 @@
 <?php
 ob_start();
 
-$item= $_GET["ITR"]." \ ";
+$item= $_GET["ITR"];
 if(isset($_COOKIE["BasketCompUK"])){
   
 $bas=$_COOKIE["BasketCompUK"];
