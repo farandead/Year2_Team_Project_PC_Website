@@ -11,13 +11,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
 
 ?>
 <html>
-.scrollabletextbox {
-    height:100px;
-    width:200px;
-    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 82%;
-    overflow:scroll;
-}
+
 <body>
     <form action="">
         
@@ -34,7 +28,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
   
      <label for="Cats">Choose a Category:</label>
   <select name="Cats" id="Cats" required >
-      <option value="0" selected disabled>Select</option>
+      <option value="" selected disabled>Select</option>
       <?php
       while($row=mysqli_fetch_assoc($queryCats)){
         echo "<option value=\" ".$row['Cat_ID']."\"> ".$row['Cat_Name']."</option>";
@@ -45,7 +39,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
         
    <label for="Mans">Choose a Manufacture:</label>
   <select name="Mans" id="Mans" required >
-       <option value="0" selected disabled>Select</option>
+       <option value="" selected disabled>Select</option>
   <?php
       while($row=mysqli_fetch_assoc($queryMans)){
         echo "<option value=\" ".$row['Man_ID']."\"> ".$row['Man_Name']."</option>";
@@ -54,9 +48,12 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
   </select><br><br>
         
         
-        
-        <textarea class="scrollabletextbox" name="note"  cols="129" maxlength="5000" required></textarea>
-        <br>
+        <label for="Mans">Enter the points:</label><br>
+        <textarea class="scrollabletextbox" name="Points"  cols="129" maxlength="5000" required></textarea>
+        <br><br>
+         <label for="Mans">Enter the description:</label><br>
+        <textarea class="scrollabletextbox" name="Description"  cols="129" maxlength="5000" required></textarea>
+        <br><br>
         
         
   <input type="submit" value="Add new product">
