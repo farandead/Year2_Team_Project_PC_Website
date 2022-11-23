@@ -70,7 +70,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
        <label for="Link">Link:</label><br>
   <input type="text" id="LinkMan" name="LinkMan" maxlength= "50" required  ><br><br>
      
-     <input type="submit" name="submit" value="Add a new manufacturer">
+     <input type="submit" name="submitMan" value="Add a new manufacturer">
     </form>
 </body>
 </html>
