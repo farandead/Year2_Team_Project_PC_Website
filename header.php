@@ -46,7 +46,7 @@
 <body style="background: none;" class="dark_target"></body>
    
 
-    <header class="navigationBar" id="navigationLightMode" style="margin-top:-50px ;">
+    <header class="navigationBar" id="navigationLightMode" >
         <ul id="navbar">
             <div id="logoblock">
                 <a href="index.php" class="link">
