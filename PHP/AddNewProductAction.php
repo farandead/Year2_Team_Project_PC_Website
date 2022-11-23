@@ -6,6 +6,6 @@ if (isset($_POST['submit'])){
   
 }
 
-header("Location: ../AddProductAdminPanel.php");
+//header("Location: ../AddProductAdminPanel.php");
 
 ?>
