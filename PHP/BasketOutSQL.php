@@ -3,7 +3,7 @@
 $BasketStr= $_COOKIE["BasketCompUK"];
 
 $items="";
-$template= "TemplateProduct.php";
+$template= "TemplateProductBasket.php";
 
 $arrayStringBasket=  explode(";", $BasketStr );
 
