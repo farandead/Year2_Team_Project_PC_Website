@@ -17,7 +17,7 @@ echo "<div class=\"devices-sub-container-product\">
                                 
 //foreach($lines as $line){   
 echo $ArrayCollectionBasketDic[$row['Product_ID']];
-                                   echo " <li class=\"description-ulisted-item\"> <h3>Quantity:</h3><h4><input type=\"number\" value=\"2\" id=\"quantity\" name=\"quantity\" min=\"1\" max=\"5\"></h4>"."</li>";
+                                   echo " <li class=\"description-ulisted-item\"> <h3>Quantity:</h3><h4><input type=\"number\" value=\"".$ArrayCollectionBasketDic[$row['Product_ID']]."\" id=\"quantity\" name=\"quantity\" min=\"1\" max=\"5\"></h4>"."</li>";
 //}
 
 
