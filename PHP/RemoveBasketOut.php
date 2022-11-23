@@ -14,7 +14,9 @@ echo $bas;
   
   setcookie("BasketCompUK",$bas,time() + 2 * 24 * 60 * 60,"/","comp-uk.motorsfeere.com",true);
   //$_COOKIE["BasketCompUK"]=$bas;
+ 
 }
 
+header("Location: ShoppingCart.php");
 
 ?>
