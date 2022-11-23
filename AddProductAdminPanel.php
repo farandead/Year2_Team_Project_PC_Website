@@ -47,7 +47,9 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
       ?>
   </select><br><br>
         
-        
+          <label for="Mans">Enter the Predescription:</label><br>
+        <textarea class="scrollabletextbox" name="Predescription"  cols="38" rows="5" required></textarea>
+        <br><br>
         <label for="Mans">Enter the points:</label><br>
         <textarea class="scrollabletextbox" name="Points"  cols="129" maxlength="5000" required></textarea>
         <br><br>
