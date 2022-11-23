@@ -1,6 +1,15 @@
 <?php
 require "PHP/CheckAdminAccess.php";
+require "connect_db.php";
 
+//SQL For Mans
+$queryMans=mysqli_query($conn,"SELECT * FROM Manufacture");
+$resMans=mysqli_fetch_assoc($queryMans);
+//SQL For Cats
+$queryCats=mysqli_query($conn,"SELECT * FROM Category");
+$resCats=mysqli_fetch_assoc($queryCats);
+while($resCats){
+echo "1";}
 ?>
 <html>
 
@@ -17,12 +26,16 @@ require "PHP/CheckAdminAccess.php";
   
      <label for="Cats">Choose a Category:</label>
   <select name="Cats" id="cars">
+      <?php 
+      ?>
     <option value="volvo">Volvo</option>
     <option value="saab">Saab</option>
   </select><br><br>
         
    <label for="Mans">Choose a Manufacture:</label>
   <select name="Mans" id="Mans">
+      <?php 
+      ?>
     <option value="volvo">Volvo</option>
     <option value="saab">Saab</option>
   </select><br><br>
