@@ -198,7 +198,7 @@
         <div class="banner-1-container">
             <div class="banner-1-sub-container">
                 <div class="banner-1-sub-container-heading">
-                    <h1 style="font-family: 'Russo One', sans-serif; ">CONFIGURE YOUR PC</h1>
+                  <a href='categories.php'>  <h1 style="font-family: 'Russo One', sans-serif; ">CONFIGURE YOUR PC</h1> </a>
                 </div>
                 <div class="banner-1-sub-container-paragraph">
                     <p
