@@ -11,13 +11,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
 
 ?>
 <html>
-.scrollabletextbox {
-    height:100px;
-    width:200px;
-    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 82%;
-    overflow:scroll;
-}
+
 <body>
     <form action="">
         
