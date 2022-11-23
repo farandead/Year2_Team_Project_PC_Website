@@ -17,6 +17,6 @@ echo $bas;
  
 }
 
-//header("Location: ../ShoppingCart.php");
+header("Location: ../ShoppingCart.php");
 
 ?>
