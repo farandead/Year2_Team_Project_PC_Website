@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['Add new manufacture'])){
+if (isset($_POST['submit'])){
 echo "YES!";
 }
 else {
