@@ -36,9 +36,9 @@ try {
         if (empty($_POST['user_sex'])) {
             $errors[] = "Please choose : M or F";
        }
-        /*if (empty($_POST['User_DOB'])) {
-            $errors[] = "Please choose : M or F";
-       }*/
+        if (empty($_POST['user_birthday'])) {
+            $errors[] = "Please select your date of birth";
+       }
 
 
         if (empty($_POST['email'])) {
@@ -90,8 +90,8 @@ try {
             //     $key .= mt_rand(0, 9);
             //}
             $Users_status = 'Customer';
-            $sql = "INSERT INTO account (User_FName, User_SName, user_Email, User_Password, User_Phone_Number, User_Sex, User_Status ) 
-        VALUES ( :User_FName, :User_SName, :user_Email,   :User_Password ,:User_Phone_Number, :User_Sex, :User_Status)";
+            $sql = "INSERT INTO account (User_FName, User_SName, user_Email, User_Password, User_Phone_Number, User_Sex, User_Status, User_DOB ) 
+        VALUES ( :User_FName, :User_SName, :user_Email,   :User_Password ,:User_Phone_Number, :User_Sex, :User_Status, :User_DOB)";
             $result = $conn->prepare($sql);
             $values = array(
                 ':User_FName'        => $_POST['firstName'],
@@ -101,8 +101,7 @@ try {
                 ':User_Phone_Number' => $_POST['user_number'],
                 ':User_Sex'          => $_POST['user_sex'],
                 ':User_Status'       => $Users_status,
-              
-              //':User_DOB'        => $_POST['User_DOB'],
+                ':User_DOB'        => $_POST['user_birthday'],
                 
 
 
