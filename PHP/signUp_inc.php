@@ -109,7 +109,7 @@ try {
             $res = $result->execute($values);
             if ($res) {
                 //echo "YOU ARE IN !";
-                echo "<script>alert('YOU ARE IN !');</script>";
+             
               header('Location: https://comp-uk.motorsfeere.com/Sign_up_new.php');
               exit;
                 //      $messages[] = "YOU ARE IN !";
