@@ -42,23 +42,24 @@ try {
                     // $hashed = '$2y$10$HqLUsOHun8xAxsui5wGCYe5';
                     if (password_verify($_POST['pwd'], $res['User_Password'])) {
                         
-                        // regenerate session id
-                        //session_start();
-                        // $_SESSION['login'] = true;
-                        //  $_SESSION['standardUserId'] = $res['standard_user_id'];
-                        // $_SESSION['userEmail'] = $res['user_email'];
-                        // $_SESSION['last_login'] = time();
-                        // session_start();
+                        //regenerate session id
+                        session_start();
+                        $_SESSION['login'] = true;
+                        $_SESSION['user_Email'] = $res['user_Email'];
+                        $_SESSION['User_FName'] = $res['User_FName'];
+                        $_SESSION['User_SName'] = $res['User_SName'];
+                        $_SESSION['last_login'] = time();
+                        session_start();
         
-                        // redirect the user to members area/dashboard page
-                        // header("location: /index.php");
-                        // exit;
-                        echo "Valid";
+                        // redirect the user to main page
+                        header("location: /index.php");
+                        exit;
+                        //echo "Valid";
                        
                     } else {
-                        //  header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
-                        // exit();
-                       echo  "wrong login ";
+                          header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
+                         exit();
+                       //echo  "wrong login ";
                         
                       
                     }
@@ -69,7 +70,8 @@ try {
 
                     // header("location: /pages/connexion.php?error=unknowDetail");   
                     //exit();
-                    $errors[] = "unknowDetail";
+                    header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
+                    exit();
                 }
             }
         
