@@ -8,7 +8,7 @@ if (isset($_POST['submitPr'])){
   $Cats=$_POST['Cats'];
   $Mans=$_POST['Mans'];
   $Predescription=$_POST['Predescription'];
-  $Predescription=array_values(array_filter(explode(PHP_EOL, $Predescription)));
+  $Predescription=explode("\n", str_replace("\r", "", $Predescription));
   $Points=$_POST['Points'];
   $Description=$_POST['Description'];
   echo "---------<br>";  
