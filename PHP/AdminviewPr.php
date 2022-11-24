@@ -1,5 +1,5 @@
 <?php
-$linkToAdd="";
+$linkToAdd="AddProductAdminPanel.php";
 
 
 if($status=="Admin"){

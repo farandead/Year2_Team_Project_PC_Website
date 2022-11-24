@@ -1,4 +1,4 @@
-<!-- DATABASE CONNECTION -->
+
 <!-- DATABASE CONNECTION -- HAVE TO MAKE AN INCLUSIONS-->
 <?php
 $servername = "localhost";
@@ -15,7 +15,6 @@ try {
 }
 ?>
 <!-- END DATABASE CONNECTION-->
-<!-- END DATABASE CONNECTION -->
 <!DOCTYPE html>
 <html>
 
@@ -84,9 +83,6 @@ try {
 <body style="background: none;" class="dark_target">
 
 
-    <?php require 'header.php'; ?>
-
-  
 
     <div class="container" id="container123">
         <div class="form-container sign-up-container">

@@ -1,4 +1,4 @@
-<head>
+<!-- <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@
 </head>
 
 <body style="background: none;" class="dark_target"></body>
-   
+   -->
 
     <header class="navigationBar" id="navigationLightMode" style="margin-top:-25px" >
         <ul id="navbar">
@@ -82,11 +82,11 @@
                             style="font-size: xx-large;color:white"></i> </a></li>
                 <br>
                 <br>
-                <li><a class="sign-in-logo" class="link" href="Sign_up.html"> <i class="bi bi-person-fill"
+                <li><a class="sign-in-logo" class="link" href="Sign_up_new.php"> <i class="bi bi-person-fill"
                             style="font-size: xx-large;color:white"></i> </a></li>
         </ul>
         </div>
 
     </header>
 
-</body>
+
