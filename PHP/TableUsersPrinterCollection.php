@@ -2,7 +2,7 @@
 
 require "connect_db.php";
 
-$templateRow
+$templateRow="";
 $sql="";
 
 
