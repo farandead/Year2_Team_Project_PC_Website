@@ -1,5 +1,5 @@
 <?php
-$linkToAdd="PHP/statusTester.php";
+$linkToAdd="AddProductAdminPanel.php";
 
 
 if($status=="Admin"){
