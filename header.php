@@ -1,4 +1,4 @@
-<!-- <head>
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,19 +41,24 @@
         }
     </style>
 
-</head>
+</head> 
 
 <body style="background: none;" class="dark_target"></body>
-   -->
+   
 
-    <header class="navigationBar" id="navigationLightMode" style="margin-top:-25px" >
+    <header class="navigationBar" id="navigationLightMode" style="margin-top:-50px" >
         <ul id="navbar">
             <div id="logoblock">
                 <a href="index.php" class="link">
+                    
                      <img class="img-logo" src="img/Logo.png" alt="Logo" > 
                     <!-- <p id="logoMovie" style="color:white">
-                        LOGO </p> -->
+                        LOGO
+
+                    </p> -->
+
                 </a>
+
             </div>
             <div id="linksblock">
                 <li class="navbaritem"><a class="link" href="about_us.html">About Us</a></li>
@@ -62,11 +67,15 @@
                 <li class="navbaritem"><a class="link" href="contact_us.html">Contact Us</a></li>
                 <li class="navbaritem"><a class="link" href="#">Reviews</a></li>
             </div>
+
             <div id="membershipblock">
-                <li>
-                    <i id="toggle_button_dark" class="bi bi-moon" onclick="myFunction()"></i> <i id="toggle_button"
-                    style="display: flex;" class="bi bi-brightness-high-fill" onclick="myFunction()"> </i>
-                </li>
+
+
+
+                <li><i id="toggle_button_dark" class="bi bi-moon" onclick="myFunction()"></i> <i id="toggle_button"
+                        style="display: flex;" class="bi bi-brightness-high-fill" onclick="myFunction()"></i></li>
+
+
                 <br>
                 <br>
                 <li><a class="searchLogo" class="link" href=""> <i class="fa fa-search"

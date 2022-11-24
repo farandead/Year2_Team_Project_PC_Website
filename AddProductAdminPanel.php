@@ -47,15 +47,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
       ?>
   </select><br><br>
         
-          <label for="Mans">Enter the Predescription:</label><br>
-        <textarea class="scrollabletextbox" name="Predescription"  cols="38" rows="5" required></textarea>
-        <br><br>
-        <label for="Mans">Enter the points:</label><br>
-        <textarea class="scrollabletextbox" name="Points"  cols="129" maxlength="5000" required></textarea>
-        <br><br>
-         <label for="Mans">Enter the description:</label><br>
-        <textarea class="scrollabletextbox" name="Description"  cols="129" maxlength="5000" required></textarea>
-        <br><br>
+      
         
         
   <input type="submit" name="submitPr" value="Add new product">
@@ -72,5 +64,16 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
      
      <input type="submit" name="submitMan" value="Add a new manufacturer">
     </form>
+    
+     <form action ="PHP/AddNewCatAction.php" method="post">
+     <h3>Add a new category</h3>
+         
+       <label for="NameC">Name:</label><br>
+  <input type="text" id="NameCaT" name="NameMan" maxlength= "20" required  ><br><br>
+     
+ 
+     <input type="submit" name="submitCat" value="Add a new category">
+    </form>
+    
 </body>
 </html>
