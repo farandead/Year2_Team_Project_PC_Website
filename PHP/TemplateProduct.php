@@ -29,7 +29,7 @@ foreach($lines as $line){
                             </div>";
 if($view==1 and $status=="Admin"){
   echo "<div class=\"product-details-buy-buttons\">
-                               <a href=''> EDIT THE ITEM ></a>
+                               <a href='PHP/EDITPr.php?Product=".$row['Product_ID']."'> EDIT THE ITEM ></a>
                             </div>";
 }
 echo "
