@@ -37,6 +37,18 @@ if (isset($_POST['submitPr'])){
 fwrite($PreDesTXT, $txt);
 fclose($PreDesTXT);*/
   
+  require "connect_db.php";
+  
+  $sql = "INSERT INTO Product (Product_Name, Product_Discount, Product_Price,Man_ID,Cat_ID)
+VALUES ('$NamePr', '$DisPr', '$PricePr','$Mans','$Cats')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
   
 }
 
