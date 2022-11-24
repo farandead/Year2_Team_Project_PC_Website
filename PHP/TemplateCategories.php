@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+
 //echo $row['Cat_Name'];
 echo"
 <br>
