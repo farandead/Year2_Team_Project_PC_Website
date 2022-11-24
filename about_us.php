@@ -51,40 +51,9 @@
 
 <body style="background:none;">
 
-    <header class="navigationBar" id="navigationLightMode" >
-        <ul id="navbar">
-            <div id="logoblock">
-                <a href="mainpage.php" class="link">
-                    <p id="logoMovie" style="color:white">
-                        LOGO
+    
 
-                    </p>
-                </a>
-
-            </div>
-            <div id="linksblock">
-                <li class="navbaritem"><a class="link" href="filmPage.html">DESKTOP PCs</a></li>
-                <li class="navbaritem"><a class="link" href="#">LAPTOPS</a></li>
-                <li class="navbaritem"><a class="link" href="contact_us.html">CONTACT US</a></li>
-                <li class="navbaritem"><a class="link" href="#">REVIEWS</a></li>
-            </div>
-
-            <div id="membershipblock">
-
-
-
-                <li><i id="toggle_button_dark" class="bi bi-moon" onclick="myFunction()"></i> <i id="toggle_button"
-                        style="display: flex;" class="bi bi-brightness-high-fill" onclick="myFunction()"></i></li>
-
-
-                <br>
-                <br>
-                <li><a class="searchLogo" class="link" href=""> <i class="fa fa-search"
-                            style="font-size: xx-large;color:white"></i> </a></li>
-        </ul>
-        </div>
-        </ul>
-    </header>
+     <?php require 'header.php'; ?>
 
     <div class="main-container-about-us-page" >
         <section class="page" >

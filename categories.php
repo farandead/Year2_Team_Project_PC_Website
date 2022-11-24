@@ -53,44 +53,7 @@ require "PHP/StatusSetter.php";
    
     <?php require 'header.php'; ?>
 
-    <!-- <header class="navigationBar" id="navigationLightMode" style="margin-top:-50px ;">
-        <ul id="navbar">
-            <div id="logoblock">
-                <a href="index.php" class="link">
-                    
-                    <img class="img-logo" src="img/Logo.png" alt="Logo">
-
-                </a>
-
-            </div>
-            <div id="linksblock">
-                <li class="navbaritem"><a class="link" href="header.php">DESKTOP PCs</a></li>
-                <li class="navbaritem"><a class="link" href="#">LAPTOPS</a></li>
-                <li class="navbaritem"><a class="link" href="contact_us.html">CONTACT US</a></li>
-                <li class="navbaritem"><a class="link" href="#">REVIEWS</a></li>
-            </div>
-
-            <div id="membershipblock">
-
-
-
-                <li><i id="toggle_button_dark" class="bi bi-moon" onclick="myFunction()"></i> <i id="toggle_button"
-                        style="display: flex;" class="bi bi-brightness-high-fill" onclick="myFunction()"></i></li>
-
-
-                <br>
-                <br>
-                <li><a class="searchLogo" class="link" href=""> <i class="fa fa-search"
-                            style="font-size: xx-large;color:white"></i> </a></li>
-                <br>
-                <br>
-                <li><a class="sign-in-logo" class="link" href="Sign_up.html"> <i class="bi bi-person-fill"
-                            style="font-size: xx-large;color:white"></i> </a></li>
-        </ul>
-        </div>
-
-    </header> --> 
-
+   
     
 
     <div< class="container1">

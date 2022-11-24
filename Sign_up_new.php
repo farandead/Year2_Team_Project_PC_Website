@@ -1,4 +1,4 @@
-<!-- DATABASE CONNECTION -->
+
 <!-- DATABASE CONNECTION -- HAVE TO MAKE AN INCLUSIONS-->
 <?php
 $servername = "localhost";
@@ -15,7 +15,6 @@ try {
 }
 ?>
 <!-- END DATABASE CONNECTION-->
-<!-- END DATABASE CONNECTION -->
 <!DOCTYPE html>
 <html>
 
@@ -77,55 +76,15 @@ try {
             ;
         }
     </style>
-
 </head>
 
 
 <body style="background: none;" class="dark_target">
 
-
-    <header class="navigationBar" id="navigationLightMode" style="margin-top:-200px ;">
-        <ul id="navbar">
-            <div id="logoblock">
-                <a href="mainpage.php" class="link">
-                    <p id="logoMovie" style="color:white">
-                        LOGO
-
-                    </p>
-                </a>
-
-            </div>
-            <div id="linksblock">
-                <li class="navbaritem"><a class="link" href="">DESKTOP PCs</a></li>
-                <li class="navbaritem"><a class="link" href="#">LAPTOPS</a></li>
-                <li class="navbaritem"><a class="link" href="contact_us.html">CONTACT US</a></li>
-                <li class="navbaritem"><a class="link" href="#">REVIEWS</a></li>
-            </div>
-
-            <div id="membershipblock">
-
-
-
-                <li><i id="toggle_button_dark" class="bi bi-moon" onclick="myFunction()"></i> <i id="toggle_button"
-                        style="display: flex;" class="bi bi-brightness-high-fill" onclick="myFunction()"></i></li>
-
-
-                <br>
-                <br>
-                <li><a class="searchLogo" class="link" href=""> <i class="fa fa-search"
-                            style="font-size: xx-large;color:white"></i> </a></li>
-                <br>
-                <br>
-                <li><a class="sign-in-logo" class="link" href="Sign_up.html"> <i class="bi bi-person-fill"
-                            style="font-size: xx-large;color:white"></i> </a></li>
-        </ul>
-        </div>
-
-    </header>
-
-  
+ <?php require 'header.php'; ?>
 
     <div class="container" id="container123">
+       
         <div class="form-container sign-up-container">
             <form action="PHP/signUp_inc.php" method='post' class="form-id">
 
@@ -146,7 +105,19 @@ try {
                     <input type="text" class="small-input" placeholder="City" name="user_city" value="" />
                     <input type="text" class="small-input" placeholder="Post Code" name="user_postCode" value="" />
                 </div> -->
+                <input type="date" placeholder="Date of Birth" name="user_birthday" value="" min="1950-01-01" max="2022-12-15">
+                
                
+                <label class="radio-inline">
+                   <input type="radio" name="user_sex" value="Male">Male
+                </label>
+                            
+                <label class="radio-inline">
+                   <input type="radio" name="user_sex" value="Female">Female
+                </label>
+                 
+                   
+              
                 <button name="signup_submit" >Sign In</button>
                 <!--<input  style="margin-top:15px"   value="Sign Up">-->
             </form>
