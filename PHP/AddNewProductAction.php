@@ -33,6 +33,10 @@ if (isset($_POST['submitPr'])){
      echo $Description;
   
   $PreDesTXT = fopen("testKirill.txt", "w") or die("Unable to open file!");
+  $txt = "Jane Doe\n";
+fwrite($PreDesTXT, $txt);
+fclose($PreDesTXT);
+  
   
 }
 
