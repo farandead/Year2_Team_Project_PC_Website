@@ -5,7 +5,7 @@ if(isset($_POST['submitPrice'])){
   $ds=$_POST['Discount'];
   require "connect_db.php";
   
-  $sql = "UPDATE Product SET Product_Price='$pr' WHERE Product_ID=$ID";
+  $sql = "UPDATE Product SET Product_Price='$pr', Product_Discount='$ds' WHERE Product_ID=$ID";
 
 if ($conn->query($sql) === TRUE) {
   echo "Record updated successfully";
