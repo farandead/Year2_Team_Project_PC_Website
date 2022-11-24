@@ -10,21 +10,21 @@ if (isset($_POST['submitPr'])){
   $Predescription=$_POST['Predescription'];
   $Points=$_POST['Points'];
   $Description=$_POST['Description'];
-  echo "---------";  
+  echo "---------<br>";  
      echo $NamePr;
-  echo "---------";
+  echo "---------<br>";
      echo $PricePr;
-  echo "---------";
+  echo "---------<br>";
      echo $DisPr;
-    echo "---------";
+    echo "---------<br>";
      echo $Cats;
-    echo "---------";
+    echo "---------<br>";
      echo $Mans;
-    echo "---------";
+    echo "---------<br>";
      echo $Predescription;
-    echo "---------";
+    echo "---------<br>";
      echo $Points;
-    echo "---------";
+    echo "---------<br>";
      echo $Description;
   
 }
