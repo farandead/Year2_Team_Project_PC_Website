@@ -1,5 +1,5 @@
 <?php
-$linkToAdd="";
+$linkToAdd="PHP/statusTester.php";
 
 
 if($status=="Admin"){
