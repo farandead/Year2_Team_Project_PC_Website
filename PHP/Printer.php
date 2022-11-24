@@ -2,7 +2,7 @@
 
 $isEmpty=true;
 $counter=0;
-
+error_reporting(0);
 while($row=mysqli_fetch_assoc($query)){
   
   $isEmpty=false;
@@ -30,6 +30,7 @@ if($isEmpty==true or $counter!=0){
   //echo "<br>";
  
 }
+error_reporting(1);
 echo "<br>";
 echo "<br>";
 ?>

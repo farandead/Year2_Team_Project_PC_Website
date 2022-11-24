@@ -1,12 +1,11 @@
 <?
+
 $lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
 $price=round($row['Product_Price']-$row['Product_Price']*$row['Product_Discount']/100,2);
 echo "<div class=\"devices-sub-container-product\">
                         <div class=\"productdetails dark_target\">
                             <div class=\"product-details-title\">".$row['Product_Name']."</div>
-                            <div class=\"product-details-img\">
- <div class=\"product-details-img\"><img src=\"../Products/Images/".$row['Product_ID'].".jpg\"  width=\"150 px\" height=\"150px\" alt=\"No image\">
-                           
+                            <div class=\"product-details-img\"><img src=\"../Products/Images/".$row['Product_ID'].".jpg\"  width=\"150 px\" height=\"150px\" alt=\"No image\">
                             </div>
                             <div class=\"product-details-description dark_target\">
                                 <p>Price: <span>".$price."£</span> ";
@@ -30,7 +29,7 @@ foreach($lines as $line){
                             </div>";
 if($view==1 and $status=="Admin"){
   echo "<div class=\"product-details-buy-buttons\">
-                               <a href=''> EDIT THE ITEM ></a>
+                               <a href='PHP/EDITPr.php?Product=".$row['Product_ID']."'> EDIT THE ITEM ></a>
                             </div>";
 }
 echo "

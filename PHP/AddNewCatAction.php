@@ -1,26 +1,23 @@
 <?php
+if (isset($_POST['submitCat'])){
+   ob_start();
 
-if (isset($_POST['submitMan'])){
-  ob_start();
-$link=$_POST['LinkMan'];
-$name=$_POST['NameMan'];
+$name=$_POST['NameCat'];
   
  require "connect_db.php";
   
   //SQL to add a new Man
   
   
-  $sql = "INSERT INTO Manufacture (Man_Name, Man_Link)
-VALUES ('".$name."', '".$link."')";
+  $sql = "INSERT INTO Category (Cat_Name)
+VALUES ('".$name."')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
-
-   $conn  -> close();
+ $conn  -> close();
 }
 header("Location: ../AddProductAdminPanel.php");
-
 ?>
