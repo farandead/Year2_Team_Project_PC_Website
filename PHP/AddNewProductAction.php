@@ -7,8 +7,8 @@ if (isset($_POST['submitPr'])){
   $DisPr=$_POST['DisPr'];
   $Cats=$_POST['Cats'];
   $Mans=$_POST['Mans'];
-  $Predescription=$_POST['Predescription'];
-  $Predescription=explode("\n", str_replace("\r", "", $Predescription));
+  //$Predescription=$_POST['Predescription'];
+  $Predescription=explode("\r\n", trim($_POST['Predescription']));
   $Points=$_POST['Points'];
   $Description=$_POST['Description'];
   echo "---------<br>";  
