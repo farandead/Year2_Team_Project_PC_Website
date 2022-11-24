@@ -106,7 +106,7 @@ try {
             }
         } else {
             $errors[] = "not inserting";
-            // var_dump($errors);
+             var_dump($errors);
         }
         //var_dump($errors);
         // echo "</br>";
