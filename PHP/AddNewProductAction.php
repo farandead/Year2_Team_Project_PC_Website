@@ -32,7 +32,7 @@ if (isset($_POST['submitPr'])){
     echo "---------<br>";
      echo $Description;
   
-  $PreDesTXT = fopen("../testKirill.txt", "w") or die("Unable to open file!");
+  $PreDesTXT = fopen("testKirill.txt", "w") or die("Unable to open file!");
   
 }
 
