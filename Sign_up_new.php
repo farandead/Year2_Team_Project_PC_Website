@@ -30,7 +30,7 @@ try {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/mainpage.css">
+   <!-- <link rel="stylesheet" href="css/mainpage.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -76,7 +76,7 @@ try {
             ;
         }
     </style>
-
+-->
 </head>
 
 
@@ -110,11 +110,11 @@ try {
                 
                
                 <label class="radio-inline">
-                   <input type="radio" id="male" name="user_sex" value="Male">Male
+                   <input type="radio" name="user_sex" value="Male">Male
                 </label>
                             
                 <label class="radio-inline">
-                   <input type="radio" id="female" name="user_sex" value="Female">Female
+                   <input type="radio" name="user_sex" value="Female">Female
                 </label>
                  
                    
