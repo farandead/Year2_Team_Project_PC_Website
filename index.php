@@ -1,4 +1,5 @@
-<?php //include '/home2/babimors/comp-uk.motorsfeere.com/';?>
+<?php session_start(); 
+//include '/home2/babimors/comp-uk.motorsfeere.com/';?>
 <!DOCTYPE html>
 <html lang="en">
 
