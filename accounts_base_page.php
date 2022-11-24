@@ -151,101 +151,12 @@
                   <tr>
                       <th>ID</th>
                       <th>Email</th>
-                      <th>Password</th>
+                      <th>Phone number</th>
                       <th>Name</th>
                   </tr>
               </thead>
                <?php     require "PHP/TableUsersPrinterCollection.php"; ?>
-                  <tr>
-                      <td>ID#</td>
-                      <td>Email@gmail.com</td>
-                      <td>Password123</td>
-                      <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
+                 
                   
         </table>
       </div>
