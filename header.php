@@ -61,8 +61,8 @@
 
             </div>
             <div id="linksblock">
-                <li class="navbaritem"><a class="link" href="#l">DESKTOP PCs</a></li>
-                <li class="navbaritem"><a class="link" href="#">LAPTOPS</a></li>
+                <li class="navbaritem"><a class="link" href="product_page.php?Category=Gaming%20Desktop%20pc">DESKTOP PCs</a></li>
+                <li class="navbaritem"><a class="link" href="product_page.php?Category=Gaming%20Laptops">LAPTOPS</a></li>
                 <li class="navbaritem"><a class="link" href="contact_us.html">CONTACT US</a></li>
                 <li class="navbaritem"><a class="link" href="#">REVIEWS</a></li>
             </div>
