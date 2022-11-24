@@ -8,6 +8,7 @@ if (isset($_POST['submitPr'])){
   $Cats=$_POST['Cats'];
   $Mans=$_POST['Mans'];
   $Predescription=$_POST['Predescription'];
+  $Predescription=array_values(array_filter(explode(PHP_EOL, $Predescription)));
   $Points=$_POST['Points'];
   $Description=$_POST['Description'];
   echo "---------<br>";  
@@ -21,7 +22,7 @@ if (isset($_POST['submitPr'])){
     echo "---------<br>";
      echo $Mans;
     echo "---------<br>";
-     echo $Predescription;
+    print_r($Predescription);
     echo "---------<br>";
      echo $Points;
     echo "---------<br>";
