@@ -8,10 +8,14 @@ if(isset($_GET['Product'])){
   $q=mysqli_query($conn, $sql);
   $result=mysqli_fetch_array($q);
   
+    if(!(isset($result['Product_Name']))){
+  header("Location: index.php");
+  }
+  
   $price=$result['Product_Price'];
   $Product_Discount=$result['Product_Discount'];
   $Product_Name=$result['Product_Name'];
-  
+
   echo "<body>";
   echo 
     
