@@ -33,5 +33,8 @@ if(isset($_GET['Product'])){
   echo "</body>";
  // echo $price;
 }
+else{
+header("Location: index.php");
+}
 
 ?>
