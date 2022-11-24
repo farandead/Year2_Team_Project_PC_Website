@@ -61,7 +61,7 @@
 
             </div>
             <div id="linksblock">
-                <li class="navbaritem"><a class="link" href="about_us.html">About Us</a></li>
+                <li class="navbaritem"><a class="link" href="about_us.php">About Us</a></li>
                 <li class="navbaritem"><a class="link" href="product_page.php?Category=Gaming%20Desktop%20pc">Desktops PCs</a></li>
                 <li class="navbaritem"><a class="link" href="product_page.php?Category=Gaming%20Laptops">Laptops</a></li>
                 <li class="navbaritem"><a class="link" href="contact_us.html">Contact Us</a></li>
