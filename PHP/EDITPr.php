@@ -15,7 +15,7 @@ if(isset($_GET['Product'])){
   echo "<body>";
   echo 
     
-        ' <form action ="PHP/changePrice.php" method="post">
+        ' <form action ="changePrice.php?Product='.$ID.'" method="post">
      <h3>'.$Product_Name.'</h3>
          
        <label for="Price">Price(£):</label><br>
