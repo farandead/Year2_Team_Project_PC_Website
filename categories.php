@@ -54,9 +54,10 @@ require "PHP/StatusSetter.php";
     <?php require 'header.php'; ?>
 
    
+
     
 
-    <div< class="container1">
+    <div class="container1">
        
     <!-- -->
     <?php 
