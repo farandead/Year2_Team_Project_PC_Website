@@ -23,10 +23,10 @@ if(isset($_GET['Product'])){
      <h3>'.$Product_Name.'</h3>
          
        <label for="Price">Price(£):</label><br>
-  <input type="text" id="Price" name="Price" maxlength= "20" required value= "'.$price.'" ><br><br>
+  <input type="number" id="Price" name="Price" maxlength= "20" required value= "'.$price.'" ><br><br>
      
          <label for="Discount">Discount(%):</label><br>
-  <input type="text" id="Discount" name="Discount" max= "100" min="0" required value= "'.$Product_Discount.'" ><br><br>
+  <input type="number" id="Discount" name="Discount" max= "100" min="0" required value= "'.$Product_Discount.'" ><br><br>
            
            
          
