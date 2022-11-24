@@ -33,9 +33,9 @@ try {
         if (empty($_POST['user_number'])) {
             $errors[] = "Please Enter your number";
         }
-       // if (empty($_POST['user_sex'])) {
-       //     $errors[] = "Please choose : M or F";
-       // }
+        if (empty($_POST['user_sex'])) {
+            $errors[] = "Please choose : M or F";
+       }
 
 
 
@@ -88,8 +88,8 @@ try {
             //     $key .= mt_rand(0, 9);
             //}
     
-            $sql = "INSERT INTO account (User_FName, User_SName, user_Email, User_Password, User_Phone_Number ) 
-        VALUES ( :User_FName, :User_SName, :user_Email,   :User_Password ,:User_Phone_Number)";
+            $sql = "INSERT INTO account (User_FName, User_SName, user_Email, User_Password, User_Phone_Number, User_Sex ) 
+        VALUES ( :User_FName, :User_SName, :user_Email,   :User_Password ,:User_Phone_Number, :User_Sex)";
             $result = $conn->prepare($sql);
             $values = array(
                 ':User_FName' => $_POST['firstName'],
@@ -97,6 +97,7 @@ try {
                 ':user_Email' => $_POST['email'],
                 ':User_Password' => $pass_hash,
                 ':User_Phone_Number' => $_POST['user_number'],
+                ':User_Sex'        => $_POST['user_sex'],
                 
 
 
@@ -105,6 +106,8 @@ try {
             if ($res) {
                 //echo "YOU ARE IN !";
                 echo "<script>alert('YOU ARE IN !');</script>";
+              header('Location: https://comp-uk.motorsfeere.com/Sign_up_new.php');
+              exit;
                 //      $messages[] = "YOU ARE IN !";
                 //       $messages[]= 'An confirmation e-mail have been send to this address' .$_POST['email']. '. ';
                 /*
