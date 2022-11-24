@@ -8,13 +8,13 @@ if (isset($_POST['submitPr'])){
   $Cats=$_POST['Cats'];
   $Mans=$_POST['Mans'];
   
-  $Predescription=$_POST['Predescription'];
-  $Predescription = explode("^", $Predescription);
+//  $Predescription=$_POST['Predescription'];
+  //$Predescription = explode("^", $Predescription);
   
-  $Points=$_POST['Points'];
-  $Points = explode("^", $Points);
+//  $Points=$_POST['Points'];
+ // $Points = explode("^", $Points);
   
-  $Description=$_POST['Description'];
+ // $Description=$_POST['Description'];
   echo "---------<br>";  
      echo $NamePr;
   echo "---------<br>";
@@ -26,16 +26,16 @@ if (isset($_POST['submitPr'])){
     echo "---------<br>";
      echo $Mans;
     echo "---------<br>";
-    print_r($Predescription);
-    echo "---------<br>";
-    print_r($Points);
-    echo "---------<br>";
-     echo $Description;
+   // print_r($Predescription);
+   // echo "---------<br>";
+   // print_r($Points);
+   // echo "---------<br>";
+    // echo $Description;
   
-  $PreDesTXT = fopen("testKirill.txt", "w") or die("Unable to open file!");
+ /* $PreDesTXT = fopen("testKirill.txt", "w") or die("Unable to open file!");
   $txt = "Jane Doe\n";
 fwrite($PreDesTXT, $txt);
-fclose($PreDesTXT);
+fclose($PreDesTXT);*/
   
   
 }
