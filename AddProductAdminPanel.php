@@ -64,5 +64,16 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
      
      <input type="submit" name="submitMan" value="Add a new manufacturer">
     </form>
+    
+     <form action ="PHP/AddNewCatAction.php" method="post">
+     <h3>Add a new category</h3>
+         
+       <label for="NameC">Name:</label><br>
+  <input type="text" id="NameCaT" name="NameMan" maxlength= "20" required  ><br><br>
+     
+ 
+     <input type="submit" name="submitCat" value="Add a new category">
+    </form>
+    
 </body>
 </html>
