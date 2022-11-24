@@ -51,20 +51,21 @@
             <div id="logoblock">
                 <a href="index.php" class="link">
                     
-                    <!-- <img class="img-logo" src="img/Logo.png" alt="Logo" > -->
-                    <p id="logoMovie" style="color:white">
+                     <img class="img-logo" src="img/Logo.png" alt="Logo" > 
+                    <!-- <p id="logoMovie" style="color:white">
                         LOGO
 
-                    </p>
+                    </p> -->
 
                 </a>
 
             </div>
             <div id="linksblock">
-                <li class="navbaritem"><a class="link" href="product_page.php?Category=Gaming%20Desktop%20pc">DESKTOP PCs</a></li>
-                <li class="navbaritem"><a class="link" href="product_page.php?Category=Gaming%20Laptops">LAPTOPS</a></li>
-                <li class="navbaritem"><a class="link" href="contact_us.html">CONTACT US</a></li>
-                <li class="navbaritem"><a class="link" href="#">REVIEWS</a></li>
+                <li class="navbaritem"><a class="link" href="#">About Us</a></li>
+                <li class="navbaritem"><a class="link" href="product_page.php?Category=Gaming%20Desktop%20pc">Desktops PCs</a></li>
+                <li class="navbaritem"><a class="link" href="product_page.php?Category=Gaming%20Laptops">Laptops</a></li>
+                <li class="navbaritem"><a class="link" href="contact_us.html">Contact Us</a></li>
+                <li class="navbaritem"><a class="link" href="#">Reviews</a></li>
             </div>
 
             <div id="membershipblock">
