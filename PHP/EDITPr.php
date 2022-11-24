@@ -9,7 +9,7 @@ if(isset($_GET['Product'])){
   $result=mysqli_fetch_array($q);
   
     if(!(isset($result['Product_Name']))){
-  header("Location: index.php");
+  header("Location: ../index.php");
   }
   
   $price=$result['Product_Price'];
@@ -38,7 +38,7 @@ if(isset($_GET['Product'])){
  // echo $price;
 }
 else{
-header("Location: index.php");
+header("Location: ../index.php");
 }
 
 ?>
