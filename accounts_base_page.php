@@ -155,6 +155,7 @@
                       <th>Name</th>
                   </tr>
               </thead>
+               <?php     require "TableUsersPrinterCollection.php"; ?>
                   <tr>
                       <td>ID#</td>
                       <td>Email@gmail.com</td>
