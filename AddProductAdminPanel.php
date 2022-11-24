@@ -69,7 +69,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
      <h3>Add a new category</h3>
          
        <label for="NameC">Name:</label><br>
-  <input type="text" id="NameCaT" name="NameMan" maxlength= "20" required  ><br><br>
+  <input type="text" id="NameCaT" name="NameCat" maxlength= "20" required  ><br><br>
      
  
      <input type="submit" name="submitCat" value="Add a new category">
