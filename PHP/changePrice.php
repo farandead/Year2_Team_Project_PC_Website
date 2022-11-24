@@ -1,5 +1,6 @@
 <?php
 if(isset($_POST['submitPrice'])){
+  ob_start();
   $ID= $_GET['Product'];
   $pr=$_POST['Price'];
   $ds=$_POST['Discount'];
@@ -14,6 +15,7 @@ if ($conn->query($sql) === TRUE) {
 }
   
    $conn  -> close();
+  header("Location: PHP/EDITPr.php");
 }
 
 
