@@ -108,16 +108,17 @@ try {
                 </div> -->
                 <input type="date" placeholder="Date of Birth" name="user_birthday" value="" min="1950-01-01" max="2022-12-15">
                 
-               <div class="row">
-                    <div class="col">
-                        <input type="radio" id="male" name="user_sex" value="Male">
-                        <label for="male">Male</label>
-                    </div>
-                    <div class="col">
-                        <input type="radio" id="female" name="user_sex" value="Female">
-                        <label for="female">Female</label>
-                    </div>
-                </div>
+               
+                <label class="radio-inline">
+                   <input type="radio" id="male" name="user_sex" value="Male">Male
+                </label>
+                            
+                <label class="radio-inline">
+                   <input type="radio" id="female" name="user_sex" value="Female">Female
+                </label>
+                 
+                   
+              
                 <button name="signup_submit" >Sign In</button>
                 <!--<input  style="margin-top:15px"   value="Sign Up">-->
             </form>
