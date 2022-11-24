@@ -1,5 +1,5 @@
 <?
-error_reporting(0);
+
 $lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
 $price=round($row['Product_Price']-$row['Product_Price']*$row['Product_Discount']/100,2);
 echo "<div class=\"devices-sub-container-product\">
