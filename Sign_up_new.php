@@ -106,7 +106,16 @@ try {
                     <input type="text" class="small-input" placeholder="City" name="user_city" value="" />
                     <input type="text" class="small-input" placeholder="Post Code" name="user_postCode" value="" />
                 </div> -->
-               
+               <div class="row">
+                    <div class="col">
+                        <input type="radio" id="male" name="user_sex" value="Male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="col">
+                        <input type="radio" id="female" name="user_sex" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
                 <button name="signup_submit" >Sign In</button>
                 <!--<input  style="margin-top:15px"   value="Sign Up">-->
             </form>
