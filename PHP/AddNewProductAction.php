@@ -44,14 +44,20 @@ VALUES ('$NamePr', '$DisPr', '$PricePr','$Mans','$Cats')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
+   echo '<script type ="text/JavaScript">';  
+echo 'alert("New record created successfully")';  
+echo '</script>';  
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
+     echo '<script type ="text/JavaScript">';  
+echo 'alert("Error")';  
+echo '</script>';  
 }
 
 $conn->close();
   
 }
 
-//header("Location: ../AddProductAdminPanel.php");
+header("Location: ../AddProductAdminPanel.php");
 
 ?>
