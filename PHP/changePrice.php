@@ -1,11 +1,12 @@
 <?php
 if(isset($_POST['submitPrice'])){
+  ob_start();
   $ID= $_GET['Product'];
   $pr=$_POST['Price'];
   $ds=$_POST['Discount'];
-  require "connect_db";
+  require "connect_db.php";
   
-  $sql = "UPDATE Product SET Product_Price='$pr' WHERE Product_ID=$ID";
+  $sql = "UPDATE Product SET Product_Price='$pr', Product_Discount='$ds' WHERE Product_ID=$ID";
 
 if ($conn->query($sql) === TRUE) {
   echo "Record updated successfully";
@@ -14,6 +15,7 @@ if ($conn->query($sql) === TRUE) {
 }
   
    $conn  -> close();
+  header("Location: PHP/EDITPr.php");
 }
 
 
