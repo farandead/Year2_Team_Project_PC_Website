@@ -1,11 +1,7 @@
 <?php
-
-
-
 $servername = "localhost";
 $username = 'babimors_astonTeam';
 $password ='HW#1o.5=#cl+';
-
 try {
   $conn = new PDO("mysql:host=$servername;dbname=babimors_compuk", $username, $password);
   // set the PDO error mode to exception
@@ -13,13 +9,7 @@ try {
   echo "Connected successfully"; 
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
-}
-?> 
-<!-- SIGN UP PHP SCRIPT-->
-    <?php
-
-   
-        
+}     
         //if (empty($_POST['lastName'])) {
         // $errors[] = "";
         //}
@@ -39,8 +29,6 @@ try {
         if (empty($_POST['user_birthday'])) {
             $errors[] = "Please select your date of birth";
        }
-
-
         if (empty($_POST['email'])) {
             $errors[] = "E-mail address is required";
         } else {
@@ -55,7 +43,6 @@ try {
                 $errors[] = "The e-mail already exist. Please connect.";
             }
         }
-
         // if (empty($_POST['phoneNumber'])) {
         //  $errors[] = "Veuiller rentrer votre numéro de téléphone";
         // }
@@ -80,10 +67,8 @@ try {
             //var_dump($pass_hash);
             // }
         }
-
         if (empty($errors)) {
-            //   echo " inserting ";
-    
+            //   echo " inserting "; 
             //  $longueurKey = 15;
             //  $key = "";
             // for ($i = 1; $i < $longueurKey; $i++) {
@@ -101,16 +86,11 @@ try {
                 ':User_Phone_Number' => $_POST['user_number'],
                 ':User_Sex'          => $_POST['user_sex'],
                 ':User_Status'       => $Users_status,
-                ':User_DOB'        => $_POST['user_birthday'],
-                
-
-
+                ':User_DOB'        => $_POST['user_birthday'],             
             );
             $res = $result->execute($values);
             if ($res) {
-                //echo "YOU ARE IN !";
-             
-              header('Location: https://comp-uk.motorsfeere.com/Sign_up_new.php');
+              header('Location: /Sign_up_new.php');
               exit;
                 //      $messages[] = "YOU ARE IN !";
                 //       $messages[]= 'An confirmation e-mail have been send to this address' .$_POST['email']. '. ';
@@ -125,15 +105,9 @@ try {
                 echo "not in ";
             }
         } else {
-
             $errors[] = "not inserting";
             // var_dump($errors);
         }
-
         //var_dump($errors);
         // echo "</br>";
-    
         // var_dump($messages);
-   
-    ?>
-    <!-- END --- SIGN UP PHP SCRIPT-->
