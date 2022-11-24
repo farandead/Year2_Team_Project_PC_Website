@@ -1,4 +1,4 @@
-<!-- DATABASE CONNECTION -->
+
 <!-- DATABASE CONNECTION -- HAVE TO MAKE AN INCLUSIONS-->
 <?php
 $servername = "localhost";
@@ -15,7 +15,6 @@ try {
 }
 ?>
 <!-- END DATABASE CONNECTION-->
-<!-- END DATABASE CONNECTION -->
 <!DOCTYPE html>
 <html>
 
