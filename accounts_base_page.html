@@ -20,6 +20,8 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
     <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
     
 
 
@@ -34,7 +36,7 @@
     </script>
     <style>
         body {
-            margin: 0%;
+            margin-top: 30px;
             padding: 0%;
             font-family: "Arial", Helvetica, sans-serif;
         }
@@ -95,112 +97,137 @@
         </ul>
         </ul>
     </header>
+
     
-        <section class ="bg-dark text-light py-1 text-center text-sm-start rounded border border-white">
-            <section class="py-4">
-        <div class="container1 margin:50px">
-            <style>
-                #customers {
-                  font-family: Arial, Helvetica, sans-serif;
-                  border-collapse: collapse;
-                  width: 70%;
-                  margin: 70px;
-                  margin-right: 70px;
-                }
-                
-                #customers td, #customers th {
-                  border: 1px solid #ddd;
-                  padding: 50px;
-                }
-                
-                #customers tr:nth-child(even){background-color: #f2f2f2;}
-                
-                #customers tr:hover {background-color: #ddd;}
-                
-                #customers th {
-                  padding-top: 12px;
-                  padding-bottom: 12px;
-                  text-align: left;
-                  background-color: #4234c3;
-                  color: white;
-                }
-                </style>
-                </head>
-                <body>
-                
-                <h1>Accounts Base Page Table</h1>
-                
-                <table id="customers">
+    <!--Account Base Page Table-->
+       <section class ="table">
+        <div class="container1 d-flex justify-content-center align-items-center">
+          <div class="row"></div>
+          <h1>Accounts Base Page</h1>
+        </div>
+      </div>
+
+        <div class="container1 mt-5 d-flex justify-content-center align-items-center mt-5">
+          <div class="row"></div>
+          <h1>Accounts Base Page</h1>
+        </div>
+      </div>
+  
+    <div class="container2 me-4 ms-4">
+      <div class="row">
+            <table id="example" class="table table-striped" style="width: 100%;">
+              <thead>
                   <tr>
-                    <th>ID</th>
-                    <th>Email</th>
-                    <th>Password</th>
-                    <th>Name</th>
+                      <th>ID</th>
+                      <th>Email</th>
+                      <th>Password</th>
+                      <th>Name</th>
+                  </tr>
+              </thead>
+                  <tr>
+                      <td>ID#</td>
+                      <td>Email@gmail.com</td>
+                      <td>Password123</td>
+                      <td>NameABC</td>
                   </tr>
                   <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>name@gmail.com</td>
-                    <td>Password</td>
-                    <th>Name</th>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>
                   </tr>
                   <tr>
-                    <td>Berglunds snabbköp</td>
-                    <td>name@gmail.com</td>
-                    <td>Password</td>
-                    <th>Name</th>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>
                   </tr>
                   <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>name@gmail.com</td>
-                    <td>Password</td>
-                    <th>Name</th>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>
                   </tr>
                   <tr>
-                    <td>Ernst Handel</td>
-                    <td>name@gmail.com</td>
-                    <td>Password</td>
-                    <th>Name</th>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>
                   </tr>
                   <tr>
-                    <td>Island Trading</td>
-                    <td>name@gmail.com</td>
-                    <td>Password</td>
-                    <th>Name</th>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>
                   </tr>
                   <tr>
-                    <td>Königlich Essen</td>
-                    <td>name@gmail.com</td>
-                    <td>Password</td>
-                    <th>Name</th>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>
                   </tr>
                   <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>name@gmail.com</td>
-                    <td>Password</td>
-                    <th>Name</th>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>>
                   </tr>
                   <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>name@gmail.com</td>
-                    <td>Password</td>
-                    <th>Name</th>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>
                   </tr>
                   <tr>
-                    <td>North/South</td>
-                    <td>name@gmail.com</td>
-                    <td>Password</td>
-                    <th>Name</th>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>
                   </tr>
                   <tr>
-                    <td>Paris spécialités</td>
-                    <td>name@gmail.com</td>
-                    <td>Password</td>
-                    <th>Name</th>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>
                   </tr>
-                </table>
-            </section>
-        </section>
+                  <tr>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>
+                  </tr>
+                  <tr>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>
+                  </tr>
+                  <tr>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>
+                  </tr>
+                  <tr>
+                    <td>ID#</td>
+                    <td>Email@gmail.com</td>
+                    <td>Password123</td>
+                    <td>NameABC</td>
+                  </tr>
+                  
+        </table>
+      </div>
     </div>
+  </section>
+
+
+
+        <script src="//code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+        <script src="./js/admin_data_table.js"></script>
+
         
-    </body>
+  </body>
+</html> 
 

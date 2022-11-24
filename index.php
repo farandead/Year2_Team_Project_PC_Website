@@ -123,7 +123,7 @@
         </div>
 
         <div class="devices-container-heading">
-            <h3 id="devices-container-heading-h3" style="font-family: 'Russo One', sans-serif;font-size:19px ">FEATURED SYSTEMS</h3>
+            <h3 id="devices-container-heading-h3" style="font-family: 'Russo One', sans-serif;font-size:19px ">Discounts:</h3>
 
         </div>
 
@@ -135,245 +135,32 @@
 
 
         <div class="devices-container" id="desktop_container">
-            <div class="devices-sub-container">
-                <div class="devices-sub-container-product">
-                    <div class="productdetails">
-                        <div class="product-details-title">AGILITY PRO</div>
-                        <div class="product-details-img"><img src="img/AGILITY_PRO.webp" alt=""></div>
-                        <div class="product-details-description">
-                            <ul class="description-ulisted">
-                                <li class="description-ulisted-item">PCS 3601 CASE</li>
-                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
-                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
-                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
-                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
-                            </ul>
-                        </div>
-                        <div class="product-details-buy-buttons">
-                            <button>CONFIGURE THIS PC ></button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="devices-sub-container-product">
-                    <div class="productdetails">
-                        <div class="product-details-title">AGILITY PRO</div>
-                        <div class="product-details-img"><img src="img/AGILITY_PRO.webp" alt=""></div>
-                        <div class="product-details-description">
-                            <ul class="description-ulisted">
-                                <li class="description-ulisted-item">PCS 3601 CASE</li>
-                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
-                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
-                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
-                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
-                            </ul>
-                        </div>
-                        <div class="product-details-buy-buttons">
-                            <button>CONFIGURE THIS PC ></button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="devices-sub-container-product">
-                    <div class="productdetails">
-                        <div class="product-details-title">AGILITY PRO</div>
-                        <div class="product-details-img"><img src="img/AGILITY_PRO.webp" alt=""></div>
-                        <div class="product-details-description">
-                            <ul class="description-ulisted">
-                                <li class="description-ulisted-item">PCS 3601 CASE</li>
-                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
-                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
-                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
-                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
-                            </ul>
-                        </div>
-                        <div class="product-details-buy-buttons">
-                            <button>CONFIGURE THIS PC ></button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="devices-sub-container">
-                <div class="devices-sub-container-product">
-                    <div class="productdetails">
-                        <div class="product-details-title">AGILITY PRO</div>
-                        <div class="product-details-img"><img src="img/AGILITY_PRO.webp" alt=""></div>
-                        <div class="product-details-description">
-                            <ul class="description-ulisted">
-                                <li class="description-ulisted-item">PCS 3601 CASE</li>
-                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
-                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
-                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
-                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
-                            </ul>
-                        </div>
-                        <div class="product-details-buy-buttons">
-                            <button>CONFIGURE THIS PC ></button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="devices-sub-container-product">
-                    <div class="productdetails">
-                        <div class="product-details-title">AGILITY PRO</div>
-                        <div class="product-details-img"><img src="img/AGILITY_PRO.webp" alt=""></div>
-                        <div class="product-details-description">
-                            <ul class="description-ulisted">
-                                <li class="description-ulisted-item">PCS 3601 CASE</li>
-                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
-                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
-                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
-                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
-                            </ul>
-                        </div>
-                        <div class="product-details-buy-buttons">
-                            <button>CONFIGURE THIS PC ></button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="devices-sub-container-product">
-                    <div class="productdetails">
-                        <div class="product-details-title">AGILITY PRO</div>
-                        <div class="product-details-img"><img src="img/AGILITY_PRO.webp" alt=""></div>
-                        <div class="product-details-description">
-                            <ul class="description-ulisted">
-                                <li class="description-ulisted-item">PCS 3601 CASE</li>
-                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
-                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
-                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
-                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
-                            </ul>
-                        </div>
-                        <div class="product-details-buy-buttons">
-                            <button>CONFIGURE THIS PC ></button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            
+            
+            
+            <?php
+    //here
+    require "PHP/connect_db.php";
+    $query=mysqli_query($conn,"SELECT * FROM Product WHERE (Cat_ID = '1' OR Cat_ID = '3') AND Product_Discount > 0");
+    require "PHP/ProductsCollectionPrinterIndex.php";
+    ?>
+            
+            
         </div>
 
         <div class="devices-container-laptop" id="laptop_container">
-            <div class="devices-sub-container">
-                <div class="devices-sub-container-product">
-                    <div class="productdetails">
-                        <div class="product-details-title">LAFIFE PRO 15 6</div>
-                        <div class="product-details-img"><img src="img/Lafife Pro 15 6.webp" alt=""></div>
-                        <div class="product-details-description">
-                            <ul class="description-ulisted">
-                                <li class="description-ulisted-item">PCS 3601 CASE</li>
-                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
-                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
-                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
-                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
-                            </ul>
-                        </div>
-                        <div class="product-details-buy-buttons">
-                            <button>CONFIGURE THIS PC ></button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="devices-sub-container-product">
-                    <div class="productdetails">
-                        <div class="product-details-title">LAFIFE PRO 15 6</div>
-                        <div class="product-details-img"><img src="img/Lafife Pro 15 6.webp" alt=""></div>
-                        <div class="product-details-description">
-                            <ul class="description-ulisted">
-                                <li class="description-ulisted-item">PCS 3601 CASE</li>
-                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
-                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
-                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
-                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
-                            </ul>
-                        </div>
-                        <div class="product-details-buy-buttons">
-                            <button>CONFIGURE THIS PC ></button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="devices-sub-container-product">
-                    <div class="productdetails">
-                        <div class="product-details-title">LAFIFE PRO 15 6</div>
-                        <div class="product-details-img"><img src="img/Lafife Pro 15 6.webp" alt=""></div>
-                        <div class="product-details-description">
-                            <ul class="description-ulisted">
-                                <li class="description-ulisted-item">PCS 3601 CASE</li>
-                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
-                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
-                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
-                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
-                            </ul>
-                        </div>
-                        <div class="product-details-buy-buttons">
-                            <button>CONFIGURE THIS PC ></button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="devices-sub-container">
-                <div class="devices-sub-container-product">
-                    <div class="productdetails">
-                        <div class="product-details-title">LAFIFE PRO 15 6</div>
-                        <div class="product-details-img"><img src="img/Lafife Pro 15 6.webp" alt=""></div>
-                        <div class="product-details-description">
-                            <ul class="description-ulisted">
-                                <li class="description-ulisted-item">PCS 3601 CASE</li>
-                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
-                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
-                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
-                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
-                            </ul>
-                        </div>
-                        <div class="product-details-buy-buttons">
-                            <button>CONFIGURE THIS PC ></button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="devices-sub-container-product">
-                    <div class="productdetails">
-                        <div class="product-details-title">LAFIFE PRO 15 6</div>
-                        <div class="product-details-img"><img src="img/Lafife Pro 15 6.webp" alt=""></div>
-                        <div class="product-details-description">
-                            <ul class="description-ulisted">
-                                <li class="description-ulisted-item">PCS 3601 CASE</li>
-                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
-                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
-                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
-                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
-                            </ul>
-                        </div>
-                        <div class="product-details-buy-buttons">
-                            <button>CONFIGURE THIS PC ></button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="devices-sub-container-product">
-                    <div class="productdetails">
-                        <div class="product-details-title">AGILITY PRO</div>
-                        <div class="product-details-img"><img src="img/Lafife Pro 15 6.webp" alt=""></div>
-                        <div class="product-details-description">
-                            <ul class="description-ulisted">
-                                <li class="description-ulisted-item">PCS 3601 CASE</li>
-                                <li class="description-ulisted-item"> Intel® Core™ i3-10100</li>
-                                <li class="description-ulisted-item">GIGABYTE B560 HD3 (rev. 1.0)</li>
-                                <li class="description-ulisted-item"> 8GB PCS PRO DDR4 2666MHz</li>
-                                <li class="description-ulisted-item">2GB GEFORCE GT 1030 - DVI, HDMI</li>
-                            </ul>
-                        </div>
-                        <div class="product-details-buy-buttons">
-                            <button>CONFIGURE THIS PC ></button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            
+                        <?php
+    //here
+    require "PHP/connect_db.php";
+    $query=mysqli_query($conn,"SELECT * FROM Product WHERE (Cat_ID = '2' OR Cat_ID = '4') AND Product_Discount > 0");
+    require "PHP/ProductsCollectionPrinterIndex.php";
+    ?>
+            
+            
+            
+            
+            
         </div>
 
 
@@ -381,7 +168,7 @@
         <div class="banner-1-container">
             <div class="banner-1-sub-container">
                 <div class="banner-1-sub-container-heading">
-                    <h1 style="font-family: 'Russo One', sans-serif; ">CONFIGURE YOUR PC</h1>
+                  <a href='categories.php'>  <h1 style="font-family: 'Russo One', sans-serif; ">CONFIGURE YOUR PC</h1> </a>
                 </div>
                 <div class="banner-1-sub-container-paragraph">
                     <p
@@ -391,7 +178,7 @@
 
                 </div>
                 <div class="banner-1-sub-container-button">
-                    <button style="  font-family: 'Russo One', sans-serif;  ">CONFIGURE NOW</button>
+                    <a href='categories.php'>  <button style="  font-family: 'Russo One', sans-serif;  ">CONFIGURE NOW</button> </a>
                 </div>
             </div>
             <div class="banner-1-sub-container">

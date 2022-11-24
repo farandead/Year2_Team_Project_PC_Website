@@ -1,0 +1,7 @@
+<?php
+
+
+
+$template= "TemplateProductIndex.php";
+
+?>
