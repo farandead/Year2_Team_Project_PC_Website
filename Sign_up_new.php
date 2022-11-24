@@ -106,6 +106,8 @@ try {
                     <input type="text" class="small-input" placeholder="City" name="user_city" value="" />
                     <input type="text" class="small-input" placeholder="Post Code" name="user_postCode" value="" />
                 </div> -->
+                <input type="date" id="birthday" placeholder="yyyy-mm-dd" name="user_birthday" value="" min="1950-01-01" max="2022-12-15">
+                 <label for="birthday">Date of Birth</label>
                <div class="row">
                     <div class="col">
                         <input type="radio" id="male" name="user_sex" value="Male">
