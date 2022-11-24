@@ -10,7 +10,7 @@ $data_git = array(
 )
 );
 $data_string_git = json_encode($data_git);
-$ch_git = curl_init('https://api.github.com/repos/YOUR_REPO/contents/wall.jpg');
+$ch_git = curl_init('https://github.com/GIB225/Year2_Team_Project_PC_Website/tree/main/PHP/Test/wall.jpg');
 curl_setopt($ch_git, CURLOPT_CUSTOMREQUEST, "PUT");
 curl_setopt($ch_git, CURLOPT_POSTFIELDS, $data_string_git);
 curl_setopt($ch_git, CURLOPT_RETURNTRANSFER, true);
