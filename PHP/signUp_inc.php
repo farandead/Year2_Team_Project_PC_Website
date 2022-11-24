@@ -19,7 +19,7 @@ try {
     <?php
 
    
-
+        
         //if (empty($_POST['lastName'])) {
         // $errors[] = "";
         //}
@@ -36,7 +36,9 @@ try {
         if (empty($_POST['user_sex'])) {
             $errors[] = "Please choose : M or F";
        }
-
+        /*if (empty($_POST['User_DOB'])) {
+            $errors[] = "Please choose : M or F";
+       }*/
 
 
         if (empty($_POST['email'])) {
@@ -87,17 +89,20 @@ try {
             // for ($i = 1; $i < $longueurKey; $i++) {
             //     $key .= mt_rand(0, 9);
             //}
-    
-            $sql = "INSERT INTO account (User_FName, User_SName, user_Email, User_Password, User_Phone_Number, User_Sex ) 
-        VALUES ( :User_FName, :User_SName, :user_Email,   :User_Password ,:User_Phone_Number, :User_Sex)";
+            $Users_status = 'Customer';
+            $sql = "INSERT INTO account (User_FName, User_SName, user_Email, User_Password, User_Phone_Number, User_Sex, User_Status ) 
+        VALUES ( :User_FName, :User_SName, :user_Email,   :User_Password ,:User_Phone_Number, :User_Sex, :User_Status)";
             $result = $conn->prepare($sql);
             $values = array(
-                ':User_FName' => $_POST['firstName'],
-                ':User_SName' => $_POST['lastname'],
-                ':user_Email' => $_POST['email'],
-                ':User_Password' => $pass_hash,
+                ':User_FName'        => $_POST['firstName'],
+                ':User_SName'        => $_POST['lastname'],
+                ':user_Email'        => $_POST['email'],
+                ':User_Password'     => $pass_hash,
                 ':User_Phone_Number' => $_POST['user_number'],
-                ':User_Sex'        => $_POST['user_sex'],
+                ':User_Sex'          => $_POST['user_sex'],
+                ':User_Status'       => $Users_status,
+              
+              //':User_DOB'        => $_POST['User_DOB'],
                 
 
 
