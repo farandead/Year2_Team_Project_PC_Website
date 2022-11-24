@@ -82,7 +82,7 @@
                             style="font-size: xx-large;color:white"></i> </a></li>
                 <br>
                 <br>
-                <li><a class="sign-in-logo" class="link" href="Sign_up.html"> <i class="bi bi-person-fill"
+                <li><a class="sign-in-logo" class="link" href="Sign_up_new.php"> <i class="bi bi-person-fill"
                             style="font-size: xx-large;color:white"></i> </a></li>
         </ul>
         </div>
