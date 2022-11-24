@@ -9,7 +9,7 @@ while($row=mysqli_fetch_assoc($query)){
 echo 
                     "<tr>
                       <td>".$row['User_ID']."</td>
-                      <td>".$row['user_Email']."</td>
+                      <td>".$row['user_Email']." - "."edit"."</td>
                       <td>".$row['User_Phone_Number']."</td>
                       <td>".$row['User_SName']." ".$row['User_FName']."</td>
                   </tr>";
