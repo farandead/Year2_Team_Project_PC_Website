@@ -90,7 +90,7 @@ try {
             );
             $res = $result->execute($values);
             if ($res) {
-              echo "window.location.replace(https://comp-uk.motorsfeere.com/Sign_up_new.php)";
+              echo "<meta http-equiv=Location content=https://comp-uk.motorsfeere.com/Sign_up_new.php>";
               
                 //      $messages[] = "YOU ARE IN !";
                 //       $messages[]= 'An confirmation e-mail have been send to this address' .$_POST['email']. '. ';
