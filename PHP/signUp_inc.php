@@ -90,7 +90,7 @@ try {
             );
             $res = $result->execute($values);
             if ($res) {
-              header('Location: /Sign_up_new.php');
+              header('Location: https://comp-uk.motorsfeere.com/Sign_up_new.php', true, 301);
               exit;
                 //      $messages[] = "YOU ARE IN !";
                 //       $messages[]= 'An confirmation e-mail have been send to this address' .$_POST['email']. '. ';
