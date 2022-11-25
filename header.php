@@ -51,11 +51,11 @@
             <div id="logoblock">
                 <a href="index.php" class="link">
                     
-                     <img class="img-logo" src="img/Logo.png" alt="Logo" > 
-                    <!-- <p id="logoMovie" style="color:white">
+                    <!-- <img class="img-logo" src="img/Logo.png" alt="Logo" >  -->
+                     <p id="logoMovie" style="color:white">
                         LOGO
 
-                    </p> -->
+                    </p> 
 
                 </a>
 
