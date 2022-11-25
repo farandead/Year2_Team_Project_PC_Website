@@ -14,7 +14,7 @@ $email=$_GET['EMAIL'];
      <h3>'.$email.'</h3>'; ?>
          
        <label for="em">Change to:</label><br>
-  <input type="text" id="em" name="em" maxlength= "50" required  ><br><br>
+  <input type="email" id="em" name="em" maxlength= "50" required  ><br><br>
      
       
            
