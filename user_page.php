@@ -55,7 +55,7 @@
             
             <div class= "title">
                 <h1 class="helloUser">Hello User !</h1>
-                <h2 class="subheading">Order History </h2>
+                <h2 class="subheading">Order History: </h2>
             </div>
             <table class = "orderTable">
             <tr>
