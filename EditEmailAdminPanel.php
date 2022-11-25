@@ -3,14 +3,14 @@ ob_start();
 
 if(isset($_GET['EMAIL']) and isset($_GET['EMAIL'])){
 $email=$_GET['EMAIL'];
-
+$ID=$_GET['ID'];
 ?>
 <html>
   <body>
     <h3>Edit the email<h/3>
 
     
- <?php   echo'     <form action ="changeEmail.php?EMAIL='.$email.'" method="post">
+ <?php   echo'     <form action ="changeEmail.php?EMAIL='.$email.'&ID=".$ID."" method="post">
      <h3>'.$email.'</h3>'; ?>
          
        <label for="em">Change to:</label><br>
