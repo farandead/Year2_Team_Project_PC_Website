@@ -74,10 +74,10 @@
                 <a href="#">
                     
                     <div class="icon">
-                        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>		
+                        <i class="fa fa-cart-arrow-down" style="font-size: xx-large;color:white"></i>		
                         		
                     </div>
-                    <div class="name"><span data-text="Cart">Cart</span></div>
+                    <div class="name"><span data-text="Cart" >Cart</span></div>
                     
                 </a></li>
                 <br>
