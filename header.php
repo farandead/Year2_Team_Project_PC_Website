@@ -70,7 +70,7 @@
 
             <div id="membershipblock">
 
-                <li><i class="fa fa-cart-arrow-down" aria-hidden="true" style= " size: 30px; "></i> </li>
+                <li><i class="fa fa-cart-arrow-down" aria-hidden="true" style= " size: 60px; "></i> </li>
                 <br>
                 <br>
 
