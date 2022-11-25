@@ -51,7 +51,7 @@
             <div id="logoblock">
                 <a href="index.php" class="link">
                     
-                     <img class="img-logo" src="img/Logo.png" alt="Logo" > 
+                     <img class="img-logo" src="img/Logo1.png" alt="Logo" > 
                     <!-- <p id="logoMovie" style="color:white">
                         LOGO
 
