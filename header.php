@@ -70,6 +70,7 @@
 
             <div id="membershipblock">
 
+                <li>
                 <a href="#">
                     
                     <div class="icon">
@@ -78,7 +79,7 @@
                     </div>
                     <div class="name"><span data-text="Cart">Cart</span></div>
                     
-                </a>
+                </a></li>
                 <br>
                 <br>
 
