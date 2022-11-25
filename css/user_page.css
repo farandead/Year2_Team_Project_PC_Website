@@ -208,9 +208,9 @@ input {
 	font-family: arial, sans-serif;
 	border-collapse: collapse;
 	width: 100%;
-	margin-top: 50px;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
   }
   
 td, th {

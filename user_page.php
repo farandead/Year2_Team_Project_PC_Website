@@ -52,9 +52,12 @@
 
     <div class="container1">
         <div class="OrdersBox">
-            <h1>Hello User !</h1>
-            <h2>Order History </h2>
-
+            
+            <div class= "title">
+                <h1>Hello User !</h1>
+                <h2>Order History </h2>
+            </div>
+            
             <table class = "orderTable">
             <tr>
                 <th>Order ID</th>
