@@ -9,11 +9,13 @@ $id=base64_decode($_GET['ID']);
   require "connect_db.php";
   
   
-   $sql = "SELECT COUNT(*) FROM account WHERE user_Email= '$email'";
-        $stmt = $this->connect()->query($sql);
-        $count = $stmt->fetchColumn();
+   $sql = "SELECT FROM account WHERE user_Email= '$email'";
+        if ($result=mysqli_query($conn,$sql)) {
+    $rowcount=mysqli_num_rows($result);
+    echo "The total number of rows are: ".$rowcount; 
+}
   
-  if($count>0){
+  if($rowcount>0){
   $sql = "UPDATE account SET user_Email='$email' WHERE 	User_ID=$id";
 
 if ($conn->query($sql) === TRUE) {
