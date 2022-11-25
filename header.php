@@ -74,7 +74,7 @@
                     
                     <div class="icon">
                         <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>		
-                        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i><		
+                        		
                     </div>
                     <div class="name"><span data-text="Cart">Cart</span></div>
                     
