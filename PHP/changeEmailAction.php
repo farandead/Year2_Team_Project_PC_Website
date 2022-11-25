@@ -3,7 +3,7 @@ require "CheckAdminAccess.php";
 
 ob_start();
 if(isset($_POST['submitEmail'])){
-  echo "Yes:";
+  //echo "Yes:";
 $email=$_POST['em'];
 $id=base64_decode($_GET['ID']);
   require "connect_db.php";
@@ -12,7 +12,7 @@ $id=base64_decode($_GET['ID']);
    $sql = "SELECT user_Email FROM account WHERE user_Email= '$email'";
         if ($result=mysqli_query($conn,$sql)) {
     $rowcount=mysqli_num_rows($result);
-    echo "The total number of rows are: ".$rowcount; 
+    echo "The total number of rows are: ".$rowcount."<br>"; 
 }
   
   if($rowcount==0){
