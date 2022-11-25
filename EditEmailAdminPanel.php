@@ -1,4 +1,7 @@
 <?php
+ob_start();
+
+if(isset($_GET['EMAIL'])){
 $email=$_GET['EMAIL'];
 
 ?>
@@ -24,3 +27,9 @@ $email=$_GET['EMAIL'];
       
   </body>
 </html>
+<?php 
+}else{
+  header("Location: accounts_base_page.php");
+}
+  
+  ?>
