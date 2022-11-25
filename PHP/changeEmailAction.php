@@ -1,7 +1,7 @@
 <?php
 ob_start();
 if(isset($_POST['submitEmail'])){
-  echo "Yes:":
+  echo "Yes:";
 echo "<br>Email:".$_GET['EMAIL'];
   echo "<br>ID".$_GET['ID'];
 }
