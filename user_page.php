@@ -51,8 +51,62 @@
    
 
     <div class="container1">
-       
-    
+        <div class="OrdersBox">
+            <h1>Hello User !</h1>
+            <h2>Order History </h2>
+
+            <table class = "orderTable">
+            <tr>
+                <th>Order ID</th>
+                <th>Date</th>
+                <th>Payment Status</th>
+                <th>Fulfillment Status</th>
+                <th>Total Price</th>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <<td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <<td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+            <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+            <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+            <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            </table>
+        </div>
     </div>
 
     
