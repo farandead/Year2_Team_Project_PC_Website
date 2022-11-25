@@ -11,7 +11,7 @@ $ID=base64_decode($_GET['ID']);
     <h3>Edit the email<h/3>
 
     
- <?php   echo'     <form action ="changeEmail.php?EMAIL='.$email.'&ID=".$ID."" method="post">
+ <?php   echo'     <form action ="changeEmail.php?EMAIL='.base64_encode($email).'&ID=".base64_encode($ID)."" method="post">
      <h3>'.$email.'</h3>'; ?>
          
        <label for="em">Change to:</label><br>
