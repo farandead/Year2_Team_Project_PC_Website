@@ -3,8 +3,8 @@ ob_start();
 
 if(isset($_GET['EMAIL']) and isset($_GET['EMAIL'])){
   if($_GET['EMAIL']!=null and $_GET['EMAIL']!=null){
-$email=$_GET['EMAIL'];
-$ID=$_GET['ID'];
+$email=base64_decode($_GET['EMAIL']);
+$ID=base64_decode($_GET['ID']);
 ?>
 <html>
   <body>
