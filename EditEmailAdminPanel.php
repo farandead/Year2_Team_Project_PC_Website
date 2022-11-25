@@ -1,4 +1,7 @@
 <?php
+
+require "PHP/CheckAdminAccess.php";
+
 ob_start();
 
 if(isset($_GET['EMAIL']) and isset($_GET['EMAIL'])){
