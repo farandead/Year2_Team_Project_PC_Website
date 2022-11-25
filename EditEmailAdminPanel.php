@@ -2,6 +2,7 @@
 ob_start();
 
 if(isset($_GET['EMAIL']) and isset($_GET['EMAIL'])){
+  if($_GET['EMAIL']!=null and $_GET['EMAIL']!=null){
 $email=$_GET['EMAIL'];
 $ID=$_GET['ID'];
 ?>
@@ -28,6 +29,7 @@ $ID=$_GET['ID'];
   </body>
 </html>
 <?php 
+  }else{header("Location: accounts_base_page.php");}
 }else{
   header("Location: accounts_base_page.php");
 }
