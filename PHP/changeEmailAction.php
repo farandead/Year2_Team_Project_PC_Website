@@ -8,6 +8,12 @@ $email=$_POST['em'];
 $id=base64_decode($_GET['ID']);
   require "connect_db.php";
   
+  
+   $sql = "SELECT COUNT(*) FROM account WHERE user_Email= '$email'";
+        $stmt = $this->connect()->query($sql);
+        $count = $stmt->fetchColumn();
+  
+  if($count>0){
   $sql = "UPDATE account SET user_Email='$email' WHERE 	User_ID=$id";
 
 if ($conn->query($sql) === TRUE) {
@@ -15,7 +21,10 @@ if ($conn->query($sql) === TRUE) {
 } else {
   echo "Error updating record: " . $conn->error;
 }
-  
+  }
+  else{
+  echo "Email is already used!";
+  }
    $conn  -> close();
   
 }
