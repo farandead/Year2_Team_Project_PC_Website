@@ -1,7 +1,7 @@
 <?php
 ob_start();
 
-if(isset($_GET['EMAIL'])){
+if(isset($_GET['EMAIL']) and isset($_GET['EMAIL'])){
 $email=$_GET['EMAIL'];
 
 ?>
