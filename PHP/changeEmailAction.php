@@ -15,7 +15,7 @@ $id=base64_decode($_GET['ID']);
     echo "The total number of rows are: ".$rowcount; 
 }
   
-  if($rowcount>0){
+  if($rowcount==0){
   $sql = "UPDATE account SET user_Email='$email' WHERE 	User_ID=$id";
 
 if ($conn->query($sql) === TRUE) {
