@@ -195,7 +195,7 @@ input {
 	position: absolute;
 	top: 16px;
 	left: 16px;
-    width: 950px;
+    width: 850px;
 	max-width: 100%;
 	min-height: 750px;
 	margin: auto;
@@ -207,7 +207,7 @@ input {
 .orderTable {
 	font-family: arial, sans-serif;
 	border-collapse: collapse;
-	width: 100%;
+	width: 80%;
 	margin-top: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
