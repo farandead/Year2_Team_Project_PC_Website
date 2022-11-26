@@ -1,5 +1,5 @@
 <?php
-echo $_SESSION['User_Status'];
+//echo $_SESSION['User_Status'];
 if(isset($_SESSION['User_Status'])){
   
 }else{
