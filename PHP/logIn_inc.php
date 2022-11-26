@@ -28,7 +28,7 @@ try {
                 $errors[] = "Please Enter your password ";
                 
             }
-
+var_dump($errors);
             if (!empty($errors)) {
                 // Check the Login Credentials
                 $sql = "SELECT user_Email,User_Password FROM account WHERE user_Email=? ";
