@@ -1,4 +1,4 @@
-<?php
+<?php /*
 $servername = "localhost";
 $username = 'babimors_astonTeam';
 $password = 'HW#1o.5=#cl+'; 
@@ -10,26 +10,26 @@ try {
      echo "Connected successfully"; 
 } catch (PDOException $e) {
      echo "Connection failed: " . $e->getMessage();
-}
+} */
 ?> 
 
 <?php
-        $Noerrors = 1 ;
+       
+  if (isset($_POST['submit_Login']) & !empty($_POST['submit_Login'])) {
             // PHP Form Validations
             if (empty($_POST['email'])) {
                 // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
                 //  exit();
-                echo "emptyinputemail";
-                $Noerrors = 2;
+            $errors[] = "Please Enter your email ";
+               
             }
             if (empty($_POST['pwd'])) {
                 // header("location: /pages/connexion.php?error=emptyinput");
-                echo "emptyinputpwd";
+                $errors[] = "Please Enter your password ";
                 
-                $Noerrors = 2;
             }
 
-            if ($Noerrors = 1) {
+            if (!empty($errors)) {
                 // Check the Login Credentials
                 $sql = "SELECT user_Email,User_Password FROM account WHERE user_Email=? ";
                 $result = $conn->prepare($sql);
@@ -57,8 +57,7 @@ try {
                         //echo "Valid";
                        
                     } else {
-                          header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
-                         exit();
+                          $errors[] = "The password or the email is incorrect ";
                        //echo  "wrong login ";
                         
                       
@@ -70,11 +69,10 @@ try {
 
                     // header("location: /pages/connexion.php?error=unknowDetail");   
                     //exit();
-                    header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
-                    exit();
+                    $errors[] = "The password or the email is incorrect ";
                 }
             }
-        
+  }
 
         ?>
         <!-- END LOG IN PHP SCRIPT -->
