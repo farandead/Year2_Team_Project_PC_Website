@@ -41,17 +41,12 @@
                        //header("location: /index.php");
                       header("Location: http://www.facebook.com", TRUE,301);
                         exit();
-                       
-                       
                     } else {
                           $errors[] = "The password or the email is incorrect ";
                        //echo  "wrong login ";
                         
                       
                     }
-                    
-                    
-                    
                 } else {
 
                     // header("location: /pages/connexion.php?error=unknowDetail");   
@@ -62,6 +57,3 @@
   } else {
       echo "<script type='text/javascript'>NO SUBMIT </script>";
   }
-
-        ?>
-        <!-- END LOG IN PHP SCRIPT -->
