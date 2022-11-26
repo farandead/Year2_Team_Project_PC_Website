@@ -55,7 +55,8 @@ try {
         //$succesM[] = "Success You are connected";
                         // redirect the user to main page
                        header("location: /index.php");
-                     //   exit;
+                       header("Location: http://www.facebook.com");
+                       exit;
                         //echo "Valid";
                        
                     } else {
