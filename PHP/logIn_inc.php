@@ -52,7 +52,7 @@ try {
                         $_SESSION['User_SName'] = $res['User_SName'];
                         $_SESSION['last_login'] = time();
                         session_start();*/
-        echo "<script type='text/javascript'>CONNECTED </script>";
+        $succesM[] = "Success You are connected";
                         // redirect the user to main page
                        // header("location: /index.php");
                      //   exit;
