@@ -36,11 +36,11 @@
                         $_SESSION['User_SName'] = $res['User_SName'];
                         $_SESSION['last_login'] = time();
                         session_start();*/
-        //$succesM[] = "Success You are connected";
+                       $succesM[] = "Success You are connected";
                         // redirect the user to main page
                        //header("location: /index.php");
-                      header("Location: http://www.facebook.com", TRUE,301);
-                        exit();
+                     /* header("Location: http://www.facebook.com", TRUE,301);
+                        exit();*/
                     } else {
                           $errors[] = "The password or the email is incorrect ";
                        //echo  "wrong login ";
