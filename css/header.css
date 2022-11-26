@@ -1,19 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-* {
-	box-sizing: border-box;
-}
 
+
+
+.navigation-bar{
+    background-color: #0260be;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    width: auto;
+}
+.navigation-menu{
+    display: flex;
+    flex-direction: row;
+}
+.navigation-menu ul{
+    display: flex;
+    flex-direction: row;
+}
+.navigation-icons ul{
+    width: 200px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.dark_target{
+    background-color:rgb(30,30,30) ;
+    color: white;
+}
+.navigation-icons ul li{
+    
+    
+}
 .navigationBar{
     z-index:+1 ;
-    position: absolute;
-    width: 100%;
+    position: sticky;
+    width: auto;
     color: white;
-    height: 120px;
+    height: 130px;
     padding: 0%;
     background-color: #0260be;
     font-size: 10px;
-    margin-top: -20px;
+    padding-top: 20px;
+          
     margin-bottom: 100px;
    
    
@@ -71,57 +105,46 @@
     margin-top: auto;
     margin-bottom: auto;
     color: white;
+    width:max-content ;
 
 }
 
-.link:hover{
-    border-bottom: 1px solid white;
-    color: white;
-}
-.link{
-    color: white;
-    text-decoration: none;
-}
-.searchLogo{
-    margin-left:50px ;
-    color: white;
-   
-}
-.searchLogo:hover{
+
+@media (max-width:420px) {
+    .navigation-bar{
+        width:100vmin;
+
+        flex-direction: column;
+        display: inline-flex;
+    }
+    .navigation-menu{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbaritem {
+        margin-left:5px ;
+        margin-right: 5px;
+    }
+    .navbaritem a p{
+        font-size: 10px;
+    }
+    .navbaritem a p{
+        font-size: 12px;
+    }
+    .navigation-icons ul{
     
-    color: #0260be;
-}
+        justify-content: space-between;
+    }
 
-#membershipblock{
-    display: flex;
-    flex-direction: row;
-   margin-left: 234px;
+    .navigation-icons ul li i{
+        font-size: 22px;
+    }
+    .navigation-icons ul li a i{
+        font-size: 22px;
+    }
+
     
-}
-#membershipblock li{
-    color: white;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    margin-left:15px ;
-    margin-right: 15px;
-    font-weight: bold;
-} 
+    
 
-.membershipblock li a .icon{
-	width: 100px; 
-	height: 100px; 
-	text-align: center;
-	overflow: hidden;
-	
-	
 }
 
-.membershipblock li a .icon .fa{
-	width: 100%;
-	height: 100%;
-	line-height: 40px;
-	font-size: 34px;
-	transition: 0.5s; 
-	color: white;
-}
