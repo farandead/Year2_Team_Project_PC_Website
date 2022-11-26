@@ -43,13 +43,13 @@ try {
                     if (password_verify($_POST['pwd'], $res['User_Password'])) {
                         
                         //regenerate session id
-                        session_start();
+                       /* session_start();
                         $_SESSION['login'] = true;
                         $_SESSION['user_Email'] = $res['user_Email'];
                         $_SESSION['User_FName'] = $res['User_FName'];
                         $_SESSION['User_SName'] = $res['User_SName'];
                         $_SESSION['last_login'] = time();
-                        session_start();
+                        session_start();*/
         echo "<script type='text/javascript'>CONNECTED </script>";
                         // redirect the user to main page
                        // header("location: /index.php");
