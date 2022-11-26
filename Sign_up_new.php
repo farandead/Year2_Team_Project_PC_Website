@@ -129,7 +129,7 @@ try {
         </div>
         <!--END  CREATE AN ACCOUNT  -->
 
-       <?php if (isset($_POST['submit_Login']) & !empty($_POST['submit_Login'])) {
+       <?php if (isset($_POST['submit_Login'])) {
             // PHP Form Validations
             if (empty($_POST['email'])) {
                 // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
@@ -200,7 +200,7 @@ try {
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a
                         href="" style="margin-bottom:10px">Here</a></a>
- <input type="submit" name="submit_Login" value="Sign I">
+ <input type="submit" name="submit_Login" value="Sign In">
               <!--  <button name="submit_Login" >Sign In</button> -->
                 <!-- message  -->
                     <?php
