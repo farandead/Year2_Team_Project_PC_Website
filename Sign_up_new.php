@@ -200,8 +200,8 @@ try {
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a
                         href="" style="margin-bottom:10px">Here</a></a>
-
-              <button name="submit_Login" >Sign In</button>
+ <input type="submit" name="submit_Login" value="Sign I">
+              <!--  <button name="submit_Login" >Sign In</button> -->
                 <!-- message  -->
                     <?php
                     if (!empty($errors)) {
