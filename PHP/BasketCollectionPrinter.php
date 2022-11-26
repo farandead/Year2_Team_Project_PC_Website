@@ -1,6 +1,9 @@
 <?php
 //echo $_SESSION['User_Status'];
 if(isset($_SESSION['User_Status'])){
+  require "connect_db.php";
+  require "BasketInSQL.php";
+  require "Printer.php";
   
 }else{
 if(isset($_COOKIE["BasketCompUK"])){
