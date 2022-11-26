@@ -40,7 +40,7 @@
 <body>
     <?php require 'header.php'; ?>
 
-    <div class="mainbox-container" id="main_body">
+    <div class="mainbox-container dark_target" id="main_body">
         <div class="mainbox-container-1">
             <section class="bannerContainer">
 
@@ -120,7 +120,7 @@
 
 
 
-        <div class="devices-container" id="desktop_container">
+        <div class="devices-container dark_target" id="desktop_container">
 
 
             <?php
@@ -136,7 +136,7 @@
 
         </div>
 
-        <div class="devices-container-laptop" id="laptop_container">
+        <div class="devices-container-laptop dark_target" id="laptop_container">
 
             <?php
             //here
