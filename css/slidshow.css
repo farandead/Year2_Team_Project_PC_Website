@@ -223,7 +223,7 @@ position: relative;
     margin-right: 15px;
     font-weight: bold;
 }
-@media (max-width: 420px) {
+@media (max-width: 730px) {
     .bannerContainer{
         overflow: hidden;
     
@@ -235,7 +235,7 @@ position: relative;
     
     }
     .bannerContainer img{
-        width: 420px;
+        width: 100vmin;
         margin: auto;
         height: 100% ;
         align-items: center;
@@ -298,11 +298,11 @@ position: relative;
        
         margin: 0px 0px;
         height: 200px;
-        width: 309px;
+        width: 50vmin;
         justify-items: center;
         font-family: 'Russo One', sans-serif;
-        font-size: 12px;
-        margin: -206px 50px;
+        font-size: 22px;
+        margin: -286px 50px;
         text-justify:distribute-all-lines;
         filter: brightness(1);
         filter: drop-shadow(1px 2px 1px black);
@@ -312,7 +312,7 @@ position: relative;
     #bannerTextContainer{
        
         height: 206px;
-        width: 500px;
+        width: 100vmin;
         
         font-family: 'Russo One', sans-serif;
         
