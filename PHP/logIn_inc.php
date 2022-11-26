@@ -17,7 +17,7 @@ try {
        
   if (isset($_POST['submit_Login']) ) {
       
-      $errors = NULL ;
+      $errors[] = '' ;
             // PHP Form Validations
             if (empty($_POST['email'])) {
                 // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
