@@ -55,5 +55,5 @@
                 }
             }
   } else {
-      echo "<script type='text/javascript'>NO SUBMIT </script>";
+     
   }
