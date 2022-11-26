@@ -55,8 +55,9 @@ try {
         //$succesM[] = "Success You are connected";
                         // redirect the user to main page
                        //header("location: /index.php");
-                       header("Location: http://www.facebook.com", TRUE,301);
-                       exit;
+                      /* header("Location: http://www.facebook.com", TRUE,301);
+                       exit;*/
+                       echo "window.location.href='http://www.w3docs.com/'";
                         //echo "Valid";
                        
                     } else {
