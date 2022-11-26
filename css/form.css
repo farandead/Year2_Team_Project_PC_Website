@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+.form_box{
+    width: 80%;
+    margin: 5vw auto 0 auto;
+    display: flex;
+    padding: 4vw 0;
+    justify-content: space-between;
+}
+.form_box>div{
+    width: 48%;
+    box-shadow: 0 0 65px 0 rgb(0 0 0 / 8%);
+    padding: 60px 35px 45px;
+    border-radius: 10px;
+}
+body {
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+.form_box>div>form{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
+.form_left>form>h3{
+    font-family: Impact;
+}
+.form_left>form>div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.form_left>form>div>div{
+    width: 49%;
+    /*display: flex;*/
+    /*align-items: center;*/
+    margin-bottom: 10px;
+}
+.form_left>form>div>div>label{
+    margin-right: 10px;
+    font-family: 'Staatliches', cursive;
+}
+/*.form_box>form>div>div>input{*/
+    /*background: transparent;*/
+    /*border: 0;*/
+    /*border-bottom: 3px solid #f0f0f0;*/
+    /*border-radius: 0;*/
+    /*box-shadow: none;*/
+    /*margin: 10px 5px 10px 0 !important;*/
+/*}*/
+label{
+    font-family: 'Staatliches', cursive;
+}
+select{
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #f1f1f1;
+    color: #888!important;
+    font-size: 17px;
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+input{
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #f1f1f1;
+    color: #888!important;
+    font-size: 17px;
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+input[type=submit]{
+    border: 0 none;
+    display: inline-block;
+    padding: 10px 30px !important;
+    background: #e53e29;
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 0;
+    margin: 0 !important;
+    width: 100%;
+    height: auto !important;
+    font-family: 'Staatliches', cursive;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background: #0260be !important;
+}
+textarea{
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #f1f1f1;
+    color: #888!important;
+    font-size: 17px;
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.form_right>form>h3{
+    font-family: Impact;
+}
+.form_right>form>div>div{
+    /*display: flex;*/
+    /*align-items: center;*/
+    margin-bottom: 10px;
+}
