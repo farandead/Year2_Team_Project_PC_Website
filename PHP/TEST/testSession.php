@@ -1,6 +1,6 @@
 <?php
 session_start();
 
-echo $_SESSION['User_SName'];
+echo $_SESSION['User_Status'];
 
 ?>
