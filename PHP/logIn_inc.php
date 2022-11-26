@@ -50,10 +50,10 @@ try {
                         $_SESSION['User_SName'] = $res['User_SName'];
                         $_SESSION['last_login'] = time();
                         session_start();
-        
+        echo "<script type='text/javascript'>CONNECTED </script>";
                         // redirect the user to main page
-                        header("location: /index.php");
-                        exit;
+                       // header("location: /index.php");
+                     //   exit;
                         //echo "Valid";
                        
                     } else {
@@ -72,6 +72,8 @@ try {
                     $errors[] = "The password or the email is incorrect ";
                 }
             }
+  } else {
+      echo "<script type='text/javascript'>NO SUBMIT </script>";
   }
 
         ?>
