@@ -1,21 +1,5 @@
-<?php /*
-$servername = "localhost";
-$username = 'babimors_astonTeam';
-$password = 'HW#1o.5=#cl+'; 
-
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=babimors_compuk", $username, $password);
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-     echo "Connected successfully"; 
-} catch (PDOException $e) {
-     echo "Connection failed: " . $e->getMessage();
-} */
-?> 
-
-<?php
-       
-  if (isset($_POST['submit_Login']) ) {
+ <?php
+    if (isset($_POST['submit_Login']) ) {
       
  
             // PHP Form Validations
@@ -55,10 +39,9 @@ try {
         //$succesM[] = "Success You are connected";
                         // redirect the user to main page
                        //header("location: /index.php");
-                      /* header("Location: http://www.facebook.com", TRUE,301);
-                       exit;*/
-                       echo "window.location.href='http://www.w3docs.com/'";
-                        //echo "Valid";
+                      header("Location: http://www.facebook.com", TRUE,301);
+                        exit();
+                       
                        
                     } else {
                           $errors[] = "The password or the email is incorrect ";
