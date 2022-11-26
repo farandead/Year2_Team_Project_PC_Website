@@ -129,10 +129,10 @@ try {
         </div>
         <!--END  CREATE AN ACCOUNT  -->
 
-       
-
+       <?php require '/PHP/logIn_inc.php'; ?>
+ 
          <div class="form-container sign-in-container">
-            <form action="PHP/logIn_inc.php" style="background:white ;" method="post">
+            <form style="background:white ;" method="post">
                 <h1>Sign in</h1>
 
                 <input type="email" placeholder="Email" autocomplete="email" name="email" value="" />
@@ -146,10 +146,6 @@ try {
                     <?php
                     if (!empty($errors)) {
                         var_dump($errors);
-                        //var_dump($_POST['email']);
-                        var_dump(password_verify($_POST['pwd'], $res['User_Password']));
-                        var_dump($res['User_Password']);
-                        var_dump($_POST['pwd']);
                        
                     }
 
