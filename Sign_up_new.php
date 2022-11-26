@@ -144,7 +144,7 @@ try {
               <!--  <button name="submit_Login" >Sign In</button> -->
                 <!-- message  -->
                     <?php
-                 var_dump($errors);
+
                     if (!empty($errors)) {
                         var_dump($errors);
                        
