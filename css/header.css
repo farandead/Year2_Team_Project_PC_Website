@@ -29,6 +29,9 @@
     align-items: center;
     
 }
+.navbaritem a p{
+        text-transform:uppercase;
+   }
 
 .navigation-icons ul li{
     
