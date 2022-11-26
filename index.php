@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMPUK</title>
+    <title>Movie -Your One Stop Source of Unlimited Movies</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -46,15 +46,14 @@
         }
     </style>
 
-</head> 
-    
-   <?php //include '/header.php'; ?>
+</head>
+
+<?php //include '/header.php'; ?>
 <!-- font-family: 'Staatliches', cursive; -->
 <!-- font-family: 'Russo One', sans-serif; -->
 
 
 <body>
-
     <?php require 'header.php'; ?>
 
     <div class="mainbox-container" id="main_body">
@@ -118,13 +117,15 @@
 
                 </div>
                 <div class="banner-1-sub-container-button">
-                    <a href='product_page.php?Category=Gaming Laptops'><button style="  font-family: 'Russo One', sans-serif;  ">CONFIGURE NOW</button></a>
+                    <a href='product_page.php?Category=Gaming Laptops'><button
+                            style="  font-family: 'Russo One', sans-serif;  ">CONFIGURE NOW</button></a>
                 </div>
             </div>
         </div>
 
         <div class="devices-container-heading">
-            <h3 id="devices-container-heading-h3" style="font-family: 'Russo One', sans-serif;font-size:19px ">Discounts:</h3>
+            <h3 id="devices-container-heading-h3" style="font-family: 'Russo One', sans-serif;font-size:19px ">FEATURED
+                SYSTEMS</h3>
 
         </div>
 
@@ -136,32 +137,30 @@
 
 
         <div class="devices-container" id="desktop_container">
-            
-            
-            
+
+
             <?php
-    //here
-    require "PHP/connect_db.php";
-    $query=mysqli_query($conn,"SELECT * FROM Product WHERE (Cat_ID = '1' OR Cat_ID = '3') AND Product_Discount > 0");
-    require "PHP/ProductsCollectionPrinterIndex.php";
-    ?>
-            
-            
+            //here
+             require "PHP/connect_db.php";
+            $query=mysqli_query($conn,"SELECT * FROM Product WHERE (Cat_ID = '1' OR Cat_ID = '3') AND Product_Discount > 0");
+            require "PHP/ProductsCollectionPrinterIndex.php";
+            ?>
+
+
+
+
+
         </div>
 
         <div class="devices-container-laptop" id="laptop_container">
-            
-                        <?php
-    //here
-    require "PHP/connect_db.php";
-    $query=mysqli_query($conn,"SELECT * FROM Product WHERE (Cat_ID = '2' OR Cat_ID = '4') AND Product_Discount > 0");
-    require "PHP/ProductsCollectionPrinterIndex.php";
-    ?>
-            
-            
-            
-            
-            
+
+            <?php
+            //here
+            require "PHP/connect_db.php";
+            $query=mysqli_query($conn,"SELECT * FROM Product WHERE (Cat_ID = '2' OR Cat_ID = '4') AND Product_Discount > 0");
+            require "PHP/ProductsCollectionPrinterIndex.php";
+            ?>
+           
         </div>
 
 
@@ -169,7 +168,7 @@
         <div class="banner-1-container">
             <div class="banner-1-sub-container">
                 <div class="banner-1-sub-container-heading">
-                  <a href='categories.php'>  <h1 style="font-family: 'Russo One', sans-serif; ">CONFIGURE YOUR PC</h1> </a>
+                    <h1 style="font-family: 'Russo One', sans-serif; ">CONFIGURE YOUR PC</h1>
                 </div>
                 <div class="banner-1-sub-container-paragraph">
                     <p
@@ -179,7 +178,7 @@
 
                 </div>
                 <div class="banner-1-sub-container-button">
-                    <a href='categories.php'>  <button style="  font-family: 'Russo One', sans-serif;  ">CONFIGURE NOW</button> </a>
+                    <button style="  font-family: 'Russo One', sans-serif;  ">CONFIGURE NOW</button>
                 </div>
             </div>
             <div class="banner-1-sub-container">
@@ -204,10 +203,11 @@
             </div>
         </div>
 
-       
-       
-    </div> 
-    
+
+
+    </div>
+
     <?php require 'footer.php'; ?>
+
 
 </body>
