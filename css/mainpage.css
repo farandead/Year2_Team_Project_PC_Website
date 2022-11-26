@@ -483,7 +483,150 @@ i {
     z-index: 2;
     position: relative;
 }
+@media (max-width: 420px) {
+    
+    .navigationBar {
+        width: 420px;
+        height: 80px;
+    }
+    #logoblock {
+        margin-top: -20px;
+        margin-left: 0px;
+        height: 90px;
+        margin-right: 8px;
+        color: white;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    #logoMovie {
+        padding-bottom: 20px;
+        margin-left: -20px;
+        margin-right: 0px;
+        font-size: 12px;
+        font-family: "Russo One", sans-serif;
+    }
+    #logoMovie img {
+        width: 100px;
+        margin: 0%;
+    }
 
+    #linksblock {
+        margin-top: -20px;
+    }
+
+    .navbaritem {
+        font-weight: bold;
+
+        display: flex;
+        flex-direction: row;
+        margin-left: -5px;
+        margin-right: -5px;
+
+        width: 60px;
+    }
+    .navbaritem a p {
+        font-size: 6px;
+    }
+    #membershipblock {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+        margin-top: -20px;
+    }
+    #membershipblock i{
+        font-size: 12px;
+    }
+    #membershipblock li {
+        color: white;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-weight: bold;
+    }
+    .searchLogo i{
+        font-size: 15px;
+    }
+    .searchLogo {
+        margin-left: 20px;
+        color: white;
+    }
+    .mainbox-container{
+        width: 430px;
+
+    }
+    .banner-1-container {
+        display: flex;
+        background-color: #0260be;
+        width: 420px;
+        align-content: center;
+        align-items: left;
+        justify-content: left;
+        justify-items: left;
+        text-align: left;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .banner-1-sub-container img{
+        width: 190px;
+    }
+    .banner-1-sub-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items:center ;
+        justify-content: center;
+        justify-items: center;
+        margin-top: -10px;
+        padding-left: 5px;
+        color: white;
+    }
+    .banner-1-sub-container-heading {
+        text-align: left;
+        color: white;
+        padding-top: 20px;
+        font-weight: 200;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+            "Helvetica Neue", sans-serif;
+    }
+    .banner-1-sub-container-heading h1{
+        color: white;
+       font-size: 16px;
+       padding-right: 60px;
+    }
+    .banner-1-sub-container-paragraph p{
+        font-size: 10px;
+        padding-top:10px ;
+        padding-bottom:10px ;
+    }
+    .banner-1-sub-container-button  button {
+        padding: 10px 10px;
+        font-weight: 500;
+        width: 100px;
+        margin-right: 110px;
+        font-size: xx-small;
+       
+        border: 1px solid rgb(255, 255, 255);
+    
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+    }
+    .change-buttons{
+        padding-left: 80px;
+    }
+    .devices-container-heading{
+        margin-left: 10px;
+    }
+    .devices-sub-container{
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    
+}
    
 
     
