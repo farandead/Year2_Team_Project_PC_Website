@@ -54,7 +54,7 @@ try {
                         session_start();*/
         //$succesM[] = "Success You are connected";
                         // redirect the user to main page
-                       header("location: /index.php");
+                       //header("location: /index.php");
                        header("Location: http://www.facebook.com");
                        exit;
                         //echo "Valid";
