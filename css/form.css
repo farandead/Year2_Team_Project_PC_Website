@@ -80,7 +80,7 @@ input[type=submit]{
     border: 0 none;
     display: inline-block;
     padding: 10px 30px !important;
-    background: #e53e29;
+    background: #0260be;
     color: #fff !important;
     font-size: 18px;
     font-weight: 600;
@@ -92,7 +92,7 @@ input[type=submit]{
     cursor: pointer;
 }
 input[type=submit]:hover{
-    background: #0260be !important;
+    background: red !important;
 }
 textarea{
     border-style: solid;
