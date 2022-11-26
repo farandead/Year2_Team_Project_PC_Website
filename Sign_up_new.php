@@ -129,7 +129,7 @@ try {
         </div>
         <!--END  CREATE AN ACCOUNT  -->
 
-       <?php require '/PHP/logIn_inc.php'; ?>
+       <?php require 'PHP/logIn_inc.php'; ?>
  
          <div class="form-container sign-in-container">
             <form style="background:white ;" method="post">
