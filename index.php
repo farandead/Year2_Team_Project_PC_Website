@@ -40,7 +40,7 @@
 <body>
     <?php require 'header.php'; ?>
 
-    <div class="mainbox-container dark_target" id="main_body">
+    <div class="mainbox-container dark_target" id="main_body" style="margin-top: -20px;">
         <div class="mainbox-container-1">
             <section class="bannerContainer">
 
