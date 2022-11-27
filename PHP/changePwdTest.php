@@ -17,9 +17,7 @@ if(isset($_POST['submit']))
 	{
 $password= $_POST['password'] ;
 $newpassword=password_hash($_POST['newpassword'], PASSWORD_DEFAULT);
-$user_email= $_SESSION['user_Email'};
-
-
+$user_email= $_SESSION['user_Email'];
 $pwdHashed = $_SESSION["User_Password"];
 
 $checkPwd =  password_verify($password, $pwdHashed);
