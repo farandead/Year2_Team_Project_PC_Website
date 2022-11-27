@@ -17,29 +17,29 @@ if(isset($_POST['submit']))
 	{
 $password= $_POST['password'] ;
 $newpassword=password_hash($_POST['newpassword'], PASSWORD_DEFAULT);
-$user_email=$Mail;
+$user_email= $_SESSION['user_Email'};
 
 
-$pwdHashed = $info["user_pwd"];
+$pwdHashed = $_SESSION["User_Password"];
 
 $checkPwd =  password_verify($password, $pwdHashed);
 if ($checkPwd === false) {
-        $error="Le mot de passe actuel n'est pas valide.";
+        $error="The current password is not valid.";
     } else if ($checkPwd === true) {
         
         if($_POST['newpassword'] == $_POST['confirmpassword']){
-            $con="UPDATE standardUser SET 	user_pwd=:newpassword WHERE user_email=:username";
-$chngpwd1 = $dbh->prepare($con);
-$chngpwd1-> bindParam(':username', $user_email, PDO::PARAM_STR);
-$chngpwd1-> bindParam(':newpassword', $newpassword, PDO::PARAM_STR);
-$changeSucc = $chngpwd1->execute();
+            $conn="UPDATE account SET User_Password=:newpassword WHERE user_Email=:username";
+$chngpwd = $dbh->prepare($conn);
+$chngpwd-> bindParam(':username', $user_email, PDO::PARAM_STR);
+$chngpwd-> bindParam(':newpassword', $newpassword, PDO::PARAM_STR);
+$changeSucc = $chngpwd->execute();
 if ($changeSucc){
-$msg="Votre mot de passe à été changer avec succés !";
+$msg="The password have been successfully changed  !";
 } else {
-        $error="Nous n'avons pas pû changer votre mot de passe. Veuillez contacter le service client.";
+        $error="We did not been able to change your password.";
 }
         } else {
-         $error="Erreur de confirmation: Les mots de passe ne correspondent pas !";
+         $error="The confirmation did not succeed. Please verify your new password. ";
          
         }
         
