@@ -43,7 +43,7 @@ if ($conn->query($sqlNewBas) === TRUE) {
       
       echo "yes!!!!!".$GetPrice;//of total
       
-      $sqlPriceProduct="SELECT * FROM Product WHERE Product_ID=$GetOrderID";
+      $sqlPriceProduct="SELECT * FROM Product WHERE Product_ID=$product";
       $resultPr=mysqli_query($conn,$sqlPriceProduct);
       $ROWPr=mysqli_fetch_assoc($resultPr);
       
