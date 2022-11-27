@@ -68,48 +68,33 @@
                 <th>Fulfillment Status</th>
                 <th>Total Price</th>
             </tr>
-            <tr>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-            </tr>
-            <tr>
-                <<td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-            </tr>
-            <tr>
-                <<td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-            </tr>
-            <tr>
-            <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-            </tr>
-            <tr>
-            <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-            </tr>
-            <tr>
-            <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-                <td>x</td>
-            </tr>
+                <?php 
+                 $sql = "SELECT * FROM OrderP WHERE User_ID=? ";
+                $result = $conn->prepare($sql);
+                $result->execute(array($_SESSION['User_ID']));
+                $count = $result->rowCount();
+                
+                
+                if ($count > 0) {
+                    while ($row = $result->fetch(PDO::FETCH_ASSOC)) { ?>
+                        <tr>
+                            <td><?php echo $row['Order_ID'] ?></td>
+                            <td><?php echo $row['Order_Status'] ?></td>
+                            <td><?php echo $row['Order_ID'] ?></td>
+                            <td><?php echo $row['User_ID'] ?></td>
+                            
+                        </tr>
+                       <?php  }
+                }else { 
+                
+                echo "There is no previous order";
+                }
+                
+                
+                ?>
+                
+                
+           
             </table>
         </div>
 
