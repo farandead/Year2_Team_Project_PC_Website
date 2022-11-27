@@ -91,6 +91,9 @@
  
 
 @media (max-width:720px){
+   .main-container-product-details-page{
+        padding-top: 0%;
+    }
     .sub-container-product-details-page-heading{
        
         margin-left:0px ;
