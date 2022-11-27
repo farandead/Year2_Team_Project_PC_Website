@@ -16,12 +16,14 @@ try {
             if (empty($_POST['email'])) {
                 // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
                 //  exit();
-            $errors[] = "Please Enter your email ";
-               
+            
+             header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
+            exit();
             }
             if (empty($_POST['pwd'])) {
                 // header("location: /pages/connexion.php?error=emptyinput");
-                $errors[] = "Please Enter your password ";
+                header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
+                 exit();
                 
             }
 
@@ -58,16 +60,18 @@ try {
                      cebook.com", TRUE,301);
                         exit();*/
                     } else {
-                          $errors[] = "The password or the email is incorrect ";
+                        
                        //echo  "wrong login ";
+                        header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");   
+                    exit();
                         
                       
                     }
                 } else {
 
-                    // header("location: /pages/connexion.php?error=unknowDetail");   
-                    //exit();
-                    $errors[] = "The password or the email is incorrect ";
+                
+                    header("location: /pages/connexion.php?error=unknowDetail");   
+    exit();
                 }
             }
   } else {
