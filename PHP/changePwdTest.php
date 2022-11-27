@@ -23,7 +23,7 @@ $pwdHashed = $_SESSION["User_Password"];
 $checkPwd =  password_verify($password, $pwdHashed);
 if ($checkPwd === false) {
         $error="The current password is not valid.";
-	exit();
+	
     } else {
 
 	if($_POST['newpassword'] == $_POST['confirmpassword']){
