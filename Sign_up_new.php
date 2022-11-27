@@ -132,10 +132,10 @@ try {
         </div>
         <!--END  CREATE AN ACCOUNT  -->
 
-       <?php require 'PHP/logIn_inc.php'; ?>
+       
  
          <div class="form-container sign-in-container">
-            <form style="background:white ;" method="post">
+            <form action ="PHP/logIn_inc.php" style="background:white ;" method="post">
                 <h1>Sign in</h1>
 
                 <input type="email" placeholder="Email" autocomplete="email" name="email" value="" required />
