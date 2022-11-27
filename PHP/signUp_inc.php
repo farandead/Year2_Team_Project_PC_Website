@@ -2,28 +2,28 @@
 if (isset($_POST['signup_submit'])) {
         if (empty($_POST['firstName'])) {
             $errorsU[] = "Please Enter your firstName";
-          exit();
+          
         }
         if (empty($_POST['lastname'])) {
             $errorsU[] = "Please Enter your lastname";
-          exit();
+          
         }
 
         if (empty($_POST['user_number'])) {
             $errorsU[] = "Please Enter your number";
-          exit();
+          
         }
         if (empty($_POST['user_sex'])) {
             $errorsU[] = "Please choose : M or F";
-          exit();
+          
        }
         if (empty($_POST['user_birthday'])) {
             $errorsU[] = "Please select your date of birth";
-          exit();
+         
        }
         if (empty($_POST['email'])) {
             $errorsU[] = "E-mail address is required";
-          exit();
+          
         } else {
 
             // Check Email is Unique in DB 
@@ -34,7 +34,7 @@ if (isset($_POST['signup_submit'])) {
             $count = $result->rowCount();
             if ($count == 1) {
                 $errorsU[] = "The e-mail already exist. Please connect.";
-              exit();
+              
             }
         }
         // if (empty($_POST['phoneNumber'])) {
@@ -42,7 +42,7 @@ if (isset($_POST['signup_submit'])) {
         // }
         if (empty($_POST['user_pwd'])) {
             $errorsU[] = "Please insert a password.";
-          exit();
+         
         } else {
             $pass_hash = password_hash($_POST['user_pwd'], PASSWORD_DEFAULT);
            
@@ -67,14 +67,14 @@ if (isset($_POST['signup_submit'])) {
           
             if ($res) {
                $msgU[] = "Your account have been created. Please sign in.";
-              exit();
+              
               
             } else {
               $errorsU[] = "Oh Oh , There is an unusual problem. Pleas try again Later.";
-              exit();
+              
             }
         } else {
             $errorsU[] = "Some input have not been wrote correctly. Please verify your answer";
-             exit();
+           
         }
 }
