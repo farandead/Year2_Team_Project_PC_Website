@@ -1,22 +1,28 @@
 .main-container-product-details-page{
-   
+   width: 70.3vmax;
    display: flex;
    align-content: center;
    justify-content: center;
    align-items: center;
    justify-items: center;
    padding-top: 120px;
-   width: 70.3%;
    margin: auto;
+  
    flex-direction: column;
    height: 100%;
    
     
 }
 .sub-container-product-details-page{
-    width: 100%;
+    width:  70.6vmax;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
     background-color: rgb(255, 255, 255);
     padding: 40px 0px;
+    
 }
 
 
@@ -26,9 +32,10 @@
     justify-items: left;
     text-align: left;
     background-color: rgb(28, 28, 28);
-    width:100% ;
+    width: 70.6vmax;
     color: white;
     padding-top: 25px;
+    margin: auto;
     
 
 }
@@ -54,6 +61,7 @@
 .productdetails{
     height: 400px;
     background: white ;
+    width: 40vmin;
     
 }
 .product-details-description{
@@ -76,4 +84,63 @@
 }
 .sub-container-product-details-page{
     box-shadow: 1px 1px 10px rgba(146, 146, 146, 0.542);
+}
+.sub-container-product-details-page-heading h1{
+    font-size: large;
+} 
+ 
+
+@media (max-width:720px){
+    .sub-container-product-details-page-heading{
+       
+        margin-left:0px ;
+        
+    
+    }
+
+    .sub-container-product-details-page-heading{
+        display: flex;
+        align-items:center;
+        justify-items: left;
+        text-align: left;
+        background-color: rgb(28, 28, 28);
+        width: 100%;
+        color: white;
+        padding-top: 5px;
+        
+    
+    }
+    .sub-container-product-details-page-heading{
+        
+        
+    
+    }
+    .devices-sub-container{
+        width: 70vmin;
+        margin-top:20px ;
+        margin-bottom:70px ;
+    }
+    .devices-sub-container-product{
+        margin-top: 100px;
+    }
+    .main-container-product-details-page{
+        text-align: center;
+    }
+    .productdetails{
+       
+        width: 70vmin;
+        
+    }
+    .product-details-buy-buttons{
+        width: 70vmin;
+    }
+    .sub-container-product-details-page-heading{
+        width: 100vmin;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+    }
+
 }
