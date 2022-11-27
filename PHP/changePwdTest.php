@@ -25,13 +25,19 @@ if ($checkPwd === false) {
         $error="The current password is not valid.";
 	
     } else {
+	
 
 	if($_POST['newpassword'] == $_POST['confirmpassword']){
-		$sql="UPDATE account SET User_Password=:newpassword WHERE user_Email=:username";
-		$chngpwd = $conn->prepare($sql);
-		$chngpwd-> bindParam(':username', $user_email, PDO::PARAM_STR);
-		$chngpwd-> bindParam(':newpassword', $newpassword, PDO::PARAM_STR);
-		$changeSucc = $chngpwd->execute();
+		
+		$data = [
+		    'newpassword' => $newpassword,
+		    'username' => $user_email,
+
+		];
+		$sql = "UPDATE account SET User_Password=:newpassword WHERE user_Email=:username";
+		$stmt= $conn->prepare($sql);
+		$changeSucc = $stmt->execute($data);
+		 
 		if ($changeSucc){
 			$msg="The password have been successfully changed !";
 		} else {
