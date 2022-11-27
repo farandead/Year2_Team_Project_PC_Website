@@ -52,6 +52,37 @@ if ($conn->query($sqlNewBas) === TRUE) {
       
       echo "Price: ".$price;//of one
       
+      
+      
+      
+          $sqlNewLink = "INSERT INTO Linked_Order_and_Products (Amount_Product, Product_ID, Order_ID)
+VALUES ('1', '$product', '$GetOrderID')";
+
+if ($conn->query($sqlNewLink) === TRUE) {
+  echo "New record created successfully";
+  
+  
+  $UPprice=$price+$GetPrice;
+  $sqlUpPr = "UPDATE OrderP SET Total_Price='$price' WHERE Order_ID=$UPprice";
+
+if ($conn->query($sqlUpPr) === TRUE) {
+  echo "Record updated successfully";
+} else {
+  echo "Error updating record: " . $conn->error;
+}
+  
+  
+  
+  
+  
+} else {
+  echo "Error: " . $sqlNewLink . "<br>" . $conn->error;
+}
+      
+      
+      
+      
+      
     }else{echo "Number is wrong!";}
   
   
