@@ -1,4 +1,7 @@
+<?php session_start() ?>
 <html>
+    
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +57,7 @@
         <div class="OrdersBox">
             
             <div class= "title">
-                <h1 class="helloUser">Hello User !</h1>
+                <h1 class="helloUser">Hello <?php echo $_SESSION['User_FName']; ?> !</h1>
                 <h2 class="subheading">Order History: </h2>
             </div>
             <table class = "orderTable">
