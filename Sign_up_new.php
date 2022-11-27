@@ -188,17 +188,7 @@ try {
 
 <?php
 
-if($_SESSION['login'] = true) {
-  
-  echo $_SESSION['userid'];
-  echo $_SESSION['useremail'] ;
-  echo $_SESSION['userfname'];
-  echo $_SESSION['usersname'] ;
-  echo $_SESSION['userstatus'] ;
-  echo $_SESSION['userpassword'] ;
- 
 
-}
 
 ?>
 
