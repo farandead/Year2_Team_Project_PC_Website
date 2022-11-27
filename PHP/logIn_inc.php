@@ -17,12 +17,12 @@ try {
                 // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
                 //  exit();
             
-             header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
+             header("location: https://comp-uk.motorsfeere.com/Sign_up_new.php?error=emptyinput");   
             exit();
             }
             if (empty($_POST['pwd'])) {
                 // header("location: /pages/connexion.php?error=emptyinput");
-                header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
+                header("location: https://comp-uk.motorsfeere.com/Sign_up_new.php?error=emptyinput");   
                  exit();
                 
             }
@@ -62,7 +62,7 @@ try {
                     } else {
                         
                        //echo  "wrong login ";
-                        header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");   
+                        header("location: https://comp-uk.motorsfeere.com/Sign_up_new.php?error=wronglogin");   
                     exit();
                         
                       
@@ -70,7 +70,7 @@ try {
                 } else {
 
                 
-                    header("location: ".$_SERVER["HTTP_REFERER"]."?error=unknowDetail");   
+                    header("location: https://comp-uk.motorsfeere.com/Sign_up_new.php?error=unknowDetail");   
     exit();
                 }
             }
