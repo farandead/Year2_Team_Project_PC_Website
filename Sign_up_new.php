@@ -90,11 +90,11 @@ try {
 
                 <h1>Create Account</h1>
 
-                <input type="firstname" placeholder="First Name" name="firstName"  value=""/>
-              <input type="lastname" placeholder="Last Name" name="lastname"  value="" />
-              <input type="email" placeholder="Email" name="email"  value=""/>
-              <input type="password" placeholder="Password" name="user_pwd" value="" />
-              <input type="number" placeholder="Contact No" name="user_number"  value="" />
+                <input type="firstname" placeholder="First Name" name="firstName"  value="" required />
+              <input type="lastname" placeholder="Last Name" name="lastname"  value="" required />
+              <input type="email" placeholder="Email" name="email"  value="" required />
+              <input type="password" placeholder="Password" name="user_pwd" value="" required />
+              <input type="number" placeholder="Contact No" name="user_number"  value="" required />
                  
                <!-- <input type="text" placeholder="Street" name="user_street" value="" />
                 <div class="small-container">
@@ -105,7 +105,7 @@ try {
                     <input type="text" class="small-input" placeholder="City" name="user_city" value="" />
                     <input type="text" class="small-input" placeholder="Post Code" name="user_postCode" value="" />
                 </div> -->
-                <input type="date" placeholder="Date of Birth" name="user_birthday" value="" min="1950-01-01" max="2022-12-15">
+                <input type="date" placeholder="Date of Birth" name="user_birthday" value="" min="1950-01-01" max="2022-12-15" required />
                 
                
                 <label class="radio-inline">
@@ -140,8 +140,8 @@ try {
             <form style="background:white ;" method="post">
                 <h1>Sign in</h1>
 
-                <input type="email" placeholder="Email" autocomplete="email" name="email" value="" />
-                <input type="password" placeholder="Password" name="pwd" value=""/>
+                <input type="email" placeholder="Email" autocomplete="email" name="email" value="" required />
+                <input type="password" placeholder="Password" name="pwd" value="" required/>
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a
                         href="" style="margin-bottom:10px">Here</a></a>
