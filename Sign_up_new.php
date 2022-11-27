@@ -148,12 +148,15 @@ try {
                     <?php
 
                     if (!empty($errors)) {
-                        var_dump($errors);
+                     ?>
+                         <p style="color:red;"><?php echo implode($errors) ?> </p>
+                   <?php     
                        
                     }
-                if (!empty($succesM)){
-                 var_dump($succesM);
-                }
+                if (!empty($succesM)){ ?>
+                 
+                    <p style="color:Green;"><?php echo implode($succesM) ?> </p>
+                <?php }
                 
         if (!empty($msgU)) { ?>
             <p style="color:Green;"><?php echo implode($msgU) ?> </p>
