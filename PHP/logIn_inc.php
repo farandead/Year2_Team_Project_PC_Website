@@ -70,7 +70,7 @@ try {
                 } else {
 
                 
-                    header("location: /pages/connexion.php?error=unknowDetail");   
+                    header("location: ".$_SERVER["HTTP_REFERER"]."?error=unknowDetail");   
     exit();
                 }
             }
