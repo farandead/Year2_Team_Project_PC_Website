@@ -1,6 +1,3 @@
-<?php ob_start(); 
-require "PHP/StatusSetter.php";
-?>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -23,7 +20,7 @@ require "PHP/StatusSetter.php";
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/user_page.css">
     <script src="js/toggle_switch.js"></script>
     <script src="js/sign_up_in.js"></script>
 
@@ -47,33 +44,77 @@ require "PHP/StatusSetter.php";
 
 </head>
 
-
-
 <body style="background: none;" class="dark_target"></body>
    
     <?php require 'header.php'; ?>
-
+    
    
 
-    
-
     <div class="container1">
-       
-    <!-- -->
-    <?php 
-    require "PHP/AdminviewCt.php";
-    require "PHP/CategoriesCollectionPrinter.php";
-    ?>
+        <div class="OrdersBox">
+            
+            <div class= "title">
+                <h1 class="helloUser">Hello User !</h1>
+                <h2 class="subheading">Order History: </h2>
+            </div>
+            <table class = "orderTable">
+            <tr>
+                <th>Order ID</th>
+                <th>Date</th>
+                <th>Payment Status</th>
+                <th>Fulfillment Status</th>
+                <th>Total Price</th>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <<td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <<td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+            <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+            <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+            <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            </table>
+        </div>
+
+        
+
     </div>
 
     
-        
-      
-
-
-
-
-
     <?php require 'footer.php'; ?>
 
 

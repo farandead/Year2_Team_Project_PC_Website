@@ -1,6 +1,5 @@
-
-<!-- DATABASE CONNECTION -- HAVE TO MAKE AN INCLUSIONS-->
 <?php
+session_start();
 $servername = "localhost";
 $username = 'babimors_astonTeam';
 $password = 'HW#1o.5=#cl+'; 
@@ -13,6 +12,8 @@ try {
 } catch (PDOException $e) {
     // echo "Connection failed: " . $e->getMessage();
 }
+
+
 ?>
 <!-- END DATABASE CONNECTION-->
 <!DOCTYPE html>
@@ -84,17 +85,17 @@ try {
  <?php require 'header.php'; ?>
 
     <div class="container" id="container123">
-       
+       <?php require 'PHP/signUp_inc.php' ?>
         <div class="form-container sign-up-container">
-            <form action="PHP/signUp_inc.php" method='post' class="form-id">
+            <form method='post' class="form-id">
 
                 <h1>Create Account</h1>
 
-                <input type="firstname" placeholder="First Name" name="firstName"  value=""/>
-              <input type="lastname" placeholder="Last Name" name="lastname"  value="" />
-              <input type="email" placeholder="Email" name="email"  value=""/>
-              <input type="password" placeholder="Password" name="user_pwd" value="" />
-              <input type="number" placeholder="Contact No" name="user_number"  value="" />
+                <input type="firstname" placeholder="First Name" name="firstName"  value="" required />
+              <input type="lastname" placeholder="Last Name" name="lastname"  value="" required />
+              <input type="email" placeholder="Email" name="email"  value="" required />
+              <input type="password" placeholder="Password" name="user_pwd" value="" required />
+              <input type="number" placeholder="Contact No" name="user_number"  value="" required />
                  
                <!-- <input type="text" placeholder="Street" name="user_street" value="" />
                 <div class="small-container">
@@ -105,7 +106,7 @@ try {
                     <input type="text" class="small-input" placeholder="City" name="user_city" value="" />
                     <input type="text" class="small-input" placeholder="Post Code" name="user_postCode" value="" />
                 </div> -->
-                <input type="date" placeholder="Date of Birth" name="user_birthday" value="" min="1950-01-01" max="2022-12-15">
+                <input type="date" placeholder="Date of Birth" name="user_birthday" value="" min="1950-01-01" max="2022-12-15" required />
                 
                
                 <label class="radio-inline">
@@ -118,43 +119,59 @@ try {
                  
                    
               
-                <button name="signup_submit" >Sign In</button>
+                <button name="signup_submit" >Sign Up</button>
                 <!--<input  style="margin-top:15px"   value="Sign Up">-->
             </form>
             <?php
-            if (!empty($errors)) {
-                var_dump($errors);
+            if (!empty($errorsU)) { ?>
+                <p style="color:red;"><?php echo implode($errorsU) ?> </p> 
+            <?php
             }
+       
             ?>
         </div>
         <!--END  CREATE AN ACCOUNT  -->
 
        
-
+ 
          <div class="form-container sign-in-container">
-            <form action="PHP/logIn_inc.php" style="background:white ;" method="post">
+            <form action ="PHP/logIn_inc.php" style="background:white ;" method="post">
                 <h1>Sign in</h1>
 
-                <input type="email" placeholder="Email" autocomplete="email" name="email" value="" />
-                <input type="password" placeholder="Password" name="pwd" value=""/>
+                <input type="email" placeholder="Email" autocomplete="email" name="email" value="" required />
+                <input type="password" placeholder="Password" name="pwd" value="" required/>
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a
                         href="" style="margin-bottom:10px">Here</a></a>
 
-              <button name="submit_Login" >Sign In</button>
+                 <button name="submit_Login" >Sign In</button>
+              <!--  <button name="submit_Login" >Sign In</button> -->
                 <!-- message  -->
-                    <?php
-                    if (!empty($errors)) {
-                        var_dump($errors);
-                        //var_dump($_POST['email']);
-                        var_dump(password_verify($_POST['pwd'], $res['User_Password']));
-                        var_dump($res['User_Password']);
-                        var_dump($_POST['pwd']);
-                       
-                    }
+                   
+         <?php
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] == "emptyinput") {
+                ?>
+                         <p style="color:red;">All cases is required.</p>
+                   <?php 
+               
+            } 
+            if ($_GET["error"] == "wronglogin") {
+                ?>
+                         <p style="color:red;">The email or password is incorrect.</p>
+                   <?php 
+              
+            }
+            if ($_GET["error"] == "unknowDetail") {
+                ?>
+                         <p style="color:red;">The email is not recognised, please verify or sign up.</p>
+                   <?php 
+               
+            }
+        }
 
-
-                    ?>
+        ?>
+                    
             </form>
         </div>
         
@@ -174,122 +191,14 @@ try {
         </div>
     </div>
 
+<?php
 
 
 
+?>
 
 
-
-
-    <section class="footerMenu">
-        <div class="footer-menu-sub-container">
-            <div class="footer-menu-sub-container-box">
-                <h2>LOGO</h2>
-            </div>
-            <div class="footer-menu-sub-container-box">
-                <p>Manufacturer of performance custom computers and laptops. Customise your ideal gaming PC or laptop
-                    using our advanced configurator.</p>
-            </div>
-            <div class="footer-menu-sub-container-box">
-                <span>Contact Us</span>
-                <h3> 0333 011 7000 | Open Now</h3>
-            </div>
-            <div class="footer-menu-sub-container-box"><img src="img/UK_Payment Logos_Footer.webp" alt=""></div>
-        </div>
-        <div class="footer-menu-sub-container-links">
-
-            <div class="footerMenu__container">
-                <ul class="footerMenu__list">
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Terms & Conditions</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Privacy and Legal</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Corporate Responsibility</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Disclaimer</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Site Map</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footerMenu__container">
-                <ul class="footerMenu__list">
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Contact Us</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Returns Poicy</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Warranty</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">FAQs</a>
-                    </li>
-
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Right to Cancel</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Payment Options</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Vacancies</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footerMenu__container">
-                <ul class="footerMenu__list">
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">About us</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Careers</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Corporate Events</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Why buy from us</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Our Service</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Finance</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link">Testimonials</a>
-                    </li>
-                    <li class="footerMenu__listItem">
-                        <a href="" class="link"><strong>COMPUK</strong> terms</a>
-                    </li>
-
-                </ul>
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <footer class="legalFooter">
-        <div class="legalFooter__description">
-            <p>© <STrong>COMPUK</STrong> Cinemas Limited 2019 to 2022. All rights reserved</p>
-        </div>
-        <div class="legalFooter_socialIcons">
-            <img src="img/facebook.png" alt="">
-            <img src="img/instagram.png" alt="">
-        </div>
-
-    </footer>
-
+    <?php require 'footer.php'; ?>
 
 </body>
 

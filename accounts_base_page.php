@@ -1,3 +1,6 @@
+<?php
+require "PHP/CheckAdminAccess.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -151,100 +154,12 @@
                   <tr>
                       <th>ID</th>
                       <th>Email</th>
-                      <th>Password</th>
+                      <th>Phone number</th>
                       <th>Name</th>
                   </tr>
               </thead>
-                  <tr>
-                      <td>ID#</td>
-                      <td>Email@gmail.com</td>
-                      <td>Password123</td>
-                      <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
-                  <tr>
-                    <td>ID#</td>
-                    <td>Email@gmail.com</td>
-                    <td>Password123</td>
-                    <td>NameABC</td>
-                  </tr>
+               <?php     require "PHP/TableUsersPrinterCollection.php"; ?>
+                 
                   
         </table>
       </div>

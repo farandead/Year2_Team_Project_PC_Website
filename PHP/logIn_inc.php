@@ -1,4 +1,4 @@
-<?php
+<?php ob_start();
 $servername = "localhost";
 $username = 'babimors_astonTeam';
 $password = 'HW#1o.5=#cl+'; 
@@ -7,31 +7,29 @@ try {
     $conn = new PDO("mysql:host=$servername;dbname=babimors_compuk", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-     echo "Connected successfully"; 
+    // echo "Connected successfully"; 
 } catch (PDOException $e) {
-     echo "Connection failed: " . $e->getMessage();
+    // echo "Connection failed: " . $e->getMessage();
 }
-?> 
-
-<?php
-        $Noerrors = 1 ;
+    if (isset($_POST['submit_Login']) ) {
             // PHP Form Validations
             if (empty($_POST['email'])) {
                 // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
                 //  exit();
-                echo "emptyinputemail";
-                $Noerrors = 2;
+            
+             header("location: https://comp-uk.motorsfeere.com/Sign_up_new.php?error=emptyinput");   
+            exit();
             }
             if (empty($_POST['pwd'])) {
                 // header("location: /pages/connexion.php?error=emptyinput");
-                echo "emptyinputpwd";
+                header("location: https://comp-uk.motorsfeere.com/Sign_up_new.php?error=emptyinput");   
+                 exit();
                 
-                $Noerrors = 2;
             }
 
-            if ($Noerrors = 1) {
+            if (empty($errors)) {
                 // Check the Login Credentials
-                $sql = "SELECT user_Email,User_Password FROM account WHERE user_Email=? ";
+                $sql = "SELECT * FROM account WHERE user_Email=? ";
                 $result = $conn->prepare($sql);
                 $result->execute(array($_POST['email']));
                 $count = $result->rowCount();
@@ -43,38 +41,41 @@ try {
                     if (password_verify($_POST['pwd'], $res['User_Password'])) {
                         
                         //regenerate session id
-                        session_start();
+                        
                         $_SESSION['login'] = true;
+                        $_SESSION['User_ID'] = $res['User_ID'];
                         $_SESSION['user_Email'] = $res['user_Email'];
                         $_SESSION['User_FName'] = $res['User_FName'];
                         $_SESSION['User_SName'] = $res['User_SName'];
-                        $_SESSION['last_login'] = time();
-                        session_start();
-        
+                        $_SESSION['User_Status'] = $res['User_Status'];
+                        $_SESSION['User_Password'] = $res['User_Password'];
+                        
+                        
+                    
+                        $succesM[] = "Success You are connected";
                         // redirect the user to main page
-                        header("location: /index.php");
-                        exit;
-                        //echo "Valid";
-                       
+                       header("location: /index.php");
+                     
+                     /* header("Location: http://www.fa
+                     cebook.com", TRUE,301);
+                        exit();*/
                     } else {
-                          header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
-                         exit();
+                        
                        //echo  "wrong login ";
+                        header("location: https://comp-uk.motorsfeere.com/Sign_up_new.php?error=wronglogin");   
+                    exit();
                         
                       
                     }
-                    
-                    
-                    
                 } else {
 
-                    // header("location: /pages/connexion.php?error=unknowDetail");   
-                    //exit();
-                    header("location: ".$_SERVER["HTTP_REFERER"]."?error=wronglogin");
-                    exit();
+                
+                    header("location: https://comp-uk.motorsfeere.com/Sign_up_new.php?error=unknowDetail");   
+    exit();
                 }
             }
-        
+  } else {
+     
+  }
 
-        ?>
-        <!-- END LOG IN PHP SCRIPT -->
+ob_end_flush();

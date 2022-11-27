@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
@@ -6,7 +5,106 @@
 }
 
 
+.navigationBar{
+    z-index:+1 ;
+    position: absolute;
+    width: 100%;
+    color: white;
+    height: 120px;
+    padding: 0%;
+    background-color: #0260be;
+    font-size: 10px;
+    margin-top: -20px;
+    margin-bottom: 100px;
+   
+   
+}
+.navigationBar_dark_mode{
+    background-color: rgb(26, 26, 26);
+   
+}
 
+
+#navbar{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+}
+#logoblock{
+    margin-left: 50PX;
+    height: 100px;
+    margin-right: 70PX;
+    color: white;
+}
+#logoMovie{
+   margin-top: 22px;
+   font-size: 40px;
+   font-family: 'Russo One', sans-serif;
+}
+.img-logo{
+    margin-top: 15px;
+    width: 200px;
+    box-sizing: 500px;
+}
+
+
+#linksblock{
+    display: flex;
+    flex-direction: row;
+    
+    height: 100px;
+    color: white;
+    
+
+}
+.navbaritem{
+    font-weight: bold;
+    
+    display: flex;
+    flex-direction: row;
+    margin-left:20px ;
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+
+}
+
+
+
+#membershipblock{
+    display: flex;
+    flex-direction: row;
+   margin-left: 234px;
+    
+}
+#membershipblock li{
+    color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left:15px ;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.link:hover{
+    border-bottom: 1px solid white;
+    color: white;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+.searchLogo{
+    margin-left:50px ;
+    color: white;
+   
+}
+.searchLogo:hover{
+    
+    color: #0260be;
+}
 
 
 .dark_mode_sign_in{
@@ -66,56 +164,75 @@ input {
 	background: #eee;
 	border: none;
 	padding: 12px 15px;
-	margin: 12px 0;
+	margin: 8px 0;
 	width: 100%;
-	font-size:12px;
+}
+.devices-container{
+    display: flex;
+    align-items: left;
+    flex-direction: row;
 }
 
-.container {
+.container1 {
 	
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
-	position: relative;
+	position: static;
 	overflow: hidden;
-	width: 768px;
+	width: 1500px;
 	max-width: 100%;
-	min-height: 580px;
+	min-height: 1000px;
 	margin: auto;
-	margin-top: 200px;
-	margin-bottom: 200px;
+	margin-top: 50px;
+	
 }
 
-.form-container {
+.OrdersBox{
+	border-radius: 10px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+		  0 10px 10px rgba(0,0,0,0.22);
 	position: absolute;
-	top: 0;
-	height: 100%;
-	transition: all 0.6s ease-in-out;
+	top: 16px;
+	left: 16px;
+    width: 850px;
+	max-width: 100%;
+	min-height: 750px;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 50px;
+
 }
 
-.sign-in-container {
-	left: 0;
-	width: 50%;
-	z-index: 2;
+.helloUser{
+	font-family: Arial, Helvetica, sans-serif;
+	size: 60px;
+	text-align: center;
 }
 
-.container.right-panel-active .sign-in-container {
-	transform: translateX(100%);
+.subheading{
+	font-family: Arial, Helvetica, sans-serif;
+	size: 30px;
 }
 
-.sign-up-container {
-	left: 0;
-	width: 50%;
-	opacity: 0;
-	z-index: 1;
-}
-
-.container.right-panel-active .sign-up-container {
-	transform: translateX(100%);
-	opacity: 1;
-	z-index: 5;
-	animation: show 0.6s;
-}
+.orderTable {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 90%;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+  }
+  
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+tr:nth-child(even) {
+	background-color: #dddddd;
+  }
 
 @keyframes show {
 	0%, 49.99% {

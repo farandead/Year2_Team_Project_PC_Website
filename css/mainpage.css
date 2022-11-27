@@ -1,55 +1,45 @@
-*{
+* {
     /* font-family: 'Staatliches', cursive; */
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 15px;
     transition: all 0.2s ease-in-out;
-   
-   
-
-    
 }
 
-body{
-  
+body {
     font-family: "Arial", Helvetica, sans-serif;
     background-image: url(/img/1_gb.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-   
 }
-.mainbox-container{
-width: 72%;
-margin: auto;
-box-shadow: 1px 1px 5px rgba(70, 69, 69, 0.382);
-background-color: rgb(250, 250, 250);
-position: relative;
-
-
+.mainbox-container {
+    width: 72%;
+    margin: auto;
+    box-shadow: 1px 1px 5px rgba(70, 69, 69, 0.382);
+    background-color: rgb(250, 250, 250);
+    position: relative;
 }
-
 
 i {
     font-size: 30px;
     cursor: pointer;
     position: relative;
-    ;
 }
-.dark-mode{
+.dark-mode {
     background-color: rgb(26, 26, 26);
     color: white;
 }
-.dark-mode-dark{
+.dark-mode-dark {
     background-color: rgb(22, 22, 22);
     color: white;
 }
-#toggle_button_dark{
+#toggle_button_dark {
     display: none;
 }
 
-
-.navigationBar{
-    z-index:+1 ;
+.navigationBar {
+    z-index: +1;
     position: absolute;
     width: 100%;
     color: white;
@@ -58,367 +48,331 @@ i {
     background-color: #0260be;
     font-size: 10px;
     margin-top: -20px;
-   
-   
 }
-.navigationBar_dark_mode{
+.navigationBar_dark_mode {
     background-color: rgb(26, 26, 26);
-   
 }
 
-
-#navbar{
+#navbar {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-
 }
-#logoblock{
-    margin-left: 250PX;
-    height: 100px;
-    margin-right: 70PX;
+#logoblock {
+    margin-left: 250px;
+    height: 120px;
+    margin-right: 70px;
     color: white;
 }
-#logoMovie{
-   margin-top: 22px;
-   font-size: 40px;
-   font-family: 'Russo One', sans-serif;
+#logoMovie {
+    margin-top: 22px;
+    font-size: 40px;
+    font-family: "Russo One", sans-serif;
+}
+#logoMovie img {
+   width: 250px;
+   margin-top: -30px;
+   margin-right: -20px;
 }
 
-
-#linksblock{
+#linksblock {
     display: flex;
     flex-direction: row;
-    
+
     height: 100px;
     color: white;
-    
-
 }
-.navbaritem{
+.navbaritem {
     font-weight: bold;
-    
+
     display: flex;
     flex-direction: row;
-    margin-left:20px ;
+    margin-left: 20px;
     margin-right: 20px;
     margin-top: auto;
     margin-bottom: auto;
     color: white;
-
 }
 
-
-
-#membershipblock{
+#membershipblock {
     display: flex;
     flex-direction: row;
-   margin-left: 234px;
-    
+    margin-left: 234px;
 }
-#membershipblock li{
+#membershipblock li {
     color: white;
     display: flex;
     align-items: center;
     align-content: center;
-    margin-left:15px ;
+    margin-left: 15px;
     margin-right: 15px;
     font-weight: bold;
 }
-.link:hover{
+.searchLogo i{
+    font-size: 28px;
+}
+
+.link:hover {
     border-bottom: 1px solid white;
     color: white;
 }
-.link{
+.link {
     color: white;
     text-decoration: none;
 }
-.searchLogo{
-    margin-left:50px ;
+.searchLogo {
+    margin-left: 50px;
     color: white;
-   
 }
-.searchLogo:hover{
-    
+.searchLogo:hover {
     color: #0260be;
 }
 
-
-
-.safetyContainer{
-    
+.safetyContainer {
     display: block;
     width: 50%;
     margin: auto;
 }
-.safetyContainer img{
+.safetyContainer img {
     margin-top: 100px;
     margin-bottom: 100px;
-} 
+}
 
-.footerMenu{
+.footerMenu {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 150px;
-   
+
     color: white;
-    background-color: #1d1d1d ;
+    background-color: #1d1d1d;
     display: flex;
     flex-direction: row;
-    
+
     align-content: space-around;
     justify-content: space-around;
     align-items: center;
-    
 }
-.footer-menu-sub-container-links{
+.footer-menu-sub-container-links {
     display: flex;
     margin-top: 100px;
 }
-.footerMenu__list{
+.footerMenu__list {
     list-style-type: none;
     border-top: 3px solid white;
     margin-left: 10px;
     margin-right: 10px;
-    top: 50%; 
+    top: 50%;
     bottom: 0%;
-    
 }
-.footer-menu-sub-container-box span{
+.footer-menu-sub-container-box span {
     margin-top: 20px;
     font-weight: 700;
 }
-.footer-menu-sub-container-box h3{
+.footer-menu-sub-container-box h3 {
     color: #238ffa;
     font-weight: 900;
     padding-bottom: 25px;
 }
-.footer-menu-sub-container-box p{
+.footer-menu-sub-container-box p {
     color: white;
 }
-.footer-menu-sub-container-box img{
-     border-top: 1px solid white;
-     padding-top: 20px;
+.footer-menu-sub-container-box img {
+    border-top: 1px solid white;
+    padding-top: 20px;
 }
 
-.legalFooter{
+.legalFooter {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top:1px solid rgba(0, 0, 0, 0.404) ;
+    border-top: 1px solid rgba(0, 0, 0, 0.404);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color:#0260be;
+    background-color: #0260be;
     color: white;
-
 }
-.legalFooter__description p{
+.legalFooter__description p {
     font-size: smaller;
     color: white;
-
 }
-.footerMenu__listItem{
+.footerMenu__listItem {
     margin-top: 25px;
     margin-bottom: 25px;
     font-weight: bolder;
     font-size: smaller;
 }
-.legalFooter_socialIcons img{
+.legalFooter_socialIcons img {
     height: 34px;
-    padding-top:5px ;
-    padding-left:5px ;
-    padding-right:5px ;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     filter: brightness(0) invert(1);
 }
 
-
-
-
-
-
-
-.devices-container-heading{
-
+.devices-container-heading {
     display: flex;
-    
-   
+
     padding-left: 100px;
     text-align: left;
     margin: auto;
     text-align: left;
 }
-.devices-container-heading h3{
+.devices-container-heading h3 {
     margin-top: 50px;
-    margin-bottom:-20px ;
+    margin-bottom: -20px;
     border-bottom: 1px solid black;
     padding-bottom: 20px;
 }
-.devices-container{
+.devices-container {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.devices-container-laptop{
+.devices-container-laptop {
     display: none;
     align-items: center;
     flex-direction: column;
 }
-.devices-sub-container{
+.devices-sub-container {
     display: flex;
-    margin-top: 40PX;
+    margin-top: 40px;
 }
-.devices-sub-container-product{
-    margin-left:30px ;
+.devices-sub-container-product {
+    margin-left: 30px;
     margin-right: 30px;
     margin-top: 30px;
     box-shadow: 1px 1px 10px rgb(161, 161, 161);
 }
-.productdetails{
-    
-   
+.productdetails {
     display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:fit-content;
+    height: fit-content;
     text-align: center;
     width: 300px;
-
 }
 
-.product-details-title{
+.product-details-title {
     display: block;
     color: white;
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     font-size: larger;
     letter-spacing: 3px;
-    padding:10px 10px;
-    
+    padding: 10px 10px;
+
     background-color: #1e8af5;
-    
 }
-.dark{
+.dark {
     background-color: rgb(33, 32, 32);
 }
-.dark_transperent{
+.dark_transperent {
     background-color: rgba(33, 32, 32, 0.43);
-    
 }
-.product-details-img img{
+.product-details-img img {
     width: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.description-ulisted-item{
-    list-style-type:none;
+.description-ulisted-item {
+    list-style-type: none;
     text-align: left;
     font-size: smaller;
     font-weight: 500;
 }
-.product-details-buy-buttons button{
-    font-family: 'Russo One', sans-serif; 
-   width: 100%;
-   padding-top: 10px;
-   padding-bottom: 10px;
-   background-color: #1e8af5;
-   border: none;
-   color: white;
-   font-size: 12px;
-   font-weight: 200;
-   letter-spacing: 2PX;
+.product-details-buy-buttons button {
+    font-family: "Russo One", sans-serif;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1e8af5;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 2px;
 }
-.product-details-buy-buttons button:hover{
-    background-color: #1266bb ;
+.product-details-buy-buttons button:hover {
+    background-color: #1266bb;
     color: #e0eefb;
 }
 
-.change-buttons{
-    
+.change-buttons {
     margin-top: 50px;
     margin-bottom: -10px;
     display: flex;
-    
+
     height: 60px;
     align-content: left;
     justify-content: right;
     align-items: center;
     justify-items: center;
     padding-right: 100px;
-   
-
 }
-.change-buttons button{
+.change-buttons button {
     height: 40px;
     width: 170px;
     margin-left: 10px;
     background-color: rgba(229, 222, 222, 0.677);
     border: none;
     font-weight: 600;
-   
 }
-.change-buttons button:active{
+.change-buttons button:active {
     background-color: #0260be;
-   
 }
-.banner-1-container{
+.banner-1-container {
     display: flex;
     background-color: #0260be;
     margin-top: 50px;
-    
 }
 
-.banner-1-sub-container{
+.banner-1-sub-container {
     display: flex;
     flex-direction: column;
     align-content: center;
     margin-top: 50px;
     padding-left: 30px;
     color: white;
-   
 }
-.banner-1-sub-container-heading{
+.banner-1-sub-container-heading {
     color: white;
     padding-top: 50px;
     font-weight: 200;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
 }
 
-.banner-1-sub-container-button button{
+.banner-1-sub-container-button button {
     padding: 10px 30px;
     font-weight: 500;
     font-size: smaller;
     border: 1px solid rgb(255, 255, 255);
 
-    background-color:rgba(255, 255, 255, 0) ;
+    background-color: rgba(255, 255, 255, 0);
     color: white;
 }
-.banner-1-sub-container-button button:hover{
+.banner-1-sub-container-button button:hover {
     background-color: white;
     color: black;
 }
-.shipping-banner{
-   
+.shipping-banner {
 }
-.shipping-banner-sub-container{
+.shipping-banner-sub-container {
     display: flex;
     flex-direction: row;
-
 }
-.shipping-banner-sub-container ul li{
+.shipping-banner-sub-container ul li {
     list-style: none;
     display: flex;
-   
-
 }
-.shipping-banner-sub-container-img img{
+.shipping-banner-sub-container-img img {
     width: 10%;
 }
 
-.shipping-banner{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 5%, rgba(0,163,255,1) 100%);
+.shipping-banner {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 5%, rgba(0, 163, 255, 1) 100%);
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
@@ -428,62 +382,264 @@ i {
     justify-content: center;
     color: white;
 }
-.shipping-banner div{
+.shipping-banner div {
     align-items: center;
     align-content: center;
     justify-items: center;
     justify-content: center;
 }
-.shipping-banner div div{
-    padding-left:40px ;
+.shipping-banner div div {
+    padding-left: 40px;
     padding-right: 40px;
 }
 
-.shipping-banner-sub-container button{
+.shipping-banner-sub-container button {
     padding: 10px 25px;
-    font-family:'Russo One', sans-serif ;
+    font-family: "Russo One", sans-serif;
     background-color: rgba(254, 254, 254, 0);
     color: white;
     border: 1px solid white;
     font-size: smaller;
-
 }
-.shipping-banner-sub-container button:hover{
-   
+.shipping-banner-sub-container button:hover {
     background-color: white;
-   
+
     font-size: smaller;
     color: black;
-
 }
-.shipping-banner-outer{
+.shipping-banner-outer {
     background-color: rgb(223, 218, 218);
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.image-container-bottom{
+.image-container-bottom {
     display: flex;
-    
+
     align-items: center;
     align-content: space-around;
     justify-content: space-around;
     background-color: rgb(223, 218, 218);
-
-
 }
-.image-sub-container-bottom img{
+.image-sub-container-bottom img {
     width: 400px;
     height: 200px;
     z-index: 1;
     position: relative;
 }
-.image-sub-container-bottom h2{
-  
+.image-sub-container-bottom h2 {
     z-index: 2;
     position: relative;
 }
 
-   
+@media (max-width: 720px) {
+    body{
+        width: 100vmin;
+        overflow:hidden;
+    }
+    .navigationBar {
+        width: 100vmin;
+        height: 80px;
+    }
+    #logoblock {
+        margin-top: -20px;
+        margin-left: 0px;
+        height: 90px;
+        margin-right: 8px;
+        color: white;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    #logoMovie {
+        padding-bottom: 20px;
+        margin-left: -20px;
+        margin-right: 0px;
+        font-size: 12px;
+        font-family: "Russo One", sans-serif;
+    }
+    #logoMovie img {
+        width: 100px;
+        margin: 0%;
+    }
 
+    #linksblock {
+        margin-top: -20px;
+    }
+
+    .navbaritem {
+        font-weight: bold;
+
+        display: flex;
+        flex-direction: row;
+        margin-left: -5px;
+        margin-right: -5px;
+
+        width: 60px;
+    }
+    .navbaritem a p {
+        font-size: 6px;
+    }
+    #membershipblock {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+        margin-top: -20px;
+    }
+    #membershipblock i{
+        font-size: 12px;
+    }
+    #membershipblock li {
+        color: white;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-weight: bold;
+    }
+    .searchLogo i{
+        font-size: 15px;
+    }
+    .searchLogo {
+        margin-left: 20px;
+        color: white;
+    }
+    .mainbox-container{
+        width: 100vmin;
+
+    }
+    .banner-1-container {
+        display: flex;
+        background-color: #0260be;
+        width: 100vmin;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        flex-direction: column;
+    }
+    .banner-1-sub-container img{
+        width: 220px;
+        padding-top: 40px;
+    }
+    .banner-1-sub-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items:center ;
+        justify-content: center;
+        justify-items: center;
+        margin-top: -10px;
+        padding-left: 5px;
+        color: white;
+    }
+    .banner-1-sub-container-heading {
+        text-align: left;
+        color: white;
+        padding-top: 20px;
+        font-weight: 200;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+            "Helvetica Neue", sans-serif;
+    }
+    .banner-1-sub-container-heading h1{
+        color: white;
+       font-size: 16px;
+       
+    }
+    .banner-1-sub-container-paragraph{
+        width: 100vmin;
+    }
+    .banner-1-sub-container-paragraph p{
+        font-size: 20px;
+        padding-top:10px ;
+        padding-bottom:10px ;
+    }
+    .banner-1-sub-container-button  button {
+        padding: 10px 10px;
+        font-weight: 500;
+        width: 200px;
+        
+        font-size: small;
+       
+        border: 1px solid rgb(255, 255, 255);
     
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+    }
+    .change-buttons{
+        padding-left: 80px;
+    }
+    .devices-container-heading{
+        margin-left: 10px;
+    }
+    .devices-sub-container{
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    .shipping-banner-sub-container-img img {
+        width: 20px;
+    }
+    .shipping-banner {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 5%, rgba(0, 163, 255, 1) 100%);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        align-content: space-around;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        color: white;
+        flex-direction: column;
+    }
+    .shipping-banner-sub-container{
+        flex-direction: column;
+    }
+    .shipping-banner div {
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        
+    }
+    .footerMenu{
+        flex-direction: column;
+        padding: 0%;
+    }
+    .footer-menu-sub-container{
+        text-align: center;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-menu-sub-container-box span {
+        margin-top: 12px;
+        font-weight: 700;
+    }
+    .footer-menu-sub-container-box{
+        width: 80%;
+    }
+    .legalFooter {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.404);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items:center ;
+        background-color: #0260be;
+        color: white;
+    }
+    
+}

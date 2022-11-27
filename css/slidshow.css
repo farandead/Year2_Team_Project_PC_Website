@@ -1,26 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
-* {
-	box-sizing: border-box;
-}
 .bannerContainer{
+    overflow: hidden;
 
-overflow: hidden;
-
-height: 498px;
-margin-top: 20px;    
-border-radius: 0px;
+    height: 498px;
+    margin-top: 20px;    
+    border-radius: 0px;
 
 
 }
 .bannerContainer img{
-width: 80%;
-margin: auto;
-height: 80% ;
-align-items: center;
-display: flex;
+    width: 80%;
+    margin: auto;
+    height: 80% ;
+    align-items: center;
+    display: flex;
+   
+    position: relative;
+   
 
-position: relative;
 }
 
 .slider-frame{
@@ -54,7 +50,6 @@ position: relative;
     -webkit-animation-play-state: running;
 
 }
-
 .img-container{
     margin: 0px;
     padding: 0%;
@@ -64,7 +59,7 @@ position: relative;
 }
 .img-container img{
     height: 60%;
-    
+    width:100%;
   
     filter: opacity(92%);
 }
@@ -89,7 +84,7 @@ position: relative;
 
 #bannerTextContainer{
    
-    height: 300px;
+    height:285px;
     width: 500px;
     
     font-family: 'Russo One', sans-serif;
@@ -120,106 +115,124 @@ position: relative;
     border-radius: 6px;
 }
 
-.navigationBar{
-    z-index:+1 ;
-    position: absolute;
-    width: 100%;
-    color: white;
-    height: 120px;
-    padding: 0%;
-    background-color: #0260be;
-    font-size: 10px;
-    margin-top: -20px;
-    margin-bottom: 100px;
-   
-   
-}
-.navigationBar_dark_mode{
-    background-color: rgb(26, 26, 26);
-   
-}
-
-
-#navbar{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-
-}
-#logoblock{
-    margin-left: 250PX;
-    height: 100px;
-    margin-right: 70PX;
-    color: white;
-}
-#logoMovie{
-   margin-top: 22px;
-   font-size: 40px;
-   font-family: 'Russo One', sans-serif;
-}
-.img-logo{
-    margin-top: 15px;
-    width: 200px;
-    box-sizing: 200px;
-}
-#logoMovie{
-    margin-top: 22px;
-    font-size: 40px;
-    font-family: 'Russo One', sans-serif;
+ @media (max-width: 730px) {
+    .bannerContainer{
+        overflow: hidden;
+    
+        height: 468px;
+        margin-top: 20px;    
+        border-radius: 0px;
+       
+    
+    
+    }
+    .bannerContainer img{
+        width: 100vmin;
+        margin: auto;
+        height: 100% ;
+        align-items: center;
+        display: flex;
+       
+        position: relative;
+       
+    
+    }
+    
+    .slider-frame{
+        overflow: hidden;
+    }
+    
+    @-webkit-keyframes slide_animation{
+        0% {left: 0px;}
+        10% {left: 0px;}
+        20% {left: 1200px;}
+        30% {left: 1200px;}
+        40% {left: 2400px;}
+        50% {left: 2400px;}
+        60% {left: 1200px;}
+        70% {left: 1200px;}
+        80% {left: 0px;}
+        90% {left: 0px;}
+        100% {left: 0px;}
+    }
+    
+    .slide-images{
+        display: flex;
+        flex-direction: row;
+        width: 4200px;
+        height: 800px;
+        margin:  0 0 0 -2400px;
+        position: relative;
+        -webkit-animation-name: slide_animation ;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-play-state: running;
+    
+    }
+    .img-container{
+        margin: 0px;
+        padding: 0%;
+        position: relative;
+        float: left;
+    
+    }
+    .img-container img{
+        height: 60%;
+        width:100%;
+      
+        filter: opacity(92%);
+    }
+    
+    #bannerText{
+        color: white;
+        font-family: 'Russo One', sans-serif;
+        
+       
+        margin: 0px 0px;
+        height: 200px;
+        width: 50vmin;
+        justify-items: center;
+        font-family: 'Russo One', sans-serif;
+        font-size: 22px;
+        margin: -286px 50px;
+        text-justify:distribute-all-lines;
+        filter: brightness(1);
+        filter: drop-shadow(1px 2px 1px black);
+        
+    }
+    
+    #bannerTextContainer{
+       
+        height: 206px;
+        width: 100vmin;
+        
+        font-family: 'Russo One', sans-serif;
+        
+        text-justify: newspaper;
+        filter: brightness(1);
+        
+    }
+    .linkButton{
+        text-align: center;
+        font-size: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+        font-weight: 400;
+        width: 150px;
+        background-color: rgba(168, 154, 154, 0);
+        color: white;
+        border: 1px solid white;
+        border-bottom-right-radius:30px ;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .linkButton:hover{
+        background-color: #0281ff;
+        border: none;
+        color: white;
+        border-bottom-right-radius: 0px;
+        border-radius: 6px;
+    }
+    
+    
  }
-
-#linksblock{
-    display: flex;
-    flex-direction: row;
-    
-    height: 100px;
-    color: white;
-    
-
-}
-.navbaritem{
-    font-weight: bold;
-    
-    display: flex;
-    flex-direction: row;
-    margin-left:20px ;
-    margin-right: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-    color: white;
-
-}
-
-.link:hover{
-    border-bottom: 1px solid white;
-    color: white;
-}
-.link{
-    color: white;
-    text-decoration: none;
-}
-.searchLogo{
-    margin-left:50px ;
-    color: white;
-   
-}
-.searchLogo:hover{
-    
-    color: #0260be;
-}
-
-#membershipblock{
-    display: flex;
-    flex-direction: row;
-   margin-left: 234px;
-    
-}
-#membershipblock li{
-    color: white;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    margin-left:15px ;
-    margin-right: 15px;
-    font-weight: bold;
-}
