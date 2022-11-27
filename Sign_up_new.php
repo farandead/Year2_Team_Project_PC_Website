@@ -84,9 +84,9 @@ try {
  <?php require 'header.php'; ?>
 
     <div class="container" id="container123">
-       
+       <?php require 'PHP/signUp_inc.php' ?>
         <div class="form-container sign-up-container">
-            <form action="PHP/signUp_inc.php" method='post' class="form-id">
+            <form method='post' class="form-id">
 
                 <h1>Create Account</h1>
 
@@ -122,9 +122,14 @@ try {
                 <!--<input  style="margin-top:15px"   value="Sign Up">-->
             </form>
             <?php
-            if (!empty($errors)) {
-                var_dump($errors);
+            if (!empty($errorsU)) { ?>
+                <p style="color:red;"><?php echo implode($errorsU) ?> </p> 
+            <?php
             }
+        if (!empty($msgU)) { ?>
+            <p style="color:red;"><?php echo implode($msgU) ?> </p>
+             
+            <?php }
             ?>
         </div>
         <!--END  CREATE AN ACCOUNT  -->
