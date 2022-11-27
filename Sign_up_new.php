@@ -1,7 +1,5 @@
-
-<!-- DATABASE CONNECTION -- HAVE TO MAKE AN INCLUSIONS-->
 <?php
-
+session_start();
 $servername = "localhost";
 $username = 'babimors_astonTeam';
 $password = 'HW#1o.5=#cl+'; 
@@ -15,7 +13,7 @@ try {
     // echo "Connection failed: " . $e->getMessage();
 }
 
-session_start();
+
 ?>
 <!-- END DATABASE CONNECTION-->
 <!DOCTYPE html>
