@@ -35,9 +35,10 @@ if ($conn->query($sqlNewBas) === TRUE) {
   
     if($rowcount==1){
     $result2=mysqli_query($conn,$sql);
+      $ROWLINK=fetch_assoc($result2);
       
-     // $sqlGetPrice=
-      echo "yes!!!!!";
+     $sqlGetPrice=$ROWLINK['Total_Price'];
+      echo "yes!!!!!".$sqlGetPrice;
     
     }else{echo "Number is wrong!";}
   
