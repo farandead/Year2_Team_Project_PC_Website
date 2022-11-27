@@ -20,7 +20,7 @@ if ($resultBas=mysqli_query($conn,$sqlBas)) {
     $RowBas=mysqli_fetch_array($resultBas);
          $idOrder=$RowBas['Order_ID'];
 
-    }else{echo "Something is wrong!"};
+    }else{echo "Something is wrong!";}
     }else{echo "No such item";}
   
   
