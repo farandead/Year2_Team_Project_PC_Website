@@ -63,7 +63,7 @@ if ($conn->query($sqlNewLink) === TRUE) {
   
   
   $UPprice=$price+$GetPrice;
-  $sqlUpPr = "UPDATE OrderP SET Total_Price='$price' WHERE Order_ID=$UPprice";
+  $sqlUpPr = "UPDATE OrderP SET Total_Price='$UPprice' WHERE Order_ID= $GetOrderID";
 
 if ($conn->query($sqlUpPr) === TRUE) {
   echo "Record updated successfully";
