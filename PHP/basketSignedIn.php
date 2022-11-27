@@ -59,7 +59,8 @@ if ($conn->query($sqlNewBas) === TRUE) {
       $resOfsqlIfthere=mysqli_query($conn,$sqlIfthere);
        $ROWsofIfthere=mysqli_fetch_assoc($resOfsqlIfthere);
        
-      if(!isset($ROWsofIfthere)){$rowcountIfthere=0;}else{$rowcountIfthere=mysqli_num_rows($ROWsofIfthere);}
+      if(!isset($ROWsofIfthere)){$rowcountIfthere=0;}
+      else{$rowcountIfthere=mysqli_num_rows($ROWsofIfthere);}
       
       
       if($rowcountIfthere==0){
