@@ -39,8 +39,7 @@
                         $_SESSION['User_password'] = $res['User_Password'];
                         
                         
-                     header("location: /index.php");
-            exit;
+                    
                         $succesM[] = "Success You are connected";
                         // redirect the user to main page
                        //header("location: /index.php");
