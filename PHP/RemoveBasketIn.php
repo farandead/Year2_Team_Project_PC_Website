@@ -1,9 +1,9 @@
 <?php
 ob_start();
+session_start();
 
 
-
-if(isset($_GET['ITR'])){
+if(isset($_GET['ITR'] and isset($_SESSION['User_ID']))){
   $item=$_GET['ITR'];
   require "connect_db.php";
   
