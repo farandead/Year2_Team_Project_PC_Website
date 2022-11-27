@@ -17,7 +17,7 @@ if ($resultBas=mysqli_query($conn,$sqlBas)) {
             $i=-1;
             while($row = mysqli_fetch_array($resultBasPr)) {
                 $i++;
-                  $items=  $row['Product_ID'];
+                  //$items=  $row['Product_ID'];
                 
                 
                  if($i==0){ $items=$items."Product_ID='".$row['Product_ID']."'";}else{
