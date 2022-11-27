@@ -1,7 +1,6 @@
 <?php session_start(); 
 //include '/home2/babimors/comp-uk.motorsfeere.com/';
 
-echo $_SESSION['count'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
