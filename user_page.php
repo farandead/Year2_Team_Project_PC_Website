@@ -94,8 +94,9 @@ try {
                     while ($row = $result->fetch(PDO::FETCH_ASSOC)) { ?>
                         <tr>
                             <td><?php echo $row['Order_ID'] ?></td>
+                            <td>x</td>
                             <td><?php echo $row['Order_Status'] ?></td>
-                            <td><?php echo $row['Order_ID'] ?></td>
+                            <td>x</td>
                             <td>x</td>
                             <td><?php echo $row['Total_Price'] ?></td>
                             
