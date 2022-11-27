@@ -1,5 +1,8 @@
 <?php
+
 if(isset($_GET["product"])){
+  session_start();
+  
   
 $product=$_GET["product"];
 $IsThere=false;
