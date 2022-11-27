@@ -59,6 +59,9 @@ if ($conn->query($sqlNewBas) === TRUE) {
       $resOfsqlIfthere=mysqli_query($conn,$sqlIfthere);
        $ROWsofIfthere=mysqli_fetch_assoc($resOfsqlIfthere);
        $rowcountIfthere=mysqli_num_rows($ROWsofIfthere);
+      if(!isset($rowcountIfthere)){$rowcountIfthere=0;}
+      
+      
       if($rowcountIfthere==0){
       
           $sqlNewLink = "INSERT INTO Linked_Order_and_Products (Amount_Product, Product_ID, Order_ID)
