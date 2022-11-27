@@ -96,7 +96,8 @@ try {
                             <td><?php echo $row['Order_ID'] ?></td>
                             <td><?php echo $row['Order_Status'] ?></td>
                             <td><?php echo $row['Order_ID'] ?></td>
-                            <td><?php echo $row['User_ID'] ?></td>
+                            <td>x</td>
+                            <td><?php echo $row['Total_Price'] ?></td>
                             
                         </tr>
                        <?php  }
