@@ -154,9 +154,15 @@ try {
                 if (!empty($succesM)){
                  var_dump($succesM);
                 }
+                
+        if (!empty($msgU)) { ?>
+            <p style="color:Green;"><?php echo implode($msgU) ?> </p>
+             
+            <?php }
+            ?>
 
 
-                    ?>
+                    
             </form>
         </div>
         
