@@ -13,5 +13,6 @@ if (empty($_SESSION['count'])) {
    $_SESSION['count']++;
 }
 
+echo $_SESSION['count'];
 
 ?>
