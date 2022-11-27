@@ -102,8 +102,8 @@ try {
                         </tr>
                        <?php  }
                 }else { 
-                
-                echo "There is no previous order";
+                ?> <p style="color:red;"><?php echo "There is no previous order" ?> </p>
+                <?php
                 }
                 
                 
