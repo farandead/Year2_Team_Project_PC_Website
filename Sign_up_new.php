@@ -1,6 +1,7 @@
 
 <!-- DATABASE CONNECTION -- HAVE TO MAKE AN INCLUSIONS-->
 <?php
+session_start();
 $servername = "localhost";
 $username = 'babimors_astonTeam';
 $password = 'HW#1o.5=#cl+'; 
