@@ -30,6 +30,9 @@ if ($conn->query($sqlNewBas) === TRUE) {
     
   }
   
+  $result=mysqli_query($conn,$sql);
+  $rowcount=mysqli_num_rows($result);
+  
     if($rowcount==1){
     $result2=mysqli_query($conn,$sql);
       
