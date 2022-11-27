@@ -13,7 +13,19 @@ if ($resultBas=mysqli_query($conn,$sqlBas)) {
         $resultBasPr=mysqli_query($conn,$sqlOrder);
         $rowcount2=mysqli_num_rows($resultBasPr);
         if($rowcount2>0){
-        echo "Good!";
+        //echo "Good!";
+            $i=-1;
+            while($row = mysqli_fetch_array($result)) {
+                $i++;
+                  $items=  $row['Product_ID'];
+                
+                
+                 if($i==0){ $items=$items."Product_ID='".$row['Product_ID']."'";}else{
+                    $items=$items." OR Product_ID='".$row['Product_ID']."'";
+                 }
+            }  
+            echo $items;
+            
         }else{
         echo "Basket is empty";
         }
