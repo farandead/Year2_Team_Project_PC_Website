@@ -57,10 +57,10 @@ if ($conn->query($sqlNewBas) === TRUE) {
       
       $sqlIfthere="SELECT * FROM Linked_Order_and_Products WHERE Product_ID=$product and Order_ID=$GetOrderID ";
       $resOfsqlIfthere=mysqli_query($conn,$sqlIfthere);
-       $ROWsofIfthere=mysqli_fetch_assoc($resOfsqlIfthere);
+       //$ROWsofIfthere=mysqli_fetch_assoc($resOfsqlIfthere);
        
-      if(!isset($ROWsofIfthere)){$rowcountIfthere=0;}
-      else{$rowcountIfthere=mysqli_num_rows($ROWsofIfthere);}
+   
+    $rowcountIfthere=mysqli_num_rows($resOfsqlIfthere);
       
       
       if($rowcountIfthere==0){
