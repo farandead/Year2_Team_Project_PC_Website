@@ -10,5 +10,5 @@ if(isset($_SESSION['User_Status'])){
 else{
   require "basketSignedOut.php";
 }
-//header("location: ../ShoppingCart.php");
+header("location: ../ShoppingCart.php");
 ?>
