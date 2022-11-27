@@ -8,14 +8,13 @@ echo $_SESSION['User_ID'];
 
 if($_SESSION['login'] = true) {
   
-  echo $_SESSION['userid'];
-  echo $_SESSION['useremail'] ;
-  echo $_SESSION['userfname'];
-  echo $_SESSION['usersname'] ;
-  echo $_SESSION['userstatus'] ;
-  echo $_SESSION['userpassword'] ;
- 
-
+  echo $_SESSION['User_ID'];
+  echo $_SESSION['user_Email'] ;
+  echo $_SESSION['User_FName'];
+  echo $_SESSION['User_SName'] ;
+  echo $_SESSION['User_Status'] ;
+  echo $_SESSION['User_Password'] ;
+                   
 }
 
 
