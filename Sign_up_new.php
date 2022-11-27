@@ -165,8 +165,20 @@ try {
              
             <?php }
             ?>
+         <?php
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] == "emptyinput") {
+                echo "<div class='alert alert-danger'> <p>All cases is required.</p> </div>";
+            } 
+            if ($_GET["error"] == "wronglogin") {
+                echo "<div class='alert alert-danger'> <p>The email or password is incorrect.</p> </div>";
+            }
+            if ($_GET["error"] == "unknowDetail") {
+                echo "<div class='alert alert-danger'> <p>The email is not recognised, please verify or sign up.</p> </div>";
+            }
+        }
 
-
+        ?>
                     
             </form>
         </div>
