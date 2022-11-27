@@ -1,5 +1,5 @@
 <?php
-$id=29;//$_SESSION['User_ID'];
+$id=$_SESSION['User_ID'];
 $template= "TemplateProductBasket.php";
 $items="";
 
