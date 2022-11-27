@@ -30,7 +30,7 @@ if(isset($_SESSION['User_Status'])){$DeleteLink="PHP/RemoveBasketIn.php?ITR=";
                                <a href='Product_Description.php?Product=".$row['Product_ID']."'> <button>LOOK UP THIS ITEM ></button></a>
                             </div>
   <div class=\"product-details-buy-buttons\">
-                               <a href='"$DeleteLink.$row['Product_ID']."'> <button>REMOVE THIS ITEM ></button></a>
+                               <a href='".$DeleteLink.$row['Product_ID']."'> <button>REMOVE THIS ITEM ></button></a>
                             </div>";
 
 echo "
