@@ -6,14 +6,11 @@ echo $_SESSION['User_Status'];
 //$_SESSION['User_ID']=29;
 echo $_SESSION['User_ID'];
 
-session_start();
-echo $_SESSION['User_Status'];
-if (empty($_SESSION['count'])) {
-   $_SESSION['count'] = 1;
-} else {
-   $_SESSION['count']++;
-}
 
-echo $_SESSION['count'];
+if(isset($_SESSION['User_ID']) {
+echo "EXIST";
+}else {
+   "Not exist";
+}
 
 ?>
