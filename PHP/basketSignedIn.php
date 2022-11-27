@@ -37,14 +37,26 @@ if ($conn->query($sqlNewBas) === TRUE) {
     $result2=mysqli_query($conn,$sql);
       $ROWLINK=mysqli_fetch_assoc($result2);
       
-     $sqlGetPrice=$ROWLINK['Total_Price'];
+     $GetPrice=$ROWLINK['Total_Price'];
+      $GetOrderID=$$ROWLINK['Order_ID'];
+      
+      
       echo "yes!!!!!".$sqlGetPrice;
-    
+      
+      $sqlPriceProduct="SELECT * FROM Product WHERE Product_ID=$GetOrderID";
+      $resultPr=mysqli_query($conn,$sqlPriceProduct);
+      $ROWPr=mysqli_fetch_assoc($resultPr);
+      
+      
+      $price=round($ROWPr['Product_Price']-$ROWPr['Product_Price']*$ROWPr['Product_Discount']/100,2);
+      
+      echo "Price: ".$price;
+      
     }else{echo "Number is wrong!";}
   
   
 }else{
- $rowcount=mysqli_num_rows($result);
+ //$rowcount=mysqli_num_rows($result);
   
 
 }
