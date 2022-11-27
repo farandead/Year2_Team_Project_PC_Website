@@ -34,7 +34,7 @@
                         $_SESSION['user_Email'] = $res['user_Email'];
                         $_SESSION['User_FName'] = $res['User_FName'];
                         $_SESSION['User_SName'] = $res['User_SName'];
-                        $_SESSION['last_login'] = time();
+                        $_SESSION['User_ID'] = $res['User_ID'];
                         
                      
                         $succesM[] = "Success You are connected";
