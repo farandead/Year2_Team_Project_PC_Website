@@ -6,7 +6,7 @@ if(isset($_GET["product"])){
   
 $product=$_GET["product"];
 $IsThere=false;
-$UserId=$_GET["User_ID"];
+$UserId=$_SESSION["User_ID"];
   
 require "connect_db.php";
  
