@@ -14,6 +14,8 @@ try {
 } catch (PDOException $e) {
     // echo "Connection failed: " . $e->getMessage();
 }
+
+session_start();
 ?>
 <!-- END DATABASE CONNECTION-->
 <!DOCTYPE html>
