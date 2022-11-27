@@ -57,7 +57,7 @@
         <div class="OrdersBox">
             
             <div class= "title">
-                <h1 class="helloUser">Hello <?php echo $_SESSION['User_FName']; ?> !</h1>
+                <h1 class="helloUser">Hello <?php echo ucfirst($_SESSION['User_FName']); ?> !</h1>
                 <h2 class="subheading">Order History: </h2>
             </div>
             <table class = "orderTable">
