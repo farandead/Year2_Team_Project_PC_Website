@@ -119,7 +119,7 @@ try {
                  
                    
               
-                <button name="signup_submit" >Sign In</button>
+                <button name="signup_submit" >Sign Up</button>
                 <!--<input  style="margin-top:15px"   value="Sign Up">-->
             </form>
             <?php
@@ -143,7 +143,8 @@ try {
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
                 <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a
                         href="" style="margin-bottom:10px">Here</a></a>
- <input type="submit" name="submit_Login" value="Sign In">
+
+                 <button name="submit_Login" >Sign In</button>
               <!--  <button name="submit_Login" >Sign In</button> -->
                 <!-- message  -->
                     <?php
