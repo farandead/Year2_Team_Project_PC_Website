@@ -7,7 +7,7 @@ echo $_SESSION['User_Status'];
 echo $_SESSION['User_ID'];
 
 
-if(isset($_SESSION['User_ID']) {
+if(isset($_SESSION['User_ID'])) {
 echo "EXIST";
 }else {
    "Not exist";
