@@ -38,7 +38,7 @@ if ($conn->query($sqlNewBas) === TRUE) {
       $ROWLINK=mysqli_fetch_assoc($result2);
       
      $GetPrice=$ROWLINK['Total_Price'];
-      $GetOrderID=$$ROWLINK['Order_ID'];
+      $GetOrderID=$ROWLINK['Order_ID'];
       
       
       echo "yes!!!!!".$sqlGetPrice;
