@@ -1,9 +1,7 @@
-<?php
-require "PHP/CheckAdminAccess.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+    <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,13 +18,9 @@ require "PHP/CheckAdminAccess.php";
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
-        <link rel="stylesheet" href="css/admin.css">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
-        
     
     
-        <link rel="stylesheet" href="css/slidshow.css">
+        <link rel="stylesheet" href="css/header.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -37,7 +31,7 @@ require "PHP/CheckAdminAccess.php";
         </script>
         <style>
             body {
-                margin-top: 30px;
+                margin: 0%;
                 padding: 0%;
                 font-family: "Arial", Helvetica, sans-serif;
             }
@@ -50,55 +44,50 @@ require "PHP/CheckAdminAccess.php";
             }
         </style>
     
-    <!-- font-family: 'Staatliches', cursive; -->
-    <!-- font-family: 'Russo One', sans-serif; -->
+    </head>
     
-    <body style="background-image: none;">
+    <body style="background: none;" class="dark_target">
     
-        <header class="container-fluid navigationBar" id="navigationLightMode" style="margin-top: -50px;">
-            <div class="row">
-            <ul id="navbar">
-                <div id="logoblock">
-                    <a href="mainpage.html" class="link">
-                        <p id="logoMovie" style="color:white">
-                            LOGO
+        <div class="navigation-bar"  id="navigationLightMode">
+            <div class="navigation-logo">
     
-                        </p>
-                    </a>
+                <img class="img-logo" src="img/Logo1.png" alt="Logo">
     
-                </div>
-                
-                <div id="linksblock">
-                    <li class="navbaritem"><a class="link" href="filmPage.html">DESKTOP PCs</a></li>
-                    <li class="navbaritem"><a class="link" href="#">LAPTOPS</a></li>
-                    <li class="navbaritem"><a class="link" href="#">CONTACT US</a></li>
-                    <li class="navbaritem"><a class="link" href="#">REVIEWS</a></li>
-                </div>
-    
-                <div id="membershipblock">
-    
-    
-    
-                    <li><i id="toggle_button_dark" class="bi bi-moon" onclick="myFunction()"></i> <i id="toggle_button"
-                            style="display: flex;" class="bi bi-brightness-high-fill" onclick="myFunction()"></i></li>
-    
-    
-                    <br>
-                    <br>
-                    <li><a class="searchLogo" class="link" href=""> <i class="fa fa-search"
-                                style="font-size: xx-large;color:white"></i> </a></li>
-                    <br>
-                    <br>
-                    <li><a class="sign-in-logo" class="link" href="Sign_up.html"> <i class="bi bi-person-fill"
-                                style="font-size: xx-large;color:white"></i> </a></li>
-                       
-                  
-         
-                
-                </div>
             </div>
-            </ul>
-            </ul>
+            <div class="navigation-menu">
+                <ul>
+                    <li class="navbaritem"><a class="link" href="product_page.php?Category=Gaming%20Desktop%20pc">
+                            <p>Desktops PCs</p>
+                        </a></li>
+                    <li class="navbaritem"><a class="link" href="product_page.php?Category=Gaming%20Laptops">
+                                <p>Laptops</p>
+                    </a></li>
+                    <li class="navbaritem"><a class="link" href="about_us.php">
+                            <p>About Us</p>
+                        </a></li>
+                    <li class="navbaritem"><a class="link" href="contact_us.html">
+                            <p>Contact Us</p>
+                        </a></li>
+                    <li class="navbaritem"><a class="link" href="#">
+                            <p>Reviews</p>
+                        </a></li>
+                </ul>
+    
+            </div>
+            <div class="navigation-icons">
+    
+                <ul>
+                    <li>
+                        <i id="toggle_button_dark" class="bi bi-moon" onclick="darkModeProduct()"></i> 
+                        <i id="toggle_button"style="display: flex;color:white;" class="bi bi-brightness-high-fill" onclick="darkModeProduct()"></i></li>
+                 
+                    <li><a class="sign-in-logo" class="link" href="Sign_up_new.php"> <i class="bi bi-person-fill"
+                                style="color:white"></i> </a></li>
+                    <li><i class="fa fa-cart-arrow-down" style="font-size: xx-large;color:white"></i></li>
+    
+                </ul>
+            </div>
+        </div>
             
             <!--Admin Panel-->
         <div class="container-fluid mt-1">
