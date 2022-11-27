@@ -26,12 +26,12 @@ if ($conn->query($sqlNewBas) === TRUE) {
   echo "Error: " . $sqlNewBas . "<br>" . $conn->error;
 }
     
-    
+      $result=mysqli_query($conn,$sql);
+  $rowcount=mysqli_num_rows($result);
     
   }
   
-  $result=mysqli_query($conn,$sql);
-  $rowcount=mysqli_num_rows($result);
+
   
     if($rowcount==1){
     $result2=mysqli_query($conn,$sql);
