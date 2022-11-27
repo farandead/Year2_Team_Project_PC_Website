@@ -26,8 +26,8 @@ if ($checkPwd === false) {
     } else if ($checkPwd === true) {
         
         if($_POST['newpassword'] == $_POST['confirmpassword']){
-            $conn="UPDATE account SET User_Password=:newpassword WHERE user_Email=:username";
-$chngpwd = $dbh->prepare($conn);
+            $sql="UPDATE account SET User_Password=:newpassword WHERE user_Email=:username";
+$chngpwd = $conn->prepare($sql);
 $chngpwd-> bindParam(':username', $user_email, PDO::PARAM_STR);
 $chngpwd-> bindParam(':newpassword', $newpassword, PDO::PARAM_STR);
 $changeSucc = $chngpwd->execute();
