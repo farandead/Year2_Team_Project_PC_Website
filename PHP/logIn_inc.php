@@ -1,6 +1,5 @@
-<?php 
-session_start();
-ob_start();
+<?php session_start();
+
 $servername = "localhost";
 $username = 'babimors_astonTeam';
 $password = 'HW#1o.5=#cl+'; 
@@ -80,4 +79,4 @@ try {
      
   }
 
-ob_end_flush();
+
