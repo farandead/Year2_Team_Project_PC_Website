@@ -29,17 +29,19 @@
                     if (password_verify($_POST['pwd'], $res['User_Password'])) {
                         
                         //regenerate session id
-                       /* session_start();
+                        session_start();
                         $_SESSION['login'] = true;
                         $_SESSION['user_Email'] = $res['user_Email'];
                         $_SESSION['User_FName'] = $res['User_FName'];
                         $_SESSION['User_SName'] = $res['User_SName'];
                         $_SESSION['last_login'] = time();
-                        session_start();*/
-                       $succesM[] = "Success You are connected";
+                        
+                     
+                        $succesM[] = "Success You are connected";
                         // redirect the user to main page
                        //header("location: /index.php");
-                     /* header("Location: http://www.facebook.com", TRUE,301);
+                     /* header("Location: http://www.fa
+                     cebook.com", TRUE,301);
                         exit();*/
                     } else {
                           $errors[] = "The password or the email is incorrect ";
