@@ -52,8 +52,14 @@ if ($conn->query($sqlNewBas) === TRUE) {
       
       echo "Price: ".$price;//of one
       
+ 
       
       
+      $sqlIfthere="SELECT * FROM Linked_Order_and_Products WHERE Product_ID=$product and Order_ID=$GetOrderID ";
+      $resOfsqlIfthere=mysqli_query($conn,$sqlIfthere);
+       $ROWsofIfthere=mysqli_fetch_assoc($resOfsqlIfthere);
+       $rowcountIfthere=mysqli_num_rows($ROWsofIfthere);
+      if($rowcountIfthere==0){
       
           $sqlNewLink = "INSERT INTO Linked_Order_and_Products (Amount_Product, Product_ID, Order_ID)
 VALUES ('1', '$product', '$GetOrderID')";
@@ -79,6 +85,9 @@ if ($conn->query($sqlUpPr) === TRUE) {
   echo "Error: " . $sqlNewLink . "<br>" . $conn->error;
 }
       
+      
+      
+      }    
       
       
       
