@@ -15,7 +15,7 @@ if ($resultBas=mysqli_query($conn,$sqlBas)) {
         if($rowcount2>0){
         //echo "Good!";
             $i=-1;
-            while($row = mysqli_fetch_array($result)) {
+            while($row = mysqli_fetch_array($resultBasPr)) {
                 $i++;
                   $items=  $row['Product_ID'];
                 
