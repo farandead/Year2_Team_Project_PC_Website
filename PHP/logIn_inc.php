@@ -1,7 +1,5 @@
  <?php ob_start();
     if (isset($_POST['submit_Login']) ) {
-      
- 
             // PHP Form Validations
             if (empty($_POST['email'])) {
                 // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
@@ -43,6 +41,7 @@
                         $succesM[] = "Success You are connected";
                         // redirect the user to main page
                        header("location: /index.php");
+                     
                      /* header("Location: http://www.fa
                      cebook.com", TRUE,301);
                         exit();*/
