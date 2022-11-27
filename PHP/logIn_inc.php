@@ -29,7 +29,7 @@
                     if (password_verify($_POST['pwd'], $res['User_Password'])) {
                         
                         //regenerate session id
-                        session_start();
+                        
                         $_SESSION['login'] = true;
                         $_SESSION['User_ID'] = $res['User_ID'];
                         $_SESSION['user_Email'] = $res['user_Email'];
@@ -37,7 +37,7 @@
                         $_SESSION['User_SName'] = $res['User_SName'];
                         $_SESSION['User_Status'] = $res['User_Status'];
                         $_SESSION['User_password'] = $res['User_Password'];
-                        session_start();
+                        
                         
                      header("location: /index.php");
             exit;
