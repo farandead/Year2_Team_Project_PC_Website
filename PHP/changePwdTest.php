@@ -18,38 +18,54 @@ if(isset($_POST['submit']))
 $password = $_POST['password'] ;
 $newpassword = password_hash($_POST['newpassword'], PASSWORD_DEFAULT);
 $user_email= $_SESSION['user_Email'];
-$pwdHashed = $_SESSION["User_Password"];
-
-$checkPwd =  password_verify($password, $pwdHashed);
-if ($checkPwd === false) {
-        $error="The current password is not valid.";
 	
-    } else {
 	
+	
+	$sql = "SELECT User_Password FROM account WHERE user_Email=? ";
+                $result = $conn->prepare($sql);
+                $result->execute(array($user_email));
+                $count = $result->rowCount();
+                $res = $result->fetch(PDO::FETCH_ASSOC);
+                
+	if ($res) {
+                    // Compare the password with password hash
+                   
+	$checkPwd =  password_verify($password, $res['User_Password']);
+			
 
-	if($_POST['newpassword'] == $_POST['confirmpassword']){
-		
-		$data = [
-		    'newpassword' => $newpassword,
-		    'username' => $user_email,
+		if ($checkPwd === false) {
+			$error="The current password is not valid.";
 
-		];
-		$sql = "UPDATE account SET User_Password=:newpassword WHERE user_Email=:username";
-		$stmt= $conn->prepare($sql);
-		$changeSucc = $stmt->execute($data);
-		 
-		if ($changeSucc){
-			$msg="The password have been successfully changed !";
-		} else {
-			$error="We did not been able to change your password.";
+		    } else {
+
+
+			if($_POST['newpassword'] == $_POST['confirmpassword']){
+
+				$data = [
+				    'newpassword' => $newpassword,
+				    'username' => $user_email,
+
+				];
+				$sql = "UPDATE account SET User_Password=:newpassword WHERE user_Email=:username";
+				$stmt= $conn->prepare($sql);
+				$changeSucc = $stmt->execute($data);
+
+				if ($changeSucc){
+					$msg="The password have been successfully changed !";
+				} else {
+					$error="We did not been able to change your password.";
+				}
+			} else {
+			 $error="The confirmation did not succeed. Please verify your new password. ";
+
+			}
+
+
 		}
-	} else {
-	 $error="The confirmation did not succeed. Please verify your new password. ";
 
 	}
-        
-       
-}
+
+
     
 
 }
