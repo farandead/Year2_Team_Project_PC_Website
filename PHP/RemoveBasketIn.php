@@ -3,7 +3,7 @@ ob_start();
 session_start();
 
 
-if(isset($_GET['ITR'] and isset($_SESSION['User_ID']))){
+if(isset($_GET['ITR']) and isset($_SESSION['User_ID'])){
   $item=$_GET['ITR'];
   $id=$_SESSION['User_ID'];
   
