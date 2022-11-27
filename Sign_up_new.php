@@ -126,10 +126,7 @@ try {
                 <p style="color:red;"><?php echo implode($errorsU) ?> </p> 
             <?php
             }
-        if (!empty($msgU)) { ?>
-            <p style="color:red;"><?php echo implode($msgU) ?> </p>
-             
-            <?php }
+       
             ?>
         </div>
         <!--END  CREATE AN ACCOUNT  -->
