@@ -35,7 +35,7 @@ if ($resultBas=mysqli_query($conn,$sqlBas)) {
         
         
         
-      echo "yes";
+      //echo "yes";
     }else{
     echo "Something is wrong!";
     }
