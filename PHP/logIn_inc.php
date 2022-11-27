@@ -37,7 +37,7 @@
                         $_SESSION['User_SName'] = $res['User_SName'];
                         $_SESSION['User_Status'] = $res['User_Status'];
                         $_SESSION['User_password'] = $res['User_Password'];
-                        
+                        session_start();
                         
                      
                         $succesM[] = "Success You are connected";
