@@ -147,34 +147,26 @@ try {
                  <button name="submit_Login" >Sign In</button>
               <!--  <button name="submit_Login" >Sign In</button> -->
                 <!-- message  -->
-                    <?php
-
-                    if (!empty($errors)) {
-                     ?>
-                         <p style="color:red;"><?php echo implode($errors) ?> </p>
-                   <?php     
-                       
-                    }
-                if (!empty($succesM)){ ?>
-                 
-                    <p style="color:Green;"><?php echo implode($succesM) ?> </p>
-                <?php }
-                
-        if (!empty($msgU)) { ?>
-            <p style="color:Green;"><?php echo implode($msgU) ?> </p>
-             
-            <?php }
-            ?>
+                   
          <?php
         if (isset($_GET["error"])) {
             if ($_GET["error"] == "emptyinput") {
-                echo "<div class='alert alert-danger'> <p>All cases is required.</p> </div>";
+                ?>
+                         <p style="color:red;">All cases is required.</p>
+                   <?php 
+               
             } 
             if ($_GET["error"] == "wronglogin") {
-                echo "<div class='alert alert-danger'> <p>The email or password is incorrect.</p> </div>";
+                ?>
+                         <p style="color:red;">The email or password is incorrect.</p>
+                   <?php 
+              
             }
             if ($_GET["error"] == "unknowDetail") {
-                echo "<div class='alert alert-danger'> <p>The email is not recognised, please verify or sign up.</p> </div>";
+                ?>
+                         <p style="color:red;">The email is not recognised, please verify or sign up.</p>
+                   <?php 
+               
             }
         }
 
