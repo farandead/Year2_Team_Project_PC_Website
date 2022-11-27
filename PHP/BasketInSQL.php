@@ -25,7 +25,7 @@ if ($resultBas=mysqli_query($conn,$sqlBas)) {
                  }
             }  
             echo $items;
-            
+             $query=mysqli_query($conn,"SELECT * FROM Product WHERE ".$items."");
         }else{
         echo "Basket is empty";
         }
