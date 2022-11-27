@@ -31,12 +31,12 @@
                         //regenerate session id
                         
                         $_SESSION['login'] = true;
-                        $_SESSION['User_ID'] = $res['User_ID'];
-                        $_SESSION['user_Email'] = $res['user_Email'];
-                        $_SESSION['User_FName'] = $res['User_FName'];
-                        $_SESSION['User_SName'] = $res['User_SName'];
-                        $_SESSION['User_Status'] = $res['User_Status'];
-                        $_SESSION['User_password'] = $res['User_Password'];
+                        $_SESSION['UserID'] = $res['User_ID'];
+                        $_SESSION['userEmail'] = $res['user_Email'];
+                        $_SESSION['UserFName'] = $res['User_FName'];
+                        $_SESSION['UserSName'] = $res['User_SName'];
+                        $_SESSION['UserStatus'] = $res['User_Status'];
+                        $_SESSION['UserPassword'] = $res['User_Password'];
                         
                         
                     
