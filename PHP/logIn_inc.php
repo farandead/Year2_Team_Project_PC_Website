@@ -1,4 +1,6 @@
-<?php ob_start();
+<?php 
+session_start();
+ob_start();
 $servername = "localhost";
 $username = 'babimors_astonTeam';
 $password = 'HW#1o.5=#cl+'; 
@@ -41,7 +43,7 @@ try {
                     if (password_verify($_POST['pwd'], $res['User_Password'])) {
                         
                         //regenerate session id
-                        
+                        session_start();
                         $_SESSION['login'] = true;
                         $_SESSION['User_ID'] = $res['User_ID'];
                         $_SESSION['user_Email'] = $res['user_Email'];
@@ -50,7 +52,7 @@ try {
                         $_SESSION['User_Status'] = $res['User_Status'];
                         $_SESSION['User_Password'] = $res['User_Password'];
                         
-                        
+                        session_start();
                     
                         $succesM[] = "Success You are connected";
                         // redirect the user to main page
