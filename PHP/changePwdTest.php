@@ -61,7 +61,7 @@ $msg="The password have been successfully changed  !";
             <?php if($error){?><div class="errorWrap"><?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><?php echo htmlentities($msg); ?> </div><?php }?>
             
-            <div class="mt-5 text-center"><input class="btn   profile-button" type="submit" name="submit" value="Sauvergarder" class="btnSubmit"></div>
+            <div class="mt-5 text-center"><input class="btn   profile-button" type="submit" name="submit" value="Save" class="btnSubmit"></div>
             
             
             </div>
