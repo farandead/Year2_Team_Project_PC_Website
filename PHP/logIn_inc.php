@@ -31,11 +31,13 @@
                         //regenerate session id
                         session_start();
                         $_SESSION['login'] = true;
+                        $_SESSION['User_ID'] = $res['User_ID'];
                         $_SESSION['user_Email'] = $res['user_Email'];
                         $_SESSION['User_FName'] = $res['User_FName'];
                         $_SESSION['User_SName'] = $res['User_SName'];
+                        $_SESSION['User_Status'] = $res['User_Status'];
                         $_SESSION['User_password'] = $res['User_Password'];
-                        $_SESSION['User_ID'] = $res['User_ID'];
+                        
                         
                      
                         $succesM[] = "Success You are connected";
