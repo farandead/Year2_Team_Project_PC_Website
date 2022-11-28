@@ -1,7 +1,7 @@
 <?php
-if(isset($_GET['Product'])){
+if(isset($_GET['Product']) and isset($_POST['buy'])){
 $product=$_GET['Product'];
-
-}else{}
+echo "yes";
+}else{echo "no";}
 
 ?>
