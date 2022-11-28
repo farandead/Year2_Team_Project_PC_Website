@@ -76,9 +76,9 @@ $user_email= $_SESSION['user_Email'];
 
  <div class="p-3 py-5">
                 <div class="d-flex justify-content-between align-items-center experience"><span>Update Password</span></div><br>
-                <div class="col-md-12"><label class="labels">Mot de Passe Actuel</label><input type="password" class="form-control" name="password" id="password" required></div> <br>
-                <div class="col-md-12"><label class="labels">Nouveau Mot de Passe</label><input type="password" class="form-control" placeholder="nouveau mot de passe" name="newpassword" id="newpassword" required></div>
-                <div class="col-md-12"><label class="labels">Confirmation Mot de Passe</label><input type="password" class="form-control" placeholder="confirmer mot de passe" name="confirmpassword" id="confirmpassword" required></div>
+                <div class="col-md-12"><label class="labels">Current password</label><input type="password" class="form-control" name="password" id="password" required></div> <br>
+                <div class="col-md-12"><label class="labels">New password </label><input type="password" class="form-control" placeholder="nouveau mot de passe" name="newpassword" id="newpassword" required></div>
+                <div class="col-md-12"><label class="labels">New password confirmation</label><input type="password" class="form-control" placeholder="confirmer mot de passe" name="confirmpassword" id="confirmpassword" required></div>
             <?php if(isset($error)){?><div class="errorWrap"><?php echo htmlentities($error); ?> </div><?php } 
 				else if(isset($msg)){?><div class="succWrap"><?php echo htmlentities($msg); ?> </div><?php }?>
             
