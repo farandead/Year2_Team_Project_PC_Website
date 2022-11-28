@@ -44,7 +44,7 @@ echo "
                   <td>".$row['Order_ID']."</td>
                   <td>".$Products."</td>
                   <td>".$row['User_ID']."</td>
-                  <td> <form action =\"PHP/updateOrderSt.php\" method=\"post\">     
+                  <td> ".$row['Order_Status']." <form action =\"PHP/updateOrderSt.php\" method=\"post\">     
                   
                    <select name=\"Statuses\" id=\"Statuses\" required >
                   <option value=\"InProcess\" ".$st1.">In Process</option>
