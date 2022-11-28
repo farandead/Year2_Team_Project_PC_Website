@@ -125,7 +125,7 @@ header("Location: index.php");
                     <p id="product_name"><?php echo $product['Product_Name'];?></p>
                     <p id="payment_information_heading">Delivery address:</p>
                     
-                    <select name="cars" id="cars">
+                    <select name="addresses" id="addresses" required>
 
                         
                         <?php 
