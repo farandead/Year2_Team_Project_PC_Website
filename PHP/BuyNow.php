@@ -41,6 +41,8 @@ VALUES ('$IDorder', '$addressToD')";
 
 if ($conn->query($sqlLinkAdOrd) === TRUE) {
   echo "New record created successfully";
+ //header("Location:");
+ //GO TO PROFILE PAGE!!!!!!!!!
 } else {
   echo "Error: " . $sqlLinkAdOrd . "<br>" . $conn->error;
 }
