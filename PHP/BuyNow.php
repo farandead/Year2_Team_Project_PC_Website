@@ -5,7 +5,7 @@ ob_start();
   require "connect_db.php";
 $idPr= $_POST['id'];
 $Price= $_POST['price'];
-$User=$SESSION['User_ID'];
+$User=$_SESSION['User_ID'];
   
   $sql = "INSERT INTO OrderP (Order_Status, Total_Price, User_ID)
 VALUES ('BuyNow', '$Price', '$User')";
