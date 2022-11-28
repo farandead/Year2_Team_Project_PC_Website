@@ -1,4 +1,5 @@
-<?php require ob_start();session_start();
+<?php ob_start();
+session_start();
 
 if(isset($_GET['ProductID']) and ($_SESSION['login'])){
 "connect_db.php";
