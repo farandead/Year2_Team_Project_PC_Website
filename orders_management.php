@@ -154,7 +154,7 @@
                   <th>Customer</th>
                   <th>Status</th>
                   <th>Total Price</th>
-                      <th>Address</th>
+                     
               </tr>
           </thead>
                 <?php require "PHP/TableOrdersPrinterCollection.php"; ?>
