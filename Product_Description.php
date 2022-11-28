@@ -133,7 +133,9 @@ require "PHP/IndProductPriceDis.php";
 
                 </div>
                 <div class="main-product-heading-description-container-button">
+                    <?php echo "<a href='checkout_page.php?ProductID=".$res["Product_ID"]."'>";?>
                     <Button>BUY NOW</Button>
+                    </a>
                 </div>
                 <div>
                     <p> FREE STANDARD DELIVERY TO MAINLAND UK ON ALL ORDERS!</p>
