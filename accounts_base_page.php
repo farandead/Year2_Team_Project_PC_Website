@@ -103,7 +103,7 @@ require "PHP/CheckAdminAccess.php";
             <!--Admin Panel-->
         <div class="container-fluid mt-1">
             <div class="row">
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 px-4" style="width: 100%;">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 px-4" style="margin-top: -15px;">
         <a href="#" class="navbar-brand">Admin</a>
  
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -149,7 +149,7 @@ require "PHP/CheckAdminAccess.php";
   
     <div class="container2 me-4 ms-4">
       <div class="row">
-            <table id="example" class="table table-striped" style="margin-top: -15px;">
+            <table id="example" class="table table-striped" style="width: 100%;">
               <thead>
                   <tr>
                       <th>ID</th>
