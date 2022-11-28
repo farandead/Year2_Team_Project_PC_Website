@@ -1,3 +1,12 @@
+<?php require ob_start();session_start();
+
+if(isset($_GET['ProductID']) and ($_SESSION['login'])){
+"connect_db.php";
+}else{
+header("Location: index.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
