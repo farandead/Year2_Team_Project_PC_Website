@@ -12,6 +12,7 @@ $Status=$_POST['Statuses'];
 
 if ($conn->query($sql) === TRUE) {
   echo "Record updated successfully";
+  header("Location: ../orders_management.php");
 } else {
   echo "Error updating record: " . $conn->error;
 }
