@@ -118,7 +118,7 @@ header("Location: index.php");
                <img src="img/AGILITY_PRO.webp" alt="">
             </div>
             <div class="rightside dark_target" >
-                <form action="PHP/BuyNow.php">
+                <form action="PHP/BuyNow.php" method="post">
                     <input type='hidden' name="price" value=" <?php echo $price; ?> " /> 
                     <input type='hidden' name="id" value=" <?php echo  $idpr; ?> " /> 
                     <p id="product_name"><?php echo $product['Product_Name'];?></p>
