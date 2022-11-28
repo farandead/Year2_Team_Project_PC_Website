@@ -21,7 +21,7 @@ while($row=mysqli_fetch_assoc($query)){
   $sqlPr="SELECT * FROM Linked_Order_and_Products WHERE Order_ID ='".$row['Order_ID']."'";
   $queryPr=mysqli_query($conn, $sqlPr);
   while($rowPr=mysqli_fetch_assoc($queryPr)){
-  $Products= $Products.", ".$rowP['Product_ID'];
+  $Products= $Products.", ".$rowPr['Product_ID'];
   }
   
 echo "
