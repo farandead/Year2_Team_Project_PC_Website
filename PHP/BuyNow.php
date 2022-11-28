@@ -33,6 +33,11 @@ if ($conn->query($sqlinso) === TRUE) {
 
 if ($conn->query($sqlUPORDER) === TRUE) {
   echo "Record updated successfully";
+ 
+ //ADD ADDRESS+++++++++++++++++++++
+ 
+ 
+ 
 } else {
   echo "Error updating record: " . $conn->error;
 }
