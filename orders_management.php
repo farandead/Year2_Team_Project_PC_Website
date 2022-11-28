@@ -99,9 +99,9 @@
             </ul>
             
             <!--Admin Panel-->
-        <div class="container-fluid mt-1">
+            <div class="container-fluid">
             <div class="row">
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 px-4" style="margin-top: -15px;">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-4" style="margin-top: -15px;">
         <a href="#" class="navbar-brand">Admin</a>
  
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
