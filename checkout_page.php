@@ -129,7 +129,7 @@ header("Location: index.php");
   <option value="volvo">Volvo</option>
                         
                         <?php 
-                        //Here to list addresses
+                        require "PHP/ListAddresses.php ";
                         ?>
                         
 </select>
