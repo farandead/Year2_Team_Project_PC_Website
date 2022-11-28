@@ -15,7 +15,7 @@ echo "
                   <td> <form action =\"PHP/AddNewManAction.php\" method=\"post\">     
                   
                    <select name=\"Cats\" id=\"Cats\" required >
-                  <option value="" selected disabled>Select</option>
+                  <option value=\"\" selected disabled>Select</option>
                   
                   </select>
                   
