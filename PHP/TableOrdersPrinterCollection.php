@@ -24,7 +24,7 @@ while($row=mysqli_fetch_assoc($query)){
   
   while($rowPr=mysqli_fetch_assoc($queryPr)){
     $counter++;
-    if($counter==1){ $Products=$rowPr['Product_ID']."X".$rowPr['Amount_Product'];}else{ $Products= $Products.", ".$rowPr['Product_ID']."X".$rowPr['Amount_Product'];}
+    if($counter==1){ $Products=$rowPr['Product_ID']."(".$rowPr['Amount_Product'].")";}else{ $Products= $Products.", ".$rowPr['Product_ID']."(".$rowPr['Amount_Product'].")";}
  
   }
   
