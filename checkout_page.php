@@ -116,7 +116,7 @@ header("Location: index.php");
     <div class="mainscreen dark_target">
         <div class="card">
             <div class="leftside">
-               <img src="img/AGILITY_PRO.webp" alt="">
+               <img src="Products/Images/<?PHP echo $idpr."jpg"; ?>" alt="">
             </div>
             <div class="rightside dark_target" >
                 <form action="PHP/BuyNow.php" method="post">
