@@ -9,7 +9,7 @@ $sql = "SELECT * FROM Product WHERE Product_ID=$idpr";
 if ($result=mysqli_query($conn,$sql)) {
     $rowcount=mysqli_num_rows($result);
     if($rowcount=1){
-    $product=mysql_fetch_row($result);
+    $product=mysqli_fetch_assoc($result);
     }
     else{header("Location: index.php");}
 }else{header("Location: index.php");}
