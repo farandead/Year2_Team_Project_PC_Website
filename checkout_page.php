@@ -119,7 +119,7 @@ header("Location: index.php");
             </div>
             <div class="rightside dark_target" >
                 <form action="">
-                    <p id="product_name">PRODUCT NAME</p>
+                    <p id="product_name"><?php echo $product['Product_Name'];?></p>
                     <p id="payment_information_heading">Payment Information</p>
                     <p>Cardholder Name</p>
                     <input type="text" class="inputbox dark_target" name="name" required />
