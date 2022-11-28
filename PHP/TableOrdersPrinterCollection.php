@@ -6,7 +6,7 @@ $templateRow="";
 $sql="SELECT * FROM OrderP WHERE NOT Order_Status ='Basket'";
   $query=mysqli_query($conn, $sql);
 while($row=mysqli_fetch_assoc($query)){
-  
+  $OrderID=base64_encode($row['Order_ID']);
   $st1=null;
   $st2=null;
   $st3=null;
@@ -44,7 +44,9 @@ echo "
                   <td>".$row['Order_ID']."</td>
                   <td>".$Products."</td>
                   <td>".$row['User_ID']."</td>
-                  <td> ".$row['Order_Status'].": <form action =\"PHP/updateOrderSt.php\" method=\"post\">     
+                  <td> ".$row['Order_Status'].": 
+                  
+                  <form action =\"PHP/updateOrderSt.php?OI=".$OrderID."\" method=\"post\">     
                   
                    <select name=\"Statuses\" id=\"Statuses\" required >
                   <option value=\"InProcess\" ".$st1.">I&#173;n Process</option>
