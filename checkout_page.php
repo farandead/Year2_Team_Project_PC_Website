@@ -2,7 +2,20 @@
 session_start();
 
 if(isset($_GET['ProductID']) and ($_SESSION['login'])){
-"connect_db.php";
+    
+    $idpr=$_GET['ProductID'];
+require "connect_db.php";
+$sql = "SELECT * FROM Product WHERE Product_ID=$idpr";
+if ($result=mysqli_query($conn,$sql)) {
+    $rowcount=mysqli_num_rows($result);
+    if($rowcount=1){
+    $product=mysql_fetch_row($result);
+    }
+    else{header("Location: index.php");}
+}else{header("Location: index.php");}
+    
+    
+    
 }else{
 header("Location: index.php");
 }
