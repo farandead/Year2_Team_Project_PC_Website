@@ -119,6 +119,8 @@ header("Location: index.php");
             </div>
             <div class="rightside dark_target" >
                 <form action="PHP/BuyNow.php?Product=".$idpr."">
+                    <input type='hidden' name="price" value=" <?php echo $idpr; ?> " /> 
+                    <input type='hidden' name="id" value=" <?php echo  $idpr; ?> " /> 
                     <p id="product_name"><?php echo $product['Product_Name'];?></p>
                     <p id="payment_information_heading">Payment Information:£ <?php 
                         
