@@ -156,6 +156,7 @@
                   <th>Total Price</th>
               </tr>
           </thead>
+                <?php PHP/TableOrdersPrinterCollection.php ?>
               <tr>
                   <td>ID#</td>
                   <td>Items</td>
