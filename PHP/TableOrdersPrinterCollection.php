@@ -58,7 +58,7 @@ echo "
                                   
     </form> 
     </td>
-                  <td>Total ".$row['Total_Price']."</td>
+                  <td>".$row['Total_Price']."</td>
                   <td> ".$Address."</td>
               </tr>";
   
