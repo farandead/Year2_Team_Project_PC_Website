@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if(isset($_POST['updateStO'])){
+if(isset($_POST['updateStO']) and isset($_POST['Statuses'])){
 $OrderID= base64_decode($_GET['OI']);
 $Status=$_POST['Statuses'];
   echo $OrderID;
@@ -19,5 +19,5 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
   
-}
+}else{ header("Location: ../orders_management.php");}
 ?>
