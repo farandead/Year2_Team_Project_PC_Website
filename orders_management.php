@@ -149,11 +149,11 @@
         <table id="example" class="table table-striped" style="width: 100%;">
           <thead>
               <tr>
-                  <th>Order ID#</th>
+                  <th>Order ID</th>
                   <th>Items Ordered</th>
                   <th>Customer</th>
                   <th>Status</th>
-                  <th>Total Price</th>
+                  <th>Total Price(£)</th>
                   <th>Delivery address</th>
                      
               </tr>
