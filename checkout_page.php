@@ -127,9 +127,11 @@ header("Location: index.php");
                     
                     <select name="cars" id="cars">
   <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
+                        
+                        <?php 
+                        //Here to list addresses
+                        ?>
+                        
 </select>
                     
                     <p id="payment_information_heading">Payment Information:£ <?php 
