@@ -110,16 +110,16 @@ require "PHP/CheckAdminAccess.php";
             <span class="navbar-toggler-icon"></span>
         </button>
  
-         <div class="collapse navbar-collapse" id="navmenu">
+        <div class="collapse navbar-collapse" id="navmenu">
              <ul class="navbar-nav ms-auto">
                  <li class="nav-item">
-                     <a href="#" class="nav-link">Admin applications</a>
+                     <a href="accept_admin_page.html" class="nav-link">Admin applications</a>
                  </li>
                  <li class="nav-item">
-                     <a href="#" class="nav-link">Order management</a>
+                     <a href="orders_management.php" class="nav-link">Order management</a>
                  </li>
                  <li class="nav-item">
-                     <a href="accounts_base_page.html" class="nav-link">Accounts page</a>
+                     <a href="accounts_base_page.php" class="nav-link">Accounts page</a>
                  </li>
                  
                  
