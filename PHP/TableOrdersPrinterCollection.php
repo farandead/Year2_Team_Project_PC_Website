@@ -12,13 +12,13 @@ echo "
                   <td>".$row['Order_ID']."</td>
                   <td>Items</td>
                   <td>".$row['User_ID']."</td>
-                  <td> <form action =\"PHP/AddNewManAction.php\" method=\"post\">     
+                  <td> <form action =\"PHP/updateOrderSt.php\" method=\"post\">     
                   
-                   <select name=\"Cats\" id=\"Cats\" required >
-                  <option value=\"\"  disabled>InProcess</option>
-                  <option value=\"\"  disabled>Shiped</option>
-                  <option value=\"\"  disabled>Delivered</option>
-                  <option value=\"\"  disabled>Declined</option>
+                   <select name=\"Statuses\" id=\"Statuses\" required >
+                  <option value=\"InProcess\"  disabled>In Process</option>
+                  <option value=\"Shiped\"  disabled>Shiped</option>
+                  <option value=\"Delivered\"  disabled>Delivered</option>
+                  <option value=\"Declined\"  disabled>Declined</option>
                   </select>
                   
                   
