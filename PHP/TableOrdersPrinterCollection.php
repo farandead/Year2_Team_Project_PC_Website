@@ -12,10 +12,10 @@ while($row=mysqli_fetch_assoc($query)){
   $st3=null;
   $st4=null;
   
-  if($row['Order_Status']=="InProcess"){$st1="selected";}
-  elseif($row['Order_Status']=="Shiped"){$st2="selected";}
-  elseif($row['Order_Status']=="Delivered"){$st3="selected";}
-  elseif($row['Order_Status']=="Declined"){$st4="selected";}
+  if($row['Order_Status']=="InProcess"){$st1="selected disabled ";}
+  elseif($row['Order_Status']=="Shiped"){$st2="selected disabled ";}
+  elseif($row['Order_Status']=="Delivered"){$st3="selected disabled ";}
+  elseif($row['Order_Status']=="Declined"){$st4="selected disabled ";}
   
   $Products="";
   $sqlPr="SELECT * FROM Linked_Order_and_Products WHERE Order_ID ='".$row['Order_ID']."'";
