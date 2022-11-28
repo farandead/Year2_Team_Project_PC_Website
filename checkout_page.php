@@ -1,7 +1,7 @@
 <?php ob_start();
 session_start();
-
-if(isset($_GET['ProductID']) and ($_SESSION['login'])){
+if(!($_SESSION['login'])){ header("Location: Sign_up_new.php");}
+if(isset($_GET['ProductID'])){
     
     $idpr=$_GET['ProductID'];
 require "PHP/connect_db.php";
