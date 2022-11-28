@@ -154,6 +154,7 @@
                   <th>Customer</th>
                   <th>Status</th>
                   <th>Total Price</th>
+                  <th>Delivery address</th>
                      
               </tr>
           </thead>
