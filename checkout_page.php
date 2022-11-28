@@ -1,6 +1,6 @@
 <?php ob_start();
 session_start();
-if(!($_SESSION['login'])){ header(Location: Sign_up_new.php);}
+if(!($_SESSION['login'])){ header("Location: Sign_up_new.php");}
 if(isset($_GET['ProductID'])){
     
     $idpr=$_GET['ProductID'];
