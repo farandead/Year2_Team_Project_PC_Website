@@ -118,7 +118,7 @@ header("Location: index.php");
                <img src="img/AGILITY_PRO.webp" alt="">
             </div>
             <div class="rightside dark_target" >
-                <form action="">
+                <form action="PHP/BuyNow.php?Product=".$idpr."">
                     <p id="product_name"><?php echo $product['Product_Name'];?></p>
                     <p id="payment_information_heading">Payment Information:£ <?php 
                         
@@ -145,7 +145,7 @@ header("Location: index.php");
                         <input type="password" class="inputbox dark_target " name="cvv" id="cvv" required />
                     </div>
                     <p></p>
-                    <button type="submit" class="button">CheckOut</button>
+                    <button type="submit" name ="buy" class="button">CheckOut</button>
                 </form>
             </div>
         </div>
