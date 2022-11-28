@@ -5,7 +5,7 @@ $resultAdr=mysqli_query($conn,$sqlAdr);
 while($row=mysqli_fetch_assoc($resultAdr)){
 
   $addressid=$row['Address_ID'];
-  $address=$row['Country'].$row['City'].$row['Street'].$row['ZIP'];
+  $address=$row['Country'].", ".$row['City'].", ".$row['Street'].", ".$row['ZIP'];
   echo ' <option value="'.$addressid.'">'.$address.'</option>';
 
 
