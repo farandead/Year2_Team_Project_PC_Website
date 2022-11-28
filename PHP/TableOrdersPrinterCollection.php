@@ -20,8 +20,12 @@ while($row=mysqli_fetch_assoc($query)){
   $Products="";
   $sqlPr="SELECT * FROM Linked_Order_and_Products WHERE Order_ID ='".$row['Order_ID']."'";
   $queryPr=mysqli_query($conn, $sqlPr);
+  $counter=0;
+  
   while($rowPr=mysqli_fetch_assoc($queryPr)){
-  $Products= $Products.", ".$rowPr['Product_ID'];
+    $counter++;
+    if($counter==1){ $Products=$rowPr['Product_ID'];}else{ $Products= $Products.", ".$rowPr['Product_ID'];}
+ 
   }
   
 echo "
