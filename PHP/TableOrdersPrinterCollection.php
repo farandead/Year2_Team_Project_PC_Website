@@ -31,7 +31,7 @@ while($row=mysqli_fetch_assoc($query)){
   $Address="";
   $sqlAdr="SELECT * FROM Linked_Address_and_Order WHERE Order_ID ='".$row['Order_ID']."'";
   $queryAdr=mysqli_query($conn, $sqlAdr);
-  $resAdr=mysqli_fetch_assoc($sqlAdr);
+  $resAdr=mysqli_fetch_assoc($queryAdr);
   $adrID=$resAdr['Address_ID'];
   
   $sqlAdrD="SELECT * FROM Delivery_address WHERE Address_ID ='".$adrID."'";
