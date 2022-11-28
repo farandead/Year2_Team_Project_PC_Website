@@ -37,7 +37,7 @@ while($row=mysqli_fetch_assoc($query)){
   $sqlAdrD="SELECT * FROM Delivery_address WHERE Address_ID ='".$adrID."'";
   $queryAdrD=mysqli_query($conn, $sqlAdrD);
   $resAdrD=mysqli_fetch_assoc($queryAdrD);
-  $Address=$resAdrD['Country'];
+  $Address=$resAdrD['Country'].", ".$resAdrD['City'].", ".$resAdrD['Street'].", ".$resAdrD['ZIP'];
 echo "
 
                 <tr>
