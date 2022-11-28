@@ -7,15 +7,15 @@ $sql="SELECT * FROM OrderP WHERE NOT Order_Status ='Basket'";
   $query=mysqli_query($conn, $sql);
 while($row=mysqli_fetch_assoc($query)){
   $OrderID=base64_encode($row['Order_ID']);
-  $st1=null;
-  $st2=null;
-  $st3=null;
-  $st4=null;
+  $st1=null;$v1="InProcess";
+  $st2=null;$v2="Shiped";
+  $st3=null;$v3="Delivered";
+  $st4=null;$v4="Declined";
   
-  if($row['Order_Status']=="InProcess"){$st1="selected disabled ";}
-  elseif($row['Order_Status']=="Shiped"){$st2="selected disabled ";}
-  elseif($row['Order_Status']=="Delivered"){$st3="selected disabled ";}
-  elseif($row['Order_Status']=="Declined"){$st4="selected disabled ";}
+  if($row['Order_Status']=="InProcess"){$st1="selected disabled ";$v1=null;}
+  elseif($row['Order_Status']=="Shiped"){$st2="selected disabled ";$v2=null;}
+  elseif($row['Order_Status']=="Delivered"){$st3="selected disabled ";$v3=null;}
+  elseif($row['Order_Status']=="Declined"){$st4="selected disabled ";$v4=null;}
   
   $Products="";
   $sqlPr="SELECT * FROM Linked_Order_and_Products WHERE Order_ID ='".$row['Order_ID']."'";
@@ -49,10 +49,10 @@ echo "
                   <form action =\"PHP/updateOrderSt.php?OI=".$OrderID."\" method=\"post\">     
                   
                    <select name=\"Statuses\" id=\"Statuses\" required >
-                  <option value=\"InProcess\" ".$st1.">I&#173;n Process</option>
-                  <option value=\"Shiped\" ".$st2.">S&#173;hiped</option>
-                  <option value=\"Delivered\" ".$st3.">D&#173;elivered</option>
-                  <option value=\"Declined\" ".$st4.">D&#173;eclined</option>
+                  <option value=\"".$v1."\" ".$st1.">I&#173;n Process</option>
+                  <option value=\"".$v2."\" ".$st2.">S&#173;hiped</option>
+                  <option value=\"".$v3."\" ".$st3.">D&#173;elivered</option>
+                  <option value=\"".$v4."\" ".$st4.">D&#173;eclined</option>
                   </select>
                   
                   
