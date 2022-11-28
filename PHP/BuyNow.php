@@ -18,7 +18,7 @@ if ($resultIDO=mysqli_query($conn,$sqlIDO)) {
     $rowcount=mysqli_num_rows($resultIDO);
     if($rowcount=1){
     $IDorder=mysqli_fetch_assoc($resultIDO);
-        
+        $IDorder=$IDorder['Order_ID'];
       
       
       
