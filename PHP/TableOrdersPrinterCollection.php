@@ -12,7 +12,9 @@ echo "
                   <td>".$row['Order_ID']."</td>
                   <td>Items</td>
                   <td>".$row['User_ID']."</td>
-                  <td>Status</td>
+                  <td> <form action =\"PHP/AddNewManAction.php\" method=\"post\"> Status    <input type=\"submit\" name=\"updateStO\" value=\"Update\">
+    </form> 
+    </td>
                   <td>Total ".$row['Total_Price']."</td>
               </tr>";
   
