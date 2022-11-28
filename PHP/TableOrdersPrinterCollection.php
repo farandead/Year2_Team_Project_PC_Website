@@ -48,7 +48,7 @@ echo "
                   
                    <select name=\"Statuses\" id=\"Statuses\" required >
                   <option value=\"InProcess\" ".$st1.">In Process</option>
-                  <option value=\"Shiped\" ".$st2.">Shiped</option>
+                  <option value=\"S_hiped\" ".$st2.">Shiped</option>
                   <option value=\"Delivered\" ".$st3.">Delivered</option>
                   <option value=\"Declined\" ".$st4.">Declined</option>
                   </select>
