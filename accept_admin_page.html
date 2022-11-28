@@ -131,7 +131,7 @@
 
 <!--Accept Admin Table-->
 <section class ="table">
-    <div class="container1 d-flex justify-content-center align-items-center">
+    <div class="container1 d-flex justify-content-center align-items-center py-2">
       <div class="row"></div>
       <h1>'</h1>
     </div>
@@ -139,7 +139,7 @@
 
     <div class="container1 mt-5 d-flex justify-content-center align-items-center mt-5 py-5">
       <div class="row"></div>
-      <h1>Admin Acoount management</h1>
+      <h1>Orders Management Table</h1>
     </div>
   </div>
 
@@ -148,54 +148,29 @@
         <table id="example" class="table table-striped" style="width: 100%;">
           <thead>
               <tr>
-                  <th>ID</th>
-                  <th>Email</th>
-                  <th>Phone number</th>
-                  <th>Name</th>
-                  <th>Admin or Non-Admin</th>
+                  <th>Order ID</th>
+                  <th>Items Ordered</th>
+                  <th>Customer</th>
+                  <th>Status</th>
+                  <th>Total Price(£)</th>
+                  <th>Delivery address</th>
+                     
               </tr>
-              <tr>
-                <th>ID</th>
-                <th>Email</th>
-                <th>Phone number</th>
-                <th>Name</th>
-                <th><div class="btn-group 1" role="group" aria-label="Basic checkbox toggle button group">
-                    <input type="checkbox" class="btn-check 1" id="btncheck1 1" autocomplete="off">
-                    <label class="btn btn-outline-dark" for="btncheck1 1">Admin</label>
-                  
-                    <input type="checkbox" class="btn-check 1" id="btncheck2 1" autocomplete="off">
-                    <label class="btn btn-outline-dark" for="btncheck2 1">Non-Admin</label>
-                  </div></th>
-            </tr>
-            <tr>
-                <th>ID</th>
-                <th>Email</th>
-                <th>Phone number</th>
-                <th>Name</th>
-                <th><div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                    <label class="btn btn-outline-dark" for="btncheck1">Admin</label>
-                  
-                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                    <label class="btn btn-outline-dark" for="btncheck2">Non-Admin</label>
-                  </div></th>
-            </tr>
-          </thead> 
-    </table>
+          </thead>
+                <?php require "PHP/TableOrdersPrinterCollection.php"; ?>
+
+        </table>
+    </div>
   </div>
-</div>
 </section>
 
 
 
-<script src="//code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
-<script src="./js/admin_data_table.js"></script>
+      <script src="//code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+      <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+      <script src="./js/admin_data_table.js"></script>
 
-
+      
 </body>
-</html> 
-    
-</body>
-</html>
+</html
