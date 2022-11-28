@@ -2,7 +2,7 @@
 ob_start();
 if(isset($_POST['updateStO'])){
 $OrderID= base64_decode($_GET['OI']);
-$Status=$_POsT['Statuses'];
+$Status=$_POST['Statuses'];
   echo $OrderID;
   echo $Status;
   
