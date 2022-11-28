@@ -126,7 +126,7 @@ header("Location: index.php");
                     <p id="payment_information_heading">Delivery address:</p>
                     
                     <select name="cars" id="cars">
-  <option value="volvo">Volvo</option>
+
                         
                         <?php 
                         require "PHP/ListAddresses.php";
