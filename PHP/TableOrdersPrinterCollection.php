@@ -3,7 +3,7 @@
 require "connect_db.php";
 
 $templateRow="";
-$sql="SELECT * FROM OrderP WHERE NOT Order_Status ='Basket' OR NOT Order_Status ='BuyNow'";
+$sql="SELECT * FROM OrderP WHERE NOT Order_Status ='Basket' AND NOT Order_Status ='BuyNow'";
   $query=mysqli_query($conn, $sql);
 while($row=mysqli_fetch_assoc($query)){
   $OrderID=base64_encode($row['Order_ID']);
