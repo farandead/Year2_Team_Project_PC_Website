@@ -44,13 +44,13 @@ echo "
                   <td>".$row['Order_ID']."</td>
                   <td>".$Products."</td>
                   <td>".$row['User_ID']."</td>
-                  <td> ".$row['Order_Status']." <form action =\"PHP/updateOrderSt.php\" method=\"post\">     
+                  <td> ".$row['Order_Status'].": <form action =\"PHP/updateOrderSt.php\" method=\"post\">     
                   
                    <select name=\"Statuses\" id=\"Statuses\" required >
-                  <option value=\"InProcess\" ".$st1.">In Process</option>
+                  <option value=\"InProcess\" ".$st1.">I&#173;n Process</option>
                   <option value=\"Shiped\" ".$st2.">S&#173;hiped</option>
-                  <option value=\"Delivered\" ".$st3.">Delivered</option>
-                  <option value=\"Declined\" ".$st4.">Declined</option>
+                  <option value=\"Delivered\" ".$st3.">D&#173;elivered</option>
+                  <option value=\"Declined\" ".$st4.">D&#173;eclined</option>
                   </select>
                   
                   
