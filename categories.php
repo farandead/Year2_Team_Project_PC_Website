@@ -61,7 +61,7 @@ require "PHP/StatusSetter.php";
        
     <!-- -->
     <?php 
-    require "PHP/AdminviewCt.php";
+   // require "PHP/AdminviewCt.php";
     require "PHP/CategoriesCollectionPrinter.php";
     ?>
     </div>
