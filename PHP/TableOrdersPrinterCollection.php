@@ -17,11 +17,18 @@ while($row=mysqli_fetch_assoc($query)){
   elseif($row['Order_Status']=="Delivered"){$st3="selected";}
   elseif($row['Order_Status']=="Declined"){$st4="selected";}
   
+  $Products="";
+  $sqlPr="SELECT * FROM Linked_Order_and_Products WHERE Order_ID ='".$row['Order_ID']."'";
+  $queryPr=mysqli_query($conn, $sqlPr);
+  while($rowPr=mysqli_fetch_assoc($queryPr)){
+  $Products= $Products.", ".$rowP['Product_ID'];
+  }
+  
 echo "
 
                 <tr>
                   <td>".$row['Order_ID']."</td>
-                  <td>Items</td>
+                  <td>".$Products."</td>
                   <td>".$row['User_ID']."</td>
                   <td> <form action =\"PHP/updateOrderSt.php\" method=\"post\">     
                   
