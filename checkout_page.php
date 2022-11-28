@@ -124,6 +124,14 @@ header("Location: index.php");
                     <input type='hidden' name="id" value=" <?php echo  $idpr; ?> " /> 
                     <p id="product_name"><?php echo $product['Product_Name'];?></p>
                     <p id="payment_information_heading">Delivery address:</p>
+                    
+                    <select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+                    
                     <p id="payment_information_heading">Payment Information:£ <?php 
                         
                         
