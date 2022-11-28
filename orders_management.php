@@ -154,65 +154,10 @@
                   <th>Customer</th>
                   <th>Status</th>
                   <th>Total Price</th>
+                      <th>Address</th>
               </tr>
           </thead>
                 <?php require "PHP/TableOrdersPrinterCollection.php"; ?>
-              <tr>
-                  <td>ID#</td>
-                  <td>Items</td>
-                  <td>Customer</td>
-                  <td>Status</td>
-                  <td>Total Price</td>
-              </tr>
-              <tr>
-                <td>ID#</td>
-                <td>Items</td>
-                <td>Customer</td>
-                <td>Status</td>
-                <td>Total Price</td>
-            </tr>
-            <tr>
-                <td>ID#</td>
-                <td>Items</td>
-                <td>Customer</td>
-                <td>Status</td>
-                <td>Total Price</td>
-            </tr>
-            <tr>
-                <td>ID#</td>
-                <td>Items</td>
-                <td>Customer</td>
-                <td>Status</td>
-                <td>Total Price</td>
-            </tr>
-            <tr>
-                <td>ID#</td>
-                <td>Items</td>
-                <td>Customer</td>
-                <td>Status</td>
-                <td>Total Price</td>
-            </tr>
-            <tr>
-                <td>ID#</td>
-                <td>Items</td>
-                <td>Customer</td>
-                <td>Status</td>
-                <td>Total Price</td>
-            </tr>
-            <tr>
-                <td>ID#</td>
-                <td>Items</td>
-                <td>Customer</td>
-                <td>Status</td>
-                <td>Total Price</td>
-            </tr>
-            <tr>
-                <td>ID#</td>
-                <td>Items</td>
-                <td>Customer</td>
-                <td>Status</td>
-                <td>Total Price</td>
-            </tr>
 
         </table>
     </div>
