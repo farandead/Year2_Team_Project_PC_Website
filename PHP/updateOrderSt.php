@@ -8,5 +8,15 @@ $Status=$_POST['Statuses'];
   
  require "connect_db.php";
   
+ $sql = "UPDATE OrderP SET Order_Status='$Status' WHERE Order_ID=$OrderID";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Record updated successfully";
+} else {
+  echo "Error updating record: " . $conn->error;
+}
+
+$conn->close();
+  
 }
 ?>
