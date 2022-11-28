@@ -1,3 +1,4 @@
+<?php require "PHP/CheckAdminAccess.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
