@@ -6,6 +6,17 @@ $templateRow="";
 $sql="SELECT * FROM OrderP WHERE NOT Order_Status ='Basket'";
   $query=mysqli_query($conn, $sql);
 while($row=mysqli_fetch_assoc($query)){
+  
+  $st1=null;
+  $st2=null;
+  $st3=null;
+  $st4=null;
+  
+  if($row['Order_Status']=="InProcess"){$st1="selected";}
+  elseif($row['Order_Status']=="Shiped"){$st2="selected";}
+  elseif($row['Order_Status']=="Delivered"){$st3="selected";}
+  elseif($row['Order_Status']=="Declined"){$st4="selected";}
+  
 echo "
 
                 <tr>
@@ -15,10 +26,10 @@ echo "
                   <td> <form action =\"PHP/updateOrderSt.php\" method=\"post\">     
                   
                    <select name=\"Statuses\" id=\"Statuses\" required >
-                  <option value=\"InProcess\"  disabled>In Process</option>
-                  <option value=\"Shiped\"  disabled>Shiped</option>
-                  <option value=\"Delivered\"  disabled>Delivered</option>
-                  <option value=\"Declined\"  disabled>Declined</option>
+                  <option value=\"InProcess\" ".$st1.">In Process</option>
+                  <option value=\"Shiped\" ".$st2.">Shiped</option>
+                  <option value=\"Delivered\" ".$st3.">Delivered</option>
+                  <option value=\"Declined\" ".$st4.">Declined</option>
                   </select>
                   
                   
