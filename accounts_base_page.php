@@ -137,7 +137,7 @@ require "PHP/CheckAdminAccess.php";
        <section class ="table">
         <div class="container1 d-flex justify-content-center align-items-center py-2">
           <div class="row"></div>
-          <h1>Accounts Base Page</h1>
+          <h1>'</h1>
         </div>
       </div>
 

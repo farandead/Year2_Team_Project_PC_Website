@@ -135,7 +135,7 @@
 <section class ="table">
     <div class="container1 d-flex justify-content-center align-items-center py-2">
       <div class="row"></div>
-      <h1>Orders Management Table</h1>
+      <h1>'</h1>
     </div>
   </div>
 
