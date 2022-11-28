@@ -59,6 +59,7 @@ echo "
     </form> 
     </td>
                   <td>Total ".$row['Total_Price']."</td>
+                  <td> test</td>
               </tr>";
   
 
