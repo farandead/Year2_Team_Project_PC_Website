@@ -35,6 +35,19 @@ if ($conn->query($sqlUPORDER) === TRUE) {
   echo "Record updated successfully";
  
  //ADD ADDRESS+++++++++++++++++++++
+ $addressToD=$_POST['addresses'];
+ $sqlLinkAdOrd = "INSERT INTO Linked_Address_and_Order (Order_ID, Address_ID)
+VALUES ('$IDorder', '$addressToD')";
+
+if ($conn->query($sqlLinkAdOrd) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sqlLinkAdOrd . "<br>" . $conn->error;
+}
+ 
+ 
+ 
+ 
  
  
  
