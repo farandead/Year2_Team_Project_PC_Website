@@ -10,6 +10,7 @@ if ($result=mysqli_query($conn,$sql)) {
     $rowcount=mysqli_num_rows($result);
     if($rowcount=1){
     $product=mysqli_fetch_assoc($result);
+        $price=round($product['Product_Price']-$product['Product_Price']*$product['Product_Discount']/100,2);
     }
     else{header("Location: index.php");}
 }else{header("Location: index.php");}
@@ -124,7 +125,7 @@ header("Location: index.php");
                     <p id="product_name"><?php echo $product['Product_Name'];?></p>
                     <p id="payment_information_heading">Payment Information:£ <?php 
                         
-                        $price=round($product['Product_Price']-$product['Product_Price']*$product['Product_Discount']/100,2);
+                        
                         echo  $price; ?></p>
                     <p>Cardholder Name</p>
                     <input type="text" class="inputbox dark_target" name="name" required />
