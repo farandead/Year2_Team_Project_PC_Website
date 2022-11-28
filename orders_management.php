@@ -147,7 +147,7 @@
 
 <div class="container2 me-4 ms-4">
   <div class="row">
-        <table id="example" class="table table-striped" style="width: 100%;">
+        <table id="example" class="table table-striped" style="margin-top: -15px;">
           <thead>
               <tr>
                   <th>Order ID</th>
