@@ -122,7 +122,7 @@ header("Location: index.php");
                     <p id="product_name"><?php echo $product['Product_Name'];?></p>
                     <p id="payment_information_heading">Payment Information:£ <?php 
                         
-                        $price=round($row['Product_Price']-$row['Product_Price']*$row['Product_Discount']/100,2);
+                        $price=round($product['Product_Price']-$product['Product_Price']*$product['Product_Discount']/100,2);
                         echo  $price; ?></p>
                     <p>Cardholder Name</p>
                     <input type="text" class="inputbox dark_target" name="name" required />
