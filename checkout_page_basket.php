@@ -7,6 +7,7 @@ session_start();
 if(!($_SESSION['login'])){ header("Location: ../Sign_up_new.php");}
 require "PHP/connect_db.php";
 
+    $orderID=$_POST['orderID'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
