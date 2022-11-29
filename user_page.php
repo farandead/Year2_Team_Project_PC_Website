@@ -67,56 +67,111 @@ try {
     <?php require 'header.php'; ?>
     
    
-
-    <div class="container1">
-        <div class="OrdersBox">
-            
-            <div class= "title">
-                <h1 class="helloUser">Hello <?php echo ucfirst($_SESSION['User_FName']); ?> !</h1>
-                <h2 class="subheading">Order History: </h2>
-            </div>
-            <table class = "orderTable">
-            <tr>
-                <th>Order ID</th>
-                <th>Date</th>
-                <th>Payment Status</th>
-                <th>Fulfillment Status</th>
-                <th>Total Price</th>
-            </tr>
-                <?php 
-                 $sql = "SELECT * FROM OrderP WHERE User_ID=? ";
-                $result = $conn->prepare($sql);
-                $result->execute(array($_SESSION['User_ID']));
-                $count = $result->rowCount();
+    <div class="grid-container">
+        <div class="container1">
+            <div class="OrdersBox">
                 
-                
-                if ($count > 0) {
-                    while ($row = $result->fetch(PDO::FETCH_ASSOC)) { ?>
-                        <tr>
-                            <td><?php echo $row['Order_ID'] ?></td>
-                            <td>x</td>
-                            <td><?php echo $row['Order_Status'] ?></td>
-                            <td>x</td>
-                            <td><?php echo $row['Total_Price'] ?></td>
-                            
-                        </tr>
-                       <?php  }
-                }else { 
-                ?> <p style="color:red;"><?php echo "There is no previous order" ?> </p>
-                <?php
-                }
-                
-                
-                ?>
-                   
-            </table>
-        </div>
-
-        
-        
+                <div class= "title">
+                    <h1 class="helloUser">Hello <?php echo ucfirst($_SESSION['User_FName']); ?> !</h1>
+                    <h2 class="subheading">Order History: </h2>
+                </div>
+                <table class = "orderTable">
+                <tr>
+                    <th>Order ID</th>
+                    <th>Date</th>
+                    <th>Payment Status</th>
+                    <th>Fulfillment Status</th>
+                    <th>Total Price</th>
+                </tr>
+                    <?php 
+                    $sql = "SELECT * FROM OrderP WHERE User_ID=? ";
+                    $result = $conn->prepare($sql);
+                    $result->execute(array($_SESSION['User_ID']));
+                    $count = $result->rowCount();
                     
-        
+                    
+                    if ($count > 0) {
+                        while ($row = $result->fetch(PDO::FETCH_ASSOC)) { ?>
+                            <tr>
+                                <td><?php echo $row['Order_ID'] ?></td>
+                                <td>x</td>
+                                <td><?php echo $row['Order_Status'] ?></td>
+                                <td>x</td>
+                                <td><?php echo $row['Total_Price'] ?></td>
+                                
+                            </tr>
+                        <?php  }
+                    }else { 
+                    ?> <p style="color:red;"><?php echo "There is no previous order" ?> </p>
+                    <?php
+                    }
+                    
+                    
+                    ?>
+                    
+                </table>
+            </div>
 
+            
+            <div class="Section">
+                <div class="col-md-8">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Full Name</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    Kenneth Valdez
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Email</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    fip@jukmuh.al
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Phone</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    (239) 816-9029
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Mobile</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    (320) 380-4539
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Address</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    Bay Area, San Francisco, CA
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a class="btn btn-info " target="__blank" href="">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     
