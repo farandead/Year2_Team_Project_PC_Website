@@ -5,7 +5,7 @@ while($row=mysqli_fetch_assoc($queryPrL)){
 
   
   $prodid=$row['Product_ID'];
-$sqlPr="SELECT * FROM Linked_Order_and_Products WHERE  Product_ID ='$prodid'";
+$sqlPr="SELECT * FROM Product WHERE  Product_ID ='$prodid'";
 $queryPr=mysqli_query($conn, $sqlPr);
   $productinfo=mysqli_fetch_assoc($queryPr);
   
