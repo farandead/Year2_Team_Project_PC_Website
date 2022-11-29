@@ -155,12 +155,14 @@
                 <th>Admin or Non-Admin</th>      
               </tr>
                   <?php 
-                        require "PHP/TableAdminsPrinterCollection.php";
+                        //require "PHP/TableAdminsPrinterCollection.php";
                         ?>      
                   
              
           </thead>
-
+ <?php 
+                        require "PHP/TableAdminsPrinterCollection.php";
+                        ?>    
         </table>
     </div>
   </div>
