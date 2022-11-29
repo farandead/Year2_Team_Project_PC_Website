@@ -43,7 +43,7 @@ session_start();
 
 <div class="shopping-box">
     <div class="shopping_con">
-        <div class="shopping_title">PRODUCT LIST</div> <?php if(!(isset($_SESSION['login']))){echo '<a hreaf= "Sign_up_new.php"> Sign in</a>';} ?>
+        <div class="shopping_title">PRODUCT LIST</div> <?php if(!(isset($_SESSION['login']))){echo '<a href= "Sign_up_new.php"> Sign in</a>';} ?>
         <div class="">
              <form action ="PHP/CheckOutBasket.php" method="post">
         <?php
