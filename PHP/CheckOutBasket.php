@@ -31,6 +31,7 @@ if ($conn->query($sqlUp) === TRUE) {
     
    $orderID= $idor;
     require "TotalPriceCounter.php";
+    require "setBS.php";
     echo "<script type=\"text/javascript\"> 
                 window.onload=function(){
                     document.forms['passlist'].submit();
