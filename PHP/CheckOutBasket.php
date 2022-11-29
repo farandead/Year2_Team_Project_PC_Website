@@ -28,6 +28,9 @@ if ($conn->query($sqlUp) === TRUE) {
     echo '<form style="text-align:center;" id="passlist" name="passlist" action="../checkout_page_basket.php" method="POST">';
      echo " <input type='hidden' name='orderID' value='".$idor."'>";
     echo "</form>";
+    
+   $orderID= $idor;
+    require "TotalPriceCounter.php";
     echo "<script type=\"text/javascript\"> 
                 window.onload=function(){
                     document.forms['passlist'].submit();
