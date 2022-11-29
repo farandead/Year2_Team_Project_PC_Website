@@ -1,5 +1,8 @@
 <?php 
-//ob_start();
+//
+
+if(isset($_POST['orderID'])){
+ob_start();
 session_start();
 if(!($_SESSION['login'])){ header("Location: ../Sign_up_new.php");}
 
@@ -261,3 +264,4 @@ if(!($_SESSION['login'])){ header("Location: ../Sign_up_new.php");}
 
 
 </body>
+<?php }else{ header("Location: index.php");} ?>
