@@ -103,11 +103,7 @@ require "PHP/connect_db.php";
     <div class="mainscreen dark_target">
         <div class="card">
             <div class="leftside">
-               awdadawd
-                adwadawda
-                adawdawd
-                adawdawd
-                adawdawd
+ 
                 <?php  require "PHP/printProductsCheckOut.php";?>
             </div>
             <div class="rightside dark_target" >
