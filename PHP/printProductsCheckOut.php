@@ -7,6 +7,7 @@ $sqlPr="SELECT * FROM Linked_Order_and_Products WHERE  Product_ID ='$prodid'";
 $queryPr=mysqli_query($conn, $sqlPr);
   $productinfo=mysqli_fetch_assoc($queryPr);
   echo $productinfo['Product_ID'];
+  echo "<br>";
 
 }
 
