@@ -5,7 +5,7 @@ if(isset($_POST['orderID'])){
 ob_start();
 session_start();
 if(!($_SESSION['login'])){ header("Location: ../Sign_up_new.php");}
-
+require "PHP/connect_db.php";
 
 ?>
 <!DOCTYPE html>
@@ -108,7 +108,7 @@ if(!($_SESSION['login'])){ header("Location: ../Sign_up_new.php");}
                 <form action="PHP/BuyNow.php" method="post">
                     <input type='hidden' name="price" value=" <?php echo $price; ?> " /> 
                     <input type='hidden' name="id" value=" <?php echo  $idpr; ?> " /> 
-                    <p id="product_name"><?php echo $product['Product_Name'];?></p>
+                    <p id="product_name"><?php echo "Product name";?></p>
                     <p id="payment_information_heading">Delivery address:</p>
                     
                     <select name="addresses" id="addresses" required>
