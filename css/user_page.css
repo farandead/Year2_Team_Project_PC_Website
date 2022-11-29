@@ -193,7 +193,7 @@ input {
 	border-radius: 10px;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 		  0 10px 10px rgba(0,0,0,0.22);
-	position: absolute;
+	position: fixed;
 	top: 16px;
 	left: 16px;
     width: 850px;
@@ -407,12 +407,13 @@ body{
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
-	position: static;
+	position: fixed;
 	overflow: hidden;
 	width: 500px;
 	max-width: 50%;
 	min-height: 1000px;
-	left: 880px;
+	right: 16px;
+	top: 15px;
 	margin-top: 15px;
 }
 
