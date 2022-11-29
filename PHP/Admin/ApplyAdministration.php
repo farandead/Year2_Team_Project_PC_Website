@@ -10,7 +10,7 @@ echo "Your application is pending, please wait.";
 else{
 require "../connect_db.php";
 
-  $userId=$_SESSION['Uaer_ID'];
+  $userId=$_SESSION['User_ID'];
   $sql = "UPDATE account SET User_Status='RegAdmin' WHERE User_ID=$userId";
 
 if ($conn->query($sql) === TRUE) {
