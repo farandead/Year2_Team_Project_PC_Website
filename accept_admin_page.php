@@ -154,6 +154,10 @@
                 <th>Name</th>
                 <th>Admin or Non-Admin</th>      
               </tr>
+                  <?php 
+                        require "PHP/TableAdminsPrinterCollection.php";
+                        ?>      
+                  
               <tr>
                 <td>ID#</td>
                 <td>Email@gmail.com</td>
