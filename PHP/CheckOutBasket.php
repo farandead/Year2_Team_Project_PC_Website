@@ -1,6 +1,8 @@
 <?php
 if(isset($_POST['Update'])){
-echo "yes";
+echo "Update";
 }
-
+if(isset($_POST['CheckOut'])){
+echo "CheckOut";
+}
 ?>
