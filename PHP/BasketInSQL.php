@@ -40,7 +40,7 @@ if ($resultBas=mysqli_query($conn,$sqlBas)) {
         
       //echo "yes";
     }else{
-    echo "Something is wrong!";
+    echo "Basket is empty";
     }
 }else{
 echo "Currently empty";
