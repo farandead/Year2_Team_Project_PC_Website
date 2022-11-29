@@ -145,7 +145,7 @@ require "PHP/connect_db.php";
                     </div>
                     <p></p>
                     <button type="submit" name ="buyB" class="button">CheckOut</button>
-                    <button type="submit" name ="Cancel" class="button">Cancel</button>
+                    
                 </form>
             </div>
         </div>
