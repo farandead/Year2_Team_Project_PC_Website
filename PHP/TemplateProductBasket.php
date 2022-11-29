@@ -22,7 +22,7 @@ echo "<div class=\"devices-sub-container-product\">
 if(isset($_SESSION['User_Status'])){$DeleteLink="PHP/RemoveBasketIn.php?ITR=";
 }else{$DeleteLink="PHP/RemoveBasketOut.php?ITR=";
 }
-
+// <button> does not work due to the form!
                                echo "     
                                 </ul>
                             </div>
@@ -30,7 +30,7 @@ if(isset($_SESSION['User_Status'])){$DeleteLink="PHP/RemoveBasketIn.php?ITR=";
                                <a href='Product_Description.php?Product=".$row['Product_ID']."'> LOOK UP THIS ITEM ></a>
                             </div>
   <div class=\"product-details-buy-buttons\">
-                               <a href='".$DeleteLink.$row['Product_ID']."'> <button>REMOVE THIS ITEM ></button></a>
+                               <a href='".$DeleteLink.$row['Product_ID']."'> REMOVE THIS ITEM ></a>
                             </div>";
 
 echo "
