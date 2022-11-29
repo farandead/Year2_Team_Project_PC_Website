@@ -8,7 +8,7 @@ echo "Update";
 
 while($row=mysqli_fetch_assoc($query)){
 $PRid=$row['Product_ID'];
-$amount=$_POST['$PRid'];
+$amount=$_POST[$PRid];
 $sqlUp = "UPDATE Linked_Order_and_Products SET 	Amount_Product='$amount' WHERE Order_ID ='$idor' AND Product_ID='$PRid'";
 
 if ($conn->query($sqlUp) === TRUE) {
