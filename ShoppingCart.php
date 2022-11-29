@@ -47,7 +47,8 @@ session_start();
         <div class="">
              <form action ="PHP/CheckOutBasket.php" method="post">
         <?php
-                 if(isset($_SESSION['User_Status'])){echo '<input type="submit" name="submitCat" value="Check out!">';}else{echo "no";}
+                 if(isset($_SESSION['User_Status'])){echo '<input type="submit" name="Update" value="Update the basket">';echo '<input type="submit" name="CheckOut" value="Check out!">';}
+                 else{echo "no";}
                  
                  
    include "PHP/BasketCollectionPrinter.php";
