@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['Update'])){
 echo "Update";
-  echo $_POST['14'];
+  print_r($_POST);
 }
 if(isset($_POST['CheckOut'])){
 echo "CheckOut";
