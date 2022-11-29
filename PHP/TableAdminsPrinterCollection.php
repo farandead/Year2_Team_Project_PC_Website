@@ -6,7 +6,7 @@ $sql="SELECT * FROM account WHERE  User_Status ='RegAdmin'";
   $query=mysqli_query($conn, $sql);
 
 while($row=mysqli_fetch_assoc($query)){
-  $UserID=base64_encode($row['Order_ID']);
+  $UserID=base64_encode($row['User_ID']);
   
   echo 
     '<tr>
