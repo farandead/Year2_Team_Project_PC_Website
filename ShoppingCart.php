@@ -52,8 +52,11 @@ session_start();
                  
                  
    include "PHP/BasketCollectionPrinter.php";
+                 if($_SESSION['login']){
                  $orderID=$idOrder;
     require "PHP/TotalPriceCounter.php";
+                 
+                 if(isset($TOTAL)){echo "Total: £ ". $TOTAL;}}
     ?>
             
          </form>
