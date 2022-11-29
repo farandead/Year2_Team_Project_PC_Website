@@ -15,11 +15,11 @@ while($row=mysqli_fetch_assoc($query)){
                 <td>'.$row['User_Phone_Number'].'</td>
                 <td>'.$row['User_SName'].' '.$row['User_FName'].'</td>
                 <td><div class="btn-group 1" role="group" aria-label="Basic checkbox toggle button group">
-                    <a href="break"><input type="checkbox" class="btn-check 1" id="btncheck1 1" autocomplete="off">
+                    <a href="break.php"><input type="checkbox" class="btn-check 1" id="btncheck1 1" autocomplete="off">
                     <label class="btn btn-outline-dark" for="btncheck1 1">Admin</label></a>
-                  
+                   <a href="break.php">
                     <input type="checkbox" class="btn-check 1" id="btncheck2 1" autocomplete="off">
-                    <label class="btn btn-outline-dark" for="btncheck2 1">Non-Admin</label>
+                    <label class="btn btn-outline-dark" for="btncheck2 1">Non-Admin</label></a>
                   </div></td>
             </tr>';
   
