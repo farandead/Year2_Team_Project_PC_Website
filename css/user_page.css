@@ -419,14 +419,18 @@ body{
 
 .grid-container {
 	display: grid;
-	grid-template-columns: auto auto ;
+	
 	gap: 10px;
 	
   }
   .grid-container > .OrdersBox {
 	border: 1px solid black;
+	grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
   }
   .grid-container > .section {
 	border: 1px solid black;
+	grid-column: 3;
+  grid-row: 1 / span 3;
   }
 
