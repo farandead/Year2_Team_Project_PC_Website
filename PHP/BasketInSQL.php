@@ -9,6 +9,9 @@ if ($resultBas=mysqli_query($conn,$sqlBas)) {
     if($rowcount==1){
     $RowBas=mysqli_fetch_array($resultBas);
          $idOrder=$RowBas['Order_ID'];
+        
+        echo '<input type="hidden" name="idor" value="'.$idOrder.'" />';
+        
         $sqlOrder = "SELECT * FROM Linked_Order_and_Products WHERE Order_ID=$idOrder";
         $resultBasPr=mysqli_query($conn,$sqlOrder);
         $rowcount2=mysqli_num_rows($resultBasPr);
