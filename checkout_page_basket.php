@@ -108,9 +108,9 @@ require "PHP/connect_db.php";
             </div>
             <div class="rightside dark_target" >
                 <form action="PHP/BuyNow.php" method="post">
-                    <input type='hidden' name="price" value=" <?php echo $price; ?> " /> 
-                    <input type='hidden' name="id" value=" <?php echo  $idpr; ?> " /> 
-                    <p id="product_name"><?php echo "Product name";?></p>
+                     
+                    <input type='hidden' name="id" value=" <?php echo  $orderID; ?> " /> 
+                    <p id="product_name"><?php echo "Check the list";?></p>
                     <p id="payment_information_heading">Delivery address:</p>
                     
                     <select name="addresses" id="addresses" required>
@@ -122,10 +122,7 @@ require "PHP/connect_db.php";
                         
 </select>
                     
-                    <p id="payment_information_heading">Payment Information:£ <?php 
-                        
-                        
-                        echo  "Price"; ?></p>
+                    <p id="payment_information_heading">Payment Information:</p>
                     <p>Cardholder Name</p>
                     <input type="text" class="inputbox dark_target" name="name" required />
                     <p>Card Number</p>
