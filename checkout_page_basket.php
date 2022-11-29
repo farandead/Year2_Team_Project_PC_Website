@@ -107,7 +107,7 @@ require "PHP/connect_db.php";
                 <?php  require "PHP/printProductsCheckOut.php";?>
             </div>
             <div class="rightside dark_target" >
-                <form action="PHP/BuyNow.php" method="post">
+                <form action="PHP/checkOutBasketAccept.php" method="post">
                      
                     <input type='hidden' name="id" value=" <?php echo  $orderID; ?> " /> 
                     <p id="product_name"><?php echo "Check the list";?></p>
@@ -144,7 +144,8 @@ require "PHP/connect_db.php";
                         <input type="password" class="inputbox dark_target " name="cvv" id="cvv" required />
                     </div>
                     <p></p>
-                    <button type="submit" name ="buy" class="button">CheckOut</button>
+                    <button type="submit" name ="buyB" class="button">CheckOut</button>
+                    <button type="submit" name ="Cancel" class="button">Cancel</button>
                 </form>
             </div>
         </div>
