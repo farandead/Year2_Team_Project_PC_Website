@@ -35,7 +35,7 @@ if ($conn->query($sqlUp) === TRUE) {
        </script>";
 
 }
-   //header("Location: ../ShoppingCart.php");
+   header("Location: ../ShoppingCart.php");
 }
 
 ?>
