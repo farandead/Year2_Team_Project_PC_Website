@@ -1,4 +1,5 @@
 <?php
+ob_start();
 if(isset($_POST['Update'])){
 echo "Update";
   require "connect_db.php";
