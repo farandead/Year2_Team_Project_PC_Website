@@ -25,7 +25,7 @@ if ($conn->query($sqlUp) === TRUE) {
   if(isset($_POST['CheckOut'])){
 //echo "CheckOut";
 //require "../checkout_page_basket.php";
-    echo '<form style="text-align:center;" id="passlist" name="passlist" action="checkOutBasketAccept.php" method="POST">';
+    echo '<form style="text-align:center;" id="passlist" name="passlist" action="../checkout_page_basket.php" method="POST">';
      echo " <input type='hidden' name='orderID' value='".$idor."'>";
     echo "</form>";
     echo "<script type=\"text/javascript\"> 
