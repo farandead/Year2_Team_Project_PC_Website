@@ -24,9 +24,16 @@ if ($conn->query($sqlUp) === TRUE) {
   
   if(isset($_POST['CheckOut'])){
 //echo "CheckOut";
-require "../checkout_page_basket.php";
-    
-    
+//require "../checkout_page_basket.php";
+    echo '<form style="text-align:center;" id="paypalform" action="checkOutBasketAccept.php" method="POST">';
+     echo " <input type='hidden' name='cmd' value='_xclick'>";
+    echo "</form>";
+    echo "<script type=\"text/javascript\"> 
+                window.onload=function(){
+                    document.forms['paypalform'].submit();
+                }
+       </script>";
+
 }
    //header("Location: ../ShoppingCart.php");
 }
