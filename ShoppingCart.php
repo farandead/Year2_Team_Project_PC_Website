@@ -52,7 +52,7 @@ session_start();
                  
                  
    include "PHP/BasketCollectionPrinter.php";
-                 if($_SESSION['login']){
+                 if(isswt($_SESSION['login'])){
                  $orderID=$idOrder;
     require "PHP/TotalPriceCounter.php";
                  
