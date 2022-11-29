@@ -102,7 +102,11 @@ require "PHP/connect_db.php";
     <div class="mainscreen dark_target">
         <div class="card">
             <div class="leftside">
-               <img src="Products/Images/<?PHP echo $idpr.".jpg"; ?>" alt="Not found!">
+               awdadawd
+                adwadawda
+                adawdawd
+                adawdawd
+                adawdawd
             </div>
             <div class="rightside dark_target" >
                 <form action="PHP/BuyNow.php" method="post">
