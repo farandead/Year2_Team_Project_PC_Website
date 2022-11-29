@@ -185,6 +185,9 @@ input {
 	min-height: 1000px;
 	margin: auto;
 	margin-top: 50px;
+	display: grid;
+  	grid-template-columns: auto auto ;
+  	gap: 10px;
 	
 }
 
