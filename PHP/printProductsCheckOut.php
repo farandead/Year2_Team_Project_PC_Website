@@ -1,6 +1,11 @@
 <?php
 $sqlPrL="SELECT * FROM Linked_Order_and_Products WHERE  Order_ID ='$orderID'";
   $queryPrL=mysqli_query($conn, $sqlPrL);
+
+$sqlPrice="SELECT Total_Price FROM OrderP WHERE  Order_ID ='$orderID'";
+  $queryPrice=mysqli_query($conn, $sqlPrice);
+$fpr=mysqli_fetch_assoc($queryPrice);
+$total=$fpr['Total_Price'];
 while($row=mysqli_fetch_assoc($queryPrL)){
 
   
@@ -18,6 +23,8 @@ $queryPr=mysqli_query($conn, $sqlPr);
   echo "<br>";
 
 }
+echo "<br>";
+echo "<h5>Total(£): ".$total."</h5>";
 
 
 
