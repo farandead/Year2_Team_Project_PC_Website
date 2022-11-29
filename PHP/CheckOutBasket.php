@@ -24,6 +24,10 @@ if ($conn->query($sqlUp) === TRUE) {
   
   if(isset($_POST['CheckOut'])){
 echo "CheckOut";
+    $xml = "test";
+    $url = 'checkOutBasketAccept.php';
+
+$response = http_post_data($url, $xml);
 }
    //header("Location: ../ShoppingCart.php");
 }
