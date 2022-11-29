@@ -3,7 +3,7 @@ $sqlPrLC="SELECT * FROM Linked_Order_and_Products WHERE  Order_ID ='$orderID'";
   $queryPrLC=mysqli_query($conn, $sqlPrLC);
 
 $TOTAL=0;
-while($row=mysqli_fetch_assoc($queryPrL)){
+while($row=mysqli_fetch_assoc($queryPrLC)){
 $prodid=$row['Product_ID'];
 $sqlPr="SELECT * FROM Product WHERE  Product_ID ='$prodid'";
 $queryPr=mysqli_query($conn, $sqlPr);
