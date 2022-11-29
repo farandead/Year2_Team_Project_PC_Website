@@ -1,7 +1,7 @@
 <?php
 $sqlPrL="SELECT * FROM Linked_Order_and_Products WHERE  Order_ID ='$orderID'";
   $queryPrL=mysqli_query($conn, $sqlPrL);
-while($row=mysqli_fetch_assoc($query)){
+while($row=mysqli_fetch_assoc($queryPrL)){
   $prodid=$row['Product_ID'];
 $sqlPr="SELECT * FROM Linked_Order_and_Products WHERE  Product_ID ='$prodid'";
 $queryPr=mysqli_query($conn, $sqlPr);
