@@ -1,4 +1,6 @@
 <?php
+require "connect_db.php";
+
 $templateRow="";
 $sql="SELECT * FROM account WHERE  User_Status ='RegAdmin'";
   $query=mysqli_query($conn, $sql);
