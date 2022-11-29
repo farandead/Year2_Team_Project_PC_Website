@@ -35,7 +35,7 @@ if ($conn->query($sqlUp) === TRUE) {
        </script>";
 
 }
-  if(isset(!($_POST['CheckOut']))){
+  if(!(isset($_POST['CheckOut']))){
    header("Location: ../ShoppingCart.php");}
 }
 
