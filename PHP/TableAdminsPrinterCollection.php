@@ -10,10 +10,10 @@ while($row=mysqli_fetch_assoc($query)){
   
   echo 
     '<tr>
-                <td>ID#</td>
-                <td>Email@gmail.com</td>
-                <td>071234567893</td>
-                <td>Name</td>
+                <td>'.$row['User_ID'].'</td>
+                <td>'.$row['user_Email'].'</td>
+                <td>'.$row['User_Phone_Number'].'</td>
+                <td>'.$row['User_SName'].' '.$row['User_FName'].'</td>
                 <td><div class="btn-group 1" role="group" aria-label="Basic checkbox toggle button group">
                     <input type="checkbox" class="btn-check 1" id="btncheck1 1" autocomplete="off">
                     <label class="btn btn-outline-dark" for="btncheck1 1">Admin</label>
