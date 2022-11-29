@@ -22,6 +22,6 @@ $conn->close();
   
   
 }
-header("Location: ../index.php");
+//header("Location: ../accept_admin_page.php");
 
 ?>
