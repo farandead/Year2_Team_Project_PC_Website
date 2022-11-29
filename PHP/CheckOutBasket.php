@@ -1,6 +1,6 @@
 <?php
 ob_start();
-if(isset($_POST['Update'])){
+if(isset($_POST['Update']) or isset($_POST['CheckOut'])){
 echo "Update";
   require "connect_db.php";
   $idor=$_POST['idor'];
@@ -14,7 +14,7 @@ $sqlUp = "UPDATE Linked_Order_and_Products SET 	Amount_Product='$amount' WHERE O
 
 if ($conn->query($sqlUp) === TRUE) {
   echo "Record updated successfully";
-  header("Location: ../ShoppingCart.php");
+ 
 } else {
   echo "Error updating record: " . $conn->error;
 }
@@ -22,8 +22,10 @@ if ($conn->query($sqlUp) === TRUE) {
 
 }
   
-}
-if(isset($_POST['CheckOut'])){
+  if(isset($_POST['CheckOut'])){
 echo "CheckOut";
 }
+   //header("Location: ../ShoppingCart.php");
+}
+
 ?>
