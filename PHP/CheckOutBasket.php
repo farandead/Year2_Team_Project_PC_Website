@@ -2,7 +2,7 @@
 if(isset($_POST['Update'])){
 echo "Update";
   require "connect_db.php";
-  
+  $idor=$_POST['idor'];
   $sql="SELECT * FROM Linked_Order_and_Products WHERE  Order_ID ='$idor'";
   $query=mysqli_query($conn, $sql);
 
