@@ -13,6 +13,7 @@ $sqlUp = "UPDATE Linked_Order_and_Products SET 	Amount_Product='$amount' WHERE O
 
 if ($conn->query($sqlUp) === TRUE) {
   echo "Record updated successfully";
+  header("Location: ../ShoppingCart.php");
 } else {
   echo "Error updating record: " . $conn->error;
 }
