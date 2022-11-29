@@ -45,13 +45,13 @@ session_start();
     <div class="shopping_con">
         <div class="shopping_title">PRODUCT LIST</div>
         <div class="">
-            
+             <form action ="PHP/CheckOutBasket.php" method="post">
         <?php
    include "PHP/BasketCollectionPrinter.php";
     
     ?>
             
-         
+         </form>
             
             
             
