@@ -52,7 +52,8 @@ session_start();
                  
                  
    include "PHP/BasketCollectionPrinter.php";
-    
+                 $orderID=$idOrder;
+    require "PHP/TotalPriceCounter.php";
     ?>
             
          </form>
