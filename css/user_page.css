@@ -411,9 +411,8 @@ body{
 	width: 500px;
 	max-width: 50%;
 	min-height: 1000px;
-	
-	margin-left: 1500px;
-	margin-top: 50px;
+	left: 880px;
+	margin-top: 15px;
 }
 
 .grid-container {
