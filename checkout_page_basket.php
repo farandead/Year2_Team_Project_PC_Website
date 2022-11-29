@@ -108,6 +108,7 @@ require "PHP/connect_db.php";
                 adawdawd
                 adawdawd
                 adawdawd
+                <?php  require "PHP/printProductsCheckOut.php";?>
             </div>
             <div class="rightside dark_target" >
                 <form action="PHP/BuyNow.php" method="post">
