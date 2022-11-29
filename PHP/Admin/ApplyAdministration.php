@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+if(isset($_SESSION['login'])){
 if($_SESSION['login']){
 if($_SESSION['User_Status']=="Admin"){echo "You have been already provided with the admin rights!";}
 elseif($_SESSION['User_Status']=="RegAdmin"){
@@ -14,5 +14,5 @@ require "../connect_db.php";
 else{
 header("Location: ../../Sign_up_new.php");
 }
-
+}else{header("Location: ../../Sign_up_new.php");}
 ?>
