@@ -7,8 +7,10 @@
 <h1>Addresses panel</h1>
 <?php  
    $sqlAd="SELECT * FROM Delivery_address WHERE NOT Address_Status ='Hidden' AND User_ID ='".$_SESSION['User_ID']."'";
-  $queryAd=mysqli_query($conn, $sqlAd);
-  
+  //$queryAd=mysqli_query($conn, $sqlAd);
+  if ($queryAd=mysqli_query($conn, $sqlAd)) {
+    $rowcount=mysqli_num_rows($queryAd);
+   
   
 echo '<form action="PHP/AddressControllerAction.php" method="post">';
   echo '<p>Please select the address:</p>';
@@ -28,7 +30,7 @@ echo '<br>
 <input type="submit" value="Make deafault" name="deafault">
 </form>';
   
-  
+  }
   
   ?>
   <form action="PHP/AddAddressAction.php" method="post">
