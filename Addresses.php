@@ -41,7 +41,7 @@
       <label for="Street">Street:</label>
   <input type="text" id="Street" name="Street" maxlength="20" required ><br><br>
     
-      <label for="ZIP">Country:</label>
+      <label for="ZIP">ZIP:</label>
   <input type="text" id="ZIP" name="ZIP" maxlength="7" required ><br><br>
     
     <input type="submit" value="Add new address" name="AddAddress">
