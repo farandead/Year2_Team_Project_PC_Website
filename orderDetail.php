@@ -70,15 +70,13 @@ try {
                 $count_ProductOfOrderID = $result_ProductOfOrderID->rowCount();
                 $resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC);
               
-              while($resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) {
+              while($row = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) {
     
               
               
-              }
+              
     
-    ?>
     
-    <?php
 //$lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
 $price=round($row['Product_Price']-$row['Product_Price']*$row['Product_Discount']/100,2);
 echo "<div class=\"devices-sub-container-product\">
@@ -118,7 +116,7 @@ echo "
                         </div>
                     </div>";
 
-
+}
 
 ?>
             
