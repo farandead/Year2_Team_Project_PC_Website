@@ -32,7 +32,7 @@ require "PHP/CheckAdminAccess.php";
             }
         </style>
 </head>
-<header>
+<body>
             <!--Admin Panel-->
         <div class="container-fluid">
             <div class="row">
@@ -63,9 +63,7 @@ require "PHP/CheckAdminAccess.php";
     </nav>
 </div>
 </div>
-</header>
 
-        </body>
 <!--Accept Admin Table-->
 <section class ="table">
     <div class="container1 d-flex justify-content-center align-items-center py-2">
