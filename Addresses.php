@@ -18,7 +18,7 @@
     $addres=$rowAd['Country'].", ".$rowAd['City'].", ".$rowAd['Street'].", ".$rowAd['ZIP'];
     
     if($rowAd['Address_Status']=="Default"){$addres=$addres."(Deafault address)"; }
-   echo '<input type="radio" id="'.$rowAd['Address_ID'].'" name="address" value="'.$rowAd['Address_ID'].'">
+   echo '<input type="radio" required id="'.$rowAd['Address_ID'].'" name="address" value="'.$rowAd['Address_ID'].'">
          <label for="html">'.$addres.'</label><br>';
   }
   
