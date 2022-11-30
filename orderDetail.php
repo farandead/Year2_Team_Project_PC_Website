@@ -61,21 +61,25 @@ try {
             
          </form> -->
     
-   |<?php  
+   <?php  
     
-     $OrderID = $_GET['orderId'];    
+                $OrderID = $_GET['orderId'];    
                 $sql = "SELECT * FROM Linked_Order_and_Products WHERE Order_ID = ? ";
                 $result_ProductOfOrderID = $conn->prepare($sql);
                 $result_ProductOfOrderID->execute(array($OrderID));  /* $_SESSION['User_ID']*/
                 $count_ProductOfOrderID = $result_ProductOfOrderID->rowCount();
                 $resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC);
               
-              while($row = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) {
+              while($resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) {
     
+                $ProductID = $resProductOfOrderID['Product_ID']
+                $sql = "SELECT * FROM Product WHERE Product_ID = ? ";
+                $result_Product = $conn->prepare($sql);
+                $result_Product->execute(array($ProductID));  /* $_SESSION['User_ID']*/
+                $count_Product = $result_Product->rowCount();
+                $resProduct = $result_Product->fetch(PDO::FETCH_ASSOC);
               
-              
-              
-    
+    while($row = $result_Product->fetch(PDO::FETCH_ASSOC)) {
     
 //$lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
 $price=round($row['Product_Price']-$row['Product_Price']*$row['Product_Discount']/100,2);
@@ -115,7 +119,7 @@ echo "
       
                         </div>
                     </div>";
-
+    }
 }
 
 ?>
