@@ -49,7 +49,7 @@
                 <a class="sign-in-logolink" href="Sign_up_new.php">
                    <i class="bi bi-person-fill" style="color:white"> </i> 
                  </a>
-     <?php} ?>
+     <?php } ?>
         
                 
         </div>
