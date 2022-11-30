@@ -111,7 +111,7 @@
          <div class="collapse navbar-collapse" id="navmenu">
              <ul class="navbar-nav ms-auto">
                  <li class="nav-item">
-                     <a href="accept_admin_page.html" class="nav-link">Admin applications</a>
+                     <a href="accept_admin_page.php" class="nav-link">Admin applications</a>
                  </li>
                  <li class="nav-item">
                      <a href="orders_management.php" class="nav-link">Order management</a>
