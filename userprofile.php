@@ -115,6 +115,65 @@ try {
                         <th>Date</th>
                         <th>Address</th>
                     </tr>
+                    
+                    
+                    <?php
+                  /*
+
+                    
+                    $customer = $_SESSION['User_Email'];
+                    $customer = stripcslashes($customer);
+                    $customer = mysqli_real_escape_string($con, $customer);
+                    $sql_order = "SELECT * from `orders_data`  where Cus_Email = '$customer'";
+
+                    $result_order = mysqli_query($conn, $sql_order);
+                    // $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
+                    $count_order = mysqli_num_rows($result_order);
+
+                    if ($count_order > 0) {
+
+
+                        for ($x = 1; $x <= $count_order; $x++) {
+                            $row_order = mysqli_fetch_assoc($result_order);
+
+                            $produt_id = $row_order["Product_ID"];
+
+
+
+                            $sql = "SELECT * FROM `product`  where Product_ID = '$produt_id' ";
+                            $result = mysqli_query($con, $sql);
+
+                            $row = mysqli_fetch_assoc($result);
+                            $row["Product_Name"];
+                            $row_order["Date_Placed"];
+                            $row_order["Cus_Address"];
+                            echo  "
+                        <tr>
+                        <td>" .  $x . "</td>
+                        <td>" . $row["Product_Name"] . "</td>
+                        <td>" . $row_order['Date_Placed'] . "</td>
+                        <td>" . $row_order['Cus_Address'] . "</td>
+                        </tr>
+                        ";
+
+
+                            // $row["title"];
+                            // $row_order["date_palaced"];
+                            // $row_order["delivery_address"];
+                            // echo  "
+                            // <tr>
+                            // <td>" . $row["title"] . "</td>
+                            // <td>" . $row_order['date_palaced'] . "</td>
+                            // <td>" . $row_order['delivery_address'] . "</td>
+                            // </tr>
+                            // ";
+                        }
+                    } else {
+                        echo "";
+                    }  */?>
+                    
+                    
+                    
                     <?php
                     
                     $test = "29";
@@ -124,11 +183,23 @@ try {
                 $count_order = $result_order->rowCount();
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
                     
-                     while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
+              while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
                         echo $resOrderId['Order_ID'];
-                         echo"-";
+                     
+                $sql = "SELECT * FROM Linked_Order_and_Products WHERE Order_ID = $resOrderId['Order_ID'] ";
+                $result_ProductOfOrderID = $conn->prepare($sql);
+                $result_ProductOfOrderID->execute(array($test));  /* $_SESSION['User_ID']*/
+                $count_ProductOfOrderID = $result_ProductOfOrderID->rowCount();
+                $resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC);
+              
+              while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
+                        
+                       echo $resProductOfOrderID['Product_ID'];
+                       
+                   }
+                  
                     
-      }
+                    }
                     
                ?>      
                  
