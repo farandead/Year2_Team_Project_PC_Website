@@ -185,7 +185,8 @@ input {
 	min-height: 1000px;
 	margin: auto;
 	margin-top: 50px;
-	
+	grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
 	
 }
 .gridtemp{
@@ -203,8 +204,7 @@ input {
 	
 	
 	border: 1px solid black;
-	grid-column: 1 / span 2;
-  grid-row: 1 / span 3;
+	
 
 }
 

@@ -67,9 +67,9 @@ try {
     <?php require 'header.php'; ?>
     
    
-   
-        <div class="container1">
-            <div class = "gridtemp">
+        <div class = "gridtemp">
+            <div class="container1">
+            
                 <div class="OrdersBox">
                     
                     <div class= "title">
@@ -113,15 +113,17 @@ try {
                     </table>
                 </div>
 
-                <div class="section">
-                    <h3>test</h3>
-                </div>
+                
+
+            
 
             </div>
 
-        </div>
+            <div class="section">
+                    <h3>test</h3>
+            </div>
     
-
+        </div>
     
     <?php require 'footer.php'; ?>
 
