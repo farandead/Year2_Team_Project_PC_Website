@@ -29,5 +29,9 @@
 <input type="submit" value="Remove" name="Remove">
 <input type="submit" value="Make deafault" name="deafault">
 </form>
+  <form action="PHP/AddAddressAction.php" method="post">
+     <p>Pleaseenter the details:</p>
+    <input type="submit" value="Add new address" name="AddAddress">
+    </form>
 </body>
 </html>
