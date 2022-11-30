@@ -124,6 +124,13 @@ try {
                 $count_order = $result_order->rowCount();
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
                     
+                     while($resOrderId){
+ 
+    echo $resOrderId;
+      else{ 
+          $Products= $Products.", ".$rowPr['Product_ID']."(".$rowPr['Amount_Product'].")";
+      }
+                    
                     
                     /*$Products="";
   $sqlPr="SELECT * FROM Linked_Order_and_Products WHERE Order_ID ='".$row['Order_ID']."'";
