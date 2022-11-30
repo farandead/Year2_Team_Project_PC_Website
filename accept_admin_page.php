@@ -3,6 +3,8 @@ require "PHP/CheckAdminAccess.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
+<header>
 <?php include 'header.php'; ?>
             
             <!--Admin Panel-->
