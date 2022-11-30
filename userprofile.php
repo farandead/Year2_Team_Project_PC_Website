@@ -186,9 +186,9 @@ try {
               while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
                         
                 $OrderID = $resOrderId['Order_ID'];    
-                $sql = "SELECT * FROM Linked_Order_and_Products WHERE Order_ID = $OrderID ";
+                $sql = "SELECT * FROM Linked_Order_and_Products WHERE Order_ID = ? ";
                 $result_ProductOfOrderID = $conn->prepare($sql);
-                $result_ProductOfOrderID->execute(array($test));  /* $_SESSION['User_ID']*/
+                $result_ProductOfOrderID->execute(array($OrderID));  /* $_SESSION['User_ID']*/
                 $count_ProductOfOrderID = $result_ProductOfOrderID->rowCount();
                 $resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC);
               
