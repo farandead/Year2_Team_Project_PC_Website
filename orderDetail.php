@@ -1,5 +1,6 @@
 <?php 
 session_start();
+ echo $_GET['orderId']    ;  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +38,7 @@ session_start();
         <?php
                  //if(isset($_SESSION['User_Status'])){echo '<input type="submit" name="Update" value="Update the basket">';echo '<input type="submit" name="CheckOut" value="Check out!">';}
                  //else{echo "no";}
-       echo $_GET['orderId']    ;     
+         
                  
    include "PHP/BasketCollectionPrinter.php";
                  if(isset($_SESSION['login'])){
