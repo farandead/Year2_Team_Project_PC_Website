@@ -142,7 +142,7 @@ require "PHP/CheckAdminAccess.php";
 
     <div class="container1 mt-5 d-flex justify-content-center align-items-center mt-5 py-5">
       <div class="row"></div>
-      <h1>Orders Management Table</h1>
+      <h1>Adnin authorisation</h1>
     </div>
   </div>
 
