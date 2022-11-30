@@ -95,14 +95,7 @@ if (empty($errors)) {
 
         $messages[] = "Vous êtes inscrit(e) !";
         
-       /*
-        if ($confirmationMail ){
-            $messages[]= 'Un e-mail de confirmation à été envoyé à l&apos;addresse suivante : ' .$_POST['email']. '. ';
-        } else{
-            $errors[] = " EMAIL NOT SEND ";
-
-        }
-        */
+  
     
                 //echo "YOU ARE IN !";
                  echo "<script>alert('Message Sent');</script>";
