@@ -14,8 +14,10 @@
  
 
   while($rowAd=mysqli_fetch_assoc($queryAd)){
-   echo '<input type="radio" id="1" name="address" value="1">
-         <label for="html">address</label><br>';
+    $addres=$rowAd['Country'].", ".$rowAd['City'].", ".$rowAd['Street'].", ".$rowAd['ZIP'];
+    
+   echo '<input type="radio" id="'.$rowAd['Address_ID'].'" name="address" value="'.$rowAd['Address_ID'].'">
+         <label for="html">'.$addres.'</label><br>';
   }
   
   ?>
