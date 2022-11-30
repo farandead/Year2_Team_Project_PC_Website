@@ -5,13 +5,13 @@
 
 
 <h1>Addresses panel</h1>
-
-<form action="PHP/AddressControllerAction.php" method="post">
-  <p>Please select the address:</p>
-  <?php 
-  $sqlAd="SELECT * FROM Delivery_address WHERE NOT Address_Status ='Hidden' AND User_ID ='".$_SESSION['User_ID']."'";
+<?php  
+   $sqlAd="SELECT * FROM Delivery_address WHERE NOT Address_Status ='Hidden' AND User_ID ='".$_SESSION['User_ID']."'";
   $queryAd=mysqli_query($conn, $sqlAd);
- 
+  
+  
+echo '<form action="PHP/AddressControllerAction.php" method="post">';
+  echo '<p>Please select the address:</p>';
 
   while($rowAd=mysqli_fetch_assoc($queryAd)){
     
@@ -22,13 +22,15 @@
          <label for="html">'.$addres.'</label><br>';
   }
   
-  ?>
 
-
-<br>
+echo '<br>
 <input type="submit" value="Remove" name="Remove">
 <input type="submit" value="Make deafault" name="deafault">
-</form>
+</form>';
+  
+  
+  
+  ?>
   <form action="PHP/AddAddressAction.php" method="post">
      <p>Pleaseenter the details:</p>
     
