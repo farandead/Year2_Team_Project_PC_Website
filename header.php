@@ -33,8 +33,8 @@
                     
 <?php if (isset($_SESSION['login'])){ ?>
                     
-                    <li><a href="user_page.php" class="link sign-in-logo dropdown-toggle" type="link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-person-fill" style="color:white"> </i></a></li>
-                    <li><a class="dropdown-item" href="PHP/signOut.inc.php"><i class="fa fa-power-off" aria-hidden="true"></i></a></li>
+                    <li><a title="Profile page" href="user_page.php" class="link sign-in-logo dropdown-toggle" type="link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-person-fill" style="color:white"> </i></a></li>
+                    <li><a title="Log out" class="dropdown-item" href="PHP/signOut.inc.php"><i class="fa fa-power-off" aria-hidden="true"></i></a></li>
    <?php }else { ?>
                     <li><a class="sign-in-logolink" href="Sign_up_new.php"><i class="bi bi-person-fill" style="color:white"></i></a></li>
      <?php } ?>
