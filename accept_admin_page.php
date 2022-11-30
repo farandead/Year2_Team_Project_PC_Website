@@ -34,41 +34,37 @@ require "PHP/CheckAdminAccess.php";
 </head>
 <header>
             <!--Admin Panel-->
-            
-            <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
-            </div>
-            </div>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-4" style="margin-top: -15px;">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand">Admin</a>
- 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-            <span class="navbar-toggler-icon"></span>
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <a href="#" class="navbar-brand">Admin</a>
+                    <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu"
+                    aria-controls="toggleMobileMenu"
+                    aria-expanded="false"
+                    aria-lable="Toggle navigation"
+                >
+                    <span class="navbar-toggle-icon"></span>
         </button>
- 
-         <div class="collapse navbar-collapse" id="navmenu">
-             <ul class="navbar-nav ms-auto">
-                 <li class="nav-item">
-                     <a href="accept_admin_page.php" class="nav-link">Admin applications</a>
-                 </li>
-                 <li class="nav-item">
-                     <a href="orders_management.php" class="nav-link">Order management</a>
-                 </li>
-                 <li class="nav-item">
-                     <a href="accounts_base_page.php" class="nav-link">Accounts page</a>
-                 </li>
-                 
-                 
-             </ul>
- 
-         </div>
-     </div>
-    </nav>
-</div>
-</div>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link" href="#">example</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">example 1</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">example 2</a>
+                </li>
+            </ul>
+        </div>
+
+
+        </nav>
+            </div>
 </header>
 
         </body>
