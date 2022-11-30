@@ -21,7 +21,7 @@ if ($conn->query($sql) === TRUE) {
 
 
 }
-//header("Location:../userprofile.php");
+header("Location:../userprofile.php");
 
 
 ?>
