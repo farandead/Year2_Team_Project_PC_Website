@@ -33,27 +33,6 @@
                     <li><i class="fa fa-cart-arrow-down" style="font-size: xx-large;color:white"></i></li>
 
             </ul>
-                <?php if (isset($_SESSION['login'])){ ?>
-                 
-                      <div class="dropdown">
-                           <a class="link sign-in-logo dropdown-toggle" type="link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               <i class="bi bi-person-fill" style="color:white"> </i> 
-                            </a>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="user_page.php">Profile</a>
-                            <a class="dropdown-item" href="PHP/signOut.inc.php">Log Out </a> 
-                          </div>
-                      </div>
-               
-                <?php
-}else {
-    ?>
-               
-                    <a class="sign-in-logolink" href="Sign_up_new.php">
-                        <i class="bi bi-person-fill" style="color:white"> </i> 
-                    </a>
-                
-                <?php
-} ?>
         </div>
+                
     </div>
