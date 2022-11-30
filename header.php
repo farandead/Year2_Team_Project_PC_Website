@@ -1,7 +1,7 @@
 <div class="navigation-bar"  id="navigationLightMode">
         <div class="navigation-logo">
 
-         <a  style="text-decoration-line: none;" href="index.php"><img class="img-logo" src="img/Logo1.png" alt="Logo"></a>
+         <a  style="text-decoration: none;" href="index.php"><img class="img-logo" src="img/Logo1.png" alt="Logo"></a>
 
         </div>
         <div class="navigation-menu">
@@ -30,25 +30,14 @@
                     <li><i id="toggle_button_dark" class="bi bi-moon" onclick="darkModeProduct()"></i></li> 
                     <li><i id="toggle_button"style="display: flex;color:white;" class="bi bi-brightness-high-fill" onclick="darkModeProduct()"></i></li>
                     <li><i class="fa fa-cart-arrow-down" style="font-size: xx-large;color:white"></i></li>
-                    <li>
-                             <?php if (isset($_SESSION['login'])){ ?>
-                        <div class="dropdown">
-                           <a class="link sign-in-logo dropdown-toggle" type="link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               <i class="bi bi-person-fill" style="color:white"> </i> 
-                            </a>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="user_page.php">Profile</a>
-                            <a class="dropdown-item" href="PHP/signOut.inc.php">Log Out </a> 
-                          </div>
-                      </div>
-                <?php
-}else {
-    ?>
-                <a class="sign-in-logolink" href="Sign_up_new.php">
-                   <i class="bi bi-person-fill" style="color:white"> </i> 
-                 </a>
+                    
+<?php if (isset($_SESSION['login'])){ ?>
+                    <li><a href="user_page.php" class="link sign-in-logo dropdown-toggle" type="link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-person-fill" style="color:white"> </i></a></li>
+                    <li><a class="dropdown-item" href="PHP/signOut.inc.php"><i class="fa-solid fa-power-off"></i></a></li>
+   <?php }else { ?>
+                    <li><a class="sign-in-logolink" href="Sign_up_new.php"><i class="bi bi-person-fill" style="color:white"> </i> </a>/li>
      <?php } ?>
-                    </li>
+
 
             </ul>
                 
