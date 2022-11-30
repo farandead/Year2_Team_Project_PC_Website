@@ -7,19 +7,19 @@
         <div class="navigation-menu">
             <ul>
                 <li class="navbaritem"><a class="link" href="product_page.php?Category=Gaming%20Desktop%20pc">
-                        <p>Desktops PCs</p>
+                        <p style="color:white">Desktops PCs</p>
                     </a></li>
                 <li class="navbaritem"><a class="link" href="product_page.php?Category=Gaming%20Laptops">
-                            <p>Laptops</p>
+                            <p style="color:white">Laptops</p>
                 </a></li>
                 <li class="navbaritem"><a class="link" href="about_us.php">
-                        <p>About Us</p>
+                        <p style="color:white">About Us</p>
                     </a></li>
                 <li class="navbaritem"><a class="link" href="contact_us.php">
-                        <p>Contact Us</p>
+                        <p style="color:white">Contact Us</p>
                     </a></li>
                 <li class="navbaritem"><a class="link" href="#">
-                        <p>Reviews</p>
+                        <p style="color:white">Reviews</p>
                     </a></li>
             </ul>
 
