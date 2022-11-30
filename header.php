@@ -165,7 +165,7 @@
                   
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="user_page.php">Profile</a>
-                    <a class="dropdown-item" href="signOut.inc.php">Log Out </a> 
+                    <a class="dropdown-item" href="PHP/signOut.inc.php">Log Out </a> 
                   </div>
                 </div>
                 
