@@ -34,19 +34,35 @@ require "PHP/CheckAdminAccess.php";
 </head>
 <header>
             <!--Admin Panel-->
-            <div class="collapse" id="navbarToggleExternalContent">
-  <div class="bg-dark p-4">
-    <h5 class="text-white h4">Collapsed content</h5>
-    <span class="text-muted">Toggleable via the navbar brand.</span>
-  </div>
+        <div class="container-fluid">
+            <div class="row">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-4" style="margin-top: -15px;">
+        <a href="#" class="navbar-brand">Admin</a>
+ 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+ 
+         <div class="collapse navbar-collapse" id="navmenu">
+             <ul class="navbar-nav ms-auto">
+                 <li class="nav-item">
+                     <a href="accept_admin_page.php" class="nav-link">Admin applications</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="orders_management.php" class="nav-link">Order management</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="accounts_base_page.php" class="nav-link">Accounts page</a>
+                 </li>
+                 
+                 
+             </ul>
+ 
+         </div>
+     </div>
+    </nav>
 </div>
-<nav class="navbar navbar-dark bg-dark">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-</nav>
+</div>
 </header>
 
         </body>
