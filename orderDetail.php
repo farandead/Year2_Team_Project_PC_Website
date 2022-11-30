@@ -79,7 +79,8 @@ try {
                 $result_Product->execute(array($ProductID));  /* $_SESSION['User_ID']*/
                 $count_Product = $result_Product->rowCount();
                 $row = $result_Product->fetch(PDO::FETCH_ASSOC);
-             
+         if ($count_Product > 1)   {
+          
     while($row = $result_Product->fetch(PDO::FETCH_ASSOC)) {
  
 //$lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
@@ -120,9 +121,10 @@ echo "
       
                         </div>
                     </div>";
-   } else {
-    echo " Not in " ;
-    }
+   } 
+         } else {
+          echo "c'est bizz" ;
+         }
 //}
 
 ?>
