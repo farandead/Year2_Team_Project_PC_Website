@@ -169,6 +169,15 @@
                   </div>
                 </div>
                 
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="user_page.php">Profile</a>
+                    <a class="dropdown-item" href="PHP/signOut.inc.php">Log Out </a> 
+                  </div>
+                </div>
                 <li><i class="fa fa-cart-arrow-down" style="font-size: xx-large;color:white"></i></li>
 
             </ul>
