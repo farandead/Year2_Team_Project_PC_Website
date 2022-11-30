@@ -34,9 +34,8 @@ require "PHP/CheckAdminAccess.php";
 </head>
 <body>
             <!--Admin Panel-->
-        <div class="container-fluid">
-            <div class="row">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-4" style="margin-top: -15px;">
+    <div class="container-fluid">
         <a href="#" class="navbar-brand">Admin</a>
  
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
