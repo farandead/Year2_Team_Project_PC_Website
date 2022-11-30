@@ -204,7 +204,7 @@ try {
                         <td><?php echo $resOrderId["Order_Status"] ?> </td>
                         <td> <?php echo $resOrderId['Order_ID'] ?> </td>
                         <td> <?php echo $resOrderId['Total_Price'] ?></td>
-                        <td><a href="<?php echo $resProductOfOrderID['Product_ID'] ?>"> Click </a> </td>
+                        <td><a href="orderDetail.php?orderId=<?php echo $resProductOfOrderID['Product_ID'] ?>"> Click </a> </td>
                        </tr> 
                     </a>
                     <?php
