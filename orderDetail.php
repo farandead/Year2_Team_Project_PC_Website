@@ -37,7 +37,7 @@ session_start();
         <?php
                  //if(isset($_SESSION['User_Status'])){echo '<input type="submit" name="Update" value="Update the basket">';echo '<input type="submit" name="CheckOut" value="Check out!">';}
                  //else{echo "no";}
-                 
+       echo $_GET['orderId']    ;     
                  
    include "PHP/BasketCollectionPrinter.php";
                  if(isset($_SESSION['login'])){
@@ -48,6 +48,23 @@ session_start();
     ?>
             
          </form> -->
+    
+   |<?php  
+    
+     $OrderID = $resOrderId['Order_ID'];    
+                $sql = "SELECT * FROM Linked_Order_and_Products WHERE Order_ID = ? ";
+                $result_ProductOfOrderID = $conn->prepare($sql);
+                $result_ProductOfOrderID->execute(array($OrderID));  /* $_SESSION['User_ID']*/
+                $count_ProductOfOrderID = $result_ProductOfOrderID->rowCount();
+                $resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC);
+              
+              while($resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) {
+    
+              
+              
+              }
+    
+    ?>
     
     <?php
 //$lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
