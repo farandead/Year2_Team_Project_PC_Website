@@ -76,7 +76,7 @@
                                                                                                                                                                 } ?>"></div>
 
                 </div>
-                <div class="mt-5 text-center"><a href="log_out_inc.php"> <button class="btn btn-primary profile-button" type="button">Log Out</button> </a></div>
+                <div class="mt-5 text-center"><a href="PHP/signOut.inc.php"> <button class="btn btn-primary profile-button" type="button">Log Out</button> </a></div>
             </div>
         </div>
         <div class="col-md-4">
