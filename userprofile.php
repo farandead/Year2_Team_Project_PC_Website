@@ -116,27 +116,64 @@ try {
                         <th>Address</th>
                     </tr>
                     <?php
-                  
-
                     
-                    $customer = $_SESSION['user_Email'];
+                    
+                $sql = "SELECT * FROM OrderP WHERE User_ID=? ";
+                $result_order = $conn->prepare($sql);
+                $result_order->execute(array($_SESSION['User_ID']));
+                $count_order = $result_order->rowCount();
+                $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
+                    
+                    
+                    /*$Products="";
+  $sqlPr="SELECT * FROM Linked_Order_and_Products WHERE Order_ID ='".$row['Order_ID']."'";
+  $queryPr=mysqli_query($conn, $sqlPr);
+  $counter=0;
+
+  while($rowPr=mysqli_fetch_assoc($queryPr)){
+    $counter++;
+    if($counter==1){ 
+        $Products=$rowPr['Product_ID']."(".$rowPr['Amount_Product'].")";
+    }
+      else{ 
+          $Products= $Products.", ".$rowPr['Product_ID']."(".$rowPr['Amount_Product'].")";
+      }
+ 
+  }
+                    
+                    
+                    
+                  
+                
+                    
+                $sql = "SELECT * FROM Linked_Order_and_Products WHERE Order_ID=? ";
+                $result_ProductLinkOrder = $conn->prepare($sql);
+                $result_ProductLinkOrder->execute(array($resOrderId));
+                $count_ProductLinkOrder = $result_ProductLinkOrder->rowCount();
+                $resProductId = $result_ProductLinkOrder->fetch(PDO::FETCH_ASSOC); */
+                    
+                  /*  $customer = $_SESSION['user_Email'];
                     $customer = stripcslashes($customer);
                     $customer = mysqli_real_escape_string($conn, $customer);
-                    $sql_order = "SELECT * from `orders_data`  where Cus_Email = '$customer'";
+                    $sql_order = "SELECT * from `orders_data`  where User_Email = '$customer'";
 
                     $result_order = mysqli_query($conn, $sql_order);
                     // $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
-                    $count_order = mysqli_num_rows($result_order);
+                    $count_order = mysqli_num_rows($result_order); */
 
-                    if ($count_order > 0) {
+                    if ($count_ProductLinkOrder > 0) {
 
 
                         for ($x = 1; $x <= $count_order; $x++) {
-                            $row_order = mysqli_fetch_assoc($result_order);
+                            /*$row_order = mysqli_fetch_assoc($result_order);*/
 
-                            $produt_id = $row_order["Product_ID"];
+                           /* $produt_id = $resProductId["Product_ID"];
 
-
+                            $sql = "SELECT * FROM Product WHERE Product_ID=? ";
+                            $result_Product = $conn->prepare($sql);
+                            $result_Product->execute(array($produt_id));
+                            $count_Product = $result_Product->rowCount();
+                            $resProductId = $result_Product->fetch(PDO::FETCH_ASSOC);
 
                             $sql = "SELECT * FROM `product`  where Product_ID = '$produt_id' ";
                             $result = mysqli_query($conn, $sql);
@@ -145,7 +182,7 @@ try {
                             $row["Product_Name"];
                             $row_order["Date_Placed"];
                             $row_order["Cus_Address"];
-                            echo  "
+                            echo  " */
                         <tr>
                         <td>" .  $x . "</td>
                         <td>" . $row["Product_Name"] . "</td>
