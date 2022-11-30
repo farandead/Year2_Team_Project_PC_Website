@@ -34,35 +34,32 @@ require "PHP/CheckAdminAccess.php";
 </head>
 <header>
             <!--Admin Panel-->
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
+       <div class="container">
+       <a href="#" class="navbar-brand">My CV</a>
 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-4" style="margin-top: -15px;">
-    <div class="container">
-        <a href="#" class="navbar-brand">Admin</a>
- 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
- 
-         <div class="collapse navbar-collapse" id="navmenu">
-             <ul class="navbar-nav ms-auto">
-                 <li class="nav-item">
-                     <a href="accept_admin_page.php" class="nav-link">Admin applications</a>
-                 </li>
-                 <li class="nav-item">
-                     <a href="orders_management.php" class="nav-link">Order management</a>
-                 </li>
-                 <li class="nav-item">
-                     <a href="accounts_base_page.php" class="nav-link">Accounts page</a>
-                 </li>
-                 
-                 
-             </ul>
- 
-         </div>
-     </div>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-me" class="nav-link">Contact Me</a>
+                </li>
+                
+                
+            </ul>
+
         </div>
-    </nav>
-</div>
+    </div>
+   </nav>
 </header>
 
         </body>
