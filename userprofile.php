@@ -121,7 +121,7 @@ try {
                     
                     $customer = $_SESSION['user_Email'];
                     $customer = stripcslashes($customer);
-                    $customer = mysqli_real_escape_string($con, $customer);
+                    $customer = mysqli_real_escape_string($conn, $customer);
                     $sql_order = "SELECT * from `orders_data`  where Cus_Email = '$customer'";
 
                     $result_order = mysqli_query($conn, $sql_order);
