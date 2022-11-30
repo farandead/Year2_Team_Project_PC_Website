@@ -19,7 +19,7 @@ require "PHP/CheckAdminAccess.php";
         </script>
         <style>
             body {
-                margin-top: 30px;
+                margin-top:;
                 padding: 0%;
                 font-family: "Arial", Helvetica, sans-serif;
             }
