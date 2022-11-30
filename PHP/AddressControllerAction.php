@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['Remove']) or isset($_POST['deafault']))
+if(isset($_POST['Remove']) or isset($_POST['deafault'])){
 ob_start();session_start();require "connect_db.php";
 if(isset($_POST['Remove'])){
   $changeTo= "Hidden";
