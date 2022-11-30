@@ -67,7 +67,7 @@ try {
     <?php require 'header.php'; ?>
     
    
-        <div class = "gridtemp">
+        
             <div class="container1">
             
                 <div class="OrdersBox">
@@ -123,7 +123,7 @@ try {
 
             
     
-        </div>
+        
     
     <?php require 'footer.php'; ?>
 
