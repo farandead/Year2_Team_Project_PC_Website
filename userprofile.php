@@ -126,6 +126,7 @@ try {
                     
                      while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
                         echo $resOrderId['Order_ID'];
+                         echo"-";
                     
       }
                     
