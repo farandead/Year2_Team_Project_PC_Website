@@ -41,13 +41,6 @@
    
    
 
-</head>
-
-<?php //include '/header.php'; ?>
-<!-- font-family: 'Staatliches', cursive; -->
-<!-- font-family: 'Russo One', sans-serif; -->
-
-
 <body>
     <?php require 'header.php'; ?>
 
