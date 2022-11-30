@@ -1,4 +1,6 @@
-<?php  require "PHP/connect_db.php"; session_start(); ?>
+<?php
+//to run this file session and db connection are required
+require "PHP/connect_db.php"; session_start(); ?>
 
 <html>
 <body>
@@ -6,15 +8,21 @@
 
 <h1>Addresses panel</h1>
 <?php  
+   // check number of addresses which are not hidden
+   
    $sqlAd="SELECT * FROM Delivery_address WHERE NOT Address_Status ='Hidden' AND User_ID ='".$_SESSION['User_ID']."'";
   //$queryAd=mysqli_query($conn, $sqlAd);
   if ($queryAd=mysqli_query($conn, $sqlAd)) {
     $rowcount=mysqli_num_rows($queryAd);
+     
+     //if the number < 1, the form will not appear
+     
    if($rowcount>0){
   
 echo '<form action="PHP/AddressControllerAction.php" method="post">';
   echo '<p>Please select the address:</p>';
-
+// a loop to print all the addresses (radio buttons) which are not hidden
+      //If address is default show it to the user
   while($rowAd=mysqli_fetch_assoc($queryAd)){
     
     $addres=$rowAd['Country'].", ".$rowAd['City'].", ".$rowAd['Street'].", ".$rowAd['ZIP'];
@@ -31,7 +39,7 @@ echo '<br>
 </form>';
    }
   }
-  
+  // next is a normal post form to create new address
   ?>
   <form action="PHP/AddAddressAction.php" method="post">
      <p>Pleaseenter the details:</p>
