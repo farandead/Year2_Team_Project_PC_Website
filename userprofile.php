@@ -124,11 +124,9 @@ try {
                 $count_order = $result_order->rowCount();
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
                     
-                     while($resOrderId){
- 
-    echo $resOrderId;
-                     } else{ 
-         echo "not find";
+                     while($resOrderId) {
+                        echo $resOrderId;
+                    
       }
                     
                     
