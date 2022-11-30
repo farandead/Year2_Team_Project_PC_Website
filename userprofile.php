@@ -117,18 +117,18 @@ try {
                     </tr>
                     <?php
                     
-                    
+                    $test = "29";
                 $sql = "SELECT * FROM OrderP WHERE User_ID=? ";
                 $result_order = $conn->prepare($sql);
-                $result_order->execute(array($_SESSION['User_ID']));
+                $result_order->execute(array($test));  /* $_SESSION['User_ID']*/
                 $count_order = $result_order->rowCount();
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
                     
                      while($resOrderId){
  
     echo $resOrderId;
-      else{ 
-          $Products= $Products.", ".$rowPr['Product_ID']."(".$rowPr['Amount_Product'].")";
+                     } else{ 
+         echo "not find";
       }
                     
                     
