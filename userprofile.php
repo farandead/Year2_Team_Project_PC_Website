@@ -1,14 +1,15 @@
+<?php  session_start(); ?>
 <head>
     <link rel="stylesheet" href="css/user-profile.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <?php 
     include "header.php";
-    session_start();
+
 
 ?>
 <div class="container rounded bg-white mt-5 mb-5">
