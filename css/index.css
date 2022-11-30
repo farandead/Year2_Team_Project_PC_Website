@@ -1,0 +1,353 @@
+*{
+    /* font-family: 'Staatliches', cursive; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+   
+   
+
+    
+}
+
+body{
+    margin: 0%;
+  
+    font-family: "Arial", Helvetica, sans-serif;
+    background-image: url(/img/1_gb.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+.mainbox-container{
+width: 100vmax;
+margin: auto;
+box-shadow: 1px 1px 5px rgba(70, 69, 69, 0.382);
+background-color: rgb(250, 250, 250);
+
+padding-bottom: 4vmax;
+
+
+
+}
+
+
+
+.dark-mode{
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+.dark-mode-dark{
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+#toggle_button_dark{
+    display: none;
+}
+
+
+
+.link:hover{
+    border-bottom: 1px solid white;
+    color: white;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+.searchLogo{
+    margin-left:50px ;
+    color: white;
+   
+}
+.searchLogo:hover{
+    
+    color: #0260be;
+}
+
+
+
+.safetyContainer{
+    
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+.safetyContainer img{
+    margin-top: 100px;
+    margin-bottom: 100px;
+} 
+
+
+
+
+
+
+
+.devices-container-heading{
+
+    display: flex;
+    
+   
+    padding-left: 100px;
+    text-align: left;
+    margin: auto;
+    text-align: left;
+}
+.devices-container-heading h3{
+    margin-top: 50px;
+    margin-bottom:-20px ;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+.devices-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.devices-container-laptop{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+.devices-sub-container{
+    display: flex;
+    margin-top: 40PX;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.description-ulisted{
+    height: 9vmax;
+    overflow: hidden;
+}
+
+.productdetails{
+    
+   
+    display: block;
+    flex-direction: column;
+ 
+    
+    text-align: center;
+    margin-top: 3vmax;
+    width: 20vmax;
+    min-height: 20vmax;
+    max-height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: space-between;
+    margin-left:3vmax ;
+    margin-right:3vmax ;
+    box-shadow: 0px 0px 8px rgb(73, 72, 72);
+
+}
+
+.product-details-title{
+    display: flex;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: larger;
+    letter-spacing: 3px;
+    padding:10px 10px;
+
+    
+    background-color: #1e8af5;
+    
+}
+.dark{
+    background-color: rgb(33, 32, 32);
+}
+.dark_transperent{
+    background-color: rgba(33, 32, 32, 0.43);
+    
+}
+.product-details-img img{
+    width: 7vmax;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.description-ulisted-item{
+    list-style-type:none;
+    text-align: left;
+    font-size: smaller;
+    font-weight: 500;
+}
+.product-details-buy-buttons button{
+font-family: 'Russo One', sans-serif; 
+   width: 100%;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background-color: #1e8af5;
+   border: none;
+   color: white;
+   font-size: 12px;
+   font-weight: 200;
+   letter-spacing: 2PX;
+   position: relative;
+}
+.product-details-buy-buttons button:hover{
+    background-color: #1266bb ;
+    color: #e0eefb;
+}
+
+.change-buttons{
+    
+    padding-top: 3vmax;
+    margin-bottom: -10px;
+    display: flex;
+    
+    height: 60px;
+    align-content: left;
+    justify-content: right;
+    align-items: center;
+    justify-items: center;
+    padding-right: 100px;
+   
+
+}
+.change-buttons button{
+    height: 40px;
+    width: 170px;
+    margin-left: 10px;
+    background-color: rgba(229, 222, 222, 0.677);
+    border: none;
+    font-weight: 600;
+   
+}
+.change-buttons button:active{
+    background-color: #0260be;
+   
+}
+.banner-1-container{
+    display: flex;
+    background-color: #0260be;
+    margin-top: 50px;
+    
+}
+
+.banner-1-sub-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 50px;
+    padding-left: 30px;
+    color: white;
+   
+}
+.banner-1-sub-container-heading{
+    color: white;
+    padding-top: 50px;
+    font-weight: 200;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.banner-1-sub-container-button button{
+    padding: 10px 30px;
+    font-weight: 500;
+    font-size: smaller;
+    border: 1px solid rgb(255, 255, 255);
+
+    background-color:rgba(255, 255, 255, 0) ;
+    color: white;
+}
+.banner-1-sub-container-button button:hover{
+    background-color: white;
+    color: black;
+}
+.shipping-banner{
+   
+}
+.shipping-banner-sub-container{
+    display: flex;
+    flex-direction: row;
+
+}
+.shipping-banner-sub-container ul li{
+    list-style: none;
+    display: flex;
+   
+
+}
+.shipping-banner-sub-container-img img{
+    width: 10%;
+}
+
+.shipping-banner{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 5%, rgba(0,163,255,1) 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    color: white;
+}
+.shipping-banner div{
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+.shipping-banner div div{
+    padding-left:40px ;
+    padding-right: 40px;
+}
+
+.shipping-banner-sub-container button{
+    padding: 10px 25px;
+    font-family:'Russo One', sans-serif ;
+    background-color: rgba(254, 254, 254, 0);
+    color: white;
+    border: 1px solid white;
+    font-size: smaller;
+
+}
+.shipping-banner-sub-container button:hover{
+   
+    background-color: white;
+   
+    font-size: smaller;
+    color: black;
+
+}
+.shipping-banner-outer{
+    background-color: rgb(223, 218, 218);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.image-container-bottom{
+    display: flex;
+    
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    background-color: rgb(223, 218, 218);
+
+
+}
+.image-sub-container-bottom img{
+    width: 400px;
+    height: 200px;
+    z-index: 1;
+    position: relative;
+}
+.image-sub-container-bottom h2{
+  
+    z-index: 2;
+    position: relative;
+}
+
+   
+
+    
