@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once'/PHP/connect_db.php';
+require_once'PHP/connect_db.php';
 
  
   if(isset($_SESSION['login'])){
