@@ -110,8 +110,8 @@ try {
                 <table>
                     <tr>
 
-                        <th>No </th>
-                        <th>Product </th>
+                        <th>Order Statut</th>
+                        <th>Amount</th>
                         <th>Date</th>
                         <th>Address</th>
                     </tr>
@@ -176,7 +176,7 @@ try {
                     
                     <?php
                     
-                    $test = "29";
+                $test = "29";
                 $sql = "SELECT * FROM OrderP WHERE User_ID=? AND Order_Status != 'Basket' ";
                 $result_order = $conn->prepare($sql);
                 $result_order->execute(array($test));  /* $_SESSION['User_ID']*/
@@ -184,6 +184,8 @@ try {
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
                     
               while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
+                  
+                  
                         
                 $OrderID = $resOrderId['Order_ID'];    
                 $sql = "SELECT * FROM Linked_Order_and_Products WHERE Order_ID = ? ";
@@ -194,7 +196,16 @@ try {
               
               while($resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) {
                         
-                       echo $resProductOfOrderID['Product_ID'];
+                       //echo $resProductOfOrderID['Product_ID'];
+                  ?>
+                   <a href=" <?php echo $resProductOfOrderID['Product_ID'] ?>">  <tr>
+                        <td>" <?php echo $resOrderId['Order_ID'] ?> "</td>
+                        <td>" <?php echo $resOrderId["Order_Status"] ?> "</td>
+                        <td>" <?php echo $resOrderId['Total_Price'] ?> "</td>
+                        
+                       </tr> 
+                    </a>
+                    <?php
                        
                    }
                   
