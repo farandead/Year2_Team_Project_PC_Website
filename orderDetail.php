@@ -120,7 +120,9 @@ echo "
       
                         </div>
                     </div>";
-   }
+   } else {
+    echo " Not in " ;
+    }
 //}
 
 ?>
