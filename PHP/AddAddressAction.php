@@ -9,14 +9,14 @@ if(isset($_POST['AddAddress'])){
   $Country=$_POST['Country'];
   $Street=$_POST['Street'];
     
-/*  $sql = "INSERT INTO Delivery_address(firstname, lastname, email)
-VALUES ('John', 'Doe', 'john@example.com')";
+ $sql = "INSERT INTO Delivery_address(ZIP, City, Country,Street,	Address_Status,User_ID)
+VALUES ('$ZIP', '$City', '$Country','$Street','Accessible','$userID')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
-}*/
+}
 
 
 }
