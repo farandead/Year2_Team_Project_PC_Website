@@ -30,10 +30,8 @@
                     <li><i id="toggle_button_dark" class="bi bi-moon" onclick="darkModeProduct()"></i></li> 
                     <li><i id="toggle_button"style="display: flex;color:white;" class="bi bi-brightness-high-fill" onclick="darkModeProduct()"></i></li>
                     <li><i class="fa fa-cart-arrow-down" style="font-size: xx-large;color:white"></i></li>
-
-            </ul>
-                
-                <?php if (isset($_SESSION['login'])){ ?>
+                    <li>
+                             <?php if (isset($_SESSION['login'])){ ?>
                         <div class="dropdown">
                            <a class="link sign-in-logo dropdown-toggle" type="link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                <i class="bi bi-person-fill" style="color:white"> </i> 
@@ -50,6 +48,11 @@
                    <i class="bi bi-person-fill" style="color:white"> </i> 
                  </a>
      <?php } ?>
+                    </li>
+
+            </ul>
+                
+               
         
                 
         </div>
