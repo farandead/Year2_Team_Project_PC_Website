@@ -40,8 +40,6 @@ if ($conn->query($sqlUPS) === TRUE) {
 }
 
 
-
-
 }
-
+header("Location: ../userprofile.php");
 ?>
