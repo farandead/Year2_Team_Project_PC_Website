@@ -117,7 +117,7 @@
     <div class="navigation-bar"  id="navigationLightMode">
         <div class="navigation-logo">
 
-            <img class="img-logo" src="img/Logo1.png" alt="Logo">
+         <a class="link" style="text-decoration: none; " href="index.php"><img class="img-logo" src="img/Logo1.png" alt="Logo"></a>
 
         </div>
         <div class="navigation-menu">
