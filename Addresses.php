@@ -1,4 +1,6 @@
-html>
+<?php  require "PHP/connect_db.php"; session_start(); ?>
+
+<html>
 <body>
 
 
@@ -6,6 +8,17 @@ html>
 
 <form action="/action_page.php">
   <p>Please select the address:</p>
+  <?php 
+  $sqlAd="SELECT * FROM Delivery_address WHERE User_ID ='".$_SESSION['User_ID']."'";
+  $queryAd=mysqli_query($conn, $sqlAd);
+ 
+
+  while($rowAd=mysqli_fetch_assoc($queryAd)){
+   echo '<input type="radio" id="1" name="address" value="1">
+         <label for="html">address</label><br>';
+  }
+  
+  ?>
   <input type="radio" id="1" name="address" value="1">
   <label for="html">address</label><br>
   <input type="radio" id="2" name="address" value="2">
