@@ -78,7 +78,7 @@ try {
                 $result_Product->execute(array($ProductID));  /* $_SESSION['User_ID']*/
                 $count_Product = $result_Product->rowCount();
                 $resProduct = $result_Product->fetch(PDO::FETCH_ASSOC);
-              
+              $var_dump($count_Product);
     while($row = $result_Product->fetch(PDO::FETCH_ASSOC)) {
     
 //$lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
