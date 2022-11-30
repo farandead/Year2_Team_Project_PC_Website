@@ -146,9 +146,19 @@
                 <li>
                     <i id="toggle_button_dark" class="bi bi-moon" onclick="darkModeProduct()"></i> 
                     <i id="toggle_button"style="display: flex;color:white;" class="bi bi-brightness-high-fill" onclick="darkModeProduct()"></i></li>
-             
+             <?php if (isset($_SESSION['login'])){ ?>
+                <li><a class="sign-up-logo" class="link" href="user_page.php"> <i class="bi bi-person-fill"
+                            style="color:white"></i> </a></li>
+                <?php
+}else {
+    ?>
                 <li><a class="sign-in-logo" class="link" href="Sign_up_new.php"> <i class="bi bi-person-fill"
                             style="color:white"></i> </a></li>
+                <?php
+} ?>
+                
+                
+                
                 <li><i class="fa fa-cart-arrow-down" style="font-size: xx-large;color:white"></i></li>
 
             </ul>
