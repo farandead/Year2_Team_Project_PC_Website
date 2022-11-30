@@ -6,7 +6,7 @@
 
 <h1>Addresses panel</h1>
 
-<form action="PHP/AddressControllerAction.php">
+<form action="PHP/AddressControllerAction.php" method="post">
   <p>Please select the address:</p>
   <?php 
   $sqlAd="SELECT * FROM Delivery_address WHERE NOT Address_Status ='Hidden' AND User_ID ='".$_SESSION['User_ID']."'";
@@ -24,8 +24,8 @@
 
 
 <br>
-<input type="submit" value="Remove">
-<input type="submit" value="Make deafault">
+<input type="submit" value="Remove" name="Remove">
+<input type="submit" value="Make deafault" name="deafault">
 </form>
 </body>
 </html>
