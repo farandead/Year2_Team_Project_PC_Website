@@ -32,7 +32,7 @@ if ($conn->query($sqlinso) === TRUE) {
  $sqlUPORDER = "UPDATE OrderP SET Order_Status='InProcess' WHERE 	Order_ID=$IDorder";
 
 if ($conn->query($sqlUPORDER) === TRUE) {
-  echo "Record updated successfully";
+  echo "Record updated successfully<br>";
  
  //ADD ADDRESS+++++++++++++++++++++
  $addressToD=$_POST['addresses'];
@@ -40,7 +40,7 @@ if ($conn->query($sqlUPORDER) === TRUE) {
 VALUES ('$IDorder', '$addressToD')";
 
 if ($conn->query($sqlLinkAdOrd) === TRUE) {
-  echo "New record created successfully";
+  echo "New record created successfully!!!";
  //header("Location: ../userprofile.php");
  //GO TO PROFILE PAGE!!!!!!!!!
 } else {
