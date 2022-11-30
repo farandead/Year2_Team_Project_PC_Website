@@ -185,7 +185,9 @@ input {
 	min-height: 1000px;
 	margin: auto;
 	margin-top: 50px;
+	display: grid;
 	
+	gap: 10px;
 	
 }
 
@@ -202,6 +204,9 @@ input {
 	margin: auto;
 	margin-top: 100px;
 	margin-bottom: 50px;
+	border: 1px solid black;
+	grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
 
 }
 
@@ -415,22 +420,10 @@ body{
 	right: 16px;
 	top: 15px;
 	margin-top: 15px;
-}
-
-.grid-container {
-	display: grid;
-	
-	gap: 10px;
-	
-  }
-  .grid-container > .OrdersBox {
-	border: 1px solid black;
-	grid-column: 1 / span 2;
-  grid-row: 1 / span 3;
-  }
-  .grid-container > .section {
 	border: 1px solid black;
 	grid-column: 3;
   grid-row: 1 / span 3;
-  }
+}
+
+
 

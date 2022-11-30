@@ -67,7 +67,7 @@ try {
     <?php require 'header.php'; ?>
     
    
-    <div class="grid-container">
+   
         <div class="container1">
             <div class="OrdersBox">
                 
@@ -114,10 +114,10 @@ try {
 
             <div class="section">
                 <h3>test</h3>
-        </div>
+            </div>
 
         </div>
-    </div>
+    
 
     
     <?php require 'footer.php'; ?>
