@@ -34,23 +34,8 @@
     <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script>
-
-    </script>
-    <style>
-        body {
-            margin: 0%;
-            padding: 0%;
-            font-family: "Arial", Helvetica, sans-serif;
-        }
-
-        i {
-            font-size: 30px;
-            cursor: pointer;
-            position: relative;
-            ;
-        }
-    </style>
+   
+   
 
 </head>
 <!-- font-family: 'Staatliches', cursive; -->
