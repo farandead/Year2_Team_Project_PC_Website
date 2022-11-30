@@ -184,32 +184,20 @@ try {
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
                     
               while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
-                  
-                  
-                        
-                $OrderID = $resOrderId['Order_ID'];    
-                $sql = "SELECT * FROM Linked_Order_and_Products WHERE Order_ID = ? ";
-                $result_ProductOfOrderID = $conn->prepare($sql);
-                $result_ProductOfOrderID->execute(array($OrderID));  /* $_SESSION['User_ID']*/
-                $count_ProductOfOrderID = $result_ProductOfOrderID->rowCount();
-                $resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC);
-              
-              while($resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) {
-                        
-                       //echo $resProductOfOrderID['Product_ID'];
+                         //echo $resProductOfOrderID['Product_ID'];
                   ?>
-                   <a href=" <?php echo $resProductOfOrderID['Product_ID'] ?>">  
+                     
                        <tr>
                         
-                        <td><?php echo $resOrderId["Order_Status"] ?> </td>
-                        <td> <?php echo $resOrderId['Order_ID'] ?> </td>
-                        <td> <?php echo $resOrderId['Total_Price'] ?></td>
-                        <td><a href="orderDetail.php?orderId=<?php echo $resProductOfOrderID['Product_ID'] ?>"> Click </a> </td>
+                        <td><?php echo $resOrderId["Order_Status"]?></td>
+                        <td><?php echo $resOrderId['Order_ID']?></td>
+                        <td><?php echo $resOrderId['Total_Price']?></td>
+                        <td><a href="orderDetail.php?orderId=<?php echo $resOrderId['Order_ID'] ?>"> Click </a> </td>
                        </tr> 
-                    </a>
+                    
                     <?php
                        
-                   }
+                   
                   
                     
                     }
