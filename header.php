@@ -1,3 +1,8 @@
+<head> 
+        
+ <title>COMPUK -Your One Stop Source of All Digital Needs</title>
+</head>
+
 <div class="navigation-bar"  id="navigationLightMode">
         <div class="navigation-logo">
 
