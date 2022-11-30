@@ -116,21 +116,15 @@ try {
                         <th>Address</th>
                     </tr>
                     <?php
-                    $host = "localhost";
-                    $user = "root";
-                    $password = '';
-                    $db_name = "babimors_compuk";
+                  
 
-                    $con = mysqli_connect($host, $user, $password, $db_name);
-                    if (mysqli_connect_errno()) {
-                        die("Failed to connect with MySQL: " . mysqli_connect_error());
-                    }
+                    
                     $customer = $_SESSION['User_Email'];
                     $customer = stripcslashes($customer);
                     $customer = mysqli_real_escape_string($con, $customer);
                     $sql_order = "SELECT * from `orders_data`  where Cus_Email = '$customer'";
 
-                    $result_order = mysqli_query($con, $sql_order);
+                    $result_order = mysqli_query($conn, $sql_order);
                     // $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
                     $count_order = mysqli_num_rows($result_order);
 
