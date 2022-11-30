@@ -69,51 +69,54 @@ try {
    
    
         <div class="container1">
-            <div class="OrdersBox">
-                
-                <div class= "title">
-                    <h1 class="helloUser">Hello <?php echo ucfirst($_SESSION['User_FName']); ?> !</h1>
-                    <h2 class="subheading">Order History: </h2>
+            <div class = "gridtemp">
+                <div class="OrdersBox">
+                    
+                    <div class= "title">
+                        <h1 class="helloUser">Hello <?php echo ucfirst($_SESSION['User_FName']); ?> !</h1>
+                        <h2 class="subheading">Order History: </h2>
+                    </div>
+                    <table class = "orderTable">
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Payment Status</th>
+                        <th>Fulfillment Status</th>
+                        <th>Total Price</th>
+                    </tr>
+                        <?php 
+                        $sql = "SELECT * FROM OrderP WHERE User_ID=? ";
+                        $result = $conn->prepare($sql);
+                        $result->execute(array($_SESSION['User_ID']));
+                        $count = $result->rowCount();
+                        
+                        
+                        if ($count > 0) {
+                            while ($row = $result->fetch(PDO::FETCH_ASSOC)) { ?>
+                                <tr>
+                                    <td><?php echo $row['Order_ID'] ?></td>
+                                    <td>x</td>
+                                    <td><?php echo $row['Order_Status'] ?></td>
+                                    <td>x</td>
+                                    <td><?php echo $row['Total_Price'] ?></td>
+                                    
+                                </tr>
+                            <?php  }
+                        }else { 
+                        ?> <p style="color:red;"><?php echo "There is no previous order" ?> </p>
+                        <?php
+                        }
+                        
+                        
+                        ?>
+                        
+                    </table>
                 </div>
-                <table class = "orderTable">
-                <tr>
-                    <th>Order ID</th>
-                    <th>Date</th>
-                    <th>Payment Status</th>
-                    <th>Fulfillment Status</th>
-                    <th>Total Price</th>
-                </tr>
-                    <?php 
-                    $sql = "SELECT * FROM OrderP WHERE User_ID=? ";
-                    $result = $conn->prepare($sql);
-                    $result->execute(array($_SESSION['User_ID']));
-                    $count = $result->rowCount();
-                    
-                    
-                    if ($count > 0) {
-                        while ($row = $result->fetch(PDO::FETCH_ASSOC)) { ?>
-                            <tr>
-                                <td><?php echo $row['Order_ID'] ?></td>
-                                <td>x</td>
-                                <td><?php echo $row['Order_Status'] ?></td>
-                                <td>x</td>
-                                <td><?php echo $row['Total_Price'] ?></td>
-                                
-                            </tr>
-                        <?php  }
-                    }else { 
-                    ?> <p style="color:red;"><?php echo "There is no previous order" ?> </p>
-                    <?php
-                    }
-                    
-                    
-                    ?>
-                    
-                </table>
-            </div>
 
-            <div class="section">
-                <h3>test</h3>
+                <div class="section">
+                    <h3>test</h3>
+                </div>
+
             </div>
 
         </div>
