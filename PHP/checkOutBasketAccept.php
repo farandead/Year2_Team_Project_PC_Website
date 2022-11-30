@@ -24,7 +24,7 @@ if ($conn->query($sql) === TRUE) {
 } else {
   echo "Error updating record: " . $conn->error;
 }
-  
+  header("Location:../userprofile.php");
   //go to profile page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
   echo "done";
 }else{
