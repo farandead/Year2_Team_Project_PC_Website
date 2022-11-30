@@ -10,7 +10,7 @@
   //$queryAd=mysqli_query($conn, $sqlAd);
   if ($queryAd=mysqli_query($conn, $sqlAd)) {
     $rowcount=mysqli_num_rows($queryAd);
-   
+   if($rowcount>0){
   
 echo '<form action="PHP/AddressControllerAction.php" method="post">';
   echo '<p>Please select the address:</p>';
@@ -29,7 +29,7 @@ echo '<br>
 <input type="submit" value="Remove" name="Remove">
 <input type="submit" value="Make deafault" name="deafault">
 </form>';
-  
+   }
   }
   
   ?>
