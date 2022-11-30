@@ -442,7 +442,7 @@ input {
     font-size: 13px;
     color: #5a5a5a;
     float: left;
-    width: 40%;
+    width: 100%;
     transition: all .3s;
 }
 button {

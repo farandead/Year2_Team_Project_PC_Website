@@ -117,7 +117,7 @@ try {
 
         <div class="section">
             <form class="form">
-	            <h2>User Profile</h2>
+	            <h2>Edit User Profile</h2>
 	                <div class="form-group">
 		                <label for="email">Full Name:</label>
 		                <div class="relative">
@@ -161,7 +161,7 @@ try {
                         </div>
                     </div>        
                     <div class="tright">
-                        <a href=""><button class="movebtn movebtnre" type="Reset"><i class="fa fa-fw fa-refresh"></i> Reset </button></a>
+                        
                         <a href=""><button class="movebtn movebtnsu" type="Submit">Submit <i class="fa fa-fw fa-paper-plane"></i></button></a>
                     </div>
                     
