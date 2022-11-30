@@ -4,9 +4,10 @@ require "PHP/CheckAdminAccess.php";
 <!DOCTYPE html>
 <html lang="en">
 
-<header>
+<head>
 <?php include 'header.php'; ?>
-            
+</head>
+            <header>
             <!--Admin Panel-->
         <div class="container-fluid">
             <div class="row">
