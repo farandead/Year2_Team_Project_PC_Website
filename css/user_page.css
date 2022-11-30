@@ -197,8 +197,9 @@ input {
 	
 	
 	border: 1px solid black;
-	
-	
+	position: absolute;
+	top: 16px;
+	left: 10px;
 
 }
 
