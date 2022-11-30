@@ -33,14 +33,14 @@ if ($resultBas=mysqli_query($conn,$sqlBas)) {
            // echo $items;
              $query=mysqli_query($conn,"SELECT * FROM Product WHERE ".$items."");
         }else{
-        echo "Basket is empty";
+        echo "Basket is empty2";
         }
         
         
         
       //echo "yes";
     }else{
-    echo "Basket is empty";
+    echo "Basket is empty1";
     }
 }else{
 echo "Currently empty";
