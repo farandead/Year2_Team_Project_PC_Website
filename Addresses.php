@@ -33,16 +33,16 @@
      <p>Pleaseenter the details:</p>
     
     <label for="Country">Country:</label>
-  <input type="text" id="Country" name="Country"><br><br>
+  <input type="text" id="Country" name="Country" maxlength="20"><br><br>
     
       <label for="City">City:</label>
-  <input type="text" id="City" name="City"><br><br>
+  <input type="text" id="City" name="City" maxlength="20"><br><br>
     
       <label for="Street">Street:</label>
-  <input type="text" id="Street" name="Street"><br><br>
+  <input type="text" id="Street" name="Street" maxlength="20"><br><br>
     
       <label for="ZIP">Country:</label>
-  <input type="text" id="ZIP" name="ZIP"><br><br>
+  <input type="text" id="ZIP" name="ZIP" maxlength="7"><br><br>
     
     <input type="submit" value="Add new address" name="AddAddress">
     </form>
