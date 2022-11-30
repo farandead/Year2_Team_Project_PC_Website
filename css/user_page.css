@@ -412,6 +412,30 @@ footer a {
 	border: 1px solid black;
 	
 }
+.form {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #fff;
+    margin: 3% auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 5px solid #ccc;
+}
+form:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: #c4e17f;
+    border-radius: 5px 5px 0 0  ;
+    background: rgba(196,225,127,1);
+}
 
 .form h2 {
     margin: 18px 0;
