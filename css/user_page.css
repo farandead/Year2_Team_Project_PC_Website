@@ -406,7 +406,7 @@ footer a {
 	
 	overflow: hidden;
 	position: absolute;
-	
+	right: 10px;
     top: 60px;
 	width: 600px;
     height: 100%;
