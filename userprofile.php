@@ -124,7 +124,7 @@ try {
                 $count_order = $result_order->rowCount();
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
                     
-                     while($resOrderId) {
+                     while($result_order->fetch(PDO::FETCH_ASSOC)) {
                         echo $resOrderId['Order_ID'];
                     
       }
