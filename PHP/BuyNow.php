@@ -78,6 +78,6 @@ if ($conn->query($sqlLinkAdOrd) === TRUE) {
 
   
 echo "yes";
-}else{echo "no";}
+}else{header("Location:../index.php");}
 
 ?>
