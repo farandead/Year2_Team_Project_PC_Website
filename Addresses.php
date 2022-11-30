@@ -6,7 +6,7 @@
 
 <h1>Addresses panel</h1>
 
-<form action="/action_page.php">
+<form action="PHP/AddressControllerAction.php">
   <p>Please select the address:</p>
   <?php 
   $sqlAd="SELECT * FROM Delivery_address WHERE NOT Address_Status ='Hidden' AND User_ID ='".$_SESSION['User_ID']."'";
