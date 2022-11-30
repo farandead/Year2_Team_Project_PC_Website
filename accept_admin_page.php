@@ -3,6 +3,7 @@ require "PHP/CheckAdminAccess.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="css/header.php">
 
 <head>
 <?php include 'header.php'; ?>
