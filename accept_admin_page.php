@@ -34,9 +34,15 @@ require "PHP/CheckAdminAccess.php";
 </head>
 <header>
             <!--Admin Panel-->
-        <div class="container-fluid">
-            <div class="row">
+            
+            <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+            </div>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-4" style="margin-top: -15px;">
+    <div class="container-fluid">
         <a href="#" class="navbar-brand">Admin</a>
  
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
