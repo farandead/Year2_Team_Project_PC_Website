@@ -42,8 +42,8 @@ try {
                                                                                                                                                                                                                                                                                                                     } else {
                                                                                                                                                                                                                                                                                                                         echo "notFound";
                                                                                                                                                                                                                                                                                                                     } ?></span><span class="text-black-50"><?php
-                                                                                            if (isset($_SESSION['User_Email'])) {
-                                                                                                echo $_SESSION['User_Email'];
+                                                                                            if (isset($_SESSION['user_Email'])) {
+                                                                                                echo $_SESSION['user_Email'];
                                                                                             } else {
                                                                                                 echo "notFound";
                                                                                             } ?>"</span><span> </span></div>
@@ -72,8 +72,8 @@ try {
                 <div class="row mt-3">
                     <div class="col-md-12"><label class="labels">Email</label><input disabled type="text" class="form-control" placeholder="Email" value="
                     <?php
-                    if (isset($_SESSION['User_Email'])) {
-                        echo $_SESSION['User_Email'];
+                    if (isset($_SESSION['user_Email'])) {
+                        echo $_SESSION['user_Email'];
                     } else {
                         echo "notFound";
                     } ?>"></div>
