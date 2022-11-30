@@ -150,29 +150,7 @@
                     <i id="toggle_button_dark" class="bi bi-moon" onclick="darkModeProduct()"></i> 
                     <i id="toggle_button"style="display: flex;color:white;" class="bi bi-brightness-high-fill" onclick="darkModeProduct()"></i></li>
              <?php if (isset($_SESSION['login'])){ ?>
-                  <li><a class="sign-up-logo" class="link" href="user_page.php"> <i class="bi bi-person-fill"
-                            style="color:white"></i> </a></li>
-                <?php
-}else {
-    ?>
-                <li><a class="sign-in-logo" class="link" href="Sign_up_new.php"> <i class="bi bi-person-fill"
-                            style="color:white"></i> </a></li>
-                <?php
-} ?>
-                
-                <div class="dropdown">
-                  <button class="sign-up-logo"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="bi bi-person-fill"
-                            style="color:white"></i>
-                  </button>
-                  
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="user_page.php">Profile</a>
-                    <a class="dropdown-item" href="PHP/signOut.inc.php">Log Out </a> 
-                  </div>
-                </div>
-                
-                <div class="dropdown">
+                  <div class="dropdown">
                   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown button
                   </button>
@@ -181,6 +159,17 @@
                     <a class="dropdown-item" href="PHP/signOut.inc.php">Log Out </a> 
                   </div>
                 </div>
+                <?php
+}else {
+    ?>
+                <li><a class="sign-in-logo" class="link" href="Sign_up_new.php"> <i class="bi bi-person-fill"
+                            style="color:white"></i> </a></li>
+                <?php
+} ?>
+                
+               
+                
+                
                 <li><i class="fa fa-cart-arrow-down" style="font-size: xx-large;color:white"></i></li>
 
             </ul>
