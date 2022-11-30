@@ -31,6 +31,19 @@
 </form>
   <form action="PHP/AddAddressAction.php" method="post">
      <p>Pleaseenter the details:</p>
+    
+    <label for="Country">Country:</label>
+  <input type="text" id="Country" name="Country"><br><br>
+    
+      <label for="City">City:</label>
+  <input type="text" id="City" name="City"><br><br>
+    
+      <label for="Street">Street:</label>
+  <input type="text" id="Street" name="Street"><br><br>
+    
+      <label for="ZIP">Country:</label>
+  <input type="text" id="ZIP" name="ZIP"><br><br>
+    
     <input type="submit" value="Add new address" name="AddAddress">
     </form>
 </body>
