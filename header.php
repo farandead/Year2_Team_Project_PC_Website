@@ -29,7 +29,7 @@
             <ul>
                     <li><i id="toggle_button_dark" class="bi bi-moon" onclick="darkModeProduct()"></i></li> 
                     <li><i id="toggle_button"style="display: flex;color:white;" class="bi bi-brightness-high-fill" onclick="darkModeProduct()"></i></li>
-                    <li><i class="fa fa-cart-arrow-down" style="font-size: xx-large;color:white"></i></li>
+                    <li><a href="ShoppingCart.php"><i class="fa fa-cart-arrow-down" style="font-size: xx-large;color:white"></i></a></li>
                     
 <?php if (isset($_SESSION['login'])){ ?>
                     
