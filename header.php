@@ -131,7 +131,7 @@
                 <li class="navbaritem"><a class="link" href="about_us.php">
                         <p>About Us</p>
                     </a></li>
-                <li class="navbaritem"><a class="link" href="contact_us.html">
+                <li class="navbaritem"><a class="link" href="contact_us.php">
                         <p>Contact Us</p>
                     </a></li>
                 <li class="navbaritem"><a class="link" href="#">
