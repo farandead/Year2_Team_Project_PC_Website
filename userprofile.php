@@ -119,7 +119,7 @@ try {
                   
 
                     
-                    $customer = $_SESSION['User_Email'];
+                    $customer = $_SESSION['user_Email'];
                     $customer = stripcslashes($customer);
                     $customer = mysqli_real_escape_string($con, $customer);
                     $sql_order = "SELECT * from `orders_data`  where Cus_Email = '$customer'";
@@ -139,7 +139,7 @@ try {
 
 
                             $sql = "SELECT * FROM `product`  where Product_ID = '$produt_id' ";
-                            $result = mysqli_query($con, $sql);
+                            $result = mysqli_query($conn, $sql);
 
                             $row = mysqli_fetch_assoc($result);
                             $row["Product_Name"];
