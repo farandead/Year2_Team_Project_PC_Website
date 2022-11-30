@@ -17,10 +17,10 @@ if ($conn->query($sql) === TRUE) {
   
   
      //update status to inptocess
-  $sql = "UPDATE OrderP SET Order_Status	='InProcess' WHERE Order_ID=$idor";
+  $sql = "UPDATE OrderP SET Order_Status='InProcess' WHERE Order_ID=$idor";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Record updated successfully";
+  echo "Record updated successfully to inprocess<br>";
 } else {
   echo "Error updating record: " . $conn->error;
 }
