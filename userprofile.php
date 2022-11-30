@@ -42,11 +42,11 @@ try {
                                                                                                                                                                                                                                                                                                                     } else {
                                                                                                                                                                                                                                                                                                                         echo "notFound";
                                                                                                                                                                                                                                                                                                                     } ?></span><span class="text-black-50"><?php
-                                                                                            if (isset($_SESSION['user_Email'])) {
-                                                                                                echo $_SESSION['user_Email'];
-                                                                                            } else {
-                                                                                                echo "notFound";
-                                                                                            } ?>"</span><span> </span></div>
+                if (isset($_SESSION['user_Email'])) {
+                    echo $_SESSION['user_Email'];
+                } else {
+                    echo "notFound";
+                } ?>"</span><span> </span></div>
         </div>
         <div class="col-md-5 border-right">
             <div class="p-3 py-5">
@@ -124,7 +124,7 @@ try {
                 $count_order = $result_order->rowCount();
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
                     
-                     while($result_order->fetch(PDO::FETCH_ASSOC)) {
+                     while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
                         echo $resOrderId['Order_ID'];
                     
       }
