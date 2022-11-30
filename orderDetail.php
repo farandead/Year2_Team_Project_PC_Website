@@ -52,7 +52,7 @@ session_start();
     
    |<?php  
     
-     $OrderID = $resOrderId['Order_ID'];    
+     $OrderID = $_GET['orderId'];    
                 $sql = "SELECT * FROM Linked_Order_and_Products WHERE Order_ID = ? ";
                 $result_ProductOfOrderID = $conn->prepare($sql);
                 $result_ProductOfOrderID->execute(array($OrderID));  /* $_SESSION['User_ID']*/
