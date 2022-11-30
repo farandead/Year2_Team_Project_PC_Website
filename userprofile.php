@@ -118,7 +118,7 @@ try {
                     <?php
                     
                     $test = "38";
-                $sql = "SELECT * FROM OrderP WHERE User_ID=? WHERE Order_Status != 'Basket' ";
+                $sql = "SELECT * FROM OrderP WHERE User_ID=? AND Order_Status != 'Basket' ";
                 $result_order = $conn->prepare($sql);
                 $result_order->execute(array($test));  /* $_SESSION['User_ID']*/
                 $count_order = $result_order->rowCount();
