@@ -1,6 +1,7 @@
 <?php
 if(isset($_POST['Remove']) or isset($_POST['deafault'])){
 ob_start();session_start();require "connect_db.php";
+  $address=$_POST['address'];
 if(isset($_POST['Remove'])){
   $changeTo= "Hidden";
  // echo "Remove";
@@ -30,7 +31,7 @@ if ($conn->query($sqlUP) === TRUE) {
 }
 
 
-  $sqlUPS = "UPDATE Delivery_address SET Address_Status='$changeTo' WHERE Address_ID=$ADID";
+  $sqlUPS = "UPDATE Delivery_address SET Address_Status='$changeTo' WHERE Address_ID=$address";
 
 if ($conn->query($sqlUPS) === TRUE) {
   echo "Record updated successfully";
