@@ -122,42 +122,42 @@ try {
 		                <label for="email">Full Name:</label>
 		                <div class="relative">
 			                <input class="form-control" id="name" type="text" pattern="[a-zA-Z\s]+" required="" autofocus="" title="Username should only contain letters. e.g. Piyush Gupta" autocomplete="" placeholder="Type your name here...">
-			                <i class="fa fa-user"></i>
+			                
 		                </div>
 	                </div>
 	                <div class="form-group">
 	  	                <label for="email">Email address:</label>
 	  	                <div class="relative">
 		  	                <input class="form-control" type="email" required="" placeholder="Type your email address..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-		  	                <i class="fa fa-envelope"></i>
+		  	                
 	  	                </div>
 	                </div>
 	                <div class="form-group">
 	  	                <label for="email">Contact Number:</label>
 	  	                <div class="relative">
 	  		                <input class="form-control" type="text" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required="" placeholder="Type your Mobile Number...">
-	  		                <i class="fa fa-phone"></i>
+	  		                
 	  	                </div>
 	                </div>
 	                <div class="form-group">
 	  	                <label for="email">Adress line 1:</label>
                         <div class="relative">
                             <input class="form-control" type="url" pattern="https?://.+" required="" placeholder="Adress Line 1 ...">
-                            <i class="fa fa-building"></i>
+                            
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="email">Adress line 2:</label>
                         <div class="relative">
                             <input class="form-control" type="text" id="designation" required="" placeholder="Adress Line 2 ...">
-                            <i class="fa fa-suitcase"></i>
+                            
                         </div>	
                     </div>
                     <div class="form-group">
                         <label for="email">Postcode:</label>
                         <div class="relative">
                             <input class="form-control" type="text" id="tags" required="" placeholder="Enter your Postcode...">
-                            <i class="fa fa-css3"></i>
+                            
                         </div>
                     </div>        
                     <div class="tright">
