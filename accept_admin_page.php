@@ -29,15 +29,6 @@ require "PHP/CheckAdminAccess.php";
         <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
         
     
-    
-        <link rel="stylesheet" href="css/slidshow.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-        <script src="js/toggle_switch.js"></script>
-        <script>
-    
         </script>
         <style>
             body {
