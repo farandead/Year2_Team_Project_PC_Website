@@ -178,13 +178,13 @@ input {
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
-	position: static;
+	position: absolute;
 	overflow: hidden;
 	width: 1500px;
 	max-width: 100%;
 	min-height: 1000px;
 	margin: auto;
-	margin-top: 50px;
+	top: 50px;
 	
 	
 }
@@ -198,8 +198,10 @@ input {
 	
 	border: 1px solid black;
 	position: absolute;
-	top: 16px;
+	top: 60px;
 	left: 10px;
+    width: 800px;
+    height: 100%;
 
 }
 
@@ -394,12 +396,7 @@ footer a {
     height: 100%;
 }
 
-body{
-    margin-top:20px;
-    color: #1a202c;
-    text-align: left;
-    background-color: #e2e8f0;    
-}
+
 .section {
     padding: 15px;
 	border-radius: 10px;
@@ -409,10 +406,11 @@ body{
 	overflow: hidden;
 	position: absolute;
 	right: 16px;
+    top: 60px;
 	width: 500px;
+    height: 100%;
 	border: 1px solid black;
-	grid-column: 3;
-  grid-row: 1 / span 3;
+	
 }
 
 
