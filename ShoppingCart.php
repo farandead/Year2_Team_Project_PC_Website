@@ -22,6 +22,7 @@ session_start();
   
     <link rel="stylesheet" href="css/shopping.css">
     <link rel="stylesheet" href="css/mainpage.css">
+     <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
     
