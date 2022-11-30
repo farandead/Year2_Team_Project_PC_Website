@@ -38,8 +38,6 @@
    
 
 </head>
-<!-- font-family: 'Staatliches', cursive; -->
-<!-- font-family: 'Russo One', sans-serif; -->
 
 
 <body style="background-image: none;">
