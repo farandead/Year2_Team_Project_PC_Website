@@ -21,12 +21,7 @@
   }
   
   ?>
-  <input type="radio" id="1" name="address" value="1">
-  <label for="html">address</label><br>
-  <input type="radio" id="2" name="address" value="2">
-  <label for="css">address</label><br>
-  <input type="radio" id="3" name="address" value="3">
-  <label for="javascript">address</label>
+
 
 <br>
 <input type="submit" value="Remove">
