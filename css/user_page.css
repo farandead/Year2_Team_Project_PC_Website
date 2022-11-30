@@ -607,16 +607,6 @@ button:hover {
 }
 
 
-/* --- Media Queries --- */
 
-@media only screen and (max-width: 600px) {
-    p:before{
-        content: attr(type);
-        width: 100%
-    }
-    input{
-        width: 100%;
-    }
-}
 
 
