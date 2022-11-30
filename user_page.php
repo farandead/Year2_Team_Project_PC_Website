@@ -125,7 +125,8 @@ try {
     
         
     
-    
+    <?php require 'footer.php'; ?>
+
 
 </body>
 
