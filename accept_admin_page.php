@@ -68,12 +68,6 @@ require "PHP/CheckAdminAccess.php";
         </body>
 <!--Accept Admin Table-->
 <section class ="table">
-    <div class="container1 d-flex justify-content-center align-items-center py-2">
-      <div class="row"></div>
-      <h1>'</h1>
-    </div>
-  </div>
-
     <div class="container1 mt-5 d-flex justify-content-center align-items-center mt-5 py-5">
       <div class="row"></div>
       <h1>Admin Authorisation</h1>
