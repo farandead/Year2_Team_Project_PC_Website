@@ -192,7 +192,7 @@ try {
                 $count_ProductOfOrderID = $result_ProductOfOrderID->rowCount();
                 $resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC);
               
-              while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
+              while($resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) {
                         
                        echo $resProductOfOrderID['Product_ID'];
                        
