@@ -9,7 +9,7 @@
 <form action="/action_page.php">
   <p>Please select the address:</p>
   <?php 
-  $sqlAd="SELECT * FROM Delivery_address WHERE User_ID ='".$_SESSION['User_ID']."'";
+  $sqlAd="SELECT * FROM Delivery_address WHERE NOT Address_Status ='Hidden' AND User_ID ='".$_SESSION['User_ID']."'";
   $queryAd=mysqli_query($conn, $sqlAd);
  
 
