@@ -2,7 +2,8 @@
 if(isset($_POST['AddAddress'])){
  session_start();
  ob_start();
-  
+  require "PHP/connect_db.php";
+ 
   $userID=$_SESSION['User_ID'];
   $ZIP=$_POST['ZIP'];
   $City=$_POST['City'];
