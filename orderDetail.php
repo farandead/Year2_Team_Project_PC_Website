@@ -72,14 +72,7 @@ try {
               
               while($resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) { */
     
-                $ProductID = "15";
-                $sql = "SELECT * FROM Product WHERE Product_ID = ? ";
-                $result_Product = $conn->prepare($sql);
-                $result_Product->execute(array($ProductID));  /* $_SESSION['User_ID']*/
-                $count_Product = $result_Product->rowCount();
-                $resProduct = $result_Product->fetch(PDO::FETCH_ASSOC);
-             
-    while($row = $result_Product->fetch(PDO::FETCH_ASSOC)) {
+               
     
 //$lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
 $price=round($row['Product_Price']-$row['Product_Price']*$row['Product_Discount']/100,2);
@@ -119,7 +112,7 @@ echo "
       
                         </div>
                     </div>";
-    }
+   
 //}
 
 ?>
