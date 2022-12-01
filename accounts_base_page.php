@@ -3,9 +3,6 @@ require "PHP/CheckAdminAccess.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="css/header.css">
-
-<head>
 
 <head>
         <meta charset="UTF-8">
@@ -14,7 +11,7 @@ require "PHP/CheckAdminAccess.php";
         <link rel="stylesheet" href="css/admin.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
-        
+        <link rel="stylesheet" href="css/header.css">
     
         </script>
         <style>
