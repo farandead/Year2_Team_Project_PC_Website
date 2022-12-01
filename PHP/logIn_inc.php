@@ -50,6 +50,8 @@ try {
                         $_SESSION['User_SName'] = $res['User_SName'];
                         $_SESSION['User_Status'] = $res['User_Status'];
                         $_SESSION['User_Password'] = $res['User_Password'];
+                        $_SESSION['User_Phone_Number'] = $res['User_Phone_Number'];
+                        $_SESSION['User_Address'] = $res['User_Address'];
                         
                         session_start();
                     
