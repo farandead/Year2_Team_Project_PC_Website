@@ -1,4 +1,5 @@
 <?php  session_start();
+if(!(isset($_SESSION['User_Status']))){header("Location: index.php");}
 $servername = "localhost";
 $username = 'babimors_astonTeam';
 $password = 'HW#1o.5=#cl+'; 
