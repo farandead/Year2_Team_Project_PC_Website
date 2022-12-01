@@ -48,7 +48,8 @@ try {
                 } else {
                     echo "notFound";
                 } 
-                echo "<br>test!!!!!!!!!!!";
+                if($_SESSION["User_Status"]=="Admin"){
+                echo "<br>test!!!!!!!!!!!";}
                 ?>"</span><span> </span></div>
                 
         </div>
