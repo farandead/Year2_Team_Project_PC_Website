@@ -65,17 +65,7 @@
                     </li>
                     <li class="tabs-controls__item">
                         <a href="#" class="tabs-controls__link" data-id="4">
-                            Tab D
-                        </a>
-                    </li>
-                    <li class="tabs-controls__item">
-                        <a href="#" class="tabs-controls__link" data-id="5">
-                            Tab E
-                        </a>
-                    </li>
-                    <li class="tabs-controls__item">
-                        <a href="#" class="tabs-controls__link" data-id="6">
-                            Tab F
+                            Teams
                         </a>
                     </li>
                 </ul>
@@ -98,35 +88,22 @@
                 <div class="card" id="3">
                     <h1>Delivery options</h1>
                     <p>
-We offer a range of delivery which range from free to special delivery options based on product weight, size and where you are. We ship products in the UK free of charge. Our professional team provides maintenance, technical support, and assistance for each user to solve computer related issues.
+                        We offer a range of delivery which range from free to special delivery options based on product weight, size and where you are. We ship products in the UK free of charge. Our professional team provides maintenance, technical support, and assistance for each user to solve computer related issues.
                     </p>
                 </div>
                 <div class="card" id="4">
-                    <h1>D. Sed do eiusmod</h1>
+                    <h1>COMP UK Team</h1>
                     <p>
-                        Sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrcaecat cupidatat nonv proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.
+                        •	Faran Zafar (20036414)
+                        •	Faran Zafar (20036414)
+                        •   Kirill Ushakov (220036159)
+                        •	Zixu Wang (200105886)
+                        •	Hassan Ali (200132734)
+                        •	Gbanet Ibrahim (210187269)
+
                     </p>
                 </div>
-                <div class="card" id="5">
-                    <h1>E. Ut enim ad minim veniam</h1>
-                    <p>
-                        Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in vo cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <div class="card" id="6">
-                    <h1>F. Labore et dolore magna aliqua</h1>
-                    <p>
-                        Labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in volupest laborum.
-                    </p>
-                </div>
+                
             </section>
         </section>
 
