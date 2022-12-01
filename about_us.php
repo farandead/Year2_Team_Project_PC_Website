@@ -61,7 +61,7 @@
                 <ul class="tabs-controls">
                     <li class="tabs-controls__item">
                         <a href="#" class="tabs-controls__link tabs-controls__link--active " data-id="1">
-                            Tab A test
+                            COMPUK
                         </a>
                     </li>
                     <li class="tabs-controls__item">
@@ -93,12 +93,11 @@
             </section>
             <section class="cards-container">
                 <div class="card card--current" id="1">
-                    <h1>A. test Lorem ipsum dolor sit amet</h1>
+                    <h1>COMPUK</h1>
                     <p>
-                        trst Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
+                        COMPUK is an online computer sales platform created by a group of college students. The company was founded in 2022 with 6 employees.
+                        We can customize computers to meet the needs of each user
+
                     </p>
                 </div>
                 <div class="card" id="2">
