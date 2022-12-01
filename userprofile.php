@@ -182,7 +182,7 @@ try {
                 $result_order->execute(array($userId));  /* $_SESSION['User_ID']*/
                 $count_order = $result_order->rowCount();
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
-                    
+                    if ($count_order >= 1 ) {
               while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
                          //echo $resProductOfOrderID['Product_ID'];
                   ?>
@@ -200,6 +200,9 @@ try {
                    
                   
                     
+                    }
+                    } else {
+                     echo "You do not have any order..."   
                     }
                     
                ?>      
