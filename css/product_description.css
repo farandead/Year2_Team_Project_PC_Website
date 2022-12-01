@@ -271,3 +271,11 @@ padding-bottom:8vmax
     font-weight: 700;
     letter-spacing: 1px;
 }
+.main-product-sub-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-items:center;
+    justifiy-content:center;
+    align-content:center;
+}
