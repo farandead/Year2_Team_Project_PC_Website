@@ -73,7 +73,14 @@ try {
               while($resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) { */
     
                
-               
+               $test = "2";
+                $sql = "SELECT * FROM Product WHERE Product_ID=?  ";
+                $result_order = $conn->prepare($sql);
+                $result_order->execute(array($test));  /* $_SESSION['User_ID']*/
+                $count_order = $result_order->rowCount();
+                $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
+                    
+              while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
  
 //$lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
 $price=round($row['Product_Price']-$row['Product_Price']*$row['Product_Discount']/100,2);
@@ -112,7 +119,7 @@ if(isset($_SESSION['User_Status'])){$DeleteLink="PHP/RemoveBasketIn.php?ITR=";
 echo " </div> </div>";
    
         
-//}
+}
 
 ?>
             
