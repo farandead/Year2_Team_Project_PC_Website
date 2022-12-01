@@ -9,7 +9,7 @@ echo "
 if($res['Product_Discount']>0){
 echo "
                 <div class=\"summary-container price-container dark_target\">
-                    <p><strong>discount is ".$res['Product_Discount']."%  </strong>(<s>".$res['Product_Price']."£</s>)</p>
+                    <p><strong>discount is ".$res['Product_Discount']."%  </strong>(<s>£".$res['Product_Price']."</s>)</p>
                 </div>";
 }
 
