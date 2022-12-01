@@ -99,7 +99,7 @@ try {
                                                                                                                                                                 if (isset($_SESSION['User_Address'])) {
                                                                                                                                                                     echo $_SESSION['User_Address'];
                                                                                                                                                                 } else {
-                                                                                                                                                                    echo "<a href=''> Addresses panel</a>";
+                                                                                                                                                                    echo " Addresses panel";
                                                                                                                                                                 } ?>"></div>
 
                 </div>
