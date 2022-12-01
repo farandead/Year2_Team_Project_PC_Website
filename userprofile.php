@@ -109,7 +109,7 @@ try {
                 </center>
                    <?php
                     
-                $userId = $_SESSION['user_Email'];
+                $userId = $_SESSION['User_ID'];
                 $sql = "SELECT * FROM OrderP WHERE User_ID=? AND Order_Status != 'Basket' ";
                 $result_order = $conn->prepare($sql);
                 $result_order->execute(array($userId));  /* $_SESSION['User_ID']*/
