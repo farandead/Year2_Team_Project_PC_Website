@@ -202,7 +202,7 @@ try {
                     
                     }
                     } else {
-                     echo "You do not have any order..."   
+                     echo "You do not have any order..."  ;
                     }
                     
                ?>      
