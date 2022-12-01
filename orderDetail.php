@@ -79,7 +79,7 @@ try {
                 $result_order->execute(array($test));  /* $_SESSION['User_ID']*/
                 $count_order = $result_order->rowCount();
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
-                    
+                    var_dump($result_order->execute(array($test)) )';
               while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
  
 //$lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
