@@ -32,6 +32,17 @@
            .main-product-description-sub-container {
                 background-color: white;
             }
+           .main-product-sub-container img{
+  
+   padding-right: 5vmax;
+  
+padding-left: 5vmax;
+  
+width: 30vmax;
+  
+padding-top: 5vmax;
+padding-bottom:8vmax
+}
            
         @media (max-width: 720px) {
 

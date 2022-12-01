@@ -59,13 +59,13 @@ require "PHP/statusCheckerOrderandUser.php";
      $price=round($productinfo['Product_Price']-$productinfo['Product_Price']*$productinfo['Product_Discount']/100,2);
 echo "
                         <div class=\"productdetails dark_target\" style=\"display : inline;\">
-                            <div class=\"product-details-title\">".$productinfo['Product_Name']."</div>
+                            <div class=\"product-details-title\">".$productinfo['Product_Name'].'('.$row['Amount_Product'].')'."</div>
                             <div class=\"product-details-img\"><img src=\"../Products/Images/".$productinfo['Product_ID'].".jpg\"  width=\"150 px\" height=\"150px\" alt=\"No image\">
                             </div>
                             <div class=\"product-details-description dark_target\">
-                                <p>Price: <span>".$price."£</span> ";
+                                <p>Price: <span>£".$price."</span> ";
                                 if($productinfo['Product_Discount']!=0){
-                               echo ",discount is ".$productinfo['Product_Discount']."% (<s>".$productinfo['Product_Price']."£</s>)";
+                               echo ",discount is ".$productinfo['Product_Discount']."% (<s>£".$productinfo['Product_Price']."</s>)";
                                 }
                                 echo "
                                 </p>

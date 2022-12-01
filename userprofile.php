@@ -49,7 +49,7 @@ try {
                 } 
                 if($_SESSION["User_Status"]=="Admin"){
                 echo "<br><a href='accounts_base_page.php'>Admin panel</a>";}
-                ?>"</span><span> </span></div>
+                ?></span><span> </span></div>
                 
         </div>
         <div class="col-md-5 border-right">
@@ -94,12 +94,14 @@ try {
                                                                                                                                                                             } else {
                                                                                                                                                                                 echo "notFound";
                                                                                                                                                                             } ?>"></div>
-                    <div class="col-md-12"><label class="labels">Address</label><input disabled type="text" class="form-control" placeholder="Address" value="<?php
+                    <div class="col-md-12"><label class="labels">Address</label><a href="Addresses.php" target="_blank">
+                    <input disabled type="text" class="form-control" placeholder="Address" value="<?php
                                                                                                                                                                 if (isset($_SESSION['User_Address'])) {
                                                                                                                                                                     echo $_SESSION['User_Address'];
                                                                                                                                                                 } else {
                                                                                                                                                                     echo " Addresses panel";
-                                                                                                                                                                } ?>"></div>
+                                                                                                                                                                } ?>">
+                    </a></div>
 
                 </div>
                 <div class="mt-5 text-center"><a href="PHP/signOut.inc.php"> <button class="btn btn-primary profile-button" type="button">Log Out</button> </a></div>

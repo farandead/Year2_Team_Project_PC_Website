@@ -30,18 +30,7 @@
 
     </script>
     <style>
-        body {
-            margin: 0%;
-            padding: 0%;
-            font-family: "Arial", Helvetica, sans-serif;
-        }
-
-        i {
-            font-size: 30px;
-            cursor: pointer;
-            position: relative;
-            ;
-        }
+  
     </style>
 
 </head>
@@ -61,90 +50,61 @@
                 <ul class="tabs-controls">
                     <li class="tabs-controls__item">
                         <a href="#" class="tabs-controls__link tabs-controls__link--active " data-id="1">
-                            Tab A test
+                            COMPUK
                         </a>
                     </li>
                     <li class="tabs-controls__item">
                         <a href="#" class="tabs-controls__link" data-id="2">
-                            Tab B
+                            Products
                         </a>
                     </li>
                     <li class="tabs-controls__item">
                         <a href="#" class="tabs-controls__link" data-id="3">
-                            Tab C
+                            Delivery
                         </a>
                     </li>
                     <li class="tabs-controls__item">
                         <a href="#" class="tabs-controls__link" data-id="4">
-                            Tab D
-                        </a>
-                    </li>
-                    <li class="tabs-controls__item">
-                        <a href="#" class="tabs-controls__link" data-id="5">
-                            Tab E
-                        </a>
-                    </li>
-                    <li class="tabs-controls__item">
-                        <a href="#" class="tabs-controls__link" data-id="6">
-                            Tab F
+                            Teams
                         </a>
                     </li>
                 </ul>
+                
             </section>
             <section class="cards-container">
                 <div class="card card--current" id="1">
-                    <h1>A. test Lorem ipsum dolor sit amet</h1>
+                    <h1>COMPUK</h1>
                     <p>
-                        trst Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
+                        COMPUK is an online computer sales platform created by a group of college students. The company was founded in 2022 with 6 employees.
+                        We can customize computers to meet the needs of each user
+
                     </p>
                 </div>
                 <div class="card" id="2">
-                    <h1>B. Elit, sed do eiusmod</h1>
+                    <h1>What we offer</h1>
                     <p>
-                        Elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
+                        COMPUK aims to bring together a section of the digital gaming world, from the Desktop and Laptop lineage, to give our users a concentrated pool of options. What we would offer is convenience and the ability of quick comparison all in one place. 
                     </p>
                 </div>
                 <div class="card" id="3">
-                    <h1>C. Consectetur adipisicing elit</h1>
+                    <h1>Delivery options</h1>
                     <p>
-                        Consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
+                        We offer a range of delivery which range from free to special delivery options based on product weight, size and where you are. We ship products in the UK free of charge. Our professional team provides maintenance, technical support, and assistance for each user to solve computer related issues.
                     </p>
                 </div>
                 <div class="card" id="4">
-                    <h1>D. Sed do eiusmod</h1>
+                    <h1>COMP UK Team</h1>
                     <p>
-                        Sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrcaecat cupidatat nonv proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.
+                        •	Faran Zafar (20036414)
+                        •	Faran Zafar (20036414)
+                        •   Kirill Ushakov (220036159)
+                        •	Zixu Wang (200105886)
+                        •	Hassan Ali (200132734)
+                        •	Gbanet Ibrahim (210187269)
+
                     </p>
                 </div>
-                <div class="card" id="5">
-                    <h1>E. Ut enim ad minim veniam</h1>
-                    <p>
-                        Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in vo cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <div class="card" id="6">
-                    <h1>F. Labore et dolore magna aliqua</h1>
-                    <p>
-                        Labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in volupest laborum.
-                    </p>
-                </div>
+                
             </section>
         </section>
 

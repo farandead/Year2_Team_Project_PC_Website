@@ -27,17 +27,41 @@
 
     </script>
     <style>
-        body {
-            margin: 0%;
-            padding: 0%;
-            font-family: "Arial", Helvetica, sans-serif;
-        }
-
-        i {
-            font-size: 30px;
-            cursor: pointer;
-            position: relative;
-            ;
+     @media (max-width:720px){
+    .footerMenu{
+        flex-direction: column;
+        padding: 0%;
+    }
+    .footer-menu-sub-container{
+        text-align: center;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-menu-sub-container-box span {
+        margin-top: 12px;
+        font-weight: 700;
+    }
+    .footer-menu-sub-container-box{
+        width: 80%;
+    }
+    .legalFooter {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.404);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items:center ;
+        background-color: #0260be;
+        color: white;
+    }
+}
         }
     </style>
 

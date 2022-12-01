@@ -6,12 +6,15 @@ h1 {
   line-height: 1;
   color: #423E37;
 }
-
+.main-container-about-us-page{
+  display: flex;
+}
 .page {
-  width: 100vw;
-  height: 100vh;
-  min-height: 700px;
+  width: 80vmax;
+  height: 80vmax;
+  min-height: 30vmax;
   overflow: hidden;
+  margin: auto;
 }
 
 .tabs-controls {
@@ -22,18 +25,25 @@ h1 {
   align-items: stretch;
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: auto auto;
   box-sizing: border-box;
-  padding: 50px 0 100px;
+  padding: 2vmax 0 2vmax;
   list-style-type: none;
+  flex-wrap: wrap;
   
+}
+#about_us_control{
+  flex-wrap: wrap;
+  width: 10vmax;
+  overflow: hidden;
+  margin: auto;
 }
 
 .tabs-controls__link {
   position: relative;
   display: block;
-  padding: 16px 32px;
-  font-size: 20px;
+  padding: 1vmax 2vmax;
+  font-size: 1.5vmax;
   font-weight: 700;
   color: #423E37;
   text-transform: uppercase;
@@ -62,21 +72,28 @@ h1 {
 .cards-container {
   position: relative;
   z-index: 1;
-  width: 500px;
-  height: calc(100vh - 205px);
+  width: 35vmax;
+  height: 30vmax;
   margin: 0 auto;
+ 
 }
 
 .card {
   position: absolute;
-  width: 500px;
-  height: 300px;
+  width: 35vmax;
+  height: 20vmax;
+
   background-color: #f9f9f9;
   border: 1px solid #423E37;
   box-shadow: 9px 11px 3px 0px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
-  padding: 40px;
+  padding: 1vmax;
   transition: transform 0.3s, opacity 0.2s;
+  margin: auto;
+}
+.card  p{
+  position: absolute;
+  font-size: 1vmax;
 }
 
 .card.hidden {
