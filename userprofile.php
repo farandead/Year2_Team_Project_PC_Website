@@ -94,7 +94,7 @@ try {
                                                                                                                                                                             } else {
                                                                                                                                                                                 echo "notFound";
                                                                                                                                                                             } ?>"></div>
-                    <div class="col-md-12"><label class="labels">Address</label><a href="Addresses.php">
+                    <div class="col-md-12"><label class="labels">Address</label><a href="Addresses.php" target="_blank">
                     <input disabled type="text" class="form-control" placeholder="Address" value="<?php
                                                                                                                                                                 if (isset($_SESSION['User_Address'])) {
                                                                                                                                                                     echo $_SESSION['User_Address'];
