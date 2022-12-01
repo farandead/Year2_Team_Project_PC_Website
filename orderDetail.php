@@ -43,9 +43,9 @@ require "PHP/connect_db.php";
          
          
          // ----------------------------------------------------
-    
+         $Order_ID = $_GET['orderId'];
                
-         $sql="SELECT * FROM Linked_Order_and_Products WHERE 	Order_ID=10";
+         $sql="SELECT * FROM Linked_Order_and_Products WHERE 	Order_ID=$Order_ID";
          $query=mysqli_query($conn, $sql);
          
  
