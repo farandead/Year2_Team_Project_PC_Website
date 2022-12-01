@@ -28,6 +28,91 @@
 
     <script src="js/toggle_switch.js"></script>
     <link rel="stylesheet" href="css/product_description.css">
+       <style>
+        @media (max-width: 720px) {
+
+            .main-product-description-sub-container {
+                display: flex;
+                justify-content: center;
+
+                background-color: white;
+                flex-direction: column;
+                background-color: #0376ea;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+            }
+
+            .main-product-sub-container-description {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+                justify-content: center;
+            }
+
+            .main-summary-description-conatiner {
+                display: flex;
+
+            }
+
+            .summary-container {
+                margin-left: 0.5vmax;
+                margin-right: 0.5vmax;
+            }
+
+            .summary-container p {
+                margin-left: 15px;
+                margin-right: 15px;
+                font-size: 2vmax;
+            }
+
+            #summary-container-heading {
+                font-weight: 600;
+
+            }
+
+            .price-container p strong {
+                font-size: 12px;
+                color: #0376ea;
+
+            }
+            #summary-container-heading{
+                display: none;
+            }
+            #product_heading_with_button{
+                display: flex;
+                flex-direction: column;
+            }
+            .main-product-sub-container-description{
+    padding-right: 0vmax;
+}
+.description-ulisted-item{
+    font-size: 2vmax;
+}.description-ulisted-item span{
+   
+   font-size: 1vmax;
+  
+
+}
+#description-block{
+                min-width: auto;
+            }
+
+
+
+        }
+        @media (max-width:390px){
+            body{
+                width: 390px;
+                overflow: hidden;
+            }
+            #description-block{
+                min-width: 390px;
+            }
+        }
+    </style>
 
 
 </head>
