@@ -176,10 +176,10 @@ try {
                     
                     <?php
                     
-                $test = "29";
+                $userId = $_SESSION['user_Email'];
                 $sql = "SELECT * FROM OrderP WHERE User_ID=? AND Order_Status != 'Basket' ";
                 $result_order = $conn->prepare($sql);
-                $result_order->execute(array($test));  /* $_SESSION['User_ID']*/
+                $result_order->execute(array($userId));  /* $_SESSION['User_ID']*/
                 $count_order = $result_order->rowCount();
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
                     
