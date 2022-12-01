@@ -35,7 +35,7 @@ try {
 
 ?>
 <div class="container rounded bg-white mt-5 mb-5">
-    <br>
+    <div class="row">
         <div class="col-md-3 border-right">
             <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold"><?php
                                                                                                                                                                                                                                                                                                                     if (isset($_SESSION['User_FName'])) {
@@ -49,7 +49,7 @@ try {
                     echo "notFound";
                 } 
                 if($_SESSION["User_Status"]=="Admin"){
-                echo "Not found";}
+                echo "<br><a href='accounts_base_page.php'>Admin panel</a>";}
                 ?>"</span><span> </span></div>
                 
         </div>
