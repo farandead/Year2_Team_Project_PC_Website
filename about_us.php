@@ -78,7 +78,7 @@
                         <a href="#" class="tabs-controls__link" data-id="4">
                             Tab D
                         </a>
-                    </li>
+                    </li><?php/*
                     <li class="tabs-controls__item">
                         <a href="#" class="tabs-controls__link" data-id="5">
                             Tab E
@@ -88,7 +88,7 @@
                         <a href="#" class="tabs-controls__link" data-id="6">
                             Tab F
                         </a>
-                    </li>
+                    </li>*/ ?>
                 </ul>
             </section>
             <section class="cards-container">
