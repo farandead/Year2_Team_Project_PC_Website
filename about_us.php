@@ -61,7 +61,7 @@
                 <ul class="tabs-controls">
                     <li class="tabs-controls__item">
                         <a href="#" class="tabs-controls__link tabs-controls__link--active " data-id="1">
-                            Tab A
+                            Tab A test
                         </a>
                     </li>
                     <li class="tabs-controls__item">
