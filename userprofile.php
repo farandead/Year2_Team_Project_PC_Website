@@ -112,7 +112,7 @@ try {
 
                         <th>Order Statut</th>
                         <th>Amount</th>
-                        <th>Date</th>
+                        
                         <th>Address</th>
                     </tr>
                     
@@ -133,7 +133,7 @@ try {
                        <tr>
                         
                         <td><?php echo $resOrderId["Order_Status"]?></td>
-                        <td><?php echo $resOrderId['Order_ID']?></td>
+                        
                         <td><?php echo $resOrderId['Total_Price']?></td>
                         <td><a href="orderDetail.php?orderId=<?php echo $resOrderId['Order_ID'] ?>"> Click </a> </td>
                        </tr> 
@@ -146,7 +146,7 @@ try {
                         ?>
                     <tr>
                         <?php
-                     echo "You do not have any order..."  ;
+                     echo "You do not have any orders..."  ;
                     ?>
                         </tr>
                    <?php }
