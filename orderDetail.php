@@ -74,12 +74,13 @@ try {
     
                
                $test = "2";
-                $sql = "SELECT * FROM Product WHERE Product_ID=?  ";
+                $sql = "SELECT * FROM `Product` WHERE `Product_ID`=2";
                 $result_order = $conn->prepare($sql);
-                $result_order->execute(array($test));  /* $_SESSION['User_ID']*/
+              /*  $result_order->execute(array($test)); */ /* $_SESSION['User_ID']*/
                 $count_order = $result_order->rowCount();
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
-                    var_dump($result_order->execute(array($test)) )';
+                  echo $resOrderId['Product_Price'];
+ 
               while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
  
 //$lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
