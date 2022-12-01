@@ -202,8 +202,13 @@ try {
                     
                     }
                     } else {
+                        ?>
+                    <tr>
+                        <?php
                      echo "You do not have any order..."  ;
-                    }
+                    ?>
+                        </tr>
+                   <?php }
                     
                ?>      
                  
