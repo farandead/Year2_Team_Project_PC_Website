@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <?php
     require "PHP/IndSQLandDBcon.php";
-    error_reporting(0);
+   // error_reporting(0);
  ?>
 <html lang="en">
 
