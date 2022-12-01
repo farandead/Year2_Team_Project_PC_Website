@@ -38,19 +38,12 @@ require "PHP/connect_db.php";
     
    <?php  
          
-         
-         
-         
-         
-         // ----------------------------------------------------
+      
          $Order_ID = $_GET['orderId'];
-               
          $sql="SELECT * FROM Linked_Order_and_Products WHERE 	Order_ID=$Order_ID";
          $query=mysqli_query($conn, $sql);
-         
- 
  ?>
- <div class="devices-sub-container-product">
+ <div class="devices-sub-container-product" style="display : inline;">
    <?php            
               
  while($row=mysqli_fetch_assoc($query)) {
@@ -60,15 +53,8 @@ require "PHP/connect_db.php";
          $sql2="SELECT * FROM Product WHERE 	Product_ID=$productID";
          $query2=mysqli_query($conn, $sql2);
           $productinfo=mysqli_fetch_assoc($query2);
-         //  echo "Amount:".$row['Amount_Product']."<br>";
-       //    echo "Name:".$productinfo['Product_Name']."<br>";
-         
-                
- 
-          
- 
-//$lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
-$price=round($productinfo['Product_Price']-$productinfo['Product_Price']*$productinfo['Product_Discount']/100,2);
+
+     $price=round($productinfo['Product_Price']-$productinfo['Product_Price']*$productinfo['Product_Discount']/100,2);
 echo "
                         <div class=\"productdetails dark_target\">
                             <div class=\"product-details-title\">".$productinfo['Product_Name']."</div>
