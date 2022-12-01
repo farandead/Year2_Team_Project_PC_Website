@@ -47,7 +47,10 @@ try {
                     echo $_SESSION['user_Email'];
                 } else {
                     echo "notFound";
-                } ?>"</span><span> </span></div>
+                } 
+                echo "test!!!!!!!!!!!";
+                ?>"</span><span> </span></div>
+                
         </div>
         <div class="col-md-5 border-right">
             <div class="p-3 py-5">
