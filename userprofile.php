@@ -49,7 +49,7 @@ try {
                     echo "notFound";
                 } 
                 if($_SESSION["User_Status"]=="Admin"){
-                echo "<br>test!!!!!!!!!!!";}
+                echo "<br><a href='accounts_base_page.php'>Admin panel</a>";}
                 ?>"</span><span> </span></div>
                 
         </div>
