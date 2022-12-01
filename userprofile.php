@@ -49,7 +49,7 @@ try {
                 } 
                 if($_SESSION["User_Status"]=="Admin"){
                 echo "<br><a href='accounts_base_page.php'>Admin panel</a>";}
-                ?>"</span><span> </span></div>
+                ?></span><span> </span></div>
                 
         </div>
         <div class="col-md-5 border-right">
