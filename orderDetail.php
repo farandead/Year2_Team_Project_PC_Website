@@ -1,6 +1,8 @@
 <?php 
 session_start();
+ob_start();
 require "PHP/connect_db.php";
+require "PHP/statusCheckerOrderandUser.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
