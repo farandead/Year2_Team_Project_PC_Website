@@ -34,8 +34,7 @@ require "PHP/StatusSetter.php";
     </script>
 
 </head>
-<!-- font-family: 'Staatliches', cur sive; -->
-<!-- font-family: 'Russo One', sans-serif; -->
+
 
 
 <body  class="dark_target" >
