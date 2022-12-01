@@ -48,43 +48,47 @@ try {
             
     
    <?php  
+         
+         
+         
+         
+         
+         // ----------------------------------------------------
     
-                $OrderID = $_GET['orderId'];    
-                $sql = "SELECT * FROM Linked_Order_and_Products WHERE Order_ID = ? ";
-                $result_ProductOfOrderID = $conn->prepare($sql);
-                $result_ProductOfOrderID->execute(array($OrderID));  /* $_SESSION['User_ID']*/
-                $count_ProductOfOrderID = $result_ProductOfOrderID->rowCount();
-                $resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC);
+               
+         $sql="SELECT * FROM Linked_Order_and_Products WHERE 	Order_ID=10";
+         $query=mysqli_query($conn, $sql);
+         
  
  ?>
  <div class="devices-sub-container-product">
    <?php            
-              while($resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) { 
-    
-               
-                $test = $resProductOfOrderID['Product_ID'];
-                $sql = "SELECT * FROM Product WHERE Product_ID=?";
-                $result_order = $conn->prepare($sql);
-                $result_order->execute(array($test));  /* $_SESSION['User_ID']*/
-                $count_order = $result_order->rowCount();
-                $row = $result_order->fetch(PDO::FETCH_ASSOC);
               
- 
+ while($row=mysqli_fetch_assoc($query)) {
+  
+         $productID=$row['Product_ID'];
+          
+         $sql2="SELECT * FROM Product WHERE 	Product_ID=$productID";
+         $query2=mysqli_query($conn, $sql2);
+          $productinfo=mysqli_fetch_assoc($query2);
+         //  echo "Amount:".$row['Amount_Product']."<br>";
+       //    echo "Name:".$productinfo['Product_Name']."<br>";
+         
                 
  
           
  
 //$lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
-$price=round($row['Product_Price']-$row['Product_Price']*$row['Product_Discount']/100,2);
+$price=round($productinfo['Product_Price']-$productinfo['Product_Price']*$productinfo['Product_Discount']/100,2);
 echo "
                         <div class=\"productdetails dark_target\">
-                            <div class=\"product-details-title\">".$row['Product_Name']."</div>
+                            <div class=\"product-details-title\">".$productinfo['Product_Name']."</div>
                             <div class=\"product-details-img\"><img src=\"../Products/Images/".$row['Product_ID'].".jpg\"  width=\"150 px\" height=\"150px\" alt=\"No image\">
                             </div>
                             <div class=\"product-details-description dark_target\">
                                 <p>Price: <span>".$price."£</span> ";
                                 if($row['Product_Discount']!=0){
-                               echo ",discount is ".$row['Product_Discount']."% (<s>".$row['Product_Price']."£</s>)";
+                               echo ",discount is ".$productinfo['Product_Discount']."% (<s>".$productinfo['Product_Price']."£</s>)";
                                 }
                                 echo "
                                 </p>
