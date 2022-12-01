@@ -31,9 +31,10 @@ require "PHP/connect_db.php";
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-<link rel="stylesheet" href="css/header.css">
+
     <script src="js/toggle_switch.js"></script>
     <link rel="stylesheet" href="css/checkout_page.css">
+    <link rel="stylesheet" href="css/header.css">
 
 
     <style>
@@ -59,7 +60,11 @@ require "PHP/connect_db.php";
 <body style="background:none ;">
 
     <header class="navigationBar" id="navigationLightMode" style="margin-bottom:100px ;">
-         <?php include 'header.php'; ?>
+       <?php 
+    include "header.php";
+
+
+?>
     </header>
 
 
