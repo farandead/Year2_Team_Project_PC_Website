@@ -69,6 +69,7 @@
                         </a>
                     </li>
                 </ul>
+                
             </section>
             <section class="cards-container">
                 <div class="card card--current" id="1">
