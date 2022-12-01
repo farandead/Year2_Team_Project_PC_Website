@@ -50,7 +50,7 @@ require "PHP/connect_db.php";
          
  
  ?>
- <div class="devices-sub-container">
+ <div class="devices-sub-container-product">
    <?php            
               
  while($row=mysqli_fetch_assoc($query)) {
