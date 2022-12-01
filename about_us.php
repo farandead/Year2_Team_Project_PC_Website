@@ -50,29 +50,10 @@
                     </li>
                     <li class="tabs-controls__item">
                         <a href="#" class="tabs-controls__link" data-id="2">
-                            Products
+                            WHAT WE OFFER
                         </a>
                     </li>
-                    <li class="tabs-controls__item">
-                        <a href="#" class="tabs-controls__link" data-id="3">
-                            Tab C
-                        </a>
-                    </li>
-                    <li class="tabs-controls__item">
-                        <a href="#" class="tabs-controls__link" data-id="4">
-                            Tab D
-                        </a>
-                    </li>
-                    <li class="tabs-controls__item">
-                        <a href="#" class="tabs-controls__link" data-id="5">
-                            Tab E
-                        </a>
-                    </li>
-                    <li class="tabs-controls__item">
-                        <a href="#" class="tabs-controls__link" data-id="6">
-                            Tab F
-                        </a>
-                    </li>
+                   
                 </ul>
             </section>
             <section class="cards-container">
