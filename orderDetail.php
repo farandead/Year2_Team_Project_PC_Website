@@ -69,7 +69,10 @@ try {
                 $result_ProductOfOrderID->execute(array($OrderID));  /* $_SESSION['User_ID']*/
                 $count_ProductOfOrderID = $result_ProductOfOrderID->rowCount();
                 $resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC);
-              
+ 
+ ?>
+ <div class=\"devices-sub-container-product\">
+   <?php            
               while($resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) { 
     
                
@@ -87,7 +90,7 @@ try {
  
 //$lines= file("Products/PreDescription/".$row['Product_ID'].".txt");
 $price=round($row['Product_Price']-$row['Product_Price']*$row['Product_Discount']/100,2);
-echo "<div class=\"devices-sub-container-product\">
+echo "
                         <div class=\"productdetails dark_target\">
                             <div class=\"product-details-title\">".$row['Product_Name']."</div>
                             <div class=\"product-details-img\"><img src=\"../Products/Images/".$row['Product_ID'].".jpg\"  width=\"150 px\" height=\"150px\" alt=\"No image\">
@@ -118,14 +121,14 @@ if(isset($_SESSION['User_Status'])){$DeleteLink="PHP/RemoveBasketIn.php?ITR=";
                                <a href='".$DeleteLink.$row['Product_ID']."'> REMOVE THIS ITEM ></a>
                             </div>";
 
-echo " </div> </div>";
+echo " </div> ";
    
         
               }
 
 ?>
             
-            
+            </div>
             
         </div>
     </div>
