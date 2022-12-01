@@ -107,17 +107,8 @@ try {
                 <center>
                     <P>ORDERS</P>
                 </center>
-                <table>
-                    <tr>
-
-                        <th>Order Statut</th>
-                        <th>Amount</th>
-                        <th>Date</th>
-                        <th>Address</th>
-                    </tr>
-                    
-                    
-                    <?php
+                
+                   <?php
                   /*
 
                     
@@ -186,6 +177,14 @@ try {
               while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
                          //echo $resProductOfOrderID['Product_ID'];
                   ?>
+                <table>
+                    <tr>
+
+                        <th>Order Statut</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Address</th>
+                    </tr>
                      
                        <tr>
                         
@@ -194,7 +193,7 @@ try {
                         <td><?php echo $resOrderId['Total_Price']?></td>
                         <td><a href="orderDetail.php?orderId=<?php echo $resOrderId['Order_ID'] ?>"> Click </a> </td>
                        </tr> 
-                    
+                    </table>
                     <?php
                        
                    
@@ -212,7 +211,7 @@ try {
                     
                ?>      
                  
-                </table>
+                
             </center>
         </div>
     </div>
