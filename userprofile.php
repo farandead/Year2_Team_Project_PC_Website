@@ -119,7 +119,7 @@ try {
                         <th>Order Status</th>
                         <th>Total Price(£)</th>
                         
-                        <th>Address</th>
+                        <th>More information</th>
                     </tr>
                     
                     <?php
