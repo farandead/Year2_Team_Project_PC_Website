@@ -6,7 +6,6 @@ require "PHP/CheckAdminAccess.php";
 <link rel="stylesheet" href="css/header.css">
 
 <head>
-<?php include 'header.php'; ?>
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,6 +36,7 @@ require "PHP/CheckAdminAccess.php";
         </style>
 </head>
 <body>
+<?php include 'header.php'; ?>
             <!--Admin Panel-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-4" style="margin-top: -15px;">
     <div class="container-fluid">
