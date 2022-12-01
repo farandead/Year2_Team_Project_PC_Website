@@ -34,6 +34,7 @@ $queryCats=mysqli_query($conn,"SELECT * FROM Category");
 
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/addPagemainpage.css">
+    <link rel="stylesheet" href="css/header.css">
     <style>
         .form_box>div{
             width: 32%;
