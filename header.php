@@ -24,9 +24,6 @@
                 <li class="navbaritem"><a class="link" href="contact_us.php">
                         <p style="color:white">Contact Us</p>
                     </a></li>
-                <li class="navbaritem"><a class="link" href="#">
-                        <p style="color:white">Reviews</p>
-                    </a></li>
             </ul>
 
         </div>

@@ -134,10 +134,14 @@ body{
 }
 .main-product-sub-container img{
   
-    padding-right: 10vmax;
-    padding-left: 10vmax;
-    width: 39vmax;
-    padding-top: 10vmax;
+   padding-right: 5vmax;
+  
+padding-left: 5vmax;
+  
+width: 30vmax;
+  
+padding-top: 5vmax;
+padding-bottom:8vmax
 }
 .main-product-heading-container h2{
     font-weight:700 ;
@@ -266,4 +270,12 @@ body{
     font-size: larger;
     font-weight: 700;
     letter-spacing: 1px;
+}
+.main-product-sub-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-items:center;
+    justifiy-content:center;
+    align-content:center;
 }
