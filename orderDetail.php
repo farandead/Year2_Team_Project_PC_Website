@@ -50,13 +50,13 @@ try {
                  //if(isset($_SESSION['User_Status'])){echo '<input type="submit" name="Update" value="Update the basket">';echo '<input type="submit" name="CheckOut" value="Check out!">';}
                  //else{echo "no";}
          
-                 
+        /**         
    include "PHP/BasketCollectionPrinter.php";
                  if(isset($_SESSION['login'])){
                  $orderID=$_GET['orderId'];
     require "PHP/TotalPriceCounter.php";
                  
-                 if(isset($TOTAL)){echo "Total: £ ". $TOTAL;}}
+                 if(isset($TOTAL)){echo "Total: £ ". $TOTAL;}} */
     ?>
             
          </form> -->
@@ -73,15 +73,13 @@ try {
               while($resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) { */
     
                
-                $ProductID = "11111";
-                $sql = "SELECT * FROM Product WHERE Product_ID = ? ";
+                $ProductID = "15";
+                $sql = "SELECT * FROM Product WHERE Product_ID = ?";
                 $result_Product = $conn->prepare($sql);
                 $result_Product->execute(array($ProductID));  /* $_SESSION['User_ID']*/
                 $count_Product = $result_Product->rowCount();
                 $row = $result_Product->fetch(PDO::FETCH_ASSOC);
- 
- var_dump($result_Product->execute(array($ProductID))) ;
-         if ($count_Product > 1)   {
+     
           
     while($row = $result_Product->fetch(PDO::FETCH_ASSOC)) {
  
@@ -119,14 +117,9 @@ if(isset($_SESSION['User_Status'])){$DeleteLink="PHP/RemoveBasketIn.php?ITR=";
                                <a href='".$DeleteLink.$row['Product_ID']."'> REMOVE THIS ITEM ></a>
                             </div>";
 
-echo "
-      
-                        </div>
-                    </div>";
+echo " </div> </div>";
    } 
-         } else {
-          echo "c'est bizz" ;
-         }
+        
 //}
 
 ?>
