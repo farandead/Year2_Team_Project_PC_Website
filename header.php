@@ -1,6 +1,7 @@
 <head> 
         
  <title>COMPUK -Your One Stop Source of All Digital Needs</title>
+ <script src="js/toggle_switch.js"></script>
 </head>
 
 <div class="navigation-bar"  id="navigationLightMode">

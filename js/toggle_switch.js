@@ -1,6 +1,6 @@
 function darkModeProduct(){
 
-      var collection = document.getElementById("navigationLightMode");
+    var collection = document.getElementById("navigationLightMode");
     collection.classList.toggle("navigationBar_dark_mode");
 
 
@@ -18,21 +18,6 @@ function darkModeProduct(){
             
 
         }
-
-        
-    }
-    var target = document.getElementById("toggle_button");
-    var target_two = document.getElementById("toggle_button_dark")
-    
-    if( target.style.display == "flex" ){
-        target.style.display = "none"
-        target_two.style.display = "flex"
-        
-    }else if (target_two.style.display == "flex" ){
-        target_two.style.display= "none"
-        target.style.display = "flex"
-        
-    }
 
         
     }

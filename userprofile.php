@@ -47,7 +47,11 @@ try {
                     echo $_SESSION['user_Email'];
                 } else {
                     echo "notFound";
-                } ?>"</span><span> </span></div>
+                } 
+                if($_SESSION["User_Status"]=="Admin"){
+                echo "<br><a href='accounts_base_page.php'>Admin panel</a>";}
+                ?>"</span><span> </span></div>
+                
         </div>
         <div class="col-md-5 border-right">
             <div class="p-3 py-5">
@@ -95,7 +99,7 @@ try {
                                                                                                                                                                 if (isset($_SESSION['User_Address'])) {
                                                                                                                                                                     echo $_SESSION['User_Address'];
                                                                                                                                                                 } else {
-                                                                                                                                                                    echo "notFound";
+                                                                                                                                                                    echo " Addresses panel";
                                                                                                                                                                 } ?>"></div>
 
                 </div>
