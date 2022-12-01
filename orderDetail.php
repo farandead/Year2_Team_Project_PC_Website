@@ -41,25 +41,11 @@ try {
     <?php require 'header.php'; ?>
  
 
-<!-- <div class="shopping-box">
+ <div class="shopping-box">
     <div class="shopping_con">
         <div class="shopping_title">ORDER DETAIL</div> 
         <div class="">
-             <form action ="PHP/CheckOutBasket.php" method="post">
-        <?php
-                 //if(isset($_SESSION['User_Status'])){echo '<input type="submit" name="Update" value="Update the basket">';echo '<input type="submit" name="CheckOut" value="Check out!">';}
-                 //else{echo "no";}
-         
-        /**         
-   include "PHP/BasketCollectionPrinter.php";
-                 if(isset($_SESSION['login'])){
-                 $orderID=$_GET['orderId'];
-    require "PHP/TotalPriceCounter.php";
-                 
-                 if(isset($TOTAL)){echo "Total: £ ". $TOTAL;}} */
-    ?>
             
-         </form> -->
     
    <?php  
     
