@@ -107,65 +107,7 @@ try {
                 <center>
                     <P>ORDERS</P>
                 </center>
-                
                    <?php
-                  /*
-
-                    
-                    $customer = $_SESSION['User_Email'];
-                    $customer = stripcslashes($customer);
-                    $customer = mysqli_real_escape_string($con, $customer);
-                    $sql_order = "SELECT * from `orders_data`  where Cus_Email = '$customer'";
-
-                    $result_order = mysqli_query($conn, $sql_order);
-                    // $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
-                    $count_order = mysqli_num_rows($result_order);
-
-                    if ($count_order > 0) {
-
-
-                        for ($x = 1; $x <= $count_order; $x++) {
-                            $row_order = mysqli_fetch_assoc($result_order);
-
-                            $produt_id = $row_order["Product_ID"];
-
-
-
-                            $sql = "SELECT * FROM `product`  where Product_ID = '$produt_id' ";
-                            $result = mysqli_query($con, $sql);
-
-                            $row = mysqli_fetch_assoc($result);
-                            $row["Product_Name"];
-                            $row_order["Date_Placed"];
-                            $row_order["Cus_Address"];
-                            echo  "
-                        <tr>
-                        <td>" .  $x . "</td>
-                        <td>" . $row["Product_Name"] . "</td>
-                        <td>" . $row_order['Date_Placed'] . "</td>
-                        <td>" . $row_order['Cus_Address'] . "</td>
-                        </tr>
-                        ";
-
-
-                            // $row["title"];
-                            // $row_order["date_palaced"];
-                            // $row_order["delivery_address"];
-                            // echo  "
-                            // <tr>
-                            // <td>" . $row["title"] . "</td>
-                            // <td>" . $row_order['date_palaced'] . "</td>
-                            // <td>" . $row_order['delivery_address'] . "</td>
-                            // </tr>
-                            // ";
-                        }
-                    } else {
-                        echo "";
-                    }  */?>
-                    
-                    
-                    
-                    <?php
                     
                 $userId = $_SESSION['user_Email'];
                 $sql = "SELECT * FROM OrderP WHERE User_ID=? AND Order_Status != 'Basket' ";
@@ -173,7 +115,7 @@ try {
                 $result_order->execute(array($userId));  /* $_SESSION['User_ID']*/
                 $count_order = $result_order->rowCount();
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
-                    if ($count_order >= 1 ) {
+                    
               while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
                          //echo $resProductOfOrderID['Product_ID'];
                   ?>
@@ -200,14 +142,8 @@ try {
                   
                     
                     }
-                    } else {
-                        ?>
-                    <tr>
-                        <?php
-                     echo "You do not have any order..."  ;
-                    ?>
-                        </tr>
-                   <?php }
+                   
+                   
                     
                ?>      
                  
