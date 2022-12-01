@@ -26,7 +26,23 @@
 
     <script src="js/toggle_switch.js"></script>
     <script src="js/about_us.js"></script>
-   
+    <script>
+
+    </script>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: "Arial", Helvetica, sans-serif;
+        }
+
+        i {
+            font-size: 30px;
+            cursor: pointer;
+            position: relative;
+            ;
+        }
+    </style>
 
 </head>
 <!-- font-family: 'Staatliches', cur sive; -->
@@ -50,10 +66,29 @@
                     </li>
                     <li class="tabs-controls__item">
                         <a href="#" class="tabs-controls__link" data-id="2">
-                            WHAT WE OFFER
+                            Products
                         </a>
                     </li>
-                   
+                    <li class="tabs-controls__item">
+                        <a href="#" class="tabs-controls__link" data-id="3">
+                            Delivery
+                        </a>
+                    </li>
+                    <li class="tabs-controls__item">
+                        <a href="#" class="tabs-controls__link" data-id="4">
+                            Tab D
+                        </a>
+                    </li>
+                    <li class="tabs-controls__item">
+                        <a href="#" class="tabs-controls__link" data-id="5">
+                            Tab E
+                        </a>
+                    </li>
+                    <li class="tabs-controls__item">
+                        <a href="#" class="tabs-controls__link" data-id="6">
+                            Tab F
+                        </a>
+                    </li>
                 </ul>
             </section>
             <section class="cards-container">
@@ -72,12 +107,9 @@
                     </p>
                 </div>
                 <div class="card" id="3">
-                    <h1>C. Consectetur adipisicing elit</h1>
+                    <h1>Delivery options</h1>
                     <p>
-                        Consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
+We offer a range of delivery which range from free to special delivery options based on product weight, size and where you are. We ship products in the UK free of charge. Our professional team provides maintenance, technical support, and assistance for each user to solve computer related issues.
                     </p>
                 </div>
                 <div class="card" id="4">
