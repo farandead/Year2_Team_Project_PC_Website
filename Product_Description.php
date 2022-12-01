@@ -29,6 +29,10 @@
     <script src="js/toggle_switch.js"></script>
     <link rel="stylesheet" href="css/product_description.css">
        <style>
+           .main-product-description-sub-container {
+                background-color: white;
+            }
+           
         @media (max-width: 720px) {
 
             .main-product-description-sub-container {
@@ -98,6 +102,9 @@
 }
 #description-block{
                 min-width: auto;
+            }
+            .main-product-description-sub-container {
+                background-color: white;
             }
 
 
