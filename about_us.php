@@ -66,7 +66,7 @@
                     </li>
                     <li class="tabs-controls__item">
                         <a href="#" class="tabs-controls__link" data-id="2">
-                            Tab B
+                            Products
                         </a>
                     </li>
                     <li class="tabs-controls__item">
@@ -101,12 +101,9 @@
                     </p>
                 </div>
                 <div class="card" id="2">
-                    <h1>B. Elit, sed do eiusmod</h1>
+                    <h1>What we offer</h1>
                     <p>
-                        Elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
+                        COMPUK aims to bring together a section of the digital gaming world, from the Desktop and Laptop lineage, to give our users a concentrated pool of options. What we would offer is convenience and the ability of quick comparison all in one place. 
                     </p>
                 </div>
                 <div class="card" id="3">
