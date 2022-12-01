@@ -73,7 +73,7 @@ try {
               while($resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) { */
     
                
-               $test = "2";
+               $test = "14";
                 $sql = "SELECT * FROM Product WHERE Product_ID=?";
                 $result_order = $conn->prepare($sql);
                 $result_order->execute(array($test));  /* $_SESSION['User_ID']*/
