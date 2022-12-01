@@ -32,7 +32,7 @@ require "PHP/connect_db.php";
 
  <div class="shopping-box">
     <div class="shopping_con">
-        <div class="shopping_title">ORDER DETAIL</div> 
+        <div class="shopping_title">YOUR ORDER DETAILS</div> 
         <div class="">
             
     
@@ -50,7 +50,7 @@ require "PHP/connect_db.php";
          
  
  ?>
- <div class="devices-sub-container-product">
+ <div class="devices-sub-container">
    <?php            
               
  while($row=mysqli_fetch_assoc($query)) {
