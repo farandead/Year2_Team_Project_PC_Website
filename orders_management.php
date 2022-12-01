@@ -41,7 +41,6 @@
         </style>
 </head>
 <header>
-<?php include 'header.php'; ?>
             <!--Admin Panel-->
         <div class="container-fluid">
             <div class="row">
