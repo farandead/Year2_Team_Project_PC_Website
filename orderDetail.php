@@ -43,7 +43,7 @@ require "PHP/connect_db.php";
          $sql="SELECT * FROM Linked_Order_and_Products WHERE 	Order_ID=$Order_ID";
          $query=mysqli_query($conn, $sql);
  ?>
- <div class="devices-sub-container-product" style="display : inline;">
+ <div class="devices-sub-container-product" style="display : inline-block;">
    <?php            
               
  while($row=mysqli_fetch_assoc($query)) {
