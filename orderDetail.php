@@ -63,7 +63,7 @@ try {
     
    <?php  
     
-              $OrderID = $_GET['orderId'];    
+                $OrderID = $_GET['orderId'];    
                 $sql = "SELECT * FROM Linked_Order_and_Products WHERE Order_ID = ? ";
                 $result_ProductOfOrderID = $conn->prepare($sql);
                 $result_ProductOfOrderID->execute(array($OrderID));  /* $_SESSION['User_ID']*/
@@ -71,7 +71,7 @@ try {
                 $resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC);
  
  ?>
- <div class=\"devices-sub-container-product\">
+ <div class="devices-sub-container-product">
    <?php            
               while($resProductOfOrderID = $result_ProductOfOrderID->fetch(PDO::FETCH_ASSOC)) { 
     
@@ -104,22 +104,8 @@ echo "
                                 </p>
                                 <ul class=\"description-ulisted\">";
                                 
-//foreach($lines as $line){   
-//echo $ArrayCollectionBasketDic[$row['Product_ID']];
-//}
-if(isset($_SESSION['User_Status'])){$DeleteLink="PHP/RemoveBasketIn.php?ITR=";
-}else{$DeleteLink="PHP/RemoveBasketOut.php?ITR=";
-}
-// <button> does not work due to the form!
-                               echo "     
-                                </ul>
-                            </div>
-                            <div class=\"product-details-buy-buttons\">
-                               <a href='Product_Description.php?Product=".$row['Product_ID']."'> LOOK UP THIS ITEM ></a>
-                            </div>
-  <div class=\"product-details-buy-buttons\">
-                               <a href='".$DeleteLink.$row['Product_ID']."'> REMOVE THIS ITEM ></a>
-                            </div>";
+
+                               
 
 echo " </div> ";
    
