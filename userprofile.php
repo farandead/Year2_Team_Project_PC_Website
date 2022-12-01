@@ -116,8 +116,8 @@ try {
                 <table>
                     <tr>
 
-                        <th>Order Statut</th>
-                        <th>Amount</th>
+                        <th>Order Status</th>
+                        <th>Total Price(£)</th>
                         
                         <th>Address</th>
                     </tr>
