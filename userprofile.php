@@ -99,7 +99,7 @@ try {
                                                                                                                                                                 if (isset($_SESSION['User_Address'])) {
                                                                                                                                                                     echo $_SESSION['User_Address'];
                                                                                                                                                                 } else {
-                                                                                                                                                                    echo "notFound";
+                                                                                                                                                                    echo "<a href=''> Addresses panel</a>";
                                                                                                                                                                 } ?>"></div>
 
                 </div>
