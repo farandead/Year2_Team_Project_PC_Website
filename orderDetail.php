@@ -39,7 +39,39 @@ try {
 <body>
     
     <?php require 'header.php'; ?>
-
+  <?php
+                    
+                $test = "29";
+                $sql = "SELECT * FROM OrderP WHERE User_ID=? AND Order_Status != 'Basket' ";
+                $result_order = $conn->prepare($sql);
+                $result_order->execute(array($test));  /* $_SESSION['User_ID']*/
+                $count_order = $result_order->rowCount();
+                $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
+                    
+              while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
+                         //echo $resProductOfOrderID['Product_ID'];
+                  ?>
+                     
+                       <tr>
+                        
+                        <td><?php echo $resOrderId["Order_Status"]?></td>
+                        <td><?php echo $resOrderId['Order_ID']?></td>
+                        <td><?php echo $resOrderId['Total_Price']?></td>
+                        <td><a href="orderDetail.php?orderId=<?php echo $resOrderId['Order_ID'] ?>"> Click </a> </td>
+                       </tr> 
+                    
+                    <?php
+                       
+                   
+                  
+                    
+                    }
+                    
+               ?>      
+                 
+                </table>
+            </center>
+        </div>
 
 <!-- <div class="shopping-box">
     <div class="shopping_con">
@@ -76,10 +108,10 @@ try {
                $test = "2";
                 $sql = "SELECT * FROM `Product` WHERE `Product_ID`=2";
                 $result_order = $conn->prepare($sql);
-              /*  $result_order->execute(array($test)); */ /* $_SESSION['User_ID']*/
+                $result_order->execute(array($test));  /* $_SESSION['User_ID']*/
                 $count_order = $result_order->rowCount();
                 $resOrderId = $result_order->fetch(PDO::FETCH_ASSOC);
-                  echo $resOrderId['Product_Price'];
+                echo $resOrderId['Product_Price'];
  
               while($resOrderId = $result_order->fetch(PDO::FETCH_ASSOC)) {
  
