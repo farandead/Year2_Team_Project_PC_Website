@@ -27,7 +27,16 @@ session_start();
 <body>
     
     <?php require 'header.php'; ?>
+  <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: "Arial", Helvetica, sans-serif;
+            background-color: none;
+        }
 
+       
+    </style>
 
 <div class="shopping-box">
     <div class="shopping_con">
