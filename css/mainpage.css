@@ -435,7 +435,7 @@ i {
 @media (max-width: 720px) {
     body{
         width: 100vmin;
-        overflow:hidden;
+        overflow-y: visible;
     }
     .navigationBar {
         width: 100vmin;
