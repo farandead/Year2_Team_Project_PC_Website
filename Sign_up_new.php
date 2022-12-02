@@ -132,8 +132,7 @@ try {
                 <input type="email" placeholder="Email" autocomplete="email" name="email" value="" required />
                 <input type="password" placeholder="Password" name="pwd" value="" required/>
                 <a href="#" style="font-size: smaller;margin-top:10px">Forgot your password?</a>
-                <a href="#" style="font-size: smaller;margin-top:10px;">Not a Customer? Sign in as admin Click <a
-                        href="" style="margin-bottom:10px">Here</a></a>
+                
 
                  <button name="submit_Login" >Sign In</button>
              
