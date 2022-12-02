@@ -37,9 +37,7 @@ if (isset($_POST['signup_submit'])) {
               
             }
         }
-        // if (empty($_POST['phoneNumber'])) {
-        //  $errors[] = "Veuiller rentrer votre numéro de téléphone";
-        // }
+        
         if (empty($_POST['user_pwd'])) {
             $errorsU[] = "Please insert a password.";
          
