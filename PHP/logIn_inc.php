@@ -15,14 +15,12 @@ try {
     if (isset($_POST['submit_Login']) ) {
             // PHP Form Validations
             if (empty($_POST['email'])) {
-                // header("location: ".$_SERVER['PHP_SELF']."?error=emptyinput");   
-                //  exit();
-            
+              
              header("location: https://comp-uk.motorsfeere.com/Sign_up_new.php?error=emptyinput");   
             exit();
             }
             if (empty($_POST['pwd'])) {
-                // header("location: /pages/connexion.php?error=emptyinput");
+               
                 header("location: https://comp-uk.motorsfeere.com/Sign_up_new.php?error=emptyinput");   
                  exit();
                 
@@ -38,7 +36,7 @@ try {
                 
                 if ($res) {
                     // Compare the password with password hash
-                    // $hashed = '$2y$10$HqLUsOHun8xAxsui5wGCYe5';
+                   
                     if (password_verify($_POST['pwd'], $res['User_Password'])) {
                         
                         //regenerate session id
@@ -59,12 +57,10 @@ try {
                         // redirect the user to main page
                        header("location: /index.php");
                      
-                     /* header("Location: http://www.fa
-                     cebook.com", TRUE,301);
-                        exit();*/
+                     
                     } else {
                         
-                       //echo  "wrong login ";
+                      
                         header("location: https://comp-uk.motorsfeere.com/Sign_up_new.php?error=wronglogin");   
                     exit();
                         
