@@ -85,6 +85,7 @@ try {
  <?php require 'header.php'; ?>
 
     <div class="container" id="container123">
+        <!--  CREATE AN ACCOUNT  -->
        <?php require 'PHP/signUp_inc.php' ?>
         <div class="form-container sign-up-container">
             <form method='post' class="form-id">
@@ -96,17 +97,7 @@ try {
               <input type="email" placeholder="Email" name="email"  value="" required />
               <input type="password" placeholder="Password" name="user_pwd" value="" required />
               <input type="number" placeholder="Contact No" name="user_number"  value="" required />
-                 
-               <!-- <input type="text" placeholder="Street" name="user_street" value="" />
-                <div class="small-container">
-                    <input type="text" class="small-input" placeholder="County" name="user_county" value="" />
-                    <input type="text" class="small-input" placeholder="Country" name="user_country" value="" />
-                </div>
-                <div class="small-conatainer-2">
-                    <input type="text" class="small-input" placeholder="City" name="user_city" value="" />
-                    <input type="text" class="small-input" placeholder="Post Code" name="user_postCode" value="" />
-                </div> -->
-                <input type="date" placeholder="Date of Birth" name="user_birthday" value="" min="1950-01-01" max="2022-12-15" required />
+              <input type="date" placeholder="Date of Birth" name="user_birthday" value="" min="1950-01-01" max="2022-12-15" required />
                 
                
                 <label class="radio-inline">
@@ -120,7 +111,7 @@ try {
                    
               
                 <button name="signup_submit" >Sign Up</button>
-                <!--<input  style="margin-top:15px"   value="Sign Up">-->
+                
             </form>
             <?php
             if (!empty($errorsU)) { ?>
@@ -132,7 +123,7 @@ try {
         </div>
         <!--END  CREATE AN ACCOUNT  -->
 
-       
+       <!--SIGN IN -->
  
          <div class="form-container sign-in-container">
             <form action ="PHP/logIn_inc.php" style="background:white ;" method="post">
@@ -145,8 +136,8 @@ try {
                         href="" style="margin-bottom:10px">Here</a></a>
 
                  <button name="submit_Login" >Sign In</button>
-              <!--  <button name="submit_Login" >Sign In</button> -->
-                <!-- message  -->
+             
+                <!-- MESSAGE  -->
                    
          <?php
         if (isset($_GET["error"])) {
@@ -171,10 +162,11 @@ try {
         }
 
         ?>
-                    
+                <!-- END MESSAGE  -->    
             </form>
+             
         </div>
-        
+        <!-- END SIGN IN -->
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
