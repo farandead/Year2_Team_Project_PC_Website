@@ -1,0 +1,4 @@
+Newest_Database.PNG
+babimors_compuk.sql
+
+The actual structure of the database and sql code
