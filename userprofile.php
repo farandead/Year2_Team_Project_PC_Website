@@ -15,6 +15,16 @@ try {
 
 
 ?>
+  <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: "Arial", Helvetica, sans-serif;
+            background-color: none;
+        }
+
+       
+    </style>
 <head>
       <link rel="stylesheet" href="css/user-profile.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
