@@ -68,11 +68,11 @@ if (isset($_POST['signup_submit'])) {
               
               
             } else {
-              $errorsU[] = "Oh Oh , There is an unusual problem. Pleas try again Later.";
+              $errorsU[] = "Oh Oh , There is an unusual problem. Please try again Later.";
               
             }
         } else {
-            $errorsU[] = "Some input have not been wrote correctly. Please verify your answer";
+           // $errorsU[] = "Some input have not been wrote correctly. Please verify your answer";
            
         }
 }
