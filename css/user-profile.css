@@ -43,30 +43,22 @@ body {
     border: solid 1px #BA68C8
 }
 
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 30vmax;
-    background-color: #e5eef7;
-    font-size: 0.6vmax;
+    width: 100%;
   }
   
   td, th {
-    border: 2px solid #dddddd;
+    border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-    
-  }
-  th{
-    text-transform: uppercase;
-    border: 1px solid white;
   }
   
   tr:nth-child(even) {
-    background-color: #f4f3f3;
-   
-
-}
+    background-color: #dddddd;
+  }
 center p{
     font-size: 1.5vmax;
     font-weight: 600;
