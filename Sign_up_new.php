@@ -160,7 +160,10 @@ try {
             <?php
             }
        
-           
+            if (!empty($msgU)) { ?>
+                <p style="color:green;"><?php echo implode($msgU) ?> </p> 
+            <?php
+            }
 
         ?>
                 <!-- END MESSAGE  -->    
