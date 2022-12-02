@@ -113,13 +113,7 @@ try {
                 <button name="signup_submit" >Sign Up</button>
                 
             </form>
-            <?php
-            if (!empty($errorsU)) { ?>
-                <p style="color:red;"><?php echo implode($errorsU) ?> </p> 
-            <?php
-            }
-       
-            ?>
+            
         </div>
         <!--END  CREATE AN ACCOUNT  -->
 
@@ -159,6 +153,14 @@ try {
                
             }
         }
+        
+       
+            if (!empty($errorsU)) { ?>
+                <p style="color:red;"><?php echo implode($errorsU) ?> </p> 
+            <?php
+            }
+       
+           
 
         ?>
                 <!-- END MESSAGE  -->    
