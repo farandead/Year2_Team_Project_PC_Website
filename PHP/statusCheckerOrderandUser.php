@@ -2,7 +2,8 @@
 //You need to start the sessrion before the require!
 //You need to require connect_db.php before the doc!
 //Put ob_start(); before this file
-$IDUser=$_SESSION['User_ID'];
+if(isset($_SESSION['User_ID'])){
+$IDUser=$_SESSION['User_ID'];}else{header("Location: ../index.php");}
 $IDOrder=$_GET['orderId'];
 
 $SQLCHECK="SELECT * FROM OrderP WHERE User_ID=$IDUser and Order_ID=$IDOrder";
