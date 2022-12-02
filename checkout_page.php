@@ -52,17 +52,8 @@ header("Location: index.php");
 
 
     <style>
-        body {
-            margin: 0%;
-            padding: 0%;
-            font-family: "Arial", Helvetica, sans-serif;
-        }
-
-        i {
-            font-size: 30px;
-            cursor: pointer;
-            position: relative;
-            ;
+        .leftside img{
+        width: 20vmax;
         }
     </style>
 
