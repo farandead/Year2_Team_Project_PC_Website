@@ -21,6 +21,7 @@ try {
             padding: 0%;
             font-family: "Arial", Helvetica, sans-serif;
             background-color: none;
+            background:none;
         }
 
        
@@ -43,7 +44,7 @@ try {
 
 
 ?>
-<body style="background:none" >
+
 <div class="container rounded bg-white mt-5 mb-5">
     <div class="row">
         <div class="col-md-3 border-right">
@@ -178,4 +179,4 @@ try {
 
 </div>
 </div>
-</body>
+
